@@ -1,0 +1,64 @@
+---
+title: "Neural Playground"
+description: "An interactive neural network visualizer built with WebGL and TensorFlow.js that lets you poke neurons and watch them squirm."
+date: "2024-12-01"
+tags: ["AI", "WebGL", "TypeScript", "interactive"]
+featured: true
+github: "https://github.com/sandwich-codes/neural-playground"
+demo: "https://neural.sandwich.codes"
+status: "active"
+cover: "/images/projects/neural-playground.jpg"
+tech: ["Next.js", "TensorFlow.js", "WebGL", "TypeScript", "Tailwind CSS"]
+---
+
+## Overview
+
+Neural Playground is an experiment in making neural networks tangible and playful. Instead of staring at loss curves, you can literally grab neurons, rewire connections, and watch data flow through the network in real-time.
+
+The whole thing started because I was tired of neural network tutorials being so abstract. What if you could *feel* the weights changing? What if backpropagation looked like a Rube Goldberg machine?
+
+## Architecture
+
+The app uses a layered rendering approach:
+
+1. **TensorFlow.js** handles the actual math — forward passes, backprop, gradient descent
+2. **WebGL** renders the network visualization at 60fps with custom shaders
+3. **React** manages the UI layer and user interactions
+4. **Zustand** keeps state synchronized between the model and the view
+
+```typescript
+// The core visualization loop
+function renderNetwork(ctx: WebGLContext, network: NeuralNetwork) {
+  const activations = network.getActivations();
+  const weights = network.getWeights();
+
+  ctx.bindBuffer(ctx.ARRAY_BUFFER, activationBuffer);
+  ctx.bufferData(ctx.ARRAY_BUFFER, new Float32Array(activations), ctx.DYNAMIC_DRAW);
+
+  // Each connection glows based on weight magnitude
+  weightShader.setUniform("u_time", performance.now() / 1000);
+  weightShader.setUniform("u_weightScale", Math.max(...weights.map(Math.abs)));
+
+  ctx.drawArrays(ctx.LINES, 0, connectionCount * 2);
+}
+```
+
+## Challenges
+
+The biggest challenge was performance. Rendering thousands of connections with real-time weight updates while keeping 60fps required careful WebGL optimization:
+
+- **Instanced rendering** for neurons (they're all circles, just different sizes/colors)
+- **Buffer streaming** for weight updates instead of recreating buffers each frame
+- **Level-of-detail** — distant layers use simpler representations
+
+## What I Learned
+
+- WebGL is beautiful but unforgiving. One wrong buffer offset and your neurons look like modern art.
+- TensorFlow.js is surprisingly capable for browser-based ML, but you need to be mindful of tensor disposal.
+- Users *love* being able to drag neurons around. It makes the abstract feel concrete.
+
+## Future Plans
+
+- Add support for convolutional layers with filter visualization
+- Implement training from scratch (not just inference visualization)
+- Add a "challenge mode" where users try to design networks for specific tasks
