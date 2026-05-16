@@ -18,9 +18,7 @@ The slices are then loaded into a step sequencer with 128+ built-in patterns —
 
 The core idea is that chopping samples shouldn't require music theory knowledge or a pre-existing vision. Splinched embraces randomness and happy accidents. You feed it audio, it gives you back something you wouldn't have thought to make.
 
-![Splinched full interface showing waveform, sequencer, and controls](/images/projects/splinched-full.png)
-
-![Splinched sequencer configuration with pattern and slice controls](/images/projects/splinched-sequencer-config.png)
+![Splinched header with logo and tagline](/images/projects/splinched-header.png)
 
 ## The Problem It Solves
 
@@ -52,9 +50,15 @@ The sequencer is the heart of the app. It has 128+ patterns split evenly between
 - **Rhythmic patterns** are weighted toward slices identified as drums. They include standard drum patterns, syncopated grooves, and polyrhythmic sequences. Some include micro-timing offsets (random ±0–30ms shifts) and ratchets (rapid repeated notes) for humanization.
 - **Melodic patterns** limit the pitch of slices according to a user-selectable key, mode (major, minor, dorian, etc.), and octave. Slices identified as drums are automatically excluded from melodic patterns. Melodic patterns play slices chromatically within the constraints of the selected scale.
 
+![Drum sequencer pattern with rhythmic slice assignments](/images/projects/splinched-sequencer-drum.png)
+
+![Melodic sequencer pattern with pitch-mapped slices](/images/projects/splinched-sequencer-melody.png)
+
 Patterns can be 16, 32, or 64 steps. Steps wrap to new lines in the display. A live playhead tracks playback across the waveform preview and the sequencer grid simultaneously.
 
 ### Pattern Manipulation
+
+![Sequencer settings with density, syncopation, and swing controls](/images/projects/splinched-sequencer-settings.png)
 
 Beyond selecting a pattern, users have deep control over how it plays:
 
@@ -97,6 +101,8 @@ All audio processing — playback, slicing, envelope shaping, filtering, and ren
 
 MIDI connectivity is initialized on demand via a button press. Once connected, a MIDI keyboard can trigger individual slices chromatically. The app maps MIDI note numbers to slice indices with pitch transposition.
 
+![MIDI pads interface for triggering slices](/images/projects/splinched-midi-pads.png)
+
 ### Canvas API
 
 The waveform display is rendered on a `<canvas>` element. Slice boundaries are drawn as vertical lines over the waveform. When a slice is triggered by the sequencer, it gets a visual highlight that persists for the duration of the slice's playback. Clicking a slice in the waveform toggles its corresponding steps in the sequencer.
@@ -124,6 +130,8 @@ Output is rendered as 16-bit WAV files using a custom WAV encoder. Users can dow
 Every control has a visible keyboard shortcut. All shortcuts are displayed on-screen. The app is fully keyboard-navigable and A11y compliant.
 
 ## UI Design
+
+![Configuration panel with algorithm selection and slice count options](/images/projects/splinched-config.png)
 
 The interface is designed to look and feel like professional music software — dense with controls, but organized. All controls are accessible within a single click, not buried in menus or context actions.
 
