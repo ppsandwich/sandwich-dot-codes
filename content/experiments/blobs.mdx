@@ -1,0 +1,58 @@
+---
+title: "Blobs: Liquid Physics in the Browser"
+description: "A real-time fluid simulation using metaballs and the WebGPU compute shader API."
+date: "2024-09-10"
+tags: ["WebGPU", "physics", "generative", "shaders"]
+demo: "https://blobs.sandwich.codes"
+github: "https://github.com/sandwich-codes/blobs"
+---
+
+## What Is This?
+
+Blobs is a real-time 2D fluid simulation running entirely in your browser using WebGPU compute shaders. Metaballs — organic, blobby shapes — merge, split, and interact based on simplified Navier-Stokes equations.
+
+Move your mouse through the fluid and watch the blobs react. Click to add more. Right-click to add obstacles.
+
+## Technical Approach
+
+The simulation runs on the GPU using WebGPU's compute shader API, which is significantly faster than doing this on the CPU or even with fragment shaders alone.
+
+```wgsl
+@compute @workgroup_size(16, 16)
+fn main(@builtin(global_invocation_id) id: vec3<u32>) {
+  let pos = vec2<f32>(f32(id.x), f32(id.y));
+  let resolution = vec2<f32>(f32(textureDimensions(output).x), f32(textureDimensions(output).y));
+  let uv = pos / resolution;
+
+  var field = 0.0;
+  for (var i = 0u; i < blobCount; i++) {
+    let blob = blobs[i];
+    let dist = distance(pos, blob.position);
+    field += blob.radius / (dist * dist + 1.0);
+  }
+
+  let color = smoothstep(0.8, 1.2, field);
+  textureStore(output, id.xy, vec4<f32>(color * blobColor, 1.0));
+}
+```
+
+## Why WebGPU?
+
+WebGPU gives us compute shaders, which means:
+
+- **Parallel computation** — each pixel calculates its field value independently
+- **Shared memory** — blob positions are uploaded once, read by all threads
+- **Pipeline flexibility** — simulation and rendering are separate passes
+
+This is roughly 50x faster than the equivalent JavaScript and 5x faster than a WebGL fragment shader approach.
+
+## Current State
+
+This is a pure experiment. It works in Chrome and Edge (WebGPU support required). The code is rough and the physics are simplified, but it looks cool and runs at 60fps with 200+ blobs.
+
+## What's Next
+
+- Add viscosity and pressure simulation
+- Implement obstacle boundaries
+- Try 3D metaballs with ray marching
+- See if I can make it work on mobile (WebGPU support is still spotty)

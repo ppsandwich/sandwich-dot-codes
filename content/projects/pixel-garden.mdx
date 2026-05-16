@@ -1,0 +1,65 @@
+---
+title: "Pixel Garden"
+description: "A generative art ecosystem where digital organisms evolve, compete, and create emergent patterns nobody predicted."
+date: "2024-10-15"
+tags: ["generative", "canvas", "Rust", "WASM"]
+featured: true
+github: "https://github.com/sandwich-codes/pixel-garden"
+demo: "https://garden.sandwich.codes"
+status: "experimental"
+cover: "/images/projects/pixel-garden.jpg"
+tech: ["Rust", "WebAssembly", "Canvas API", "TypeScript"]
+---
+
+## Overview
+
+Pixel Garden is a digital ecosystem running in your browser. Hundreds of pixel-organisms live, eat, reproduce, and die on a canvas. Each organism has a simple genetic code that determines its behavior, color, and metabolic efficiency.
+
+The result? Emergent patterns that look like alien coral reefs, bacterial colonies, or abstract expressionist paintings.
+
+## How It Works
+
+The simulation engine is written in Rust, compiled to WebAssembly for performance. The TypeScript frontend handles rendering and user interaction.
+
+```rust
+// Each organism follows simple rules
+pub fn update(org: &mut Organism, world: &World) {
+    let neighbors = world.get_neighbors(org.position);
+
+    if org.energy > REPRODUCTION_THRESHOLD {
+        org.reproduce(&mut world.organisms);
+    } else if neighbors.iter().any(|n| n.is_food()) {
+        org.eat(neighbors);
+    } else {
+        org.move_toward(nearest_food(org.position, world));
+    }
+
+    org.energy -= org.metabolic_rate;
+    if org.energy <= 0 {
+        org.die();
+    }
+}
+```
+
+The magic happens through **mutation**. When organisms reproduce, their genetic code slightly mutates. Over hundreds of generations, you see:
+
+- Color palettes shift and stabilize
+- Movement patterns emerge (some become ambush predators, others grazers)
+- Population dynamics oscillate in beautiful cycles
+
+## Technical Details
+
+- **Rust + WASM** for the simulation engine (~10x faster than pure JS)
+- **Canvas API** for pixel-level rendering
+- **Shared memory** between WASM and JS for zero-copy data transfer
+- **requestAnimationFrame** loop with configurable simulation speed
+
+## Challenges
+
+- Getting WASM memory management right was tricky. Rust's borrow checker saved me from bugs that would have been nightmares in C++.
+- Balancing simulation parameters so the ecosystem doesn't immediately collapse or explode required weeks of tuning.
+- Making it look good at different screen sizes while keeping pixel-perfect rendering.
+
+## What I Learned
+
+Emergence is beautiful and humbling. Simple rules create complex behavior. Also, Rust-to-WASM is an incredible toolchain for compute-heavy browser applications.
