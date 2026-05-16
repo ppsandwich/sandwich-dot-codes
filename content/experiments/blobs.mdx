@@ -17,7 +17,7 @@ Move your mouse through the fluid and watch the blobs react. Click to add more. 
 
 The simulation runs on the GPU using WebGPU's compute shader API, which is significantly faster than doing this on the CPU or even with fragment shaders alone.
 
-```wgsl
+```glsl
 @compute @workgroup_size(16, 16)
 fn main(@builtin(global_invocation_id) id: vec3<u32>) {
   let pos = vec2<f32>(f32(id.x), f32(id.y));
