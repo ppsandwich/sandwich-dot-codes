@@ -32,6 +32,7 @@ export interface TimelineEvent {
     prAction?: string;
     commitSha?: string;
     commitCount?: number;
+    commitMessages?: string[];
     releaseTag?: string;
   };
 }
@@ -144,6 +145,7 @@ export async function fetchGitHubTimeline(): Promise<TimelineEvent[]> {
         if (commits?.length > 0) {
           const latestMessage = commits[commits.length - 1]?.message?.split("\n")[0] ?? "";
           const sha = commits[commits.length - 1]?.sha?.substring(0, 7) ?? "";
+          const messages = commits.map((c: { message: string }) => c.message.split("\n")[0]);
 
           timeline.push({
             id: event.id,
@@ -157,6 +159,7 @@ export async function fetchGitHubTimeline(): Promise<TimelineEvent[]> {
             meta: {
               commitSha: sha,
               commitCount: commits.length,
+              commitMessages: messages,
             },
           });
         } else {

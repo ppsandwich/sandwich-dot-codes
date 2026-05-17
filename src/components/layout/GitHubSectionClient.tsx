@@ -118,6 +118,16 @@ function TimelineItem({ event, index }: { event: TimelineEvent; index: number })
             <span>·</span>
             <time dateTime={event.date} suppressHydrationWarning>{timeAgo}</time>
           </div>
+          {event.meta?.commitMessages && event.meta.commitMessages.length > 1 && (
+            <ul className="mt-1.5 space-y-0.5">
+              {event.meta.commitMessages.map((msg, i) => (
+                <li key={i} className="flex items-start gap-1.5 text-xs text-muted">
+                  <span className="mt-1 h-1 w-1 shrink-0 rounded-full bg-muted" />
+                  <span className="line-clamp-1">{msg}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </a>
     </motion.div>
