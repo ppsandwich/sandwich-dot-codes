@@ -39,10 +39,6 @@
         {
           "id": "card-1779054981093-qgrpl",
           "text": "A songwriter’s rhyme assistant that avoids cliché rhymes and suggests more interesting near-rhymes, slant rhymes, and internal rhymes."
-        },
-        {
-          "id": "card-1779054995100-oy4l1",
-          "text": "Acrilyc Pour"
         }
       ]
     },
@@ -53,6 +49,10 @@
         {
           "id": "card-1779054884738-n1tgc",
           "text": "“JIWW (Jump In, Water’s Wet)” Generate a complete production brief for a new track: tempo, key, drum style, synth palette, bass approach, arrangement, and reference vibe."
+        },
+        {
+          "id": "card-1779054995100-oy4l1",
+          "text": "Acrilyc Pour"
         }
       ]
     },
