@@ -36,6 +36,12 @@ export interface TimelineEvent {
   };
 }
 
+export interface LanguageStat {
+  name: string;
+  bytes: number;
+  percentage: number;
+}
+
 const GITHUB_USERNAME = "silentsoar";
 
 const githubHeaders = {
@@ -203,6 +209,59 @@ export async function fetchGitHubTimeline(): Promise<TimelineEvent[]> {
     return timeline
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
       .slice(0, 8);
+  } catch {
+    return [];
+  }
+}
+
+export async function fetchGitHubLanguages(): Promise<LanguageStat[]> {
+  try {
+    const reposRes = await fetch(
+      `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&type=all`,
+      {
+        headers: githubHeaders,
+        next: { revalidate: 3600 },
+      },
+    );
+
+    if (!reposRes.ok) return [];
+    const repos: { name: string; fork: boolean }[] = await reposRes.json();
+
+    const languageTotals: Record<string, number> = {};
+
+    const languageResults = await Promise.allSettled(
+      repos
+        .filter((r) => !r.fork)
+        .map((repo) =>
+          fetch(
+            `https://api.github.com/repos/${GITHUB_USERNAME}/${repo.name}/languages`,
+            {
+              headers: githubHeaders,
+              next: { revalidate: 3600 },
+            },
+          ).then((res) => (res.ok ? res.json() : {})),
+        ),
+    );
+
+    for (const result of languageResults) {
+      if (result.status === "fulfilled") {
+        const langs = result.value as Record<string, number>;
+        for (const [lang, bytes] of Object.entries(langs)) {
+          languageTotals[lang] = (languageTotals[lang] ?? 0) + bytes;
+        }
+      }
+    }
+
+    const totalBytes = Object.values(languageTotals).reduce((a, b) => a + b, 0);
+    if (totalBytes === 0) return [];
+
+    return Object.entries(languageTotals)
+      .map(([name, bytes]) => ({
+        name,
+        bytes,
+        percentage: Math.round((bytes / totalBytes) * 1000) / 10,
+      }))
+      .sort((a, b) => b.bytes - a.bytes);
   } catch {
     return [];
   }

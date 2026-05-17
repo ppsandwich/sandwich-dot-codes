@@ -13,11 +13,13 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { DoodleAccent } from "@/components/decorative/DoodleAccent";
 import { StickerTag } from "@/components/decorative/StickerTag";
-import type { TimelineEvent } from "@/lib/github";
+import { LanguageChart } from "@/components/ui/LanguageChart";
+import type { TimelineEvent, LanguageStat } from "@/lib/github";
 import { formatDistanceToNow } from "date-fns";
 
 interface GitHubSectionClientProps {
   initialTimeline: TimelineEvent[];
+  initialLanguages: LanguageStat[];
 }
 
 const POLL_INTERVAL_MS = 90_000;
@@ -122,18 +124,26 @@ function TimelineItem({ event, index }: { event: TimelineEvent; index: number })
   );
 }
 
-export function GitHubSectionClient({ initialTimeline }: GitHubSectionClientProps) {
+export function GitHubSectionClient({ initialTimeline, initialLanguages }: GitHubSectionClientProps) {
   const [timeline, setTimeline] = useState<TimelineEvent[]>(initialTimeline);
+  const [languages, setLanguages] = useState<LanguageStat[]>(initialLanguages);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const refresh = useCallback(async () => {
     try {
       setIsRefreshing(true);
-      const res = await fetch("/api/github-timeline");
-      if (res.ok) {
-        const data: TimelineEvent[] = await res.json();
+      const [timelineRes, langsRes] = await Promise.all([
+        fetch("/api/github-timeline"),
+        fetch("/api/github-languages"),
+      ]);
+      if (timelineRes.ok) {
+        const data: TimelineEvent[] = await timelineRes.json();
         setTimeline(data);
+      }
+      if (langsRes.ok) {
+        const data: LanguageStat[] = await langsRes.json();
+        setLanguages(data);
       }
     } catch {
       // keep existing data
@@ -150,6 +160,7 @@ export function GitHubSectionClient({ initialTimeline }: GitHubSectionClientProp
   }, [refresh]);
 
   const hasData = timeline.length > 0;
+  const hasLanguages = languages.length > 0;
 
   return (
     <Section spacing="default">
@@ -207,6 +218,21 @@ export function GitHubSectionClient({ initialTimeline }: GitHubSectionClientProp
             </div>
             <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent" />
           </div>
+        )}
+
+        {hasLanguages && (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.15, type: "spring", stiffness: 200, damping: 20 }}
+            className="mt-10 rotate-[0.2deg]"
+          >
+            <h3 className="mb-4 font-heading text-lg font-black uppercase tracking-wider">
+              Code by Language
+            </h3>
+            <LanguageChart languages={languages} />
+          </motion.div>
         )}
       </Container>
     </Section>
