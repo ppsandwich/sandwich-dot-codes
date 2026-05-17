@@ -130,25 +130,46 @@ export async function fetchGitHubTimeline(): Promise<TimelineEvent[]> {
     for (const event of events) {
       const repoName: string = event.repo?.name?.split("/")[1] ?? event.repo?.name ?? "unknown";
 
-      if (event.type === "PushEvent" && event.payload?.commits?.length > 0) {
-        const commits = event.payload.commits;
-        const latestMessage = commits[commits.length - 1]?.message?.split("\n")[0] ?? "";
-        const sha = commits[commits.length - 1]?.sha?.substring(0, 7) ?? "";
+      if (event.type === "PushEvent") {
+        const commits = event.payload?.commits;
+        const ref: string = event.payload?.ref ?? "";
+        const branch = ref.replace("refs/heads/", "");
 
-        timeline.push({
-          id: event.id,
-          type: "commit",
-          title: commits.length === 1
-            ? latestMessage
-            : `Pushed ${commits.length} commits`,
-          url: `https://github.com/${event.repo.name}/commit/${commits[commits.length - 1]?.sha}`,
-          repo: repoName,
-          date: event.created_at,
-          meta: {
-            commitSha: sha,
-            commitCount: commits.length,
-          },
-        });
+        if (commits?.length > 0) {
+          const latestMessage = commits[commits.length - 1]?.message?.split("\n")[0] ?? "";
+          const sha = commits[commits.length - 1]?.sha?.substring(0, 7) ?? "";
+
+          timeline.push({
+            id: event.id,
+            type: "commit",
+            title: commits.length === 1
+              ? latestMessage
+              : `Pushed ${commits.length} commits`,
+            url: `https://github.com/${event.repo.name}/commit/${commits[commits.length - 1]?.sha}`,
+            repo: repoName,
+            date: event.created_at,
+            meta: {
+              commitSha: sha,
+              commitCount: commits.length,
+            },
+          });
+        } else {
+          const headSha: string = event.payload?.head ?? "";
+          timeline.push({
+            id: event.id,
+            type: "commit",
+            title: `Pushed to ${branch}`,
+            url: headSha
+              ? `https://github.com/${event.repo.name}/commit/${headSha}`
+              : `https://github.com/${event.repo.name}`,
+            repo: repoName,
+            date: event.created_at,
+            meta: {
+              commitSha: headSha.substring(0, 7),
+              commitCount: 1,
+            },
+          });
+        }
       } else if (event.type === "PullRequestEvent" && event.payload?.pull_request) {
         const pr = event.payload.pull_request;
         timeline.push({
