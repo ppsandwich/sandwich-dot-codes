@@ -68,7 +68,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex items-center justify-between border-t border-background/20 pt-6">
-          <p className="text-xs text-background/50">
+          <p className="text-xs text-background/50" suppressHydrationWarning>
             &copy; {new Date().getFullYear()} {siteConfig.name}. All rights (and lefts) reserved.
           </p>
           <DoodleAccent variant="squiggle" color="#D6B347" size={20} />

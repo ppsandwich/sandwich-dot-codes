@@ -33,11 +33,14 @@ export function ExperimentPageContent({ experiment }: ExperimentPageContentProps
             </Link>
 
             <div className="mb-4 flex flex-wrap gap-2">
-              {experiment.tags.map((tag) => (
-                <StickerTag key={tag} variant="salmon" rotation={Math.random() * 4 - 2}>
-                  #{tag}
-                </StickerTag>
-              ))}
+              {experiment.tags.map((tag, i) => {
+                const rotations = [-2, 1.5, -1, 2, -1.5];
+                return (
+                  <StickerTag key={tag} variant="salmon" rotation={rotations[i % rotations.length]}>
+                    #{tag}
+                  </StickerTag>
+                );
+              })}
             </div>
 
             <h1 className="font-heading text-display font-black leading-[0.95] tracking-tighter rotate-[-0.3deg]">
@@ -49,7 +52,7 @@ export function ExperimentPageContent({ experiment }: ExperimentPageContentProps
             </p>
 
             <div className="mt-4 flex items-center gap-4 text-sm text-muted">
-              <time dateTime={experiment.date}>
+              <time dateTime={experiment.date} suppressHydrationWarning>
                 {new Date(experiment.date).toLocaleDateString("en-US", {
                   month: "long",
                   day: "numeric",
