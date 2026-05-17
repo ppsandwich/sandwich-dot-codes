@@ -36,7 +36,7 @@ export interface TimelineEvent {
   };
 }
 
-const GITHUB_USERNAME = "sandwich-codes";
+const GITHUB_USERNAME = "silentsoar";
 
 const githubHeaders = {
   Accept: "application/vnd.github.v3+json",
