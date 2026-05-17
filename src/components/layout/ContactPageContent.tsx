@@ -41,15 +41,15 @@ export function ContactPageContent() {
             {
               icon: <Github size={24} />,
               label: "GitHub",
-              value: "sandwich-codes",
+              value: "silentsoar",
               href: siteConfig.links.github,
               color: "foreground",
             },
             {
               icon: <Mail size={24} />,
               label: "Email",
-              value: "hello@sandwich.codes",
-              href: "mailto:hello@sandwich.codes",
+              value: "dfgibbs@gmail.com",
+              href: "mailto:dfgibbs@gmail.com",
               color: "mustard",
             },
             ...(siteConfig.links.twitter

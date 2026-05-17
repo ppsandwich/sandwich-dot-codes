@@ -24,7 +24,7 @@ export function AboutPageContent() {
           <h1 className="font-heading text-display font-black leading-[0.95] tracking-tighter rotate-[-0.3deg]">
             Hello, I&apos;m
             <br />
-            <span className="text-mustard">a Developer</span>
+            <span className="text-mustard">a Product Person</span>
           </h1>
         </motion.div>
 
@@ -42,7 +42,7 @@ export function AboutPageContent() {
             are experiments in making code feel more human, more playful, and more alive.
           </p>
           <p className="rotate-[0.15deg]">
-            By day, I work on web applications and AI tooling. By night, I poke at neural
+            By day, I work in Product Management. By night, I poke at neural
             networks until they make art, turn voice recordings into 3D landscapes, and
             wonder what happens if you give pixels the ability to reproduce.
           </p>

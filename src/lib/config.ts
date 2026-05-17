@@ -7,7 +7,7 @@ export const siteConfig: SiteConfig = {
   url: "https://sandwich.codes",
   ogImage: "/og.png",
   links: {
-    github: "https://github.com/sandwich-codes",
+    github: "https://github.com/silentsoar",
     twitter: undefined,
   },
 };
