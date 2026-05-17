@@ -94,7 +94,7 @@ export function SearchModal({ items }: SearchModalProps) {
               className="fixed left-1/2 top-[20%] z-[101] w-[calc(100%-2rem)] max-w-lg -translate-x-1/2"
             >
               <Command
-                className="border-3 border-border bg-background shadow-tactile-lg"
+                className="border-3 border-border bg-background shadow-tactile-lg dark:bg-background-dark"
                 shouldFilter={true}
                 loop
               >

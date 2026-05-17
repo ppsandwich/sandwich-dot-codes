@@ -23,7 +23,7 @@ export function PhoneShowcase({ src, alt = "App screenshot", className }: PhoneS
           {/* Phone inner bezel */}
           <div className="relative rounded-[35px] border border-border/40 bg-[#1a1716] p-[4px]">
             {/* Screen */}
-            <div className="relative overflow-hidden rounded-[32px] bg-background">
+            <div className="relative overflow-hidden rounded-[32px] bg-background dark:bg-background-dark">
               {/* Dynamic Island */}
               <div className="absolute left-1/2 top-[8px] z-20 h-[26px] w-[76px] -translate-x-1/2 rounded-full border border-border/30 bg-foreground" />
 
