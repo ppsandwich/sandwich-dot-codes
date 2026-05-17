@@ -39,13 +39,6 @@
       ]
     },
     {
-      "id": "parked",
-      "title": "Parked",
-      "cards": [
-        { "id": "card-6", "text": "Command palette with cmdk" }
-      ]
-    },
-    {
       "id": "done",
       "title": "Done",
       "cards": [
