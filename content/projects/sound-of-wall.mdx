@@ -1,0 +1,166 @@
+---
+title: "Sound of Wall"
+description: "Upload audio. The app analyzes it in-browser, extracts sonic features, and generates deterministic procedural artwork — the same audio always produces the same image."
+date: "2026-05-17"
+tags: ["audio", "procedural art", "generative", "Web Audio API", "Canvas API", "deterministic"]
+featured: true
+demo: "https://sound-of-wall-mwy1.vercel.app/"
+status: "active"
+cover: "/images/projects/sound-of-wall-header.png"
+showcase: "/images/projects/sound-of-wall-showcase.png"
+tech: ["TypeScript", "Next.js", "Web Audio API", "Canvas API", "Meyda", "simplex-noise", "Vercel", "Neon Postgres"]
+---
+
+## Overview
+
+Sound of Wall turns uploaded audio into collectible procedural artwork. You drop in a sound file — a song, a field recording, a voice memo — and the app analyzes it entirely in the browser, extracting rhythm, spectral content, dynamics, and structural features. Those features drive a deterministic rendering engine that produces unique visual compositions from the audio's sonic fingerprint.
+
+The critical constraint: the same audio input always generates the same artwork. No randomness, no AI inference, no diffusion models. Every pixel is derived from mathematical relationships between the audio's properties and a seeded procedural system. Change the audio, and the output changes. Keep the audio identical, and the output is identical — every time, on every device.
+
+## The Problem It Solves
+
+Generative art tools either require deep technical knowledge (Processing, TouchDesigner) or lean on AI image generation (Midjourney, Stable Diffusion). The first approach excludes most people. The second produces non-deterministic, non-reproducible output that can't be meaningfully tied to its input.
+
+Sound of Wall occupies a different space. It's a direct audio-to-visual pipeline where the mapping is transparent and deterministic. The artwork isn't an interpretation or an approximation — it's a mathematical transformation. The same audio file produces the same composition whether you run it today or a year from now.
+
+This makes the output collectible in a way AI-generated images aren't. The artwork is a function of the sound, not a function of a prompt and a random seed.
+
+## Development Process
+
+The project required building four tightly coupled systems: audio analysis, deterministic hashing, scene generation, and procedural rendering. Each system feeds the next, and the entire pipeline runs client-side.
+
+### Browser Audio Analysis
+
+Audio analysis happens entirely in the browser using the Web Audio API and Meyda. The pipeline:
+
+1. **Decode** — The uploaded file is decoded into an `AudioBuffer` via `AudioContext.decodeAudioData()`.
+2. **Normalize** — The waveform data is normalized to remove volume variance between files.
+3. **FFT Analysis** — The audio is broken into overlapping windows and analyzed via FFT.
+4. **Feature Extraction** — Meyda extracts a feature vector from each window.
+5. **Aggregate** — Window-level features are aggregated into a single feature vector for the entire file.
+
+Extracted features include:
+
+- **Rhythm**: BPM, beat density, transient sharpness, rhythmic complexity
+- **Spectral**: spectral centroid, brightness, warmth, noisiness, harmonic density
+- **Dynamic**: loudness, dynamic range, energy evolution over time
+- **Structural**: repetition patterns, transition density, tension curves
+
+The feature vector is the bridge between raw audio and visual output. Every rendering decision downstream derives from it.
+
+### Deterministic Hashing
+
+Once the feature vector is computed, a SHA-256 hash is generated from the normalized waveform data and feature vector using the SubtleCrypto API. This hash becomes the deterministic seed for all downstream generation.
+
+The hash explicitly ignores:
+
+- Filenames
+- Metadata (ID3 tags, etc.)
+- Album art
+- Timestamps
+
+The hash explicitly includes:
+
+- Normalized waveform data
+- Extracted feature vectors
+
+This ensures that two different files with identical audio content produce identical artwork, while two files with different audio content — regardless of filename — produce different artwork.
+
+### Seeded PRNG
+
+All randomness in the rendering pipeline uses a Mulberry32 seeded PRNG initialized from the SHA-256 hash. `Math.random()` is never used in any rendering logic. This guarantees that the same seed produces the same sequence of random values, which means the same scene definition, the same geometry, the same colors, and the same final image.
+
+### Scene Generation
+
+The feature vector and seed drive a scene definition generator that produces a JSON structure describing every visual parameter:
+
+```json
+{
+  "seed": 92837123,
+  "palette": ["#1e1033", "#5e239d", "#f61067"],
+  "geometryDensity": 0.72,
+  "noiseScale": 0.41,
+  "symmetry": 3,
+  "particleCount": 1200,
+  "energyCurve": [0.2, 0.7, 0.3, 0.9],
+  "stylePreset": "ethereal"
+}
+```
+
+Scene definitions are stored in a database so they can be retrieved, re-rendered, and shared without re-analyzing the audio.
+
+### Procedural Rendering Engine
+
+The rendering engine uses the Canvas API to draw deterministic procedural compositions. All geometry, noise fields, color systems, and composition rules are derived from the scene definition — no randomness enters at render time.
+
+Visual systems include:
+
+- **Geometry**: spline systems, recursive curves, radial compositions, particle fields, Voronoi patterns
+- **Texture**: Perlin noise, simplex noise, turbulence fields, grain overlays, dithering
+- **Composition**: derived from rhythmic density, harmonic complexity, dynamic range, and energy progression
+
+Heavy rendering runs in a Web Worker using OffscreenCanvas to avoid blocking the React UI thread. Standard renders complete in under 5 seconds. High-resolution 4096×4096 PNG exports target under 15 seconds.
+
+### Style Presets
+
+Six style presets modify palettes, symmetry, geometry density, texture intensity, and noise behavior:
+
+- **Ethereal** — soft gradients, low density, high symmetry
+- **Noir** — high contrast, monochromatic, sharp geometry
+- **Brutalist** — raw geometry, heavy grain, aggressive composition
+- **Psychedelic** — saturated palettes, high noise scale, recursive patterns
+- **Minimal** — sparse composition, muted palettes, clean lines
+- **Retro Futurist** — CRT textures, scanlines, neon palettes
+
+The same audio with different presets produces visually distinct but deterministically reproducible results.
+
+## Technology
+
+### Frontend
+
+Next.js App Router with React, TypeScript, Tailwind CSS, and Framer Motion. Hosted on Vercel.
+
+### Serverless Backend
+
+Vercel Route Handlers handle orchestration only — no heavy computation runs on the server. Serverless functions target sub-second duration.
+
+### Audio Analysis
+
+Web Audio API for decoding and playback. Meyda for feature extraction. All analysis runs in the browser.
+
+### Rendering
+
+Canvas API with OffscreenCanvas in Web Workers. simplex-noise for noise fields. The entire rendering pipeline is client-side.
+
+### Database
+
+Neon Postgres stores generation metadata: audio hash, seed, style preset, feature vector, scene definition, image URL, and timestamp. If an identical audio hash already exists, the system returns the existing scene definition and image without regenerating.
+
+### Storage
+
+Vercel Blob stores uploaded audio, exported images, and thumbnails.
+
+## UI Design
+
+The interface is dark, cinematic, and gallery-like. The upload experience supports drag-and-drop and click-to-upload with progress indication and an audio preview player. Supported formats: MP3, WAV, FLAC, OGG, M4A. Max size: 100MB. Max duration: 15 minutes.
+
+The generation page shows the audio analysis in real-time — waveform, feature extraction progress, and the rendering canvas. Once complete, the user can export at up to 4096×4096 PNG, switch style presets to see different deterministic outputs from the same audio, and share the artwork via a permanent URL.
+
+The gallery page displays generated artworks in a responsive grid with hover animations and mixed style presets. Individual artwork pages show the full scene definition, the audio that generated it, and sharing controls.
+
+Mobile devices gracefully reduce render resolution and particle count to maintain performance.
+
+## What I Learned
+
+- Deterministic generation is harder than it sounds. Floating-point differences across browsers mean you need to normalize aggressively and avoid relying on platform-specific math precision.
+- The Web Audio API's `decodeAudioData` behaves differently across browsers for edge cases (corrupted headers, unusual sample rates). Defensive normalization is essential.
+- OffscreenCanvas support is still inconsistent. Safari on iOS doesn't support it, so the rendering engine needs a fallback path that renders on the main thread with requestAnimationFrame chunking to avoid blocking.
+- SHA-256 via SubtleCrypto is fast but asynchronous. The hashing pipeline needs to be designed around Promises from the start.
+- Storing scene definitions as JSONB in Postgres is convenient but requires careful indexing on the audio hash column for the deduplication cache lookup to be fast.
+
+## Challenges
+
+- **Cross-browser determinism**: Ensuring the same audio produces pixel-identical output across Chrome, Safari, Firefox, and Edge required abstracting all math operations and avoiding browser-specific FFT implementations.
+- **High-resolution export**: Rendering a 4096×4096 canvas in the browser without crashing required tiling the render into chunks and compositing them via OffscreenCanvas.
+- **Feature vector quality**: Simple audio features (RMS, zero-crossing rate) don't capture enough information to drive visually interesting compositions. The feature extraction pipeline needed spectral centroid, MFCCs, chroma, and energy evolution curves to produce compelling output.
+- **Caching identical uploads**: The deduplication system needs to handle the case where two users upload the same audio — same content, different filenames, different metadata. The hash must be content-addressed, not metadata-addressed.
