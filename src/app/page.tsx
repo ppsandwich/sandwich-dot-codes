@@ -11,13 +11,19 @@ export default function HomePage() {
     .filter((p) => p.featured)
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
 
+  const showcaseProjects = allProjects
+    .filter((p) => p.showcase)
+    .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+    .slice(0, 3)
+    .map((p) => ({ title: p.title, showcase: p.showcase!, url: p.url }));
+
   const recentArticles = allArticles
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 2);
 
   return (
     <>
-      <HeroSection />
+      <HeroSection showcases={showcaseProjects} />
       <CrookedDivider variant="scribble" className="my-4" />
       <FeaturedProjectsSection projects={featuredProjects} />
       <CrookedDivider variant="wavy" color="#6F9D9A" className="my-4" />
