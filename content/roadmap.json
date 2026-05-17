@@ -5,8 +5,40 @@
       "title": "Idea",
       "cards": [
         {
-          "id": "card-2",
-          "text": "Dark mode toggle animation"
+          "id": "card-1779054856801-kpvig",
+          "text": "Upload a photo or artwork and convert it into a LEGO mosaic plan with part counts, colour mapping, and build instructions. Already exists - how would mine be better?"
+        },
+        {
+          "id": "card-1779054866544-7ss6e",
+          "text": "“We Will Rebuild” Enter a LEGO set number and get alternative build ideas using only pieces from that set."
+        },
+        {
+          "id": "card-1779054874676-dw2c2",
+          "text": "“Upload a loop or sample and get a visual/metadata mood board: genre tags, texture words, BPM estimate, key estimate, and suggested arrangement ideas. Not sure how useful this would be, might be supplemental features of a bigger thing."
+        },
+        {
+          "id": "card-1779054926509-3lqvb",
+          "text": "“Neighborhood Soundwatch” An AI-assisted sample library browser that auto-tags loops by BPM, key, genre, instrument, mood, and energy. There’s already a number of these (Like XO by XLN), so it would need some stand-out features."
+        },
+        {
+          "id": "card-1779054945044-8uwzs",
+          "text": "“Doctor Beat” Upload or describe your song structure and get feedback on intro length, drops, transitions, variation, and listener momentum."
+        },
+        {
+          "id": "card-1779054953842-apkwy",
+          "text": "“Upload or enter a tracklist and get a suggested DJ set order based on BPM, key, energy, genre, and mood arc."
+        },
+        {
+          "id": "card-1779054961759-3a5l1",
+          "text": "”PIAB (Party In A Box)” Generate themed crates for gigs, parties, radio shows, or mixes, such as “sunset warm-up house” or “late-night leftfield breaks.”"
+        },
+        {
+          "id": "card-1779054969743-3hr6z",
+          "text": "” A website that turns a DJ setlist into a visual energy journey, showing peaks, breathers, tempo shifts, and mood changes. Could be merged with PIAB."
+        },
+        {
+          "id": "card-1779054981093-qgrpl",
+          "text": "A songwriter’s rhyme assistant that avoids cliché rhymes and suggests more interesting near-rhymes, slant rhymes, and internal rhymes."
         }
       ]
     },
@@ -15,16 +47,12 @@
       "title": "To Do",
       "cards": [
         {
-          "id": "card-3",
-          "text": "Full-text search with Typesense"
+          "id": "card-1779054884738-n1tgc",
+          "text": "“JIWW (Jump In, Water’s Wet)” Generate a complete production brief for a new track: tempo, key, drum style, synth palette, bass approach, arrangement, and reference vibe."
         },
         {
-          "id": "card-1",
-          "text": "Interactive 3D project showcase"
-        },
-        {
-          "id": "card-4",
-          "text": "RSS feed for writing section"
+          "id": "card-1779054995100-oy4l1",
+          "text": "Acrilyc Pour idea exploration"
         }
       ]
     },
@@ -35,6 +63,10 @@
         {
           "id": "card-5",
           "text": "Polish project page layouts"
+        },
+        {
+          "id": "card-1779055127746-h2z0c",
+          "text": "\"Expecto\" neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation."
         }
       ]
     },
@@ -43,12 +75,20 @@
       "title": "Done",
       "cards": [
         {
+          "id": "card-1779055054969-7oul2",
+          "text": "\"Splinched\" Automated sample chopper. Test the limits of serverless."
+        },
+        {
           "id": "card-7",
           "text": "GitHub activity timeline"
         },
         {
           "id": "card-8",
           "text": "SVG sandwich favicon"
+        },
+        {
+          "id": "card-1779055085784-gzmj8",
+          "text": "\"Sound Of Wall\" - the opposite of a wall of sound. Take music and make art that can hang on a wall from it."
         }
       ]
     },
@@ -56,7 +96,10 @@
       "id": "parked",
       "title": "Parked",
       "cards": [
-        { "id": "card-6", "text": "Command palette with cmdk" }
+        {
+          "id": "card-6",
+          "text": "Command palette with cmdk"
+        }
       ]
     }
   ]
