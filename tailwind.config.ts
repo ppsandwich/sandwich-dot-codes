@@ -10,8 +10,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#F5EFE4",
-        foreground: "#292524",
+        background: {
+          DEFAULT: "#F5EFE4",
+          dark: "#1a1816",
+        },
+        foreground: {
+          DEFAULT: "#292524",
+          dark: "#e8e0d4",
+        },
         mustard: "#D6B347",
         teal: "#6F9D9A",
         salmon: "#D98B73",

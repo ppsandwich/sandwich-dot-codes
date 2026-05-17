@@ -184,7 +184,7 @@ export function GitHubSectionClient({ initialTimeline, initialLanguages }: GitHu
               <button
                 onClick={refresh}
                 disabled={isRefreshing}
-                className="mt-2 shrink-0 rounded-lg border-2 border-border bg-background p-2 shadow-tactile-sm transition-all hover:scale-105 disabled:opacity-50"
+                className="mt-2 shrink-0 rounded-lg border-2 border-border bg-background p-2 shadow-tactile-sm transition-all hover:scale-105 disabled:opacity-50 dark:bg-background-dark"
                 aria-label="Refresh timeline"
               >
                 <RefreshCw
@@ -217,7 +217,7 @@ export function GitHubSectionClient({ initialTimeline, initialLanguages }: GitHu
                   ))}
                 </AnimatePresence>
               </div>
-              <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent" />
+              <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent dark:from-background-dark" />
             </div>
 
             {hasLanguages && (

@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`} suppressHydrationWarning>
-      <body className="min-h-screen bg-background font-body text-foreground">
+      <body className="min-h-screen bg-background font-body text-foreground dark:bg-background-dark dark:text-foreground-dark">
         <Providers>
           <NoiseOverlay />
           <Navbar />

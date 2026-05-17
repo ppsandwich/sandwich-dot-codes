@@ -39,7 +39,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b-3 border-border bg-background/95 backdrop-blur-sm dark:bg-[#1a1816]/95">
+    <header className="sticky top-0 z-50 border-b-3 border-border bg-background/95 backdrop-blur-sm dark:bg-background-dark/95">
       <Container>
         <nav className="flex h-16 items-center justify-between gap-4">
           <Link
@@ -93,7 +93,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="overflow-hidden border-t-3 border-border bg-background dark:bg-[#1a1816] md:hidden"
+            className="overflow-hidden border-t-3 border-border bg-background dark:bg-background-dark md:hidden"
           >
             <Container>
               <ul className="flex flex-col gap-1 py-4">
