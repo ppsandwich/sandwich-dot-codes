@@ -5,12 +5,12 @@
       "title": "Idea",
       "cards": [
         {
-          "id": "card-1779054856801-kpvig",
-          "text": "Upload a photo or artwork and convert it into a LEGO mosaic plan with part counts, colour mapping, and build instructions. Already exists - how would mine be better?"
-        },
-        {
           "id": "card-1779054866544-7ss6e",
           "text": "“We Will Rebuild” Enter a LEGO set number and get alternative build ideas using only pieces from that set."
+        },
+        {
+          "id": "card-1779054856801-kpvig",
+          "text": "Upload a photo or artwork and convert it into a LEGO mosaic plan with part counts, colour mapping, and build instructions. Already exists - how would mine be better?"
         },
         {
           "id": "card-1779054874676-dw2c2",
