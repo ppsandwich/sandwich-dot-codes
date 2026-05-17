@@ -208,31 +208,33 @@ export function GitHubSectionClient({ initialTimeline, initialLanguages }: GitHu
             </StickerTag>
           </motion.div>
         ) : (
-          <div className="relative">
-            <div className="timeline-scroll max-h-[1024px] space-y-1 overflow-y-auto pr-2">
-              <AnimatePresence mode="popLayout">
-                {timeline.map((event, i) => (
-                  <TimelineItem key={event.id} event={event} index={i} />
-                ))}
-              </AnimatePresence>
+          <div className="flex flex-col gap-10 lg:flex-row lg:items-start">
+            <div className="relative min-w-0 flex-1">
+              <div className="timeline-scroll max-h-[1024px] space-y-1 overflow-y-auto pr-2">
+                <AnimatePresence mode="popLayout">
+                  {timeline.map((event, i) => (
+                    <TimelineItem key={event.id} event={event} index={i} />
+                  ))}
+                </AnimatePresence>
+              </div>
+              <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent" />
             </div>
-            <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent" />
-          </div>
-        )}
 
-        {hasLanguages && (
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.15, type: "spring", stiffness: 200, damping: 20 }}
-            className="mt-10 rotate-[0.2deg]"
-          >
-            <h3 className="mb-4 font-heading text-lg font-black uppercase tracking-wider">
-              Code by Language
-            </h3>
-            <LanguageChart languages={languages} />
-          </motion.div>
+            {hasLanguages && (
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.15, type: "spring", stiffness: 200, damping: 20 }}
+                className="shrink-0 rotate-[0.2deg] lg:w-80"
+              >
+                <h3 className="mb-4 font-heading text-lg font-black uppercase tracking-wider">
+                  Code by Language
+                </h3>
+                <LanguageChart languages={languages} />
+              </motion.div>
+            )}
+          </div>
         )}
       </Container>
     </Section>
