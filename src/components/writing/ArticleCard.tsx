@@ -40,7 +40,7 @@ export function ArticleCard({ article, index = 0 }: ArticleCardProps) {
             style={{ transform: `rotate(${rotation}deg)` }}
           >
             <div className="flex items-center gap-3 text-xs text-muted">
-              <time dateTime={article.date}>
+              <time dateTime={article.date} suppressHydrationWarning>
                 {new Date(article.date).toLocaleDateString("en-US", {
                   month: "short",
                   day: "numeric",

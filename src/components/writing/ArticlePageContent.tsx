@@ -34,11 +34,14 @@ export function ArticlePageContent({ article }: ArticlePageContentProps) {
             </Link>
 
             <div className="mb-4 flex flex-wrap gap-2">
-              {article.tags.map((tag) => (
-                <StickerTag key={tag} variant="teal" rotation={Math.random() * 4 - 2}>
-                  #{tag}
-                </StickerTag>
-              ))}
+              {article.tags.map((tag, i) => {
+                const rotations = [-2, 1.5, -1, 2, -1.5];
+                return (
+                  <StickerTag key={tag} variant="teal" rotation={rotations[i % rotations.length]}>
+                    #{tag}
+                  </StickerTag>
+                );
+              })}
             </div>
 
             <h1 className="font-heading text-display font-black leading-[0.95] tracking-tighter rotate-[-0.2deg]">
@@ -52,7 +55,7 @@ export function ArticlePageContent({ article }: ArticlePageContentProps) {
             <div className="mt-6 flex items-center gap-4 text-sm text-muted">
               <span className="font-heading font-bold">{siteConfig.author}</span>
               <span>·</span>
-              <time dateTime={article.date}>
+              <time dateTime={article.date} suppressHydrationWarning>
                 {new Date(article.date).toLocaleDateString("en-US", {
                   month: "long",
                   day: "numeric",

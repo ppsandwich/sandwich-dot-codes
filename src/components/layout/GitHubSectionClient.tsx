@@ -116,7 +116,7 @@ function TimelineItem({ event, index }: { event: TimelineEvent; index: number })
             <span>·</span>
             <span>{getEventDescription(event)}</span>
             <span>·</span>
-            <time dateTime={event.date}>{timeAgo}</time>
+            <time dateTime={event.date} suppressHydrationWarning>{timeAgo}</time>
           </div>
         </div>
       </a>
