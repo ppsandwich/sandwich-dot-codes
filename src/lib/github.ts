@@ -164,10 +164,32 @@ export async function fetchGitHubTimeline(): Promise<TimelineEvent[]> {
           });
         } else {
           const headSha: string = event.payload?.head ?? "";
+          let title = `Pushed to ${branch}`;
+          const commitMessages: string[] = [];
+
+          if (headSha) {
+            try {
+              const commitRes = await fetch(
+                `https://api.github.com/repos/${event.repo.name}/commits/${headSha}`,
+                { headers: githubHeaders, next: { revalidate: 60 } },
+              );
+              if (commitRes.ok) {
+                const commitData = await commitRes.json();
+                const msg = commitData.commit?.message?.split("\n")[0];
+                if (msg) {
+                  title = msg;
+                  commitMessages.push(msg);
+                }
+              }
+            } catch {
+              // fall back to "Pushed to branch"
+            }
+          }
+
           timeline.push({
             id: event.id,
             type: "commit",
-            title: `Pushed to ${branch}`,
+            title,
             url: headSha
               ? `https://github.com/${event.repo.name}/commit/${headSha}`
               : `https://github.com/${event.repo.name}`,
@@ -176,6 +198,7 @@ export async function fetchGitHubTimeline(): Promise<TimelineEvent[]> {
             meta: {
               commitSha: headSha.substring(0, 7),
               commitCount: 1,
+              commitMessages,
             },
           });
         }
