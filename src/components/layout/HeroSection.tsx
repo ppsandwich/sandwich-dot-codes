@@ -195,14 +195,29 @@ export function HeroSection({ showcases = [] }: HeroSectionProps) {
         </div>
       </Container>
 
-      <div className="absolute -top-16 -right-24 rotate-12 opacity-[0.06] pointer-events-none hidden lg:block">
-        <DoodleAccent variant="star" color="#D6B347" size={420} />
+      <div
+        className="absolute -top-16 -right-24 animate-float opacity-[0.06] pointer-events-none hidden lg:block"
+        style={{ animationDuration: "12s", animationDelay: "-2s" }}
+      >
+        <div className="rotate-12">
+          <DoodleAccent variant="star" color="#D6B347" size={420} />
+        </div>
       </div>
-      <div className="absolute -bottom-20 -left-16 rotate-[-15deg] opacity-[0.05] pointer-events-none hidden lg:block">
-        <DoodleAccent variant="circle" color="#6F9D9A" size={400} />
+      <div
+        className="absolute -bottom-20 -left-16 animate-float opacity-[0.05] pointer-events-none hidden lg:block"
+        style={{ animationDuration: "14s", animationDelay: "-5s" }}
+      >
+        <div className="rotate-[-15deg]">
+          <DoodleAccent variant="circle" color="#6F9D9A" size={400} />
+        </div>
       </div>
-      <div className="absolute top-1/4 right-1/4 rotate-6 opacity-[0.04] pointer-events-none hidden xl:block">
-        <DoodleAccent variant="squiggle" color="#B8A7CC" size={384} />
+      <div
+        className="absolute top-1/4 right-1/4 animate-float opacity-[0.04] pointer-events-none hidden xl:block"
+        style={{ animationDuration: "10s", animationDelay: "-7s" }}
+      >
+        <div className="rotate-6">
+          <DoodleAccent variant="squiggle" color="#B8A7CC" size={384} />
+        </div>
       </div>
     </Section>
   );
