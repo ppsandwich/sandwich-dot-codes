@@ -1,18 +1,46 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
 import type { Article } from "contentlayer/generated";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { ArticleCard } from "@/components/writing/ArticleCard";
 import { StickerTag } from "@/components/decorative/StickerTag";
 import { DoodleAccent } from "@/components/decorative/DoodleAccent";
+import { cn } from "@/lib/utils";
 
 interface WritingPageContentProps {
   articles: Article[];
+  initialTagFilter?: string;
 }
 
-export function WritingPageContent({ articles }: WritingPageContentProps) {
+export function WritingPageContent({ articles, initialTagFilter }: WritingPageContentProps) {
+  const router = useRouter();
+  const initialTag = initialTagFilter || "all";
+  const [activeTagFilter, setActiveTagFilter] = useState(initialTag);
+
+  const allTags = Array.from(new Set(articles.flatMap((article) => article.tags))).sort((a, b) =>
+    a.localeCompare(b),
+  );
+
+  useEffect(() => {
+    setActiveTagFilter(initialTag);
+  }, [initialTag]);
+
+  const updateTagFilter = (tag: string) => {
+    setActiveTagFilter(tag);
+    router.replace(tag === "all" ? "/writing" : `/writing?tag=${encodeURIComponent(tag)}`, {
+      scroll: false,
+    });
+  };
+
+  const filteredArticles = articles.filter(
+    (article) => activeTagFilter === "all" || article.tags.includes(activeTagFilter),
+  );
+  const hasActiveFilter = activeTagFilter !== "all";
+
   return (
     <Section spacing="loose">
       <Container>
@@ -38,18 +66,80 @@ export function WritingPageContent({ articles }: WritingPageContentProps) {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {articles.map((article, i) => (
-            <ArticleCard key={article.slug} article={article} index={i} />
-          ))}
-        </div>
+        {allTags.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 200, damping: 20 }}
+            className="mb-8 flex flex-wrap gap-2"
+            aria-label="Filter articles by tag"
+          >
+            <button
+              onClick={() => updateTagFilter("all")}
+              aria-pressed={activeTagFilter === "all"}
+              className={cn(
+                "border-2 border-border px-3 py-1.5 font-heading text-xs font-bold uppercase tracking-wider",
+                "transition-all duration-200 hover:scale-105",
+                activeTagFilter === "all"
+                  ? "bg-teal text-background shadow-tactile-sm"
+                  : "bg-background hover:bg-teal/20",
+              )}
+            >
+              All Tags
+            </button>
+            {allTags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() => updateTagFilter(tag)}
+                aria-pressed={activeTagFilter === tag}
+                className={cn(
+                  "border-2 border-border px-3 py-1.5 font-heading text-xs font-bold uppercase tracking-wider",
+                  "transition-all duration-200 hover:scale-105",
+                  activeTagFilter === tag
+                    ? "bg-teal text-background shadow-tactile-sm"
+                    : "bg-background hover:bg-teal/20",
+                )}
+              >
+                #{tag}
+              </button>
+            ))}
+          </motion.div>
+        )}
 
-        {articles.length === 0 && (
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTagFilter}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
+            className="grid grid-cols-1 gap-6 md:grid-cols-2"
+          >
+            {filteredArticles.map((article, i) => (
+              <ArticleCard key={article.slug} article={article} index={i} />
+            ))}
+          </motion.div>
+        </AnimatePresence>
+
+        {filteredArticles.length === 0 && (
           <div className="py-16 text-center">
             <DoodleAccent variant="circle" color="#7C736C" size={48} className="mb-4" />
             <p className="font-heading text-lg font-bold text-muted">
-              No articles yet. The pen is warming up.
+              {articles.length === 0
+                ? "No articles yet. The pen is warming up."
+                : "No articles found for this tag."}
             </p>
+            {hasActiveFilter && (
+              <button
+                onClick={() => updateTagFilter("all")}
+                className={cn(
+                  "mt-4 border-3 border-border bg-background px-4 py-2 font-heading text-sm font-bold uppercase tracking-wider",
+                  "shadow-tactile transition-all hover:scale-105 hover:bg-mustard/20",
+                )}
+              >
+                Clear Filters
+              </button>
+            )}
           </div>
         )}
       </Container>
