@@ -37,8 +37,8 @@ export function ProjectsPageContent({
   const [activeStatusFilter, setActiveStatusFilter] = useState<ProjectStatusFilter>(initialStatus);
   const [activeTagFilter, setActiveTagFilter] = useState(initialTag);
 
-  const allTags = Array.from(new Set(projects.flatMap((p) => [...p.tags, ...p.tech]))).sort(
-    (a, b) => a.localeCompare(b),
+  const allTags = Array.from(new Set(projects.flatMap((p) => p.tags))).sort((a, b) =>
+    a.localeCompare(b),
   );
 
   useEffect(() => {
@@ -60,10 +60,7 @@ export function ProjectsPageContent({
 
   const filteredProjects = projects.filter((project) => {
     const matchesStatus = activeStatusFilter === "all" || project.status === activeStatusFilter;
-    const matchesTag =
-      activeTagFilter === "all" ||
-      project.tags.includes(activeTagFilter) ||
-      project.tech.includes(activeTagFilter);
+    const matchesTag = activeTagFilter === "all" || project.tags.includes(activeTagFilter);
 
     return matchesStatus && matchesTag;
   });

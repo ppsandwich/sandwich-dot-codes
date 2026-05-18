@@ -15,6 +15,12 @@ interface ShowcaseItem {
   url: string;
 }
 
+interface HeroTag {
+  label: string;
+  href: string;
+  source: "project" | "article";
+}
+
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
@@ -35,13 +41,8 @@ const phonePositions = [
   { rotate: -2, x: 80, y: 10, z: 1 },
 ];
 
-const heroProjectTags = [
-  { label: "TensorFlow.js", tag: "TensorFlow.js", variant: "teal", rotation: -1 },
-  { label: "Canvas API", tag: "Canvas API", variant: "salmon", rotation: 1 },
-  { label: "Web Audio", tag: "Web Audio API", variant: "slime", rotation: -2 },
-  { label: "React", tag: "React", variant: "lavender", rotation: 0 },
-  { label: "Next.js", tag: "Next.js", variant: "mustard", rotation: 2 },
-] as const;
+const tagVariants = ["teal", "salmon", "slime", "lavender", "mustard"] as const;
+const tagRotations = [-1, 1, -2, 0, 2, -0.5, 1.5, -1.5, 0.5, -2.5];
 
 function PhoneMockup({ src, alt, style }: { src: string; alt: string; style: React.CSSProperties }) {
   return (
@@ -72,9 +73,10 @@ function PhoneMockup({ src, alt, style }: { src: string; alt: string; style: Rea
 
 interface HeroSectionProps {
   showcases?: ShowcaseItem[];
+  tags?: HeroTag[];
 }
 
-export function HeroSection({ showcases = [] }: HeroSectionProps) {
+export function HeroSection({ showcases = [], tags = [] }: HeroSectionProps) {
   const hasShowcases = showcases.length > 0;
 
   return (
@@ -140,14 +142,19 @@ export function HeroSection({ showcases = [] }: HeroSectionProps) {
               variants={fadeUp}
               className="mt-8 flex flex-wrap gap-2"
             >
-              {heroProjectTags.map((tag) => (
+              {tags.map((tag, i) => (
                 <Link
-                  key={tag.label}
-                  href={`/projects?tag=${encodeURIComponent(tag.tag)}`}
+                  key={`${tag.source}-${tag.label}`}
+                  href={tag.href}
                   className="inline-block transition-transform hover:-translate-y-0.5"
-                  aria-label={`View ${tag.label} projects`}
+                  aria-label={`View ${tag.label} ${
+                    tag.source === "project" ? "projects" : "articles"
+                  }`}
                 >
-                  <StickerTag variant={tag.variant} rotation={tag.rotation}>
+                  <StickerTag
+                    variant={tagVariants[i % tagVariants.length]}
+                    rotation={tagRotations[i % tagRotations.length]}
+                  >
                     {tag.label}
                   </StickerTag>
                 </Link>
