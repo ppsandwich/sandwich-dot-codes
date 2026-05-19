@@ -48,7 +48,7 @@ export function RoadmapPageContent({ initialBoard, initialAuth }: RoadmapPageCon
                   <span className="ml-2 block text-mustard sm:ml-4">going</span>
                 </h1>
                 <p className="mt-4 max-w-lg text-lg text-muted rotate-[0.2deg]">
-                  The big board of things to build, fix, and dream up. Drag cards around to rearrange the future.
+                  The big board of things to build, fix, and dream up.
                 </p>
               </div>
               <div className="mt-2">
