@@ -104,12 +104,13 @@
           "text": "\"Splinched\" Automated sample chopper. Test the limits of serverless."
         },
         {
-          "id": "card-7",
-          "text": "GitHub activity timeline"
-        },
-        {
           "id": "card-1779055085784-gzmj8",
           "text": "\"Sound Of Wall\" - the opposite of a wall of sound. Take music and make art that can hang on a wall from it."
+        },
+        {
+          "id": "card-7",
+          "text": "GitHub activity timeline",
+          "lane": "other"
         },
         {
           "id": "card-8",
