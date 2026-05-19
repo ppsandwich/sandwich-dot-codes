@@ -68,7 +68,8 @@
         },
         {
           "id": "card-1779181284518-64y9a",
-          "text": "How to Judge an AI-Built App When You Didn’t Hand-Code Every Line A useful PM/creator rubric: concept, interaction quality, maintainability, accessibility, performance, security, and emotional response."
+          "text": "How to Judge an AI-Built App When You Didn’t Hand-Code Every Line A useful PM/creator rubric: concept, interaction quality, maintainability, accessibility, performance, security, and emotional response.",
+          "lane": "write"
         }
       ]
     },
