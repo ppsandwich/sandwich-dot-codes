@@ -8,11 +8,13 @@ import { cn } from "@/lib/utils";
 export interface KanbanCardData {
   id: string;
   text: string;
+  lane?: string;
 }
 
 interface KanbanCardProps {
   card: KanbanCardData;
   columnId: string;
+  laneId: string;
   colorClasses: { bg: string; border: string };
   isAuthenticated: boolean;
   onDragStart: (cardId: string, columnId: string) => void;
@@ -24,6 +26,7 @@ interface KanbanCardProps {
 export function KanbanCard({
   card,
   columnId,
+  laneId,
   colorClasses,
   isAuthenticated,
   onDragStart,
@@ -53,6 +56,7 @@ export function KanbanCard({
     e.dataTransfer.effectAllowed = "move";
     e.dataTransfer.setData("text/plain", card.id);
     e.dataTransfer.setData("application/column", columnId);
+    e.dataTransfer.setData("application/lane", laneId);
     onDragStart(card.id, columnId);
   }
 
