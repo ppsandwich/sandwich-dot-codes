@@ -1,0 +1,71 @@
+import { createHmac, timingSafeEqual } from "crypto";
+import { cookies } from "next/headers";
+
+export const ROADMAP_COOKIE_NAME = "roadmap_auth";
+
+const COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
+const DEFAULT_SECRET = "sandwich-codes-roadmap-dev-secret";
+
+function getRoadmapPassword(): string {
+  const password = process.env.ROADMAP_PASSWORD;
+
+  if (process.env.NODE_ENV === "production" && !password) {
+    throw new Error("ROADMAP_PASSWORD must be configured in production");
+  }
+
+  return password ?? "sandwich";
+}
+
+function getAuthSecret(): string {
+  const secret = process.env.ROADMAP_AUTH_SECRET ?? process.env.NEXTAUTH_SECRET;
+
+  if (process.env.NODE_ENV === "production" && !secret) {
+    throw new Error("ROADMAP_AUTH_SECRET or NEXTAUTH_SECRET must be configured in production");
+  }
+
+  return secret ?? DEFAULT_SECRET;
+}
+
+function sign(value: string): string {
+  return createHmac("sha256", getAuthSecret()).update(value).digest("base64url");
+}
+
+function safeEqual(a: string, b: string): boolean {
+  const aBuffer = Buffer.from(a);
+  const bBuffer = Buffer.from(b);
+  if (aBuffer.length !== bBuffer.length) return false;
+
+  return timingSafeEqual(aBuffer, bBuffer);
+}
+
+export function isValidRoadmapPassword(password: unknown): boolean {
+  return typeof password === "string" && safeEqual(password, getRoadmapPassword());
+}
+
+export function createRoadmapAuthToken(): string {
+  const issuedAt = Date.now().toString();
+  return `${issuedAt}.${sign(issuedAt)}`;
+}
+
+export function isValidRoadmapAuth(): boolean {
+  const authCookie = cookies().get(ROADMAP_COOKIE_NAME);
+  if (!authCookie) return false;
+
+  const [issuedAt, signature] = authCookie.value.split(".");
+  if (!issuedAt || !signature || !safeEqual(signature, sign(issuedAt))) return false;
+
+  const issuedAtMs = Number(issuedAt);
+  if (!Number.isFinite(issuedAtMs)) return false;
+
+  return Date.now() - issuedAtMs <= COOKIE_MAX_AGE * 1000;
+}
+
+export function roadmapCookieOptions() {
+  return {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "strict" as const,
+    path: "/",
+    maxAge: COOKIE_MAX_AGE,
+  };
+}

@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { z } from "zod";
 import { isValidAuth } from "../auth/route";
 
 export const revalidate = 0;
@@ -25,6 +26,22 @@ interface KanbanColumn {
 interface KanbanBoard {
   columns: KanbanColumn[];
 }
+
+const cardSchema = z.object({
+  id: z.string().min(1).max(128),
+  title: z.string().max(200).optional(),
+  details: z.string().max(5000).optional(),
+  text: z.string().max(200).optional(),
+  lane: z.string().max(64).optional(),
+});
+
+const boardSchema = z.object({
+  columns: z.array(z.object({
+    id: z.string().min(1).max(64),
+    title: z.string().min(1).max(100),
+    cards: z.array(cardSchema).max(200),
+  })).max(20),
+});
 
 function hasRedis(): boolean {
   return !!(process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL);
@@ -163,7 +180,19 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
   }
 
-  const board: KanbanBoard = await request.json();
+  let body: unknown;
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
+  }
+
+  const parsed = boardSchema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json({ error: "Invalid roadmap board" }, { status: 400 });
+  }
+
+  const board: KanbanBoard = parsed.data;
   const result = await writeBoard(board);
 
   return NextResponse.json(result, {

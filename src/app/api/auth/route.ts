@@ -1,46 +1,41 @@
-import { createHash } from "crypto";
-import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
-
-const ROADMAP_PASSWORD = process.env.ROADMAP_PASSWORD || "sandwich";
-const COOKIE_NAME = "roadmap_auth";
-const SALT = "sandwich-codes-roadmap-2026";
-
-function hashPassword(password: string): string {
-  return createHash("sha256").update(password + SALT).digest("hex");
-}
+import {
+  ROADMAP_COOKIE_NAME,
+  createRoadmapAuthToken,
+  isValidRoadmapAuth,
+  isValidRoadmapPassword,
+  roadmapCookieOptions,
+} from "@/lib/roadmap-auth";
 
 export function isValidAuth(): boolean {
-  const cookieStore = cookies();
-  const authCookie = cookieStore.get(COOKIE_NAME);
-  if (!authCookie) return false;
-  return authCookie.value === hashPassword(ROADMAP_PASSWORD);
+  return isValidRoadmapAuth();
 }
 
 export async function POST(request: Request) {
-  const body = await request.json();
-  const { password } = body;
+  let body: unknown;
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
+  }
 
-  if (password !== ROADMAP_PASSWORD) {
+  const password = typeof body === "object" && body !== null && "password" in body
+    ? (body as { password?: unknown }).password
+    : undefined;
+
+  if (!isValidRoadmapPassword(password)) {
     return NextResponse.json({ error: "Invalid password" }, { status: 401 });
   }
 
-  const hashed = hashPassword(password);
   const response = NextResponse.json({ success: true });
 
-  response.cookies.set(COOKIE_NAME, hashed, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
-    path: "/",
-    maxAge: 60 * 60 * 24 * 7,
-  });
+  response.cookies.set(ROADMAP_COOKIE_NAME, createRoadmapAuthToken(), roadmapCookieOptions());
 
   return response;
 }
 
 export async function DELETE() {
   const response = NextResponse.json({ success: true });
-  response.cookies.delete(COOKIE_NAME);
+  response.cookies.delete(ROADMAP_COOKIE_NAME);
   return response;
 }
