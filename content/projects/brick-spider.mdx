@@ -1,0 +1,164 @@
+---
+title: "Brick Spider"
+description: "A web app that encrypts secret messages into downloadable PNG images of procedural brick-style abstract artwork, then decrypts those images back into messages using a passphrase."
+date: "2026-05-19"
+tags: ["cryptography", "steganography", "Canvas API", "Web Crypto API", "procedural art", "encryption"]
+featured: true
+github: "https://github.com/silentsoar/brick-spider"
+demo: "https://brick-spider.vercel.app"
+status: "active"
+cover: "/images/projects/brick-spider.png"
+tech: ["TypeScript", "Next.js", "Tailwind CSS", "Canvas API", "Web Crypto API"]
+---
+
+## Overview
+
+Brick Spider is a web app that encrypts text messages into downloadable PNG images of procedural brick-style abstract artwork, then decrypts those images back into messages using a passphrase. Type a message, enter a passphrase, and the app generates a stylized brick sculpture that secretly contains your encrypted text. Another user can upload that image, enter the correct passphrase, and recover the original message.
+
+The concept is inspired by the 2001 movie *Along Came a Spider*, in which students use cryptographic messages hidden in images to pass notes in class. Brick Spider takes that idea and wraps it in a late-90s hacker aesthetic — chunky beveled panels, terminal-style headings, CRT scanlines, and a palette of neon greens, teals, ambers, and magentas on near-black backgrounds. The interface feels like a playful toy hacking utility you'd find on a school computer lab machine in 1998.
+
+The entire encode and decode pipeline runs client-side in the browser. No messages, passphrases, or uploaded images ever leave the device.
+
+![Brick Spider encrypted artifact preview](/images/projects/brick-spider.png)
+
+## The Problem It Solves
+
+Sending a secret message digitally usually means trusting a platform with your plaintext — an email provider, a messaging app, a cloud service. Even end-to-end encrypted messengers require both parties to be on the same platform. Brick Spider removes that dependency entirely. The output is a PNG image — a file format that works everywhere, can be shared through any channel, and doesn't raise suspicion. It looks like abstract art. It contains an encrypted message.
+
+The app also solves the problem of making steganography approachable. Traditional steganography tools are command-line utilities with opaque interfaces and no visual feedback. Brick Spider makes the process tangible: you watch the brick sculpture render in real-time, you can preview it before downloading, and the decode flow is as simple as dragging a PNG onto a dropzone.
+
+## Encryption
+
+Brick Spider uses AES-256-GCM via the Web Crypto API with PBKDF2-SHA-256 key derivation. When a user enters a message and passphrase:
+
+1. A random 16-byte salt and 12-byte IV are generated.
+2. The passphrase is expanded into a 256-bit key using PBKDF2 with 310,000 iterations.
+3. The message is encrypted with AES-256-GCM, producing ciphertext with an authenticated tag.
+4. A binary payload is assembled with magic bytes (`BSPDR`), version, crypto scheme, style preset, salt, nonce, ciphertext, and a CRC32 checksum.
+
+The payload is then converted to a 2-bit-per-symbol bitstream and mapped onto a grid of brick cells.
+
+```typescript
+const MAGIC_BYTES = "BSPDR";
+const FORMAT_VERSION = 1;
+const CRYPTO_SCHEME_AES_GCM_PBKDF2 = 1;
+const PBKDF2_ITERATIONS = 310_000;
+```
+
+All encryption and decryption happens in the browser using the Web Crypto API. No plaintext, no passphrases, no keys, and no ciphertext are ever sent to a server.
+
+## Image Encoding
+
+The encrypted binary payload is encoded into a fixed 64×64 logical grid rendered on a 1024×1024 canvas. Each cell encodes 2 bits of data using one of four exact RGB colors:
+
+| Bits | Color | Hex |
+|------|-------|-----|
+| 00 | Dark teal | `#00ff66` |
+| 01 | Neon green | `#00ccff` |
+| 10 | Amber | `#ffcc00` |
+| 11 | Magenta | `#ff33cc` |
+
+A 64×64 grid provides 4,096 cells × 2 bits = 8,192 bits = 1,024 bytes of raw capacity — enough for messages up to 500 characters after encryption overhead.
+
+Four registration markers in the grid corners confirm the image is a valid Brick Spider artifact before decoding begins. The decoder samples the center 4×4 pixels of each cell to read the exact data color, with a tolerance of ±8 per RGB channel to handle minor rendering drift.
+
+```typescript
+const DATA_COLORS = {
+  0: "#00ff66",
+  1: "#00ccff",
+  2: "#ffcc00",
+  3: "#ff33cc",
+};
+```
+
+## Procedural Brick Artwork
+
+The image generator renders toy-brick-like visual objects using deterministic procedural rules — no AI, no external image services. Each brick cell is drawn as a stylized top-down brick with a rectangular body, rounded corners, raised studs, subtle highlights, and subtle shadows.
+
+The key constraint is that the center sample square of each data cell must be the exact palette color, while decorative shading can appear outside that region. This keeps the image decodable while still looking like abstract art rather than a bare grid code.
+
+Three visual presets are available:
+
+### Spider Totem
+
+An abstract vertical sculpture with a central body cluster and leg-like radial brick extensions. Slightly eerie but playful — the intended signature look of the app.
+
+### Cyber Bloom
+
+A radial flower-like brick arrangement with bright hacker palette colors, dense geometric symmetry, and neon accents. More vibrant and kaleidoscopic than the other presets.
+
+### Classroom Relic
+
+A chunky asymmetric object that looks like something built under a school desk. Muted computer-lab palette with subdued greens and ambers. The most understated of the three.
+
+Unused grid cells are filled with decorative deterministic noise based on the payload hash, ensuring every generated image is unique even with the same style preset.
+
+## Decode Flow
+
+Decoding reverses the entire pipeline. The user uploads a PNG and enters a passphrase:
+
+1. The image is loaded onto a hidden canvas at its original dimensions.
+2. Registration markers are located in the grid corners.
+3. The center of each cell is sampled and mapped back to a 2-bit symbol.
+4. The bitstream is reassembled into bytes.
+5. Magic bytes and CRC32 checksum are validated.
+6. The salt and IV are extracted from the payload header.
+7. The passphrase is expanded into a key using PBKDF2 with the extracted salt.
+8. AES-256-GCM decrypts the ciphertext.
+9. The plaintext message is displayed.
+
+A wrong passphrase produces a clear error — AES-GCM's authentication tag prevents partial or garbled plaintext from leaking. Invalid or modified images are rejected at the marker detection and checksum validation stages.
+
+## Technology
+
+### Web Crypto API
+
+All cryptographic operations use the browser-native Web Crypto API. `SubtleCrypto.deriveKey()` handles PBKDF2 key derivation, while `SubtleCrypto.encrypt()` and `SubtleCrypto.decrypt()` handle AES-256-GCM. No external crypto libraries are required.
+
+### Canvas API
+
+The HTML Canvas 2D API handles both rendering and decoding. The renderer draws the brick grid with decorative elements (studs, highlights, shadows) while preserving exact center-sample colors. The decoder reads pixel data from a hidden canvas using `getImageData()`.
+
+### Next.js and TypeScript
+
+The app is built with Next.js App Router and TypeScript. Routes follow a simple structure: a landing page, an encode page, a decode page, and an about page. All state management uses React local state — no external stores, no persistence, no server-side storage.
+
+### Tailwind CSS
+
+The UI is styled with Tailwind CSS extended with a late-90s hacker palette. Near-black and deep navy backgrounds, CRT-green and amber accents, chunky beveled borders, pixel-font terminal headings, and optional scanline overlays. The interface is designed to feel like desktop software from 1998 — playful, slightly janky, and unmistakably a hacking utility.
+
+## UI Design
+
+The interface is deliberately retro. Fake window chrome wraps each section. Buttons have chunky beveled edges that compress on click. Status indicators use green and amber lights. Dividers are glitchy and asymmetric. Terminal-style monospace headings sit alongside pixel-font accents.
+
+The encode page features a message textarea with a live character counter (max 500), passphrase inputs with show/hide toggles, a style preset selector, and a preview panel that renders the generated brick artifact in real-time. The decode page has a drag-and-drop upload zone, an image preview, a passphrase input, and a result panel.
+
+Mobile responsiveness is a first-class concern. The layout collapses to a single column on small screens, all inputs go full-width, and tap targets are sized at a minimum of 44×44 pixels. The preview image scales to screen width. Hover-only interactions are avoided entirely.
+
+## What I Learned
+
+- The Web Crypto API is synchronous in its interface but asynchronous in execution. Every operation returns a Promise, which chains nicely with React's async state updates but requires careful error handling at each step.
+- Encoding binary data into an image grid sounds straightforward until you need to handle variable payload lengths, registration markers, and decorative fill — all while keeping the center sample pixels exact. The margin for error is zero: a single shifted pixel during rendering can corrupt the entire decode.
+- AES-GCM authentication tags make wrong-passphrase errors clean and unambiguous. There's no need for a separate integrity check beyond the CRC32, but having both provides defense in depth — the checksum catches image corruption before attempting decryption, while the auth tag catches key mismatches.
+- Canvas `getImageData()` returns raw RGBA values, and the exact pixel values depend on the canvas rendering pipeline. Ensuring that drawn colors survive a render-read roundtrip required avoiding any compositing, anti-aliasing, or alpha blending in the data cell regions.
+- Building a retro UI that feels authentic without being unreadable is a balancing act. Chunky borders and pixel fonts add character, but they need to stay functional. The solution was to keep form elements clean and accessible while pushing the decorative treatment into chrome, panels, and headings.
+
+## Challenges
+
+- **Pixel-perfect encoding**: The most critical challenge was ensuring that colors drawn to the canvas are exactly the colors read back during decode. Canvas 2D rendering can introduce subtle color shifts from anti-aliasing, compositing modes, or sub-pixel positioning. The solution was to draw data cells as filled rectangles at integer coordinates with `imageSmoothingEnabled` disabled, and to sample from a guaranteed-exact center region.
+- **Payload capacity**: Fitting an encrypted 500-character message into a 64×64 grid required careful payload design. The binary header (magic bytes, version, scheme, lengths) and CRC32 checksum consume bytes before the ciphertext begins. Keeping the header compact while remaining self-describing took several iterations.
+- **Mobile canvas performance**: Generating a 1024×1024 brick grid with per-cell decorative rendering involves thousands of draw calls. On mobile devices, this can take long enough to freeze the UI. The solution was to use `requestAnimationFrame` batching and show a progress indicator during generation.
+- **Retro aesthetic without irony**: The late-90s hacker look can easily tip into parody. The goal was to make it feel like a real utility that happens to have personality, not a joke app. This meant keeping the crypto implementation serious, the error messages helpful, and the workflow efficient — then layering the visual theme on top.
+
+## Privacy
+
+No message text, passphrases, derived keys, or uploaded images are ever sent to a server. The entire encode and decode pipeline runs in the browser using the Web Crypto API and Canvas API. The app has no analytics, no tracking pixels, and no third-party scripts that could exfiltrate data. Generated PNG images contain no metadata — no EXIF, no text chunks, no identifying information beyond the encoded pixel data.
+
+## Limitations
+
+Decoding only works for unmodified Brick Spider PNGs. JPEG conversion, screenshots, cropped or resized images, social media compression, and printed-and-photographed images will not decode successfully. This is a deliberate tradeoff — optimizing for lossy decode would require error-correcting codes and fuzzy color matching that significantly increase complexity and reduce capacity.
+
+## Links
+
+- [GitHub Repository](https://github.com/silentsoar/brick-spider)
+- [Live App](https://brick-spider.vercel.app)
