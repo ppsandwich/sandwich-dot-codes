@@ -60,7 +60,8 @@
         },
         {
           "id": "card-1779181228717-khnex",
-          "text": "The Case for Algorithmic Creativity Argue that randomness, rules, MIDI patterns, and Canvas APIs can produce meaningful creative work without generative AI."
+          "text": "The Case for Algorithmic Creativity Argue that randomness, rules, MIDI patterns, and Canvas APIs can produce meaningful creative work without generative AI.",
+          "lane": "write"
         },
         {
           "id": "card-1779181278941-hzxbk",
