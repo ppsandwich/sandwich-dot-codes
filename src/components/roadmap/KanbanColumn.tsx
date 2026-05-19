@@ -6,6 +6,11 @@ import { Plus, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { KanbanCard, type KanbanCardData } from "./KanbanCard";
 
+export interface SwimlaneConfig {
+  id: string;
+  title: string;
+}
+
 export interface ColumnConfig {
   id: string;
   title: string;
@@ -20,9 +25,10 @@ export interface ColumnConfig {
 interface KanbanColumnProps {
   column: { id: string; title: string; cards: KanbanCardData[] };
   config: ColumnConfig;
+  swimlanes: SwimlaneConfig[];
   isAuthenticated: boolean;
-  onMoveCard: (cardId: string, fromColumn: string, toColumn: string, toIndex: number) => void;
-  onAddCard: (columnId: string, text: string) => void;
+  onMoveCard: (cardId: string, fromColumn: string, toColumn: string, toIndex: number, toLane: string) => void;
+  onAddCard: (columnId: string, text: string, laneId: string) => void;
   onDeleteCard: (cardId: string, columnId: string) => void;
   onEditCard: (cardId: string, columnId: string, newText: string) => void;
 }
@@ -30,6 +36,7 @@ interface KanbanColumnProps {
 export function KanbanColumn({
   column,
   config,
+  swimlanes,
   isAuthenticated,
   onMoveCard,
   onAddCard,
@@ -37,18 +44,37 @@ export function KanbanColumn({
   onEditCard,
 }: KanbanColumnProps) {
   const [isOver, setIsOver] = useState(false);
-  const [dropIndex, setDropIndex] = useState<number | null>(null);
+  const [dropTarget, setDropTarget] = useState<{ laneId: string; index: number } | null>(null);
   const [isAdding, setIsAdding] = useState(false);
+  const [addingLane, setAddingLane] = useState<string | null>(null);
   const [newText, setNewText] = useState("");
 
-  function handleDragOver(e: React.DragEvent) {
+  function getLaneCards(laneId: string) {
+    return column.cards.filter((card) => (card.lane ?? swimlanes[0]?.id) === laneId);
+  }
+
+  function getColumnInsertIndex(laneId: string, laneIndex: number) {
+    const laneCardIds = new Set(getLaneCards(laneId).map((card) => card.id));
+    let seenInLane = 0;
+
+    for (let i = 0; i < column.cards.length; i++) {
+      if (!laneCardIds.has(column.cards[i].id)) continue;
+      if (seenInLane === laneIndex) return i;
+      seenInLane++;
+    }
+
+    return column.cards.length;
+  }
+
+  function handleDragOver(e: React.DragEvent, laneId: string) {
     e.preventDefault();
     e.dataTransfer.dropEffect = "move";
     setIsOver(true);
 
+    const laneCards = getLaneCards(laneId);
     const cardsContainer = e.currentTarget.querySelector("[data-cards]");
     if (!cardsContainer) {
-      setDropIndex(column.cards.length);
+      setDropTarget({ laneId, index: laneCards.length });
       return;
     }
 
@@ -64,17 +90,17 @@ export function KanbanColumn({
       }
     }
 
-    setDropIndex(insertIndex);
+    setDropTarget({ laneId, index: insertIndex });
   }
 
   function handleDragLeave(e: React.DragEvent) {
     if (!e.currentTarget.contains(e.relatedTarget as Node)) {
       setIsOver(false);
-      setDropIndex(null);
+      setDropTarget(null);
     }
   }
 
-  function handleDrop(e: React.DragEvent) {
+  function handleDrop(e: React.DragEvent, laneId: string) {
     e.preventDefault();
     setIsOver(false);
 
@@ -82,19 +108,22 @@ export function KanbanColumn({
     const sourceColumnId = e.dataTransfer.getData("application/column");
 
     if (cardId && sourceColumnId) {
-      const targetIndex = dropIndex ?? column.cards.length;
-      onMoveCard(cardId, sourceColumnId, column.id, targetIndex);
+      const targetLane = dropTarget?.laneId ?? laneId;
+      const targetLaneIndex = dropTarget?.index ?? getLaneCards(targetLane).length;
+      const targetIndex = getColumnInsertIndex(targetLane, targetLaneIndex);
+      onMoveCard(cardId, sourceColumnId, column.id, targetIndex, targetLane);
     }
 
-    setDropIndex(null);
+    setDropTarget(null);
   }
 
-  function handleAddCard() {
+  function handleAddCard(laneId: string) {
     const trimmed = newText.trim();
     if (trimmed) {
-      onAddCard(column.id, trimmed);
+      onAddCard(column.id, trimmed, laneId);
       setNewText("");
       setIsAdding(false);
+      setAddingLane(null);
     }
   }
 
@@ -111,9 +140,7 @@ export function KanbanColumn({
         isOver && "shadow-tactile-lg scale-[1.01]",
       )}
       style={{ transform: `rotate(${config.rotation}deg)` }}
-      onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
-      onDrop={handleDrop}
     >
       <div className={cn("border-b-3 border-border px-4 py-3", config.headerBg)}>
         <div className="flex items-center justify-between">
@@ -129,92 +156,113 @@ export function KanbanColumn({
         </div>
       </div>
 
-      <div data-cards className="flex flex-1 flex-col gap-2 p-3">
-        <AnimatePresence mode="popLayout">
-          {column.cards.map((card, index) => (
-            <div key={card.id} data-card-item>
-              {dropIndex === index && (
-                <motion.div
-                  layoutId="drop-indicator"
-                  className={cn("mb-2 h-1 rounded-full border-2 border-dashed border-border", config.color)}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                />
-              )}
-              <KanbanCard
-                card={card}
-                columnId={column.id}
-                colorClasses={colorClasses}
-                isAuthenticated={isAuthenticated}
-                onDragStart={() => {}}
-                onDelete={onDeleteCard}
-                onEdit={onEditCard}
-                index={index}
-              />
-            </div>
-          ))}
-        </AnimatePresence>
-
-        {dropIndex !== null && dropIndex >= column.cards.length && (
-          <div
-            className={cn("h-1 rounded-full border-2 border-dashed border-border", config.color)}
-          />
-        )}
-
-        {isOver && column.cards.length === 0 && (
-          <div className={cn("flex h-16 items-center justify-center rounded border-2 border-dashed border-border/50", config.color)}>
-            <span className="font-heading text-xs text-muted">Drop here</span>
-          </div>
-        )}
-
-        {isAuthenticated && (
-          <div className="mt-auto pt-2">
-            {isAdding ? (
-              <div className="flex flex-col gap-2">
-                <input
-                  value={newText}
-                  onChange={(e) => setNewText(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") handleAddCard();
-                    if (e.key === "Escape") {
-                      setNewText("");
-                      setIsAdding(false);
-                    }
-                  }}
-                  placeholder="What needs doing?"
-                  className="w-full border-3 border-border bg-background p-2 font-body text-sm text-foreground outline-none focus:shadow-tactile-sm"
-                  autoFocus
-                />
-                <div className="flex gap-1">
-                  <button
-                    onClick={handleAddCard}
-                    className="flex-1 border-2 border-border bg-mustard/30 px-3 py-1.5 font-heading text-xs font-bold uppercase tracking-wider transition-colors hover:bg-mustard/50"
-                  >
-                    Add
-                  </button>
-                  <button
-                    onClick={() => { setNewText(""); setIsAdding(false); }}
-                    className="border-2 border-border px-3 py-1.5 font-heading text-xs font-bold uppercase tracking-wider transition-colors hover:bg-salmon/30"
-                  >
-                    <X size={14} />
-                  </button>
-                </div>
+      <div className="flex flex-1 flex-col gap-3 p-3">
+        {swimlanes.map((lane) => {
+          const laneCards = getLaneCards(lane.id);
+          return (
+            <section
+              key={lane.id}
+              className="rounded-md border-2 border-border/25 bg-background/35 p-2 dark:bg-background-dark/35"
+              onDragOver={(e) => handleDragOver(e, lane.id)}
+              onDrop={(e) => handleDrop(e, lane.id)}
+            >
+              <div className="mb-2 flex items-center justify-between gap-2">
+                <h4 className="font-heading text-[0.65rem] font-black uppercase tracking-widest text-muted">
+                  {lane.title}
+                </h4>
+                <span className="font-heading text-[0.65rem] font-bold text-muted">{laneCards.length}</span>
               </div>
-            ) : (
-              <button
-                onClick={() => setIsAdding(true)}
-                className={cn(
-                  "flex w-full items-center justify-center gap-1 border-2 border-dashed border-border/40 py-2",
-                  "font-heading text-xs font-bold uppercase tracking-wider text-muted",
-                  "transition-all hover:border-border hover:bg-mustard/10 hover:text-foreground",
+
+              <div data-cards className="flex min-h-10 flex-col gap-2">
+                <AnimatePresence mode="popLayout">
+                  {laneCards.map((card, index) => (
+                    <div key={card.id} data-card-item>
+                      {dropTarget?.laneId === lane.id && dropTarget.index === index && (
+                        <motion.div
+                          layoutId="drop-indicator"
+                          className={cn("mb-2 h-1 rounded-full border-2 border-dashed border-border", config.color)}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                        />
+                      )}
+                      <KanbanCard
+                        card={card}
+                        columnId={column.id}
+                        laneId={lane.id}
+                        colorClasses={colorClasses}
+                        isAuthenticated={isAuthenticated}
+                        onDragStart={() => {}}
+                        onDelete={onDeleteCard}
+                        onEdit={onEditCard}
+                        index={index}
+                      />
+                    </div>
+                  ))}
+                </AnimatePresence>
+
+                {dropTarget?.laneId === lane.id && dropTarget.index >= laneCards.length && (
+                  <div className={cn("h-1 rounded-full border-2 border-dashed border-border", config.color)} />
                 )}
-              >
-                <Plus size={14} />
-                Add card
-              </button>
-            )}
-          </div>
-        )}
+
+                {isOver && laneCards.length === 0 && dropTarget?.laneId === lane.id && (
+                  <div className={cn("flex h-16 items-center justify-center rounded border-2 border-dashed border-border/50", config.color)}>
+                    <span className="font-heading text-xs text-muted">Drop here</span>
+                  </div>
+                )}
+              </div>
+
+              {isAuthenticated && (
+                <div className="pt-2">
+                  {isAdding && addingLane === lane.id ? (
+                    <div className="flex flex-col gap-2">
+                      <input
+                        value={newText}
+                        onChange={(e) => setNewText(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") handleAddCard(lane.id);
+                          if (e.key === "Escape") {
+                            setNewText("");
+                            setIsAdding(false);
+                            setAddingLane(null);
+                          }
+                        }}
+                        placeholder={`Add to ${lane.title}`}
+                        className="w-full border-3 border-border bg-background p-2 font-body text-sm text-foreground outline-none focus:shadow-tactile-sm"
+                        autoFocus
+                      />
+                      <div className="flex gap-1">
+                        <button
+                          onClick={() => handleAddCard(lane.id)}
+                          className="flex-1 border-2 border-border bg-mustard/30 px-3 py-1.5 font-heading text-xs font-bold uppercase tracking-wider transition-colors hover:bg-mustard/50"
+                        >
+                          Add
+                        </button>
+                        <button
+                          onClick={() => { setNewText(""); setIsAdding(false); setAddingLane(null); }}
+                          className="border-2 border-border px-3 py-1.5 font-heading text-xs font-bold uppercase tracking-wider transition-colors hover:bg-salmon/30"
+                        >
+                          <X size={14} />
+                        </button>
+                      </div>
+                    </div>
+                  ) : (
+                    <button
+                      onClick={() => { setIsAdding(true); setAddingLane(lane.id); }}
+                      className={cn(
+                        "flex w-full items-center justify-center gap-1 border-2 border-dashed border-border/40 py-2",
+                        "font-heading text-xs font-bold uppercase tracking-wider text-muted",
+                        "transition-all hover:border-border hover:bg-mustard/10 hover:text-foreground",
+                      )}
+                    >
+                      <Plus size={14} />
+                      Add card
+                    </button>
+                  )}
+                </div>
+              )}
+            </section>
+          );
+        })}
       </div>
     </motion.div>
   );

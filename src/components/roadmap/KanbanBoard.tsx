@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { DoodleAccent } from "@/components/decorative/DoodleAccent";
-import { KanbanColumn, type ColumnConfig } from "./KanbanColumn";
+import { KanbanColumn, type ColumnConfig, type SwimlaneConfig } from "./KanbanColumn";
 import type { KanbanCardData } from "./KanbanCard";
 
 interface KanbanBoardData {
@@ -62,6 +62,12 @@ const COLUMN_CONFIGS: Record<string, ColumnConfig> = {
   },
 };
 
+const SWIMLANES: SwimlaneConfig[] = [
+  { id: "build", title: "To build" },
+  { id: "write", title: "To write" },
+  { id: "other", title: "Other stuff" },
+];
+
 interface KanbanBoardProps {
   initialBoard: KanbanBoardData;
   isAuthenticated: boolean;
@@ -106,7 +112,7 @@ export function KanbanBoard({ initialBoard, isAuthenticated }: KanbanBoardProps)
     });
   }
 
-  function moveCard(cardId: string, fromColumnId: string, toColumnId: string, toIndex: number) {
+  function moveCard(cardId: string, fromColumnId: string, toColumnId: string, toIndex: number, toLane: string) {
     updateBoard((prev) => {
       const newBoard = { ...prev, columns: prev.columns.map((c) => ({ ...c, cards: [...c.cards] })) };
 
@@ -118,6 +124,7 @@ export function KanbanBoard({ initialBoard, isAuthenticated }: KanbanBoardProps)
       if (cardIndex === -1) return prev;
 
       const [card] = fromCol.cards.splice(cardIndex, 1);
+      card.lane = toLane;
 
       const adjustedIndex = fromColumnId === toColumnId && cardIndex < toIndex
         ? toIndex - 1
@@ -128,14 +135,14 @@ export function KanbanBoard({ initialBoard, isAuthenticated }: KanbanBoardProps)
     });
   }
 
-  function addCard(columnId: string, text: string) {
+  function addCard(columnId: string, text: string, laneId: string) {
     updateBoard((prev) => {
       const newBoard = { ...prev, columns: prev.columns.map((c) => ({ ...c, cards: [...c.cards] })) };
       const col = newBoard.columns.find((c) => c.id === columnId);
       if (!col) return prev;
 
       const id = `card-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
-      col.cards.push({ id, text });
+      col.cards.push({ id, text, lane: laneId });
       return newBoard;
     });
   }
@@ -197,6 +204,7 @@ export function KanbanBoard({ initialBoard, isAuthenticated }: KanbanBoardProps)
               key={column.id}
               column={column}
               config={config}
+              swimlanes={SWIMLANES}
               isAuthenticated={isAuthenticated}
               onMoveCard={moveCard}
               onAddCard={addCard}
