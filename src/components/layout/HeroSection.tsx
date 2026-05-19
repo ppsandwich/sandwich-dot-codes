@@ -7,6 +7,7 @@ import { Section } from "@/components/layout/Section";
 import { StickerTag } from "@/components/decorative/StickerTag";
 import { DoodleAccent } from "@/components/decorative/DoodleAccent";
 import { ScribbleArrow } from "@/components/decorative/ScribbleArrow";
+import { HeroShaderBackground } from "@/components/decorative/HeroShaderBackground";
 import { cn } from "@/lib/utils";
 
 interface ShowcaseItem {
@@ -80,8 +81,9 @@ export function HeroSection({ showcases = [], tags = [] }: HeroSectionProps) {
   const hasShowcases = showcases.length > 0;
 
   return (
-    <Section className="relative overflow-hidden" spacing="loose">
-      <Container>
+    <Section className="relative isolate overflow-hidden" spacing="loose">
+      <HeroShaderBackground className="z-0" />
+      <Container className="relative z-10">
         <div className={cn("relative", hasShowcases && "flex items-start gap-8 lg:gap-12")}>
           <div className={cn(hasShowcases && "min-w-0 flex-1")}>
             <motion.div
