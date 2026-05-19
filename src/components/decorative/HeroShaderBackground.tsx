@@ -205,6 +205,8 @@ export function HeroShaderBackground({ className }: HeroShaderBackgroundProps) {
       }
 
       gl.viewport(0, 0, width, height);
+
+      return width > 1 && height > 1;
     };
 
     const movePointer = (clientX: number, clientY: number) => {
@@ -242,7 +244,11 @@ export function HeroShaderBackground({ className }: HeroShaderBackgroundProps) {
       pointer.strength += (pointer.targetStrength - pointer.strength) * 0.08;
       pointer.targetStrength *= 0.982;
 
-      resize();
+      if (!resize()) {
+        frameId = window.requestAnimationFrame(render);
+        return;
+      }
+
       gl.useProgram(program);
       gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
       gl.enableVertexAttribArray(positionLocation);
@@ -261,17 +267,26 @@ export function HeroShaderBackground({ className }: HeroShaderBackgroundProps) {
       }
     };
 
-    const resizeObserver = new ResizeObserver(resize);
+    const scheduleRender = () => {
+      if (frameId !== null) window.cancelAnimationFrame(frameId);
+      frameId = window.requestAnimationFrame(render);
+    };
+
+    const resizeObserver = new ResizeObserver(scheduleRender);
     resizeObserver.observe(canvas);
+    window.addEventListener("resize", scheduleRender, { passive: true });
+    window.addEventListener("load", scheduleRender, { once: true });
     window.addEventListener("pointermove", handlePointerMove, { passive: true });
     window.addEventListener("touchmove", handleTouchMove, { passive: true });
     window.addEventListener("pointerleave", handlePointerLeave);
 
-    render();
+    scheduleRender();
 
     return () => {
       if (frameId !== null) window.cancelAnimationFrame(frameId);
       resizeObserver.disconnect();
+      window.removeEventListener("resize", scheduleRender);
+      window.removeEventListener("load", scheduleRender);
       window.removeEventListener("pointermove", handlePointerMove);
       window.removeEventListener("touchmove", handleTouchMove);
       window.removeEventListener("pointerleave", handlePointerLeave);
@@ -291,7 +306,7 @@ export function HeroShaderBackground({ className }: HeroShaderBackgroundProps) {
     >
       <canvas
         ref={canvasRef}
-        className="h-full w-full opacity-80 mix-blend-multiply dark:opacity-55 dark:mix-blend-screen"
+        className="block h-full w-full opacity-80 mix-blend-multiply dark:opacity-55 dark:mix-blend-screen"
       />
       <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(245,239,228,0.60),rgba(245,239,228,0.10)_42%,rgba(245,239,228,0.68))] dark:bg-[linear-gradient(115deg,rgba(26,24,22,0.50),rgba(26,24,22,0.10)_42%,rgba(26,24,22,0.58))]" />
     </div>
