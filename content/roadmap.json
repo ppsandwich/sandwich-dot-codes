@@ -24,7 +24,8 @@
         {
           "id": "card-1779054874676-dw2c2",
           "title": "“Upload a loop or sample and get a visual/metadata mood board: genre tags, texture words, BPM estimate, key estimate, and suggested arrangement ideas. Not sure how useful this would be, might be supplemental features of a bigger thing.",
-          "details": ""
+          "details": "",
+          "lane": "build"
         },
         {
           "id": "card-1779054926509-3lqvb",
@@ -118,8 +119,9 @@
         },
         {
           "id": "card-1779055127746-h2z0c",
-          "title": "Expecto",
-          "details": "Neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation."
+          "text": "\"Expecto\" neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation.",
+          "title": "\"Expecto\" neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation.",
+          "details": ""
         },
         {
           "id": "card-1779181201254-zrib7",
@@ -135,13 +137,15 @@
       "cards": [
         {
           "id": "card-1779055054969-7oul2",
-          "title": "Splinched",
-          "details": "Automated sample chopper. Test the limits of serverless."
+          "text": "\"Splinched\" Automated sample chopper. Test the limits of serverless.",
+          "title": "\"Splinched\" Automated sample chopper. Test the limits of serverless.",
+          "details": ""
         },
         {
           "id": "card-1779055085784-gzmj8",
-          "title": "Sound Of Wall",
-          "details": "The opposite of a wall of sound. Take music and make art that can hang on a wall from it."
+          "text": "\"Sound Of Wall\" - the opposite of a wall of sound. Take music and make art that can hang on a wall from it.",
+          "title": "\"Sound Of Wall\" - the opposite of a wall of sound. Take music and make art that can hang on a wall from it.",
+          "details": ""
         },
         {
           "id": "card-7",
