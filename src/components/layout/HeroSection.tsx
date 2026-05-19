@@ -257,6 +257,30 @@ export function HeroSection({ showcases = [], tags = [] }: HeroSectionProps) {
           <DoodleAccent variant="arrow" color="#D6B347" size={320} />
         </div>
       </div>
+      <div
+        className="absolute top-20 left-[2%] animate-float opacity-[0.06] pointer-events-none hidden xl:block"
+        style={{ animationDuration: "16s", animationDelay: "-3s" }}
+      >
+        <div className="rotate-12">
+          <DoodleAccent variant="circle" color="#D98B73" size={360} />
+        </div>
+      </div>
+      <div
+        className="absolute top-[42%] -right-20 animate-float opacity-[0.07] pointer-events-none hidden lg:block"
+        style={{ animationDuration: "12s", animationDelay: "-6s" }}
+      >
+        <div className="rotate-[-10deg]">
+          <DoodleAccent variant="dot-cluster" color="#B8A7CC" size={280} />
+        </div>
+      </div>
+      <div
+        className="absolute bottom-0 left-[22%] animate-float opacity-[0.06] pointer-events-none hidden xl:block"
+        style={{ animationDuration: "18s", animationDelay: "-11s" }}
+      >
+        <div className="rotate-6">
+          <DoodleAccent variant="squiggle" color="#9FAF6F" size={420} />
+        </div>
+      </div>
     </Section>
   );
 }
