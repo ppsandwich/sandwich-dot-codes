@@ -3,7 +3,7 @@ import readingTime from "reading-time";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeHighlight from "rehype-highlight";
-import cLike from "highlight.js/lib/languages/c-like";
+import cLike from "highlight.js/lib/languages/c-like.js";
 import remarkGfm from "remark-gfm";
 
 export const Project = defineDocumentType(() => ({
