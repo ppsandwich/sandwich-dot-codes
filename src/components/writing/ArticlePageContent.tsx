@@ -50,7 +50,7 @@ export function ArticlePageContent({ article }: ArticlePageContentProps) {
                   })}
                 </div>
 
-                <h1 className="font-heading text-display font-black leading-[0.95] tracking-tighter rotate-[-0.2deg]">
+                <h1 className="font-heading text-headline font-black leading-[0.95] tracking-tighter rotate-[-0.2deg]">
                   {article.title}
                 </h1>
 
