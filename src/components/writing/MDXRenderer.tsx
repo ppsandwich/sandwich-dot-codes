@@ -7,7 +7,7 @@ const mdxComponents = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
       className={cn(
-        "mt-12 mb-4 font-heading text-display font-black leading-[0.95] tracking-tighter first:mt-0",
+        "mt-12 mb-4 font-heading text-headline font-black leading-[0.95] tracking-tighter first:mt-0",
         className,
       )}
       {...props}
@@ -16,7 +16,7 @@ const mdxComponents = {
   h2: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h2
       className={cn(
-        "mt-10 mb-3 font-heading text-headline font-black leading-tight tracking-tight",
+        "mt-10 mb-3 font-heading text-subhead font-black leading-tight tracking-tight",
         className,
       )}
       {...props}
@@ -25,7 +25,7 @@ const mdxComponents = {
   h3: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h3
       className={cn(
-        "mt-8 mb-2 font-heading text-subhead font-black leading-snug",
+        "mt-8 mb-2 font-heading text-xl font-black leading-snug",
         className,
       )}
       {...props}
