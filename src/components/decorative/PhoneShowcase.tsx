@@ -7,17 +7,18 @@ interface PhoneShowcaseProps {
   src: string;
   alt?: string;
   className?: string;
+  cropped?: boolean;
 }
 
-export function PhoneShowcase({ src, alt = "App screenshot", className }: PhoneShowcaseProps) {
+export function PhoneShowcase({ src, alt = "App screenshot", className, cropped = false }: PhoneShowcaseProps) {
   return (
     <motion.div
-      className={cn("flex justify-center", className)}
+      className={cn("flex justify-center", cropped && "overflow-hidden", className)}
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, type: "spring", stiffness: 150, damping: 20 }}
     >
-      <div className="relative w-full max-w-[300px]">
+      <div className={cn("relative w-full max-w-[300px]", cropped && "max-h-[28rem]")}>
         {/* Phone outer body */}
         <div className="relative rounded-[40px] border-[3px] border-border bg-foreground p-[6px] shadow-tactile-lg">
           {/* Phone inner bezel */}
