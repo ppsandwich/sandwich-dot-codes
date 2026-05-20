@@ -119,7 +119,9 @@ export function ArticlePageContent({ article }: ArticlePageContentProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, type: "spring", stiffness: 200, damping: 20 }}
           >
-            <MDXRenderer code={article.body.code} />
+            <div className="border-3 border-border bg-background p-5 shadow-tactile paper-grain dark:bg-background-dark sm:p-8">
+              <MDXRenderer code={article.body.code} />
+            </div>
           </motion.div>
         </Container>
       </Section>
