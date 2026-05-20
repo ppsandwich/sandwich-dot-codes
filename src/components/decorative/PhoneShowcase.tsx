@@ -54,6 +54,13 @@ export function PhoneShowcase({ src, alt = "App screenshot", className, cropped 
           style={{ backgroundColor: "rgba(214, 179, 71, 0.35)" }}
           aria-hidden="true"
         />
+
+        {cropped && (
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-28 bg-gradient-to-b from-transparent to-background dark:to-background-dark"
+            aria-hidden="true"
+          />
+        )}
       </div>
     </motion.div>
   );
