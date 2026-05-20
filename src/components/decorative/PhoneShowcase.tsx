@@ -57,14 +57,14 @@ export function PhoneShowcase({ src, alt = "App screenshot", className, cropped 
       </div>
 
       {cropped && (
-        <div className="pointer-events-none absolute bottom-0 left-1/2 z-[100] h-5 w-[320px] -translate-x-1/2 bg-background dark:bg-background-dark" aria-hidden="true">
+        <div className="pointer-events-none absolute bottom-0 left-1/2 z-[100] h-8 w-[320px] -translate-x-1/2 bg-background dark:bg-background-dark" aria-hidden="true">
           <svg
             viewBox="0 0 300 18"
             preserveAspectRatio="none"
-            className="h-full w-full"
+            className="absolute inset-x-0 -top-3 h-5 w-full"
           >
             <path
-              d="M2 2 C18 -5, 32 7, 50 0 C68 -7, 84 8, 104 1 C126 -6, 138 6, 160 0 C184 -7, 196 7, 222 1 C246 -5, 260 6, 298 -1"
+              d="M2 10 C18 3, 32 15, 50 8 C68 1, 84 16, 104 9 C126 2, 138 14, 160 8 C184 1, 196 15, 222 9 C246 3, 260 14, 298 7"
               stroke="currentColor"
               strokeWidth="5"
               strokeLinecap="round"
