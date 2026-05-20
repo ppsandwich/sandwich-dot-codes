@@ -28,7 +28,7 @@ export function ProjectPageContent({ project }: ProjectPageContentProps) {
 
   return (
     <>
-      <Section spacing="default">
+      <Section spacing="default" className={hasShowcase ? "pb-0 md:pb-0" : undefined}>
         <Container size={hasShowcase ? "default" : "narrow"}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -108,6 +108,7 @@ export function ProjectPageContent({ project }: ProjectPageContentProps) {
                   <PhoneShowcase
                     src={project.showcase!}
                     alt={`${project.title} on iPhone`}
+                    cropped
                   />
                 </div>
               )}
