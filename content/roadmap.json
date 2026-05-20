@@ -6,39 +6,56 @@
       "cards": [
         {
           "id": "card-1779054866544-7ss6e",
-          "text": "“We Will Rebuild” Enter a LEGO set number and get alternative build ideas using only pieces from that set."
+          "title": "We Will Rebuild",
+          "details": "Enter a LEGO set number and get alternative build ideas using only pieces from that set.",
+          "lane": "build"
         },
         {
           "id": "card-1779054945044-8uwzs",
-          "text": "“Doctor Beat” Upload or describe your song structure and get feedback on intro length, drops, transitions, variation, and listener momentum."
+          "title": "Doctor Beat",
+          "details": "Upload or describe your song structure and get feedback on intro length, drops, transitions, variation, and listener momentum."
         },
         {
           "id": "card-1779054856801-kpvig",
-          "text": "Upload a photo or artwork and convert it into a LEGO mosaic plan with part counts, colour mapping, and build instructions. Already exists - how would mine be better?"
+          "text": "Upload a photo or artwork and convert it into a LEGO mosaic plan with part counts, colour mapping, and build instructions. Already exists - how would mine be better?",
+          "title": "Upload a photo or artwork and convert it into a LEGO mosaic plan with part counts, colour mapping, and build instructions. Already exists - how would mine be better?",
+          "details": ""
         },
         {
           "id": "card-1779054874676-dw2c2",
-          "text": "“Upload a loop or sample and get a visual/metadata mood board: genre tags, texture words, BPM estimate, key estimate, and suggested arrangement ideas. Not sure how useful this would be, might be supplemental features of a bigger thing."
+          "title": "“Upload a loop or sample and get a visual/metadata mood board: genre tags, texture words, BPM estimate, key estimate, and suggested arrangement ideas. Not sure how useful this would be, might be supplemental features of a bigger thing.",
+          "details": "",
+          "lane": "build"
         },
         {
           "id": "card-1779054926509-3lqvb",
-          "text": "“Neighborhood Soundwatch” An AI-assisted sample library browser that auto-tags loops by BPM, key, genre, instrument, mood, and energy. There’s already a number of these (Like XO by XLN), so it would need some stand-out features."
+          "text": "“Neighborhood Soundwatch” An AI-assisted sample library browser that auto-tags loops by BPM, key, genre, instrument, mood, and energy. There’s already a number of these (Like XO by XLN), so it would need some stand-out features.",
+          "title": "“Neighborhood Soundwatch” An AI-assisted sample library browser that auto-tags loops by BPM, key, genre, instrument, mood, and energy. There’s already a number of these (Like XO by XLN), so it would need some stand-out features.",
+          "details": ""
         },
         {
           "id": "card-1779054953842-apkwy",
-          "text": "“Upload or enter a tracklist and get a suggested DJ set order based on BPM, key, energy, genre, and mood arc."
+          "text": "“Upload or enter a tracklist and get a suggested DJ set order based on BPM, key, energy, genre, and mood arc.",
+          "title": "“Upload or enter a tracklist and get a suggested DJ set order based on BPM, key, energy, genre, and mood arc.",
+          "details": ""
         },
         {
           "id": "card-1779054961759-3a5l1",
-          "text": "”PIAB (Party In A Box)” Generate themed crates for gigs, parties, radio shows, or mixes, such as “sunset warm-up house” or “late-night leftfield breaks.”"
+          "text": "”PIAB (Party In A Box)” Generate themed crates for gigs, parties, radio shows, or mixes, such as “sunset warm-up house” or “late-night leftfield breaks.”",
+          "title": "”PIAB (Party In A Box)” Generate themed crates for gigs, parties, radio shows, or mixes, such as “sunset warm-up house” or “late-night leftfield breaks.”",
+          "details": ""
         },
         {
           "id": "card-1779054969743-3hr6z",
-          "text": "” A website that turns a DJ setlist into a visual energy journey, showing peaks, breathers, tempo shifts, and mood changes. Could be merged with PIAB."
+          "text": "” A website that turns a DJ setlist into a visual energy journey, showing peaks, breathers, tempo shifts, and mood changes. Could be merged with PIAB.",
+          "title": "” A website that turns a DJ setlist into a visual energy journey, showing peaks, breathers, tempo shifts, and mood changes. Could be merged with PIAB.",
+          "details": ""
         },
         {
           "id": "card-1779054981093-qgrpl",
-          "text": "A songwriter’s rhyme assistant that avoids cliché rhymes and suggests more interesting near-rhymes, slant rhymes, and internal rhymes."
+          "text": "A songwriter’s rhyme assistant that avoids cliché rhymes and suggests more interesting near-rhymes, slant rhymes, and internal rhymes.",
+          "title": "A songwriter’s rhyme assistant that avoids cliché rhymes and suggests more interesting near-rhymes, slant rhymes, and internal rhymes.",
+          "details": ""
         }
       ]
     },
@@ -48,36 +65,45 @@
       "cards": [
         {
           "id": "card-1779054884738-n1tgc",
-          "text": "“JIWW (Jump In, Water’s Wet)” Generate a complete production brief for a new track: tempo, key, drum style, synth palette, bass approach, arrangement, and reference vibe."
+          "title": "JIWW (Jump In, Water’s Wet)",
+          "details": "Generate a complete production brief for a new track: tempo, key, drum style, synth palette, bass approach, arrangement, and reference vibe.",
+          "lane": "build"
         },
         {
           "id": "card-1779054995100-oy4l1",
-          "text": "Acrilyc Pour idea exploration"
+          "text": "Acrilyc Pour idea exploration",
+          "title": "Acrilyc Pour idea exploration",
+          "details": ""
         },
         {
           "id": "card-1779181173057-x9pm0",
-          "text": "The New PM Job: Herding the Robot Into Building the Right Thing - As AI agents generate more of the code, product work shifts toward intent, constraints, review, and quality control.",
-          "lane": "write"
+          "lane": "write",
+          "title": "The New PM Job: Herding the Robot Into Building the Right Thing",
+          "details": "As AI agents generate more of the code, product work shifts toward intent, constraints, review, and quality control."
         },
         {
           "id": "card-1779181228717-khnex",
-          "text": "The Case for Algorithmic Creativity Argue that randomness, rules, MIDI patterns, and Canvas APIs can produce meaningful creative work without generative AI.",
-          "lane": "write"
+          "lane": "write",
+          "title": "The Case for Algorithmic Creativity",
+          "details": "Argue that randomness, rules, MIDI patterns, and Canvas APIs can produce meaningful creative work without generative AI."
         },
         {
           "id": "card-1779181278941-hzxbk",
-          "text": "The Case for Useless-Sounding Apps - A philosophy of making software that is not trying to become SaaS, raise money, or ruin your inbox.",
-          "lane": "write"
+          "lane": "write",
+          "title": "The Case for Useless-Sounding Apps",
+          "details": "A philosophy of making software that is not trying to become SaaS, raise money, or ruin your inbox."
         },
         {
           "id": "card-1779181284518-64y9a",
-          "text": "Is This AI-Built App Any Good? - A PM-ish checklist for judging concept, usability, maintainability, accessibility, performance, security, and whether it feels horrible to use.",
-          "lane": "write"
+          "lane": "write",
+          "title": "Is This AI-Built App Any Good?",
+          "details": "A PM-ish checklist for judging concept, usability, maintainability, accessibility, performance, security, and whether it feels horrible to use."
         },
         {
           "id": "card-1779187671768-7f93s",
-          "text": "Product Prioritisation Is Not as Objective as Everyone Pretends - Feature ranking frameworks look like machines for producing truth, but they mostly produce structured opinions.  This article asks whether objective prioritisation is possible, what “objective enough” might look like, and whether companies actually want objectivity — or just a tidier way to justify difficult choices.",
-          "lane": "write"
+          "lane": "write",
+          "title": "Product Prioritisation Is Not as Objective as Everyone Pretends",
+          "details": "Feature ranking frameworks look like machines for producing truth, but they mostly produce structured opinions.  This article asks whether objective prioritisation is possible, what “objective enough” might look like, and whether companies actually want objectivity — or just a tidier way to justify difficult choices."
         }
       ]
     },
@@ -87,16 +113,20 @@
       "cards": [
         {
           "id": "card-5",
-          "text": "Polish project page layouts"
+          "text": "Polish project page layouts",
+          "title": "Polish project page layouts",
+          "details": ""
         },
         {
           "id": "card-1779055127746-h2z0c",
-          "text": "\"Expecto\" neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation."
+          "title": "Expecto",
+          "details": "Neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation."
         },
         {
           "id": "card-1779181201254-zrib7",
-          "text": "Turning Weird Little Ideas Into Buildable Apps - My practical process for moving from vague concept to AI-readable PRD to deployable project.",
-          "lane": "write"
+          "lane": "write",
+          "title": "Turning Weird Little Ideas Into Buildable Apps",
+          "details": "My practical process for moving from vague concept to AI-readable PRD to deployable project."
         }
       ]
     },
@@ -106,21 +136,28 @@
       "cards": [
         {
           "id": "card-1779055054969-7oul2",
-          "text": "\"Splinched\" Automated sample chopper. Test the limits of serverless."
+          "title": "Splinched",
+          "details": "Automated sample chopper. Test the limits of serverless.",
+          "lane": "build"
         },
         {
           "id": "card-1779055085784-gzmj8",
-          "text": "\"Sound Of Wall\" - the opposite of a wall of sound. Take music and make art that can hang on a wall from it."
+          "title": "Sound Of Wall",
+          "details": "The opposite of a wall of sound. Take music and make art that can hang on a wall from it."
         },
         {
           "id": "card-7",
           "text": "GitHub activity timeline",
-          "lane": "other"
+          "lane": "other",
+          "title": "GitHub activity timeline",
+          "details": ""
         },
         {
           "id": "card-8",
           "text": "SVG sandwich favicon",
-          "lane": "other"
+          "lane": "other",
+          "title": "SVG sandwich favicon",
+          "details": ""
         }
       ]
     },
@@ -130,7 +167,9 @@
       "cards": [
         {
           "id": "card-6",
-          "text": "Command palette with cmdk"
+          "text": "Command palette with cmdk",
+          "title": "Command palette with cmdk",
+          "details": ""
         }
       ]
     }

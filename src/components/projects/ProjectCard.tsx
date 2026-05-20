@@ -23,6 +23,7 @@ const statusColors: Record<string, "slime" | "mustard" | "muted"> = {
 
 export function ProjectCard({ project, index = 0, variant = "default" }: ProjectCardProps) {
   const rotation = index % 2 === 0 ? -0.6 : 0.5;
+  const cardImage = project.showcase || project.cover;
 
   return (
     <motion.div
@@ -47,10 +48,10 @@ export function ProjectCard({ project, index = 0, variant = "default" }: Project
           )}
           style={{ transform: `rotate(${rotation}deg)` }}
         >
-          {project.cover && (
+          {cardImage && (
             <div className="relative h-48 overflow-hidden border-b-3 border-border">
               <Image
-                src={project.cover}
+                src={cardImage}
                 alt={project.title}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
