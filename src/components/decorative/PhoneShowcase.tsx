@@ -13,12 +13,12 @@ interface PhoneShowcaseProps {
 export function PhoneShowcase({ src, alt = "App screenshot", className, cropped = false }: PhoneShowcaseProps) {
   return (
     <motion.div
-      className={cn("flex justify-center", cropped && "overflow-hidden", className)}
+      className={cn("relative flex justify-center", cropped && "overflow-hidden", className)}
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, type: "spring", stiffness: 150, damping: 20 }}
     >
-      <div className={cn("relative w-full max-w-[300px]", cropped && "max-h-[28rem]")}>
+      <div className={cn("relative w-full max-w-[300px]", cropped && "max-h-[28rem] overflow-hidden")}>
         {/* Phone outer body */}
         <div className="relative rounded-[40px] border-[3px] border-border bg-foreground p-[6px] shadow-tactile-lg">
           {/* Phone inner bezel */}
@@ -54,27 +54,27 @@ export function PhoneShowcase({ src, alt = "App screenshot", className, cropped 
           style={{ backgroundColor: "rgba(214, 179, 71, 0.35)" }}
           aria-hidden="true"
         />
-
-        {cropped && (
-          <div className="pointer-events-none absolute inset-x-[-10px] bottom-0 z-50 h-5 bg-background dark:bg-background-dark" aria-hidden="true">
-            <svg
-              viewBox="0 0 300 18"
-              preserveAspectRatio="none"
-              className="h-full w-full"
-            >
-              <path
-                d="M2 2 C18 -5, 32 7, 50 0 C68 -7, 84 8, 104 1 C126 -6, 138 6, 160 0 C184 -7, 196 7, 222 1 C246 -5, 260 6, 298 -1"
-                stroke="currentColor"
-                strokeWidth="5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-                className="text-border"
-              />
-            </svg>
-          </div>
-        )}
       </div>
+
+      {cropped && (
+        <div className="pointer-events-none absolute bottom-0 left-1/2 z-[100] h-5 w-[320px] -translate-x-1/2 bg-background dark:bg-background-dark" aria-hidden="true">
+          <svg
+            viewBox="0 0 300 18"
+            preserveAspectRatio="none"
+            className="h-full w-full"
+          >
+            <path
+              d="M2 2 C18 -5, 32 7, 50 0 C68 -7, 84 8, 104 1 C126 -6, 138 6, 160 0 C184 -7, 196 7, 222 1 C246 -5, 260 6, 298 -1"
+              stroke="currentColor"
+              strokeWidth="5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+              className="text-border"
+            />
+          </svg>
+        </div>
+      )}
     </motion.div>
   );
 }
