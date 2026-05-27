@@ -1,5 +1,7 @@
 import { allProjects, allArticles } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
+import fs from "fs";
+import path from "path";
 import { HeroSection } from "@/components/layout/HeroSection";
 import { FeaturedProjectsSection } from "@/components/projects/FeaturedProjectsSection";
 import { WritingPreviewSection } from "@/components/writing/WritingPreviewSection";
@@ -38,13 +40,19 @@ function shuffleTags(tags: HeroTag[]) {
     .map(({ tag }) => tag);
 }
 
+function imageExists(imagePath: string | undefined): boolean {
+  if (!imagePath) return false;
+  const filePath = path.join(process.cwd(), "public", imagePath);
+  return fs.existsSync(filePath);
+}
+
 export default function HomePage() {
   const featuredProjects = allProjects
-    .filter((p) => p.featured)
+    .filter((p) => p.featured && imageExists(p.cover))
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
 
   const showcaseProjects = allProjects
-    .filter((p) => p.showcase)
+    .filter((p) => p.showcase && imageExists(p.showcase))
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 3)
     .map((p) => ({ title: p.title, showcase: p.showcase!, url: p.url }));
