@@ -1,0 +1,271 @@
+---
+title: "Knut Counter"
+description: "An AI usage cost tracking and optimization tool that monitors spending across 43+ providers, benchmarks models, and recommends the best model for your task based on cost, quality, and budget constraints."
+date: "2025-05-27"
+tags: ["AI", "cost tracking", "analytics", "React Native", "Supabase", "TypeScript", "monorepo"]
+featured: true
+github: "https://github.com/silentsoar/knut-counter"
+status: "active"
+cover: "/images/projects/knut-counter.png"
+showcase: "/images/projects/knut-counter-phone.png"
+tech: ["TypeScript", "React Native", "Expo", "Supabase", "Drizzle ORM", "Vercel", "Zustand", "Tailwind CSS"]
+---
+
+## Overview
+
+Knut Counter is a full-stack AI usage cost tracking and optimization tool. It aggregates spending data from over 43 AI providers — OpenAI, Anthropic, Google Gemini, OpenRouter, xAI, DeepSeek, and more — into a unified dashboard with monthly spend projections, token usage breakdowns, and per-provider sparkline charts.
+
+Beyond tracking, Knut Counter is an optimization tool. Its recommendation engine suggests the best model for a given task by weighing cost against quality using dual benchmark sources. A quality-vs-cost slider lets users tune recommendations to their budget, returning the cheapest viable option, the highest quality option, or the best balance between the two.
+
+The name comes from the wizarding world's smallest unit of currency — a reminder that every token has a cost, and small optimizations add up.
+
+## The Problem It Solves
+
+Using AI APIs across multiple providers is a billing nightmare. Each provider has different pricing tiers, different token counting methods, and different dashboard interfaces. OpenAI shows one thing, Anthropic shows another, and OpenRouter shows a third. There's no single place to see total AI spend, compare costs across providers, or figure out which model actually gives the best value for a specific task.
+
+Developers and teams using multiple AI providers end up with:
+- Scattered billing data across a dozen dashboards
+- No visibility into which models are driving costs
+- No way to compare price-to-quality ratios across providers
+- Manual effort to track budgets and detect anomalies
+- Guesswork when choosing between models
+
+Knut Counter solves all of this. One dashboard. One budget. One recommendation engine.
+
+## Features
+
+### Unified Dashboard
+
+The dashboard aggregates data from all connected providers into a single view. Monthly spend is calculated by summing usage records across providers, with projected costs extrapolated from the current month's pace. Token usage is broken down by provider and model, with sparkline charts showing daily trends.
+
+The dashboard also surfaces alerts: budget thresholds at 50%, 75%, 90%, and 100%; stale sync warnings when a provider hasn't reported data recently; unusual spend spikes; and missing pricing data notifications.
+
+### Model Recommendations
+
+The recommendation engine is the core differentiator. Given a task type (e.g., "code generation," "summarization," "general chat"), it returns three picks:
+
+| Pick | Strategy |
+|------|----------|
+| **Cheapest** | Lowest cost that meets a minimum quality threshold |
+| **Best Quality** | Highest benchmark score regardless of cost |
+| **Best Balance** | Optimal cost-to-quality ratio using a weighted score |
+
+The quality-vs-cost slider adjusts the weighting. Slide toward quality and the engine favors models with higher intelligence and coding benchmarks. Slide toward cost and it favors cheaper models that still pass the minimum bar.
+
+Scores are computed using benchmark data from two sources:
+
+| Source | Metrics |
+|--------|---------|
+| **Artificial Analysis** | Intelligence index, coding ability, math reasoning |
+| **BenchLM** | Leaderboard rankings across standardized tasks |
+
+### Models Table
+
+A ranked table of the top 100 models by weekly usage, with columns for:
+
+- Input/output cost per million tokens
+- Intelligence benchmark score
+- Coding ability benchmark
+- Speed (tokens per second)
+- Context window size
+- Provider
+
+Sortable by any column. Filterable by provider and capability.
+
+### Multi-Provider Support
+
+43+ providers are supported through three connection methods:
+
+| Method | How It Works |
+|--------|--------------|
+| **API Key** | Knut Counter calls the provider's usage API directly |
+| **Manual Tracking** | Users log usage records manually |
+| **CSV/JSON Import** | Upload billing exports from provider dashboards |
+
+API keys are encrypted at rest with AES-256-GCM. The encrypted keys are used server-side to sync usage data — they're never returned to the client.
+
+### Currency Conversion
+
+All costs are stored in USD but displayed in the user's preferred currency. Real-time exchange rates are fetched from Open Exchange Rates with fallback to Frankfurter. Over 50 currencies are supported.
+
+## Architecture
+
+Knut Counter is a monorepo managed by pnpm workspaces and Turborepo. The architecture separates concerns into distinct packages:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                        Vercel                                │
+│  ┌───────────────────────────────────────────────────────┐  │
+│  │              Serverless Functions (api/)               │  │
+│  │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐    │  │
+│  │  │Dashboard│ │Recommend│ │ Provider│ │ Alerts  │    │  │
+│  │  │  Data   │ │ Engine  │ │  Sync   │ │Evaluator│    │  │
+│  │  └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘    │  │
+│  └───────┼───────────┼───────────┼───────────┼──────────┘  │
+│          │           │           │           │              │
+│  ┌───────┴───────────┴───────────┴───────────┴──────────┐  │
+│  │                    Packages                           │  │
+│  │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐   │  │
+│  │  │  @knut  │ │  @knut  │ │  @knut  │ │  @knut  │   │  │
+│  │  │   db    │ │ pricing │ │providers│ │  shared │   │  │
+│  │  └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘   │  │
+│  └───────┼───────────┼───────────┼───────────┼──────────┘  │
+│          │           │           │           │              │
+│  ┌───────┴───────────┴───────────┴───────────┴──────────┐  │
+│  │                 Supabase / PostgreSQL                  │  │
+│  │  users │ provider_accounts │ usage_records │ alerts   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+          ▲
+          │
+┌─────────┴───────────────────────────────────────────────────┐
+│                    Client (Expo)                             │
+│  ┌───────────────────────────────────────────────────────┐  │
+│  │  React Native + expo-router + react-native-web        │  │
+│  │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐   │  │
+│  │  │Dashboard│ │ Models  │ │Recommend│ │ Settings│   │  │
+│  │  │  Page   │ │  Table  │ │  Page   │ │  Page   │   │  │
+│  │  └─────────┘ └─────────┘ └─────────┘ └─────────┘   │  │
+│  │                   Zustand State                       │  │
+│  └───────────────────────────────────────────────────────┘  │
+│                                                             │
+│  Works on: Web (PWA), iOS, Android                          │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Frontend
+
+The client is built with React Native and Expo SDK 53, using expo-router for file-based routing. The same codebase runs on web (as a PWA via react-native-web and Metro bundler), iOS, and Android. Zustand manages client-side state, with Supabase handling authentication and real-time subscriptions.
+
+The UI uses a custom component library in `packages/ui` with Tailwind CSS styling. Components are designed for React Native compatibility — they render correctly on both web and mobile without platform-specific code.
+
+### Backend
+
+The API layer runs on Vercel Serverless Functions. Each route is a standalone function in `api/` that handles a specific domain: dashboard aggregation, model recommendations, provider sync, alert evaluation, credential management.
+
+Serverless functions validate Supabase JWTs via the service role key, then perform operations scoped to the authenticated user's ID. No function can access another user's data.
+
+### Database
+
+PostgreSQL on Supabase with Drizzle ORM 0.43 managing the schema. Eight tables handle the full domain model:
+
+| Table | Purpose |
+|-------|---------|
+| `users` | Profiles, timezone, currency preference, monthly budget |
+| `provider_registry` | Master list of 43+ AI providers |
+| `provider_accounts` | Per-user connected providers with encrypted API keys |
+| `usage_records` | Individual usage events with tokens, cost, model |
+| `usage_caps` | Credit balance and usage cap tracking |
+| `pricing_snapshots` | Historical pricing from multiple sources |
+| `model_benchmark_snapshots` | Intelligence, coding, math, speed benchmarks |
+| `alerts` | Budget, stale sync, and anomaly alerts |
+| `import_jobs` | CSV/JSON import job tracking |
+
+Drizzle generates type-safe queries and handles migrations. The schema is defined once in `packages/db` and shared across all API routes.
+
+### Data Pipeline
+
+Pricing and benchmark data flows through a multi-source pipeline:
+
+```
+External APIs                    Knut Counter                     Database
+─────────────                    ────────────                     ────────
+
+OpenRouter API ─────────┐
+Artificial Analysis ─────┤
+LiteLLM (GitHub JSON) ──┼──→ packages/pricing ──→ pricing_snapshots
+models.dev API ─────────┤      (normalize,
+BenchLM API ────────────┘       dedupe, score)
+
+Provider Usage APIs ──────────→ api/providers/sync ──→ usage_records
+                                                          │
+Open Exchange Rates ──────────→ packages/shared ──→ (convert on read)
+```
+
+## Credential Security
+
+API keys are the most sensitive data in the system. Knut Counter treats them accordingly:
+
+1. **Encryption at rest** — Keys are encrypted with AES-256-GCM using a key derived from `CREDENTIAL_ENCRYPTION_KEY` via scrypt. The derived key never leaves the server.
+
+2. **Never exposed to client** — API responses include a `hasCredentials: boolean` flag, never the raw key. Even if the database is compromised, encrypted keys are useless without the encryption key.
+
+3. **Scoped access** — Every API route validates the Supabase JWT and scopes database queries to the authenticated user's ID. No route can access another user's credentials or data.
+
+4. **Sync-only usage** — Encrypted keys are decrypted only during server-side sync operations, when the server calls the provider's API to fetch usage data. The keys exist in memory only for the duration of that request.
+
+## Design Decisions
+
+### React Native + Expo for a Dashboard App
+
+React Native is an unusual choice for a dashboard-heavy analytics tool. The decision came from wanting a single codebase that works on web and mobile. The dashboard is the primary interface on desktop, but mobile is where quick budget checks and alert responses happen.
+
+expo-router handles file-based routing identically to Next.js, and react-native-web bridges the component gap. The custom UI package in `packages/ui` contains components that render correctly on both platforms without conditional rendering.
+
+The tradeoff is that complex data visualizations (sparkline charts, benchmark comparisons) require custom implementations rather than using web-only charting libraries. Knut Counter uses lightweight Canvas-based sparklines that work on both platforms.
+
+### Drizzle ORM Over Prisma
+
+Drizzle was chosen for three reasons: it generates SQL that looks hand-written, it has zero runtime dependencies beyond the database driver, and its schema definitions are plain TypeScript objects that can be shared across packages without code generation steps.
+
+The type safety is comparable to Prisma, but the query builder stays closer to SQL. This matters for the aggregation queries that power the dashboard — raw SQL patterns like window functions and CTEs are easier to express in Drizzle's builder.
+
+### Monorepo with Turborepo
+
+The separation into `packages/db`, `packages/pricing`, `packages/providers`, `packages/shared`, and `packages/ui` reflects the natural boundaries of the system. The pricing package can be tested independently. The provider connectors can be added without touching the database layer. The shared types package ensures the client and server agree on data shapes.
+
+Turborepo handles the build graph, caching, and parallel execution. A change to `packages/db` triggers a rebuild of all API routes that depend on it, but leaves the UI package untouched.
+
+### Supabase for Auth and Database
+
+Supabase provides two things that would be painful to build from scratch: a hosted PostgreSQL database with connection pooling, and a battle-tested authentication system with JWT tokens. The free tier is sufficient for development and small-scale production.
+
+The service role key validates JWTs server-side without calling Supabase's auth API on every request — the key is used to verify the JWT signature locally. This keeps API latency low and removes Supabase as a dependency on the critical path.
+
+## What I Learned
+
+- **Encryption in serverless is nuanced.** AES-256-GCM requires a unique nonce per encryption operation. Reusing a nonce with the same key breaks the security guarantees. Knut Counter generates a random 12-byte nonce for each encryption and stores it alongside the ciphertext. The encryption key itself is derived once from the environment variable using scrypt and cached in the serverless function's module scope.
+
+- **Multi-source data normalization is hard.** Different pricing APIs report costs in different units (per token, per 1K tokens, per 1M tokens), with different rounding, and sometimes with different definitions of what counts as a "token." The pricing package normalizes everything to cost-per-million-tokens and uses confidence scores to weight conflicting sources.
+
+- **React Native web compatibility has limits.** Some React Native primitives (`ScrollView`, `FlatList`) behave differently on web than expected. The solution was to use a thin abstraction layer in `packages/ui` that picks the right implementation based on the platform, while keeping the component API identical.
+
+- **Serverless cold starts affect UX.** Vercel functions cold-start in 200-500ms, which adds noticeable latency to API calls. The mitigation is aggressive client-side caching with Zustand, optimistic UI updates, and background data refresh on a schedule.
+
+- **Monorepo tooling has a learning curve.** pnpm workspaces, Turborepo, and shared TypeScript configs each have their own conventions and pitfalls. The initial setup took longer than expected, but the payoff in code reuse and type safety across packages has been significant.
+
+## Challenges
+
+- **Provider API inconsistency.** Every provider's usage API returns data in a different format, with different time granularities, different token counting methods, and different rate limits. The provider connectors in `packages/providers` handle this by normalizing each provider's response into a common `UsageRecord` shape. Adding a new provider means writing a new connector, but the interface is well-defined.
+
+- **Benchmark data freshness.** Model benchmarks change as providers release new model versions. The benchmark snapshot system stores historical data with timestamps, so the recommendation engine can weight recent benchmarks more heavily. Stale benchmarks are flagged for refresh.
+
+- **Budget alert accuracy.** Projected costs assume current usage pace continues through the month. This is reasonable for steady workloads but inaccurate for bursty usage. The alert system uses conservative thresholds (50%, 75%, 90%, 100%) and includes a "stale sync" warning when data is too old to project reliably.
+
+- **Mobile web performance.** The dashboard loads a lot of data — provider summaries, usage charts, model tables, alerts. On mobile web, this can cause layout shifts and slow renders. The solution was lazy loading, virtualized lists for the models table, and skeleton placeholders during data fetches.
+
+## Cron Jobs
+
+For automated data collection, Knut Counter supports scheduled jobs via Vercel Cron:
+
+| Schedule | Endpoint | Purpose |
+|----------|----------|---------|
+| Daily 3am | `/api/pricing/refresh` | Refresh pricing from all sources |
+| Hourly | `/api/providers/sync` | Sync usage data from connected providers |
+| Every 30 min | `/api/alerts/evaluate` | Evaluate and fire budget/stale alerts |
+
+These jobs run independently of user requests, keeping the dashboard data fresh without requiring manual syncs.
+
+## Future Work
+
+- **Team workspaces** — Shared budgets and usage visibility across team members
+- **Cost allocation tags** — Tag usage records with project or team labels for cost attribution
+- **Slack/Discord alerts** — Push budget alerts to team communication channels
+- **Historical trends** — Month-over-month comparisons and year-over-year analysis
+- **Custom benchmark sources** — Allow users to add their own benchmark data
+- **API access** — REST API for programmatic access to usage and recommendation data
+
+## Links
+
+- [GitHub Repository](https://github.com/silentsoar/knut-counter)
