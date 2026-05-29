@@ -24,6 +24,7 @@ export type Article = {
   slug: string
   readingTime: string
   url: string
+  firstBodyImage: string
 }
 
 export type Experiment = {
