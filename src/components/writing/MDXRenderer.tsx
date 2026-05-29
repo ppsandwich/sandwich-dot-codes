@@ -129,29 +129,34 @@ const mdxComponents = {
     useEffect(() => {
       const img = imgRef.current;
       if (!img) return;
+      const checkSize = () => {
+        const containerWidth = img.closest("article")?.clientWidth ?? 0;
+        const displayWidth = Math.min(img.naturalWidth, 600);
+        setIsSmall(displayWidth < containerWidth * 0.5);
+      };
       if (img.complete) {
-        setIsSmall(img.naturalWidth < img.parentElement!.parentElement!.clientWidth * 0.5);
+        checkSize();
       } else {
-        img.onload = () => {
-          setIsSmall(img.naturalWidth < img.parentElement!.parentElement!.clientWidth * 0.5);
-        };
+        img.onload = checkSize;
       }
     }, [src]);
 
     return (
       <figure
         className={cn(
-          "my-8 rotate-[-0.3deg]",
-          isSmall && "float-right ml-6 mb-4 w-[50%]"
+          "my-8",
+          isSmall && "float-right ml-6 mb-4"
         )}
+        style={isSmall ? { width: "50%", maxWidth: "300px" } : undefined}
       >
-        <div className={cn("border-3 border-border shadow-tactile", !isSmall && "max-w-[600px]")}>
+        <div className="border-3 border-border shadow-tactile">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             ref={imgRef}
             src={src}
             alt={alt || ""}
-            style={{ maxHeight: "600px", width: "100%", height: "auto", display: "block" }}
+            className="block h-auto w-full"
+            style={!isSmall ? { maxHeight: "600px", maxWidth: "600px" } : undefined}
             loading="lazy"
             {...props}
           />
