@@ -66,6 +66,7 @@ export type Project = {
   slug: string
   readingTime: string
   url: string
+  firstBodyImage: string
 }  
 
 /** Nested types */
