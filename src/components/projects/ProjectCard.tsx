@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -23,7 +24,8 @@ const statusColors: Record<string, "slime" | "mustard" | "muted"> = {
 
 export function ProjectCard({ project, index = 0, variant = "default" }: ProjectCardProps) {
   const rotation = index % 2 === 0 ? -0.6 : 0.5;
-  const cardImage = project.showcase || project.cover;
+  const fallbackImage = project.cover;
+  const [imgSrc, setImgSrc] = useState(project.showcase || project.cover);
 
   return (
     <motion.div
@@ -48,13 +50,18 @@ export function ProjectCard({ project, index = 0, variant = "default" }: Project
           )}
           style={{ transform: `rotate(${rotation}deg)` }}
         >
-          {cardImage && (
+          {imgSrc && (
             <div className="relative h-48 overflow-hidden border-b-3 border-border">
               <Image
-                src={cardImage}
+                src={imgSrc}
                 alt={project.title}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
+                onError={() => {
+                  if (fallbackImage && imgSrc !== fallbackImage) {
+                    setImgSrc(fallbackImage);
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent dark:from-background-dark/60" />
             </div>
