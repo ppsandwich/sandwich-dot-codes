@@ -240,6 +240,39 @@ export async function fetchGitHubTimeline(): Promise<TimelineEvent[]> {
   }
 }
 
+export async function fetchWeeklyCommitCount(): Promise<number> {
+  try {
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+
+    const res = await fetch(
+      `https://api.github.com/users/${GITHUB_USERNAME}/events/public?per_page=100`,
+      {
+        headers: githubHeaders,
+        next: { revalidate: 3600 },
+      },
+    );
+
+    if (!res.ok) return 0;
+    const events = await res.json();
+
+    let count = 0;
+    for (const event of events) {
+      if (event.type !== "PushEvent") continue;
+      const eventDate = new Date(event.created_at);
+      if (eventDate < oneWeekAgo) continue;
+      const commits = event.payload?.commits;
+      if (Array.isArray(commits)) {
+        count += commits.length;
+      }
+    }
+
+    return count;
+  } catch {
+    return 0;
+  }
+}
+
 export async function fetchGitHubLanguages(): Promise<LanguageStat[]> {
   try {
     const reposRes = await fetch(

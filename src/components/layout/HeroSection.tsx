@@ -7,6 +7,7 @@ import { Section } from "@/components/layout/Section";
 import { StickerTag } from "@/components/decorative/StickerTag";
 import { DoodleAccent } from "@/components/decorative/DoodleAccent";
 import { ScribbleArrow } from "@/components/decorative/ScribbleArrow";
+import { HealthStarRating } from "@/components/decorative/HealthStarRating";
 import { cn } from "@/lib/utils";
 
 interface ShowcaseItem {
@@ -185,6 +186,9 @@ export function HeroSection({ showcases = [], tags = [] }: HeroSectionProps) {
                     </Link>
                   );
                 })}
+                <div className="absolute bottom-0 left-0 z-10">
+                  <HealthStarRating />
+                </div>
               </div>
             </motion.div>
           )}
