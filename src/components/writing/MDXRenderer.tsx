@@ -145,7 +145,7 @@ const mdxComponents = {
           isSmall && "float-right ml-6 mb-4 max-w-[50%]"
         )}
       >
-        <div className="overflow-hidden border-3 border-border shadow-tactile">
+        <div className="w-fit overflow-hidden border-3 border-border shadow-tactile">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             ref={imgRef}
