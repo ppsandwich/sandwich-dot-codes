@@ -72,22 +72,22 @@ export function HealthStarRating({ commitCount, className }: HealthStarRatingPro
   return (
     <div
       className={cn(
-        "inline-flex flex-col items-center gap-1 rounded-md border-2 border-white/20 bg-[#1B5E50] px-3 py-2 shadow-lg",
+        "inline-flex flex-col items-center gap-1.5 rounded-md border-2 border-white/20 bg-[#1B5E50] px-4 py-2.5 shadow-lg",
         className,
       )}
       title={`${count} commits this week`}
     >
-      <span className="font-heading text-[9px] font-bold uppercase tracking-widest text-white">
+      <span className="font-heading text-[12px] font-bold uppercase tracking-widest text-white">
         Health Star Rating
       </span>
       <div className="flex gap-0.5">
         {stars.map((fill, i) => (
-          <div key={i} className="h-5 w-5">
+          <div key={i} className="h-[26px] w-[26px]">
             <StarIcon fill={fill} />
           </div>
         ))}
       </div>
-      <span className="text-[10px] text-white/80">
+      <span className="text-[13px] text-white/80">
         {count} GitHub commit{count !== 1 ? "s" : ""} this week
       </span>
     </div>

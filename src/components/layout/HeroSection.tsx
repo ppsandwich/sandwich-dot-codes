@@ -166,7 +166,7 @@ export function HeroSection({ showcases = [], tags = [] }: HeroSectionProps) {
           {hasShowcases && (
             <motion.div
               initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
+              animate={{ opacity: 1, x: -30 }}
               transition={{ delay: 0.4, type: "spring", stiffness: 150, damping: 20 }}
               className="hidden flex-shrink-0 md:block md:w-[260px] lg:w-[340px]"
             >
