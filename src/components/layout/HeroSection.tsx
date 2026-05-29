@@ -196,9 +196,6 @@ export function HeroSection({ showcases = [], tags = [] }: HeroSectionProps) {
           <div className="absolute -right-4 top-8 z-10 rotate-12 sm:right-8 md:right-16">
             <DoodleAccent variant="star" color="#D6B347" size={48} />
           </div>
-          <div className="absolute -left-2 bottom-0 z-10 sm:left-4">
-            <DoodleAccent variant="dot-cluster" color="#6F9D9A" size={40} />
-          </div>
           <div className="absolute left-1/3 top-4 z-10 rotate-[-8deg] hidden sm:block">
             <DoodleAccent variant="squiggle" color="#6F9D9A" size={64} />
           </div>
