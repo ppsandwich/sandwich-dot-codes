@@ -127,10 +127,10 @@ const mdxComponents = {
       <figure className="my-8 rotate-[-0.3deg]">
         <div className="overflow-hidden border-3 border-border shadow-tactile">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+            <img
             src={src}
             alt={alt || ""}
-            className="w-full"
+            className="max-w-full h-auto"
             loading="lazy"
             {...props}
           />
