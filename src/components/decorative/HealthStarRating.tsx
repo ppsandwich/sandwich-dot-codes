@@ -87,6 +87,9 @@ export function HealthStarRating({ commitCount, className }: HealthStarRatingPro
           </div>
         ))}
       </div>
+      <span className="text-[10px] text-white/80">
+        {count} GitHub commit{count !== 1 ? "s" : ""} this week
+      </span>
     </div>
   );
 }
