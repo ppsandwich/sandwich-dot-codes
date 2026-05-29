@@ -121,15 +121,13 @@ export async function fetchRecentCommits(): Promise<GitHubCommit[]> {
 
 export async function fetchGitHubTimeline(): Promise<TimelineEvent[]> {
   try {
-    const hasToken = !!process.env.GITHUB_TOKEN;
-    const endpoint = hasToken
-      ? "https://api.github.com/user/events?per_page=100"
-      : `https://api.github.com/users/${GITHUB_USERNAME}/events/public?per_page=100`;
-
-    const res = await fetch(endpoint, {
-      headers: githubHeaders,
-      next: { revalidate: 60 },
-    });
+    const res = await fetch(
+      `https://api.github.com/users/${GITHUB_USERNAME}/events/public?per_page=100`,
+      {
+        headers: githubHeaders,
+        next: { revalidate: 60 },
+      },
+    );
 
     if (!res.ok) return [];
     const events = await res.json();
@@ -246,32 +244,40 @@ export async function fetchWeeklyCommitCount(): Promise<number> {
   try {
     const oneWeekAgo = new Date();
     oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+    const since = oneWeekAgo.toISOString();
 
-    const hasToken = !!process.env.GITHUB_TOKEN;
-    const endpoint = hasToken
-      ? "https://api.github.com/user/events?per_page=100"
-      : `https://api.github.com/users/${GITHUB_USERNAME}/events/public?per_page=100`;
+    const reposRes = await fetch(
+      `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=pushed&type=all`,
+      {
+        headers: githubHeaders,
+        next: { revalidate: 3600 },
+      },
+    );
 
-    const res = await fetch(endpoint, {
-      headers: githubHeaders,
-      next: { revalidate: 3600 },
-    });
+    if (!reposRes.ok) return 0;
+    const repos: { name: string; fork: boolean; pushed_at: string }[] = await reposRes.json();
 
-    if (!res.ok) return 0;
-    const events = await res.json();
+    const recentlyPushed = repos.filter(
+      (r) => !r.fork && new Date(r.pushed_at) >= oneWeekAgo,
+    );
 
-    let count = 0;
-    for (const event of events) {
-      if (event.type !== "PushEvent") continue;
-      const eventDate = new Date(event.created_at);
-      if (eventDate < oneWeekAgo) continue;
-      const commits = event.payload?.commits;
-      if (Array.isArray(commits)) {
-        count += commits.length;
+    const counts = await Promise.allSettled(
+      recentlyPushed.map((repo) =>
+        fetch(
+          `https://api.github.com/repos/${GITHUB_USERNAME}/${repo.name}/commits?since=${since}&per_page=100`,
+          { headers: githubHeaders, next: { revalidate: 3600 } },
+        ).then((res) => (res.ok ? res.json() : [])),
+      ),
+    );
+
+    let total = 0;
+    for (const result of counts) {
+      if (result.status === "fulfilled" && Array.isArray(result.value)) {
+        total += result.value.length;
       }
     }
 
-    return count;
+    return total;
   } catch {
     return 0;
   }
