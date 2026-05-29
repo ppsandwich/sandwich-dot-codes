@@ -152,6 +152,7 @@ const mdxComponents = {
             src={src}
             alt={alt || ""}
             className="max-w-full h-auto"
+            style={{ maxWidth: "600px", maxHeight: "600px" }}
             loading="lazy"
             {...props}
           />
