@@ -121,13 +121,15 @@ export async function fetchRecentCommits(): Promise<GitHubCommit[]> {
 
 export async function fetchGitHubTimeline(): Promise<TimelineEvent[]> {
   try {
-    const res = await fetch(
-      `https://api.github.com/users/${GITHUB_USERNAME}/events/public?per_page=100`,
-      {
-        headers: githubHeaders,
-        next: { revalidate: 60 },
-      },
-    );
+    const hasToken = !!process.env.GITHUB_TOKEN;
+    const endpoint = hasToken
+      ? "https://api.github.com/user/events?per_page=100"
+      : `https://api.github.com/users/${GITHUB_USERNAME}/events/public?per_page=100`;
+
+    const res = await fetch(endpoint, {
+      headers: githubHeaders,
+      next: { revalidate: 60 },
+    });
 
     if (!res.ok) return [];
     const events = await res.json();
@@ -245,13 +247,15 @@ export async function fetchWeeklyCommitCount(): Promise<number> {
     const oneWeekAgo = new Date();
     oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
 
-    const res = await fetch(
-      `https://api.github.com/users/${GITHUB_USERNAME}/events/public?per_page=100`,
-      {
-        headers: githubHeaders,
-        next: { revalidate: 3600 },
-      },
-    );
+    const hasToken = !!process.env.GITHUB_TOKEN;
+    const endpoint = hasToken
+      ? "https://api.github.com/user/events?per_page=100"
+      : `https://api.github.com/users/${GITHUB_USERNAME}/events/public?per_page=100`;
+
+    const res = await fetch(endpoint, {
+      headers: githubHeaders,
+      next: { revalidate: 3600 },
+    });
 
     if (!res.ok) return 0;
     const events = await res.json();
