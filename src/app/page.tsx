@@ -65,7 +65,7 @@ export default function HomePage() {
 
   const recentArticles = allArticles
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
-    .slice(0, 2);
+    .slice(0, 6);
 
   const projectTags = getMostUsedTags(allProjects).map((tag) => ({
     label: tag,
