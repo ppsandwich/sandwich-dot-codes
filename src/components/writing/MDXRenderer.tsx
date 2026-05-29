@@ -129,29 +129,38 @@ const mdxComponents = {
     useEffect(() => {
       const img = imgRef.current;
       if (!img) return;
+      const checkSize = () => {
+        const article = img.closest("article");
+        if (!article) return;
+        const containerWidth = article.clientWidth;
+        const padding = parseInt(getComputedStyle(article).paddingLeft) + parseInt(getComputedStyle(article).paddingRight);
+        const innerWidth = containerWidth - padding;
+        const displayWidth = Math.min(img.naturalWidth, 600);
+        setIsSmall(displayWidth < innerWidth * 0.8);
+      };
       if (img.complete) {
-        setIsSmall(img.naturalWidth < img.parentElement!.parentElement!.clientWidth * 0.5);
+        checkSize();
       } else {
-        img.onload = () => {
-          setIsSmall(img.naturalWidth < img.parentElement!.parentElement!.clientWidth * 0.5);
-        };
+        img.onload = checkSize;
       }
     }, [src]);
 
     return (
       <figure
         className={cn(
-          "my-8 rotate-[-0.3deg]",
-          isSmall && "float-right ml-6 mb-4 max-w-[50%]"
+          "my-8",
+          isSmall && "float-right ml-6 mb-4"
         )}
+        style={isSmall ? { width: "50%", maxWidth: "300px" } : undefined}
       >
-        <div className="w-fit overflow-hidden border-3 border-border shadow-tactile">
+        <div className="border-3 border-border shadow-tactile">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             ref={imgRef}
             src={src}
             alt={alt || ""}
-            className="max-w-full h-auto"
+            className="block max-w-full h-auto"
+            style={!isSmall ? { maxHeight: "600px", maxWidth: "600px" } : undefined}
             loading="lazy"
             {...props}
           />
