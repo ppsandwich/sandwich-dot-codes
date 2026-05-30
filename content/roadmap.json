@@ -97,6 +97,12 @@
           "title": "Product Prioritisation Is Not as Objective as Everyone Pretends",
           "details": "Feature ranking frameworks look like machines for producing truth, but they mostly produce structured opinions.  This article asks whether objective prioritisation is possible, what “objective enough” might look like, and whether companies actually want objectivity — or just a tidier way to justify difficult choices.",
           "lane": "write"
+        },
+        {
+          "id": "card-1780109885240-2l077",
+          "title": "Locking AI out",
+          "details": "The move toward websites and databases preventing AI from accessing",
+          "lane": "write"
         }
       ]
     },
