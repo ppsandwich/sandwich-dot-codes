@@ -8,7 +8,7 @@
 
 ## 1. Overview
 
-Melodestiny is a web-based song lyric analysis tool that scores pop songs on structural and lyrical quality using 14 algorithmic techniques derived from the playbooks of the world's most successful pop songwriters. The user inputs a song title and lyrics, presses an analysis button, and receives a weighted score out of 100 with a detailed breakdown, highlighted lyrics showing technique application and improvement opportunities, and a downloadable marked-up copy of the lyrics.
+Melodestiny is a web-based song lyric analysis tool that scores pop songs on structural and lyrical quality using 15 algorithmic techniques derived from the playbooks of the world's most successful pop songwriters. The user inputs a song title and lyrics, presses an analysis button, and receives a weighted score out of 100 with a detailed breakdown, highlighted lyrics showing technique application and improvement opportunities, and a downloadable marked-up copy of the lyrics.
 
 ---
 
@@ -35,7 +35,7 @@ The UI must feel **organic, hand-crafted, antique, yet minimalistic**. Think: a 
 | `--color-rust` | `#A0522D` | Warnings, improvement flags |
 | `--color-sage` | `#7A8B6F` | Positive indicators, passing scores |
 | `--color-cream` | `#FBF8F1` | Card backgrounds |
-| `--color-charcoal` | `#3A3228` | Dark mode background |
+| `--color-charcoal` | `#3A3228` | Dark mode background (deferred to v2) |
 | `--font-display` | `'Playfair Display', serif` | Headings, titles |
 | `--font-body` | `'Lora', serif` | Body text, lyrics |
 | `--font-mono` | `'IBM Plex Mono', monospace` | Scores, technical labels |
@@ -51,16 +51,93 @@ The UI must feel **organic, hand-crafted, antique, yet minimalistic**. Think: a 
 - Generous whitespace — let content breathe
 - Thin, hand-drawn-style dividers (SVG or border-image)
 - Score displayed as a wax-seal-style circular badge
-- Animations: gentle fades, no bouncy easing — `ease-out` only
 - Icons: thin line-art style, like etched illustrations
 
-### 2.2 Mobile-First
+### 2.2 Responsive Layout
 
-- Designed for 375px width first, scales up to desktop
+- **Mobile (<768px):** Single-column, stacked vertically. Designed for 375px width first.
+- **Desktop (≥768px):** Two-column split. Left column = input form. Right column = results.
 - Touch targets minimum 44x44px
-- Single-column layout on mobile
-- Bottom-sheet pattern for analysis results (slides up from bottom)
-- Sticky analyze button at bottom of viewport
+- Sticky analyze button at bottom of viewport on mobile when input is scrolled out of view
+- Right column is sticky on desktop (results stay visible while scrolling lyrics input)
+
+### 2.3 Animation
+
+All animations must serve a purpose: guiding attention, confirming actions, or smoothing state transitions. No decoration for decoration's sake.
+
+**Timing & Easing:**
+- Duration: 150ms–400ms for UI transitions, 600ms–800ms for content reveals
+- Easing: `ease-out` for entering elements, `ease-in` for exiting, `ease-in-out` for state changes
+- All animations must respect `prefers-reduced-motion` — if the user has reduced motion enabled, transitions are instant (no animation)
+
+**Animation Catalog:**
+
+| Trigger | Animation | Purpose | Duration |
+|---|---|---|---|
+| **Analyze button click** | Button text fades to loading spinner, gentle pulse | Confirms action, manages expectation | 200ms fade |
+| **Results appear** | Right column content fades in and slides up from 8px below | Draws eye to results without jarring | 400ms, ease-out |
+| **Score badge** | Wax seal scales from 0.8 → 1.0 with subtle overshoot, then settles | Creates a "stamp" moment — the score feels official | 600ms, spring ease |
+| **Score breakdown rows** | Rows stagger in from left, 30ms delay between each | Reveals information progressively, prevents overwhelm | 200ms per row, ease-out |
+| **Highlighted lyrics** | Annotations underline from left to right (width 0 → 100%) | Draws attention to what's flagged, line by line | 300ms per annotation, staggered |
+| **Annotation tap/click** | Popover fades in and scales from 0.95 → 1.0 | Smooth reveal of detail without abruptness | 200ms, ease-out |
+| **Download button** | Subtle ink-blot expand on hover/focus | Tactile feedback, matches antique aesthetic | 300ms, ease-out |
+| **Column layout shift** | Right column cross-fades from empty state to results | Smooth transition from placeholder to content | 400ms, ease-in-out |
+| **Textarea auto-expand** | Height animates smoothly as user types more lines | Prevents jarring layout jumps | 150ms, ease-out |
+| **Error states** | Shake animation (2px horizontal, 2 cycles) on invalid input | Draws attention without being aggressive | 300ms |
+
+**Reduced Motion Fallback:**
+When `prefers-reduced-motion: reduce` is active:
+- All slides become instant fades (no translation)
+- All scales become instant opacity changes
+- Stagger delays are removed
+- Spinner becomes a static "Analyzing..." text change
+- Score badge appears instantly (no spring)
+
+### 2.4 Accessibility (A11y)
+
+The app must meet **WCAG 2.1 AA** compliance. Accessibility is not a polish item — it is a core requirement.
+
+**Keyboard Navigation:**
+- All interactive elements must be reachable via Tab in a logical order: Title → Lyrics → Analyze → Score Breakdown → Highlighted Lyrics → Download
+- Focus indicators: 2px solid gold (`--color-gold`) outline with 2px offset — visible on all backgrounds
+- Annotation popovers must be dismissible via Escape key
+- Analyze button must be activatable via Enter/Space
+- Tab trap: annotation popover traps focus while open, returns focus to trigger on close
+
+**Screen Reader Support:**
+- All images and icons have `alt` text or `aria-label`
+- Score badge: `aria-label="Song analysis score: 72 out of 100, rated Strong Foundation"`
+- Score breakdown table: proper `<table>` with `<th>` headers, `scope="col"` on all header cells
+- Annotation triggers: `aria-describedby` pointing to popover content
+- Annotation popovers: `role="dialog"`, `aria-modal="true"`, `aria-label` with technique name
+- Highlighted lyrics: annotations use `<mark>` or `<span>` with `role="note"` and `aria-label` describing the flag
+- Section headers (Verse, Chorus, Bridge): `aria-label="Verse 1, lines 1-8"` for context
+- Loading state: `aria-live="polite"` region announces "Analyzing your lyrics..." and "Analysis complete. Score: 72 out of 100."
+- Error messages: `role="alert"` for immediate announcement
+
+**Visual Accessibility:**
+- Minimum contrast ratio 4.5:1 for body text against background
+- Minimum contrast ratio 3:1 for large text (headings, score badge number)
+- Color is never the sole indicator — all flagged annotations also have text labels (Positive, Warning, Note) and distinct visual patterns (solid underline, dashed underline, dotted underline)
+- Score ranges use both color and text label (e.g., green + "Strong Foundation")
+- Focus indicators have sufficient contrast against all background colors
+
+**Motor Accessibility:**
+- Touch targets minimum 44x44px
+- No gesture-only interactions — all actions have button/tap alternatives
+- Popovers dismissible via tap-outside, Escape key, or close button
+- No time-limited interactions — analysis results persist until user re-analyzes
+
+**Cognitive Accessibility:**
+- Simple, consistent layout — no unexpected repositioning of elements
+- Error messages are plain language, not technical jargon
+- Score breakdown uses progressive disclosure (collapsed by default, expandable)
+- Copy uses plain language — no unexplained jargon (terms like "pre-chorus" link to glossary)
+
+**Testing Requirements:**
+- Automated: axe-core integration in E2E tests, zero critical/serious violations
+- Manual: keyboard-only navigation test, screen reader test (VoiceOver on macOS, NVDA on Windows)
+- Color contrast: verified via Storybook addon or manual check against design tokens
 
 ---
 
@@ -89,7 +166,7 @@ The UI must feel **organic, hand-crafted, antique, yet minimalistic**. Think: a 
 │  ┌──────────────▼──────────────────────────┐ │
 │  │        WASM Analysis Engine             │ │
 │  │  (Rust compiled to WebAssembly)         │ │
-│  │  - 14 algorithmic techniques            │ │
+│  │  - 15 algorithmic techniques            │ │
 │  │  - Scoring & weighting                  │ │
 │  │  - Lyric markup generation              │ │
 │  └─────────────────────────────────────────┘ │
@@ -117,57 +194,80 @@ Future:
 
 ## 4. User Flow
 
+The entire app is a **single view**. No navigation, no separate screens. On mobile, everything stacks vertically. On desktop (≥768px), a two-column layout: lyrics input on the left, results on the right.
+
+**Mobile (< 768px):**
 ```
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│   Landing    │────▶│  Input Form  │────▶│  Analyzing   │
-│   Screen     │     │  Title+Lyrics│     │  (loading)   │
-└──────────────┘     └──────────────┘     └──────┬───────┘
-                                                  │
-                                          ┌───────▼───────┐
-                                          │    Results     │
-                                          │    Screen      │
-                                          │                │
-                                          │  ┌──────────┐  │
-                                          │  │ Score    │  │
-                                          │  │ Badge    │  │
-                                          │  └──────────┘  │
-                                          │  ┌──────────┐  │
-                                          │  │ Breakdown│  │
-                                          │  │ Table    │  │
-                                          │  └──────────┘  │
-                                          │  ┌──────────┐  │
-                                          │  │ Highlight│  │
-                                          │  │ Lyrics   │  │
-                                          │  └──────────┘  │
-                                          │  ┌──────────┐  │
-                                          │  │ Download │  │
-                                          │  │ Button   │  │
-                                          │  └──────────┘  │
-                                          └───────────────┘
+┌─────────────────────┐
+│  Song Title Input    │
+│  Lyrics Textarea     │
+│  [Analyze] Button    │
+├─────────────────────┤
+│  Score Badge         │
+│  Score Breakdown     │
+│  Highlighted Lyrics  │
+│  [Download]          │
+└─────────────────────┘
 ```
 
-### 4.1 Input Screen
+**Desktop (≥ 768px):**
+```
+┌──────────────────────┬──────────────────────┐
+│                      │                      │
+│  Song Title Input    │  Score Badge         │
+│  Lyrics Textarea     │  Score Breakdown     │
+│  [Analyze] Button    │  [Download]          │
+│                      │                      │
+│                      ├──────────────────────┤
+│                      │                      │
+│                      │  Highlighted Lyrics  │
+│                      │                      │
+└──────────────────────┴──────────────────────┘
+```
+
+- **Left column:** Input form (title, lyrics, analyze button). Always visible.
+- **Right column:** Results. Before analysis, shows an empty state or placeholder. After analysis, shows score badge, score breakdown table, and download button in the top portion, with highlighted lyrics scrolling below.
+- Both columns are independently scrollable on desktop.
+- The right column is sticky on desktop so results remain visible while scrolling the lyrics input.
+
+### 4.1 Input Section (Always Visible)
 
 - **Song Title** — Single-line text input, placeholder: "e.g., Blank Space"
+  - Max 200 characters
+  - Trims leading/trailing whitespace on submit
+  - Empty title shows inline error: "Please enter a song title"
 - **Lyrics** — Multi-line textarea, placeholder: "Paste your lyrics here...", minimum height 200px, auto-expanding
+  - Max 10,000 characters
+  - Preserves line breaks and whitespace as entered
+  - Strips timestamps (e.g., `[01:23]`) and chord notation (e.g., `[Am]`) before analysis — these are common when pasting from chord sites
+  - Empty lyrics shows inline error: "Please enter your lyrics"
 - **Analyze Button** — Full-width, gold accent, serif text "Analyze", disabled until both fields have content
-- **Character counter** — Subtle, bottom-right of textarea
+- **Character counter** — Subtle, bottom-right of textarea, shows `{current} / 10,000`
 
 ### 4.2 Analyzing State
 
-- Full-screen overlay with parchment texture
-- Animated quill pen or ink drop SVG
-- Text: "Examining your lyrics..."
+- The analyze button shows a loading spinner inline (not a full-screen overlay)
+- Button text changes to "Examining your lyrics..."
 - Duration: typically < 500ms (WASM is fast)
+- Input fields remain visible but slightly dimmed
 
-### 4.3 Results Screen
+### 4.3 Results Section
 
-Scrollable single page with the following sections in order:
+After analysis completes, results appear in the right column (desktop) or below the input (mobile). The page does not navigate — content appears in-place.
 
 1. **Score Badge** — Wax-seal-style circular badge, number out of 100
-2. **Score Breakdown** — Table of all 14 techniques with individual scores, weights, and contribution to total
+2. **Score Breakdown** — Collapsible table of all 15 techniques with individual scores, weights, and contribution to total
 3. **Highlighted Lyrics** — Full lyrics with inline annotations
-4. **Download Button** — Exports marked-up lyrics as `.md` or `.html`
+4. **Download Button** — Exports marked-up lyrics as `.md`
+
+On desktop, the top portion of the right column contains: score badge, score breakdown table, and download button. Highlighted lyrics scroll below them. The right column is independently scrollable.
+
+### 4.4 Re-analysis
+
+- User can edit title or lyrics at any time
+- Clicking "Analyze" again replaces the current results with new ones
+- On mobile: results scroll-into-view after re-analysis
+- On desktop: right column updates in-place (already visible)
 
 ---
 
@@ -189,7 +289,8 @@ pub struct AnalysisOutput {
     pub total_score: f64,           // 0-100
     pub techniques: Vec<TechniqueResult>,
     pub highlighted_lyrics: Vec<LyricLine>,
-    pub markup_download: String,    // Markdown or HTML
+    pub markup_download: String,    // Markdown
+    pub auto_partitioned: bool,     // true if sections were auto-detected by line count
 }
 
 pub struct TechniqueResult {
@@ -228,15 +329,15 @@ pub struct Annotation {
 }
 
 pub enum FlagType {
-    Positive,
-    Neutral,
-    Negative,
+    Positive,   // Technique applied well
+    Neutral,    // Informational / optional suggestion
+    Negative,   // Improvement opportunity
 }
 
 pub enum AnnotationType {
-    Highlight,  // Good application of technique
-    Warning,    // Improvement opportunity
-    Note,       // Informational
+    Highlight,  // Maps to FlagType::Positive — gold underline
+    Warning,    // Maps to FlagType::Negative — rust underline with dot
+    Note,       // Maps to FlagType::Neutral — sepia dashed underline
 }
 ```
 
@@ -251,11 +352,15 @@ pub fn analyze(title: &str, lyrics: &str) -> JsValue {
 }
 ```
 
-The WASM module should be loaded asynchronously and cached after first load.
+The WASM module is loaded via `wasm-loader.ts`:
+1. On app mount, dynamically import the WASM module: `const wasm = await import('/wasm/melodestiny_core.js')`
+2. The `.js` wrapper (generated by wasm-bindgen) loads the `.wasm` binary
+3. Cache the initialized module as a singleton — subsequent calls reuse the same instance
+4. The WASM `.wasm` binary is served from `/public/wasm/` with `Cache-Control: immutable` headers (configured in Vercel)
 
 ---
 
-## 6. The 14 Algorithmic Techniques
+## 6. The 15 Algorithmic Techniques
 
 Each technique produces a raw score from 0.0 to 1.0. Weights are normalized so they sum to 1.0. The final score is: `sum(raw_score_i * weight_i) * 100`.
 
@@ -276,7 +381,7 @@ Each technique produces a raw score from 0.0 to 1.0. Weights are normalized so t
 
 #### T02 — Chorus-First Structural Check
 - **Author:** Max Martin
-- **Weight:** 0.08
+- **Weight:** 0.09
 - **Description:** The chorus IS the song. It should appear early and be the most repeated element.
 - **Algorithm:**
   1. Detect sections (verse, chorus, bridge) using pattern matching on common labels or structural repetition
@@ -291,7 +396,7 @@ Each technique produces a raw score from 0.0 to 1.0. Weights are normalized so t
 
 #### T03 — Repetition Detection & Variation
 - **Author:** Max Martin / Jack Antonoff
-- **Weight:** 0.09
+- **Weight:** 0.08
 - **Description:** Repeat hooks relentlessly but change ONE element each time.
 - **Algorithm:**
   1. Identify the most repeated phrase (3+ words) in the lyrics
@@ -305,7 +410,7 @@ Each technique produces a raw score from 0.0 to 1.0. Weights are normalized so t
   - Hook exists at all: +0.2
 - **Flags:** If hook repeats < 2 times → Negative flag: "Your hook phrase '{phrase}' only appears {n} time(s). Repetition is how humans encode memory — repeat it more." If hook repeats > 8 times with no variation → Neutral flag: "Your hook repeats {n} times. Consider varying the surrounding context each time to keep it fresh."
 
-#### T04 — Repetition as Mantra
+#### T04 — Mantra Density
 - **Author:** Jack Antonoff
 - **Weight:** 0.06
 - **Description:** Repeat a phrase until it transforms from words into feeling.
@@ -370,11 +475,10 @@ Each technique produces a raw score from 0.0 to 1.0. Weights are normalized so t
 - **Description:** Pop hits use predictable rhyme patterns (AABB, ABAB, ABCB) within sections.
 - **Algorithm:**
   1. For each section, extract the last word of each line
-  2. Compute phonetic similarity between line endings using a rhyme detection algorithm (matching final stressed vowel and subsequent sounds)
+  2. Detect rhyme pairs using the rhyme detection algorithm in Section 10.2 (CMU dict primary, heuristic fallback)
   3. Detect pattern: AABB (consecutive pairs rhyme), ABAB (alternating), ABCB (2nd and 4th rhyme), or free (no pattern)
   4. Score: consistent pattern within section = high, mixed patterns = medium, no pattern = low
-  5. Use a phonetic approximation: compare last 2-3 characters of each word (simplistic but effective for English pop)
-- **Scoring:** `percentage_of_lines_that_fit_detected_pattern`
+- **Scoring:** For each section, calculate `lines_that_fit_detected_pattern / total_lines_in_section`. Average across all sections. Sections with < 3 lines are excluded from scoring (too few lines to detect a pattern).
 - **Flags:** Lines that don't fit the detected pattern → Neutral flag: "This line doesn't rhyme with the expected line in your {scheme} pattern. Consider adjusting the ending word."
 
 #### T10 — Section Length Parity
@@ -382,10 +486,11 @@ Each technique produces a raw score from 0.0 to 1.0. Weights are normalized so t
 - **Weight:** 0.05
 - **Description:** Verses and choruses should be similar in length for rhythmic predictability.
 - **Algorithm:**
-  1. Count lines/syllables in each verse and each chorus
+  1. Count lines in each verse and each chorus
   2. Calculate ratio of avg verse length to avg chorus length
-  3. Ideal ratio: 0.8-1.2 (verse and chorus are within 20% of each other)
-- **Scoring:** `1.0 - min(1.0, abs(ratio - 1.0) / 0.5)`
+  3. If either avg is 0 (no verses or no choruses detected), score 0.5 and skip flagging — insufficient data
+  4. Ideal ratio: 0.8-1.2 (verse and chorus are within 20% of each other)
+- **Scoring:** `1.0 - min(1.0, abs(ratio - 1.0) / 0.5)`. Boundary values: ratio exactly 0.6 or 1.5 scores 0.2.
 - **Flags:** If ratio < 0.6 or > 1.5 → Neutral flag: "Your verses are {n}x the length of your choruses. Consider balancing them for better flow."
 
 #### T11 — Vocabulary Simplicity
@@ -399,7 +504,7 @@ Each technique produces a raw score from 0.0 to 1.0. Weights are normalized so t
   4. Penalize words with > 4 syllables
 - **Scoring:** `(percentage_in_top_5000 * 0.7) + (percentage_with_<=4_syllables * 0.3)`
 - **Flags:** Uncommon words → Neutral flag: "'{word}' is uncommon in pop lyrics. Diane Warren's hits use zero obscure words. Consider a simpler synonym."
-- **Note:** Word frequency list should be bundled as a static asset (~50KB for top 5000 words).
+- **Data source:** Use Google Books n-gram data to generate the top 5000 most common English words. Pre-process offline into a static JSON file bundled with the WASM module (~50KB). If the n-gram data is too large to process at build time, fall back to a curated list derived from the Corpus of Contemporary American English (COCA) top 5000 words.
 
 #### T12 — Direct Address Pronoun Density
 - **Author:** Diane Warren / Julia Michaels
@@ -437,14 +542,45 @@ Each technique produces a raw score from 0.0 to 1.0. Weights are normalized so t
 - **Scoring:** `min(1.0, novelty / 0.4)`
 - **Flags:** If novelty < 0.2 → Negative flag: "Your bridge reuses too many words from your verses/chorus ({n}% new). The bridge should be a contrast — introduce new imagery or perspective."
 
+#### T15 — Structural Advisory
+- **Author:** Max Martin / Jack Antonoff / Diane Warren
+- **Weight:** 0.05
+- **Description:** Evaluate whether the song's overall section structure is complete and well-arranged. Suggest adding, removing, or rearranging sections.
+- **Algorithm:**
+  1. Build a structural map of the song (e.g., V1 → C → V2 → C → B → C)
+  2. Check for missing structural elements:
+     - **No bridge:** If song has ≥ 2 verses and ≥ 2 choruses but no bridge → suggest adding one. A bridge breaks repetition and provides contrast before the final chorus.
+      - **No pre-chorus:** If verse and chorus have significantly different line counts (ratio > 1.5 or < 0.67) and no pre-chorus exists → suggest adding one to smooth the transition.
+     - **No post-chorus:** If song has no post-chorus and the chorus is short (≤ 4 lines) → suggest adding a hook fragment.
+  3. Check for structural problems:
+     - **Consecutive verses:** If two or more verses appear back-to-back without a chorus between them → flag as negative. Verses need chorus payoff.
+     - **Missing final chorus:** If the song ends on a verse or bridge → suggest ending on a chorus for resolution.
+     - **AAA with no variation:** If the song is entirely verses (strophic) with no chorus or bridge → suggest adding a contrasting section.
+     - **Excessive length:** If total section count > 8 → suggest trimming. Most pop songs have 5-7 sections.
+     - **No outro/landing:** If the song ends abruptly on a chorus with no outro or tag → note as a potential improvement.
+  4. Score: penalize missing critical elements (bridge, final chorus), lighter penalty for missing optional elements (pre-chorus, post-chorus)
+- **Scoring:**
+  - Has a bridge (if ≥ 2 verses): +0.25
+  - Has a pre-chorus (only if verse/chorus line count ratio > 1.5 or < 0.67, otherwise neutral): +0.15
+  - Ends on chorus: +0.25
+  - No consecutive verses without chorus: +0.20
+  - Reasonable length (5-7 sections): +0.15
+- **Flags:**
+  - No bridge → Negative flag: "Your song has {n} verses and {n} choruses but no bridge. A bridge breaks the repetition and gives the listener something new before the final chorus. Consider adding one after your second chorus."
+  - No pre-chorus → Neutral flag: "Your verse transitions directly into the chorus. A pre-chorus can build tension and make the chorus hit harder. Consider adding a 2-4 line build section."
+  - Consecutive verses → Negative flag: "Two verses appear back-to-back (lines {n}-{m}). The listener expects a chorus payoff after each verse. Insert a chorus between them."
+  - Doesn't end on chorus → Negative flag: "Your song ends on a {section}. Ending on the chorus gives the listener resolution and leaves them with the hook."
+  - AAA structure → Negative flag: "Your song is entirely verses with no contrasting section. Even a simple chorus or bridge would add structure and keep the listener engaged."
+  - Too many sections → Neutral flag: "Your song has {n} sections. Most pop songs have 5-7. Consider trimming less essential sections."
+
 ### 6.2 Weight Summary
 
 | ID | Technique | Author | Weight |
 |---|---|---|---|
 | T01 | Melodic Math (Lyrical Rhythm) | Max Martin | 0.10 |
-| T02 | Chorus-First Structural Check | Max Martin | 0.08 |
-| T03 | Repetition Detection & Variation | Max Martin / Jack Antonoff | 0.09 |
-| T04 | Repetition as Mantra | Jack Antonoff | 0.06 |
+| T02 | Chorus-First Structural Check | Max Martin | 0.09 |
+| T03 | Repetition Detection & Variation | Max Martin / Jack Antonoff | 0.08 |
+| T04 | Mantra Density | Jack Antonoff | 0.06 |
 | T05 | Hook/Title Structural Placement | Diane Warren | 0.10 |
 | T06 | Singability Metrics | Max Martin | 0.07 |
 | T07 | Line Length Consistency | Max Martin | 0.06 |
@@ -455,6 +591,7 @@ Each technique produces a raw score from 0.0 to 1.0. Weights are normalized so t
 | T12 | Direct Address Pronoun Density | Diane Warren / Julia Michaels | 0.07 |
 | T13 | Post-Chorus Hook Fragment | Pharrell Williams / Ed Sheeran | 0.05 |
 | T14 | Bridge Vocabulary Novelty | Jack Antonoff / Max Martin | 0.04 |
+| T15 | Structural Advisory | Max Martin / Jack Antonoff / Diane Warren | 0.05 |
 | | **Total** | | **1.00** |
 
 ### 6.3 Score Ranges
@@ -495,11 +632,15 @@ Since the user provides plain text lyrics (not structured data), sections must b
 - **Explicit labels:** Lines matching `verse`, `chorus`, `bridge`, `pre-chorus`, `outro`, `intro` (case-insensitive, with or without numbers/colons)
 - **Structural repetition:** Lines or line groups that appear identically 2+ times are likely choruses
 - **Positional heuristics:** First distinct block = verse, repeated block = chorus, unique block near end = bridge
-- **Fallback:** If no sections detected, treat entire lyrics as one section and apply all techniques uniformly
+- **Auto-partitioning fallback:** If no sections are detected, attempt auto-partitioning by line count — group every 4 lines as a verse-like section, then apply all techniques. If auto-partitioning is used, display a notice: "We've auto-detected sections based on line grouping. For more accurate analysis, label your sections (e.g., 'Verse 1:', 'Chorus:', 'Bridge:') in the lyrics."
 
 ### 7.3 Annotation Detail Panel
 
-When a user taps an annotation, a detail panel slides up (mobile) or appears as a popover (desktop) containing:
+When a user taps an annotation, a detail panel appears:
+- **Mobile (<768px):** Bottom sheet that slides up from the bottom of the viewport, max height 50vh, dismissible by swipe-down or tapping the backdrop
+- **Desktop (≥768px):** Popover anchored to the annotation, max width 320px, dismissible by clicking outside or pressing Escape
+
+The panel contains:
 
 ```
 ┌─────────────────────────────────────┐
@@ -554,14 +695,14 @@ The download produces a Markdown file with the following structure:
 
 ## Improvement Opportunities
 
-### High Priority
+### High Priority (Negative flags)
 - **T05** (Diane Warren): Your title '{title}' doesn't appear in the chorus. Move it there.
 - **T01** (Max Martin): Lines 4, 7, 12 have inconsistent syllable counts.
 
-### Medium Priority
+### Medium Priority (Negative flags with lower weight, or Neutral flags on high-weight techniques)
 - **T11** (Julia Michaels): 3 uncommon words detected: '{word1}', '{word2}', '{word3}'.
 
-### Low Priority / Notes
+### Low Priority / Notes (Neutral flags on lower-weight techniques)
 - **T13** (Pharrell Williams): No post-chorus hook fragment detected. Consider adding one.
 ```
 
@@ -579,22 +720,22 @@ The download produces a Markdown file with the following structure:
 src/
 ├── app/
 │   ├── layout.tsx              # Root layout, fonts, global styles
-│   ├── page.tsx                # Landing / input screen
-│   └── results/
-│       └── page.tsx            # Results screen (or modal)
+│   └── page.tsx                # Single view — two-column on desktop, stacked on mobile
 ├── components/
+│   ├── InputColumn.tsx         # Left column: title input + lyrics textarea + analyze button
+│   ├── ResultsColumn.tsx       # Right column: score + breakdown + highlighted lyrics + download
 │   ├── InputForm.tsx           # Title + lyrics textarea + analyze button
-│   ├── ScoreBadge.tsx          # Wax-seal score display
-│   ├── ScoreBreakdown.tsx      # 14-row table of technique scores
+│   ├── ScoreBadge.tsx          # Wax-seal score display (120px mobile, 160px desktop)
+│   ├── ScoreBreakdown.tsx      # 15-row collapsible table of technique scores
 │   ├── HighlightedLyrics.tsx   # Lyrics with inline annotations
-│   ├── AnnotationPopover.tsx   # Tooltip/popover for annotation details
+│   ├── AnnotationPopover.tsx   # Tooltip/popover for annotation details (bottom sheet on mobile, popover on desktop)
 │   ├── DownloadButton.tsx      # Triggers markup download
-│   ├── SectionHeader.tsx       # Verse/Chorus/Bridge label
-│   └── LoadingOverlay.tsx      # Analysis in progress
+│   ├── EmptyState.tsx          # Placeholder in results column before analysis — shows prompt text like "Your analysis will appear here" with an etched quill illustration
+│   └── SectionHeader.tsx       # Verse/Chorus/Bridge label
 ├── lib/
-│   ├── wasm-loader.ts          # Loads and initializes WASM module
+│   ├── wasm-loader.ts          # Loads WASM module via dynamic import(), caches singleton instance
 │   ├── types.ts                # TypeScript types matching Rust output
-│   └── section-detector.ts     # Heuristic section parsing (JS-side)
+│   └── section-detector.ts     # Lightweight JS-side section preview for showing section labels before full WASM analysis runs
 ├── styles/
 │   └── globals.css             # Tailwind + design tokens + textures
 └── public/
@@ -615,7 +756,7 @@ melodestiny-core/
 │   │   ├── t01_melodic_math.rs
 │   │   ├── t02_chorus_first.rs
 │   │   ├── t03_repetition.rs
-│   │   ├── t04_mantra.rs
+│   │   ├── t04_mantra_density.rs
 │   │   ├── t05_hook_placement.rs
 │   │   ├── t06_singability.rs
 │   │   ├── t07_line_consistency.rs
@@ -625,21 +766,24 @@ melodestiny-core/
 │   │   ├── t11_vocabulary.rs
 │   │   ├── t12_pronoun_density.rs
 │   │   ├── t13_post_chorus.rs
-│   │   └── t14_bridge_novelty.rs
+│   │   ├── t14_bridge_novelty.rs
+│   │   └── t15_structural_advisory.rs
 │   ├── syllable.rs             # Syllable counting algorithm
-│   ├── rhyme.rs                # Phonetic rhyme detection
-│   ├── section.rs              # Section detection
-│   ├── markup.rs               # Markdown/HTML markup generation
+│   ├── rhyme.rs                # Phonetic rhyme detection (CMU dict + fallback)
+│   ├── section.rs              # Section detection with auto-partitioning
+│   ├── markup.rs               # Markdown markup generation
 │   └── types.rs                # Shared types
 ├── static/
-│   └── word_freq.json          # Top 5000 English words by frequency
+│   ├── word_freq.json          # Top 5000 English words by frequency (Google Books n-gram)
+│   └── cmu_dict_subset.json    # ~2000 common words with phonetic transcriptions (CMU Pronouncing Dictionary)
 └── tests/
     ├── integration/
     │   └── full_analysis.rs
     └── unit/
         ├── t01.rs
         ├── ...
-        └── t14.rs
+        ├── t14.rs
+        └── t15_structural_advisory.rs
 ```
 
 ---
@@ -681,13 +825,19 @@ fn count_syllables(word: &str) -> usize {
 
 ### 10.2 Rhyme Detection
 
-Simplified phonetic matching:
-1. Extract last word of each line
-2. Strip common suffixes (ing, ed, tion, s)
-3. Compare last 2-3 characters (vowel-consonant pattern)
-4. Words rhyme if their endings match after normalization
+Primary approach using CMU Pronouncing Dictionary:
+1. Bundle a subset of the CMU Pronouncing Dictionary (~2000 common words) as a static JSON asset
+2. Extract last word of each line
+3. Look up phonetic transcription in CMU dict (e.g., "love" → "L AH V")
+4. Compare final stressed vowel and subsequent phonemes between line-ending words
+5. Words rhyme if their phonetic endings match (e.g., "love" / "dove" both end in "AH V")
 
-For more accuracy, bundle a small phonetic dictionary (~2000 common words) or use the CMU Pronouncing Dictionary subset.
+Fallback (words not in CMU dict):
+1. Strip common suffixes (ing, ed, tion, s)
+2. Compare last 2-3 characters (vowel-consonant pattern)
+3. Words rhyme if their endings match after normalization
+
+The CMU Pronouncing Dictionary subset (~2000 common words) is bundled as a static asset. For words not in the dictionary, the heuristic fallback (suffix matching) is used.
 
 ### 10.3 Section Detection
 
@@ -698,10 +848,13 @@ fn detect_sections(lyrics: &str) -> Vec<Section> {
     //    - Find repeated line groups (2+ identical lines)
     //    - Mark repeated groups as chorus
     //    - Mark non-repeated groups as verse
-    //    - Mark unique group near end as bridge
-    // 3. Fallback: single section
+    //    - Mark unique group near end (last 25% of lines) as bridge
+    // 3. Auto-partitioning fallback: group every 4 lines as a verse-like section
+    //    - Set auto_partitioned = true so UI can display the notice to the user
 }
 ```
+
+If auto-partitioning is used, the output includes a flag `auto_partitioned: true` so the frontend can display: "We've auto-detected sections based on line grouping. For more accurate analysis, label your sections (e.g., 'Verse 1:', 'Chorus:', 'Bridge:') in the lyrics."
 
 ---
 
@@ -717,18 +870,7 @@ fn detect_sections(lyrics: &str) -> Vec<Section> {
 
 ---
 
-## 12. Accessibility
-
-- All interactive elements must be keyboard-navigable
-- Annotations must be screen-reader accessible (aria-describedby)
-- Color is never the only indicator — all flags also have text labels
-- Score badge includes text equivalent
-- Minimum contrast ratio 4.5:1 for body text
-- Focus indicators on all interactive elements
-
----
-
-## 13. Future Extensions (Out of Scope for v1)
+## 12. Future Extensions (Out of Scope for v1)
 
 - **LLM-powered techniques** — Layer 2 (12 LLM-required techniques) as a premium feature
 - **Audio input** — Upload audio, transcribe to lyrics via Whisper WASM
@@ -740,33 +882,44 @@ fn detect_sections(lyrics: &str) -> Vec<Section> {
 
 ---
 
-## 14. Testing Strategy
+## 13. Testing Strategy
 
-### 14.1 Unit Tests (Rust)
+### 13.1 Unit Tests (Rust)
 
 Each technique module has a `tests/` directory with:
 - Known-good lyrics (e.g., "Blank Space" by Taylor Swift) expected to score > 80
 - Known-bad lyrics (e.g., random word soup) expected to score < 30
 - Edge cases: empty lyrics, single word, no chorus, all chorus
 
-### 14.2 Integration Tests (Rust)
+### 13.2 Integration Tests (Rust)
 
 - Full analysis pipeline on 10+ real pop songs
 - Verify total score is weighted sum of individual scores
 - Verify markup output is valid Markdown
 
-### 14.3 E2E Tests (Frontend)
+### 13.3 E2E Tests (Frontend)
 
 - Playwright or Cypress
 - Input form → analyze → results render → download works
 - Mobile viewport tests (375px)
-- Annotation popover opens on tap
+- Desktop viewport tests (1280px) — verify two-column layout
+- Annotation popover opens on tap/click
+- Keyboard-only navigation test: Tab through all interactive elements, verify focus indicators
+- Screen reader test: verify aria-labels, live regions, and dialog roles
+
+### 13.4 Accessibility Tests
+
+- axe-core integration in E2E tests — zero critical/serious violations
+- Manual keyboard-only walkthrough on each viewport size
+- VoiceOver (macOS) and NVDA (Windows) manual verification
+- Color contrast audit against design tokens using Storybook addon
+- Reduced motion: verify all animations are disabled when `prefers-reduced-motion: reduce` is active
 
 ---
 
-## 15. Deployment
+## 14. Deployment
 
-### 15.1 Vercel Configuration
+### 14.1 Vercel Configuration
 
 ```json
 {
@@ -790,7 +943,7 @@ Each technique module has a `tests/` directory with:
 }
 ```
 
-### 15.2 Build Pipeline
+### 14.2 Build Pipeline
 
 ```
 1. cargo build --target wasm32-unknown-unknown --release
@@ -801,7 +954,7 @@ Each technique module has a `tests/` directory with:
 
 ---
 
-## 16. Glossary
+## 15. Glossary
 
 | Term | Definition |
 |---|---|
@@ -809,18 +962,16 @@ Each technique module has a `tests/` directory with:
 | **Pre-chorus** | A transitional section between verse and chorus that builds tension |
 | **Post-chorus** | A section immediately after the chorus that repeats a hook fragment |
 | **Bridge** | A contrasting section, usually appearing once after the second chorus |
+| **Strophic** | A song structure that uses only verses (AAA form) with no chorus or bridge |
 | **Mantra** | A phrase repeated so many times it transcends meaning and becomes feeling |
 | **Vocables** | Non-lexical syllables like "oh", "ah", "la", "na" |
+| **Vowel-group method** | A syllable counting approach that counts groups of consecutive vowels in a word |
+| **Auto-partitioning** | Automatic section detection by grouping lines (e.g., every 4 lines) when no explicit labels are provided |
 | **Syllable density** | Number of syllables per line |
-| **Coefficient of variation** | Standard deviation divided by mean — measures relative variability |
+| **Coefficient of variation (CV)** | Standard deviation divided by mean — measures relative variability |
+| **CMU Pronouncing Dictionary** | A phonetic dictionary mapping English words to their phoneme sequences, used for rhyme detection |
 | **WASM** | WebAssembly — binary instruction format for stack-based virtual machines |
 
 ---
 
-## 17. Open Questions
-
-1. **Word frequency list source:** Use Google Books n-gram data or a curated pop lyric corpus?
-2. **Rhyme dictionary:** Bundle CMU Pronouncing Dictionary subset (~2000 words) or use heuristic-only approach?
-3. **Section detection fallback:** When no sections are detected, should we analyze as one section or attempt auto-partitioning by line count (e.g., every 4 lines = verse)?
-4. **Download format:** Markdown only, or also offer HTML with embedded styles?
-5. **Dark mode:** Include in v1 or defer?
+*End of document.*
