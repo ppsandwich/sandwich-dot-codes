@@ -120,6 +120,12 @@
           "title": "The New PM Job: Herding the Robot Into Building the Right Thing",
           "details": "As AI agents generate more of the code, product work shifts toward intent, constraints, review, and quality control.",
           "lane": "write"
+        },
+        {
+          "id": "card-1780265865354-n8j4o",
+          "title": "How democratic is AI, really?",
+          "details": "",
+          "lane": "write"
         }
       ]
     },
