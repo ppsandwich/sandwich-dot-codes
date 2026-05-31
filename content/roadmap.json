@@ -122,10 +122,10 @@
           "lane": "write"
         },
         {
-          "id": "card-1780106133713-uno0v",
-          "title": "Prose Pulse",
-          "details": "Problem: Writing rhythm is subjective; writers can't easily see sentence length variation, clause density, or pacing patterns.\n\nAlternatives: Hemingway Editor (readability only), ProWritingAid (grammar-focused), no rhythm-specific tools\n\nDifferentiation: Visualize prose as a waveform where sentence length = amplitude, clause density = frequency. Highlight monotone sections, pacing issues, and rhythmic patterns. Include \"beat\" markers for paragraph breaks. Export rhythm profile as MIDI for audio feedback (connects to music hobby).",
-          "lane": "build"
+          "id": "card-1780265865354-n8j4o",
+          "title": "How egalitarian is the AI future really?",
+          "details": "The best models are expensive, AI companies prize private datasets, websites are introducing protections against AI scraping - is AI only a 'force multiplier' for the elite? And how expensive will it get?",
+          "lane": "write"
         }
       ]
     },
@@ -170,6 +170,12 @@
           "title": "Turning Weird Little Ideas Into Buildable Apps",
           "details": "My practical process for moving from vague concept to AI-readable PRD to deployable project.",
           "lane": "write"
+        },
+        {
+          "id": "card-1780106133713-uno0v",
+          "title": "Melodestiny",
+          "details": "Problem: Writing rhythm is subjective; writers can't easily see sentence length variation, clause density, or pacing patterns.\n\nAlternatives: Hemingway Editor (readability only), ProWritingAid (grammar-focused), no rhythm-specific tools",
+          "lane": "build"
         }
       ]
     },
