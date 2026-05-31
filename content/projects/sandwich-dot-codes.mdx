@@ -89,6 +89,349 @@ Tailwind CSS handles all styling through a custom configuration that extends the
 
 Framer Motion powers all motion on the site. The motion system follows strict rules: playful, springy, and imperfect. Allowed patterns include fade-up reveals with staggered delays, hover wobble effects, soft scaling, and gentle parallax. Corporate-smooth easing and sci-fi effects are explicitly avoided.
 
+## Style Guide
+
+This section serves as the authoritative reference for code conventions across the Sandwich Codes codebase. Every rule here reflects what the code actually does, not aspirational goals.
+
+### Formatting
+
+Enforced by Prettier (`.prettierrc`):
+
+| Rule | Value |
+|---|---|
+| Semicolons | Always |
+| Quotes | Double quotes |
+| Trailing commas | Always (objects, arrays, params) |
+| Tab width | 2 spaces |
+| Print width | 100 characters |
+| Line endings | LF |
+
+Run `npm run format` before committing. No ESLint config exists — rely on `next lint` defaults and Prettier for enforcement.
+
+### Naming Conventions
+
+| Entity | Convention | Example |
+|---|---|---|
+| Component files | PascalCase | `ProjectCard.tsx`, `WobbleCard.tsx` |
+| Utility files | camelCase | `utils.ts`, `config.ts`, `github.ts` |
+| Component functions | PascalCase named export | `export function ProjectCard()` |
+| Props interfaces | PascalCase + `Props` suffix | `interface ProjectCardProps` |
+| Type definitions | PascalCase | `Project`, `NavItem`, `SiteConfig` |
+| Constants / config objects | camelCase | `siteConfig`, `statusColors` |
+| Variant maps | camelCase + `Styles` or `Colors` suffix | `variantStyles`, `statusColors` |
+| CSS custom classes | kebab-case | `.paper-grain`, `.noise-overlay`, `.tape-strip` |
+| CSS variables | kebab-case, double-dash prefix | `--font-fraunces`, `--font-inter` |
+| MDX content files | kebab-case | `sandwich-dot-codes.mdx`, `expecto.mdx` |
+| Route directories | kebab-case | `src/app/projects/[slug]/page.tsx` |
+
+### Component Architecture
+
+#### Named Exports Only
+
+Every component uses a named function export. Default exports are not used anywhere in the codebase.
+
+```tsx
+// Correct
+export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
+  return <div>...</div>;
+}
+
+// Incorrect — never do this
+export default function ProjectCard() { ... }
+```
+
+#### Props Interface Pattern
+
+Props are defined as an `interface` directly above the component. Components extend `React.HTMLAttributes<HTMLElement>` when they need to accept standard HTML attributes.
+
+```tsx
+interface StickerTagProps extends React.HTMLAttributes<HTMLSpanElement> {
+  variant?: StickerVariant;
+  rotation?: number;
+}
+
+export function StickerTag({
+  variant = "default",
+  rotation = -2,
+  className,
+  children,
+  ...props
+}: StickerTagProps) {
+  // ...
+}
+```
+
+#### Variant Pattern
+
+Components that have visual variants use string literal union types and a `Record` map for styles:
+
+```tsx
+type StickerVariant = "default" | "salmon" | "teal" | "mustard" | "slime" | "lavender" | "muted";
+
+const variantStyles: Record<StickerVariant, string> = {
+  default: "bg-background text-foreground",
+  salmon: "bg-salmon text-foreground",
+  // ...
+};
+```
+
+#### Polymorphic `as` Prop
+
+Layout primitives accept an `as` prop for rendering as a different HTML element:
+
+```tsx
+interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
+  as?: React.ElementType;
+  size?: "default" | "narrow" | "wide";
+}
+
+export function Container({ as: Component = "div", ... }: ContainerProps) {
+  return <Component className={cn(...)}>{children}</Component>;
+}
+```
+
+### "use client" Directive
+
+Only components that require client-side interactivity include the `"use client"` directive. This includes:
+
+- Components using `useState`, `useEffect`, or other React hooks
+- Components using Framer Motion (`motion`, `AnimatePresence`)
+- Components using browser APIs (`window`, `document`)
+- Components using Next.js client hooks (`useRouter`, `useSearchParams`, `usePathname`)
+
+Page components and data-fetching components remain as server components by default. Client interactivity is always delegated to the smallest possible leaf component.
+
+### Class Name Merging
+
+All conditional class merging uses the `cn()` utility from `@/lib/utils`, which combines `clsx` and `tailwind-merge`:
+
+```tsx
+import { cn } from "@/lib/utils";
+
+<div className={cn(
+  "border-3 border-border bg-background shadow-tactile",
+  variant === "featured" && "min-h-[320px]",
+  className,
+)} />
+```
+
+Never use raw string concatenation or template literals for class composition.
+
+### Imports
+
+Import order (enforced by convention, not a plugin):
+
+1. React / Next.js imports
+2. Third-party libraries (`framer-motion`, `lucide-react`, `date-fns`)
+3. Contentlayer generated types (`contentlayer/generated`)
+4. Internal components (`@/components/...`)
+5. Internal utilities (`@/lib/...`)
+6. Types / constants
+
+```tsx
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
+import type { Project } from "contentlayer/generated";
+import { StickerTag } from "@/components/decorative/StickerTag";
+import { cn } from "@/lib/utils";
+```
+
+Always use the `@/` path alias. Never use relative paths like `../../lib/utils`.
+
+### TypeScript
+
+- **Strict mode** is enabled. No `any` types.
+- **Contentlayer types** are imported with `import type` from `contentlayer/generated`.
+- **Custom types** live in `src/types/index.ts` and are exported as named types.
+- **Enum-like values** use string literal union types, not TypeScript `enum`:
+  ```tsx
+  status: "active" | "experimental" | "archived"
+  ```
+- **Optional fields** use `?` in the interface, never `| undefined`.
+
+### Styling
+
+#### Tailwind-First
+
+All styling is done with Tailwind utility classes. Custom CSS is only used for effects that Tailwind cannot express (SVG textures, pseudo-element overlays, scroll styling).
+
+#### Class Order
+
+Follow this implicit ordering when writing Tailwind classes:
+
+1. Layout (`flex`, `grid`, `block`, `relative`, `absolute`)
+2. Sizing (`w-`, `h-`, `min-`, `max-`)
+3. Spacing (`p-`, `m-`, `gap-`)
+4. Typography (`font-`, `text-`, `leading-`, `tracking-`)
+5. Visual (`bg-`, `border-`, `shadow-`, `opacity-`)
+6. States (`hover:`, `focus:`, `dark:`)
+7. Transitions (`transition-`, `duration-`)
+
+#### Design Tokens
+
+Always use the custom design tokens, never raw hex values in components:
+
+| Token | Tailwind Class | Hex |
+|---|---|---|
+| Background | `bg-background` / `bg-background-dark` | `#F5EFE4` / `#1a1816` |
+| Text | `text-foreground` / `text-foreground-dark` | `#292524` / `#e8e0d4` |
+| Accent | `text-mustard`, `bg-mustard` | `#D6B347` |
+| Link | `text-teal` | `#6F9D9A` |
+| Experiment | `text-salmon`, `bg-salmon` | `#D98B73` |
+| Active | `text-slime`, `bg-slime` | `#9FB06F` |
+| Decorative | `text-lavender`, `bg-lavender` | `#B8A7CC` |
+| Secondary text | `text-muted` | `#7C736C` |
+| Border | `border-border` | `#463F3A` |
+
+#### Border Width
+
+The site uses `border-3` (3px) as the standard border width, not the default `border` (1px). This is defined as a custom Tailwind utility.
+
+#### Box Shadows
+
+Four custom shadow utilities are available:
+
+| Utility | Usage |
+|---|---|
+| `shadow-tactile` | Standard card shadow (4px offset) |
+| `shadow-tactile-lg` | Hover/enhanced state (6px offset) |
+| `shadow-tactile-sm` | Small elements, tags (2px offset) |
+| `shadow-paper` | Subtle layered paper effect |
+
+#### Typography Scale
+
+Three custom fluid font sizes using `clamp()`:
+
+| Utility | Size Range | Usage |
+|---|---|---|
+| `text-display` | 3rem — 7rem | Hero headlines only |
+| `text-headline` | 2rem — 4.5rem | Section headings |
+| `text-subhead` | 1.5rem — 2.5rem | Subsection headings |
+
+Body text uses Tailwind defaults (`text-base`, `text-sm`, `text-lg`).
+
+#### Font Families
+
+| Utility | Font | Usage |
+|---|---|---|
+| `font-heading` | Fraunces (variable serif) | All headings, labels, tags |
+| `font-body` | Inter (sans-serif) | Body text, descriptions, UI |
+
+Both are loaded via `next/font/google` and injected as CSS variables (`--font-fraunces`, `--font-inter`) in the root layout.
+
+### Animation
+
+All animation uses Framer Motion. The rules:
+
+- **Spring physics only.** No CSS easing, no `tween`. Use `{ type: "spring", stiffness: 200, damping: 20 }`.
+- **Fade-up reveals.** Initial state: `opacity: 0, y: 30`. Animate to: `opacity: 1, y: 0`.
+- **Staggered delays.** Use `delay: index * 0.1` for list items.
+- **Scroll-triggered.** Use `whileInView` with `viewport={{ once: true }}`.
+- **Hover effects.** Use `whileHover` and `whileTap` on interactive elements.
+- **No sci-fi effects.** No glows, no particle systems, no 3D transforms. The motion language is playful and springy, not sleek and corporate.
+- **Respect reduced motion.** The global CSS handles this via `prefers-reduced-motion`. Components should not duplicate this logic.
+
+### Decorative Components
+
+Decorative elements follow strict accessibility rules:
+
+- Always include `aria-hidden="true"` on decorative elements.
+- Always include `pointer-events-none` so they don't interfere with interaction.
+- Use responsive visibility (`hidden sm:block`, `hidden lg:block`) to hide on small screens where they might obscure content.
+- Decorative components live in `src/components/decorative/` and are exported from the barrel `index.ts`.
+
+### Page Pattern
+
+Every page follows this structure:
+
+```tsx
+// 1. Import metadata type (for static metadata) or generateMetadata function
+import type { Metadata } from "next";
+
+// 2. Import Contentlayer types
+import { allProjects } from "contentlayer/generated";
+
+// 3. Import sorting/comparison utilities
+import { compareDesc } from "date-fns";
+
+// 4. Import client component for interactive parts
+import { ProjectsPageContent } from "@/components/projects/ProjectsPageContent";
+
+// 5. Static metadata export
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "...",
+};
+
+// 6. Default function — server component, data fetching at top
+export default function ProjectsPage() {
+  const projects = allProjects.sort((a, b) =>
+    compareDesc(new Date(a.date), new Date(b.date)),
+  );
+
+  return <ProjectsPageContent projects={projects} />;
+}
+```
+
+Dynamic routes use `generateStaticParams()` for static generation and `generateMetadata()` for per-page SEO.
+
+### API Route Pattern
+
+API routes live in `src/app/api/[name]/route.ts`:
+
+- Export named HTTP method handlers: `export async function GET()`, `export async function POST()`.
+- Return `NextResponse.json()` with explicit `Cache-Control` headers.
+- Export `revalidate` for ISR caching where applicable.
+- Use Zod for request body validation.
+- Always return proper error status codes with JSON error bodies.
+
+### Barrel Exports
+
+Each component directory has an `index.ts` barrel file that re-exports all components:
+
+```tsx
+export { StickerTag } from "./StickerTag";
+export { DoodleAccent } from "./DoodleAccent";
+export { PaperCard } from "./PaperCard";
+// ...
+```
+
+Import from the barrel, not individual files:
+
+```tsx
+import { StickerTag, DoodleAccent } from "@/components/decorative";
+```
+
+### MDX Content
+
+#### Frontmatter
+
+All required fields must be present. Dates use ISO format (`YYYY-MM-DD`). Tags are lowercase strings. Status values are one of `active`, `experimental`, or `archived`.
+
+#### Images
+
+Use standard Markdown image syntax with alt text:
+
+```mdx
+![Alt text describing the image](/images/projects/example.png)
+```
+
+#### Headings
+
+Start at `##` (h2). The page title comes from frontmatter and renders as h1. Use `###` for subsections within h2 sections.
+
+### Dark Mode
+
+The site uses the `class` strategy for dark mode (`next-themes`). Dark mode colours are defined as `.dark` variants in Tailwind config and in global CSS. When adding new colours or components:
+
+- Use Tailwind's `dark:` prefix for dark-mode overrides.
+- The `bg-background` / `bg-background-dark` tokens handle page backgrounds.
+- Accent colours (mustard, teal, salmon, etc.) remain the same in both modes.
+- Text and background colours invert; borders shift to lighter values.
+
 ## Development Process
 
 The project was built in phases:
