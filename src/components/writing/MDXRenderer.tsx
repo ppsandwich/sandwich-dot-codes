@@ -204,14 +204,15 @@ const mdxComponents = {
 interface MDXRendererProps {
   code: string;
   className?: string;
+  components?: Record<string, React.ComponentType<any>>;
 }
 
-export function MDXRenderer({ code, className }: MDXRendererProps) {
+export function MDXRenderer({ code, className, components }: MDXRendererProps) {
   const MDXContent = React.useMemo(() => getMDXComponent(code), [code]);
 
   return (
     <article className={cn("prose-sandwich", className)}>
-      <MDXContent components={mdxComponents} />
+      <MDXContent components={{ ...mdxComponents, ...components }} />
     </article>
   );
 }

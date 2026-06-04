@@ -9,6 +9,8 @@ import { Section } from "@/components/layout/Section";
 import { SkillCard } from "@/components/skills/SkillCard";
 import { StickerTag } from "@/components/decorative/StickerTag";
 import { DoodleAccent } from "@/components/decorative/DoodleAccent";
+import { TapeFrame } from "@/components/decorative/TapeFrame";
+import { PaperCard } from "@/components/decorative/PaperCard";
 import { cn } from "@/lib/utils";
 
 interface SkillsPageContentProps {
@@ -64,6 +66,57 @@ export function SkillsPageContent({ skills, initialTagFilter }: SkillsPageConten
             <DoodleAccent variant="star" color="#D6B347" size={48} />
           </div>
         </div>
+
+        {/* Conceptual Guide Card - NO IMAGES */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, type: "spring", stiffness: 200, damping: 20 }}
+          className="mb-12"
+        >
+          <TapeFrame tapePosition="top-left">
+            <PaperCard rotation={0.2} className="bg-teal/5 border-teal/40 p-6 md:p-8">
+              <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-stretch justify-between">
+                <div className="space-y-4 max-w-2xl flex-1">
+                  <h2 className="font-heading text-xl md:text-2xl font-black text-foreground">
+                    What is a Skill File?
+                  </h2>
+                  <p className="text-sm text-foreground/80 leading-relaxed">
+                    A <code className="px-1.5 py-0.5 font-mono text-xs font-bold text-salmon bg-foreground/5 border-2 border-border/20 rounded">skill.md</code> (or <code className="px-1.5 py-0.5 font-mono text-xs font-bold text-salmon bg-foreground/5 border-2 border-border/20 rounded">SKILL.md</code>) is a structured instruction guide designed to teach AI coding agents and assistants how to perform specific development tasks, execute workflows, or coordinate multi-step tool calls.
+                  </p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">
+                    By codifying rules, technical requirements, and challenges into standardized Markdown, these instructions act as operational runbooks that agents can read, understand, and execute autonomously inside a codebase.
+                  </p>
+                </div>
+                <div className="w-full md:w-80 border-2 border-dashed border-teal/30 p-4 bg-teal/10 rounded rotate-[0.5deg]">
+                  <h3 className="font-heading text-sm font-bold text-teal mb-3 uppercase tracking-wider">
+                    Core Sections
+                  </h3>
+                  <ul className="space-y-2 text-xs font-heading">
+                    <li className="flex items-start gap-2">
+                      <span className="text-salmon font-black">01.</span>
+                      <div>
+                        <strong>Core Purpose:</strong> A high-level description of what the skill achieves.
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-salmon font-black">02.</span>
+                      <div>
+                        <strong>The Skill:</strong> Detailed rules, patterns, and tool-use procedures.
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-salmon font-black">03.</span>
+                      <div>
+                        <strong>Challenges & Improvements:</strong> Real-world hurdles and planned upgrades.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </PaperCard>
+          </TapeFrame>
+        </motion.div>
 
         {allTags.length > 0 && (
           <motion.div

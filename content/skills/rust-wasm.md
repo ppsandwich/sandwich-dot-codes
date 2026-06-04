@@ -1,11 +1,6 @@
----
-title: "Rust & WebAssembly"
-purpose: "Compiling systems-level logic to client-side WebAssembly modules to achieve high-performance text parsing, syllable counting, and phonetic rhyme matching directly in the browser."
-date: "2026-06-04"
-tags: ["rust", "webassembly", "performance", "nlp", "wasm-bindgen"]
----
-> [!NOTE]
-> View the original raw Markdown rules document [here](https://github.com/ppsandwich/sandwich-dot-codes/blob/main/content/skills/rust-wasm.md) on GitHub.
+# Rust & WebAssembly
+
+Compiling systems-level logic to client-side WebAssembly modules to achieve high-performance text parsing, syllable counting, and phonetic rhyme matching directly in the browser.
 
 ## The Skill
 
