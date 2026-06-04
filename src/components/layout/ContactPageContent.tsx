@@ -41,7 +41,7 @@ export function ContactPageContent() {
             {
               icon: <Github size={24} />,
               label: "GitHub",
-              value: "silentsoar",
+              value: "ppsandwich",
               href: siteConfig.links.github,
               color: "foreground",
             },
