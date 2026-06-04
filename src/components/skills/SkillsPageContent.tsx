@@ -51,14 +51,13 @@ export function SkillsPageContent({ skills, initialTagFilter }: SkillsPageConten
             transition={{ type: "spring", stiffness: 200, damping: 20 }}
           >
             <StickerTag variant="mustard" rotation={-2} className="mb-4">
-              Skills
+              Agent Skills
             </StickerTag>
             <h1 className="font-heading text-display font-black leading-[0.95] tracking-tighter rotate-[-0.3deg]">
-              Digital Craft
+              AI Instructions
             </h1>
-            <p className="mt-4 max-w-lg text-lg text-muted rotate-[0.2deg]">
-              Specialized skillsets, technical tools, and design playbooks developed
-              while building software experiments.
+            <p className="mt-4 max-w-xl text-lg text-muted rotate-[0.2deg]">
+              Markdown files (such as `skill.md` or `SKILL.md`) that teach AI coding agents and assistants how to perform specific tasks, orchestrate workflows, and execute multi-step tools.
             </p>
           </motion.div>
           <div className="absolute -right-2 top-4 rotate-[8deg] sm:right-4">

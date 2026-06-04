@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Share2 } from "lucide-react";
 import type { Skill } from "contentlayer/generated";
@@ -13,20 +12,16 @@ import { CrookedDivider } from "@/components/decorative/CrookedDivider";
 import { TapeFrame } from "@/components/decorative/TapeFrame";
 import { PaperCard } from "@/components/decorative/PaperCard";
 import { siteConfig } from "@/lib/config";
-import { cn } from "@/lib/utils";
 
 interface SkillPageContentProps {
   skill: Skill;
 }
 
 export function SkillPageContent({ skill }: SkillPageContentProps) {
-  const effectiveCover = skill.cover || skill.firstBodyImage;
-  const hasCover = !!effectiveCover;
-
   return (
     <>
       <Section spacing="default">
-        <Container size={hasCover ? "default" : "narrow"}>
+        <Container size="narrow">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,8 +35,8 @@ export function SkillPageContent({ skill }: SkillPageContentProps) {
               All Skills
             </Link>
 
-            <div className={cn(hasCover && "flex items-start gap-8 lg:gap-12")}>
-              <div className={cn(hasCover && "min-w-0 flex-1")}>
+            <div className="flex items-start gap-8 lg:gap-12">
+              <div className="min-w-0 flex-1">
                 <div className="mb-4 flex flex-wrap gap-2">
                   {skill.tags.map((tag, i) => {
                     const rotations = [-2, 1.5, -1, 2, -1.5];
@@ -90,20 +85,6 @@ export function SkillPageContent({ skill }: SkillPageContentProps) {
                   </button>
                 </div>
               </div>
-
-              {hasCover && (
-                <div className="hidden flex-shrink-0 md:block md:w-[260px] lg:w-[300px]">
-                  <div className="border-3 border-border shadow-tactile rotate-[1deg] overflow-hidden">
-                    <Image
-                      src={effectiveCover!}
-                      alt={skill.title}
-                      width={600}
-                      height={400}
-                      className="h-auto w-full object-cover"
-                    />
-                  </div>
-                </div>
-              )}
             </div>
           </motion.div>
         </Container>

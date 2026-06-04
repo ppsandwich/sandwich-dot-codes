@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Clock, ArrowRight } from "lucide-react";
 import type { Skill } from "contentlayer/generated";
@@ -17,7 +16,6 @@ interface SkillCardProps {
 export function SkillCard({ skill, index = 0, variant = "default" }: SkillCardProps) {
   const rotation = index % 2 === 0 ? -0.5 : 0.4;
   const tapePosition = index % 3 === 0 ? "top-left" : index % 3 === 1 ? "top-right" : "top";
-  const cardImage = skill.cover || skill.firstBodyImage;
   const isCompact = variant === "compact";
 
   return (
@@ -40,27 +38,13 @@ export function SkillCard({ skill, index = 0, variant = "default" }: SkillCardPr
               "transition-all duration-300",
               "hover:shadow-tactile-lg hover:scale-[1.02] hover:rotate-0",
               "paper-grain",
-              "min-h-[130px]",
+              "p-3 min-h-[80px] flex items-center",
             )}
             style={{ transform: `rotate(${rotation}deg)` }}
           >
-            {cardImage && (
-              <div className="relative h-24 overflow-hidden border-b-3 border-border">
-                <Image
-                  src={cardImage}
-                  alt={skill.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent dark:from-background-dark/60" />
-              </div>
-            )}
-
-            <div className="p-3">
-              <h3 className="font-heading text-sm font-black transition-colors group-hover:text-mustard">
-                {skill.title}
-              </h3>
-            </div>
+            <h3 className="font-heading text-sm font-black transition-colors group-hover:text-mustard">
+              {skill.title}
+            </h3>
           </div>
         ) : (
           <TapeFrame tapePosition={tapePosition}>
@@ -73,18 +57,6 @@ export function SkillCard({ skill, index = 0, variant = "default" }: SkillCardPr
               )}
               style={{ transform: `rotate(${rotation}deg)` }}
             >
-              {cardImage && (
-                <div className="relative h-48 overflow-hidden border-b-3 border-border">
-                  <Image
-                    src={cardImage}
-                    alt={skill.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent dark:from-background-dark/60" />
-                </div>
-              )}
-
               <div className="p-6">
                 <div className="flex items-center gap-3 text-xs text-muted">
                   <time dateTime={skill.date} suppressHydrationWarning>
