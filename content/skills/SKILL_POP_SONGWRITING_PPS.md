@@ -1,18 +1,8 @@
----
-title: "Pop Songwriting Rules"
-purpose: "Defining structural, rhythmic, phonetic, and narrative rules for composing premium pop lyrics with hit potential."
-date: "2026-06-04"
-tags: ["songwriting", "music-theory", "lyrics", "creative-writing"]
-cover: "/images/projects/melodestiny-header.png"
----
-> [!NOTE]
-> View the original raw Markdown rules document [here](https://github.com/ppsandwich/sandwich-dot-codes/blob/main/content/skills/SKILL_POP_SONGWRITING_PPS.md) on GitHub.
+# Pop Songwriting Rules
 
-## The Skill
+To optimize song quality, structure, pacing, phonetics, and narrative, adhere to these guidelines:
 
-Pop songwriting rules are a formalized set of structural, phonetic, and rhythmic patterns that have been algorithmically proven to increase the memorability and success of pop music. Applying this skill involves analyzing lyrics across several core pillars:
-
-### 1. Structure & Repetition
+## Structure & Repetition
 * Place the `[Chorus]` section early (before the third section, e.g., Verse 1 -> Chorus) and repeat it at least twice.
 * Repeat the key hook line inside the `[Chorus]` or `[Post-Chorus]` 3 to 4 times.
 * Ensure 30% to 60% of all lines in the song are repeated lines.
@@ -24,9 +14,9 @@ Pop songwriting rules are a formalized set of structural, phonetic, and rhythmic
 * Start consecutive lines inside the Chorus with words sharing the same starting consonant letter.
 * The Outro must echo the Chorus, sharing between 30% and 70% of its vocabulary (a modified echo, not a direct copy).
 
-### 2. Rhythm & Pacing
+## Rhythm & Pacing
 * Keep syllable counts per line consistent within each section (e.g., all verse lines are 8 syllables; all chorus lines are 6 syllables).
-* Ensure parallel lines within a section have nearly identical syllable counts (Coefficient of Variation &le; 0.25).
+* Ensure parallel lines within a section have nearly identical syllable counts (Coefficient of Variation <= 0.25).
 * Write the majority (>= 60%) of all lines in the song with exactly 4 to 8 syllables.
 * Alternate long lines with short lines within sections.
 * Shift average syllable counts per line significantly between Verses and Choruses.
@@ -36,7 +26,7 @@ Pop songwriting rules are a formalized set of structural, phonetic, and rhythmic
 * Include a section (like a Pre-Chorus) where the average syllable count per line drops by 40% or more compared to surrounding sections.
 * Insert at least two pauses: either short 1-2 word lines or consecutive empty lines.
 
-### 3. Titles, Hooks & Framing
+## Titles, Hooks & Framing
 * Place the exact song title in the `[Chorus]`, ideally as the first and/or last line of the section.
 * Make the song title exactly 2, 3, or 4 words long.
 * Choose a title that uses alliteration, assonance, or rhyme.
@@ -44,19 +34,19 @@ Pop songwriting rules are a formalized set of structural, phonetic, and rhythmic
 * Precede or follow occurrences of the song title with high-emotion or sensory words (e.g., "crying", "lost", "burning").
 * If the title has multiple words, start or end it with a multi-syllable noun or verb (avoiding articles/pronouns).
 
-### 4. Phonetics & Texture
+## Phonetics & Texture
 * Use fluid words with open vowels; avoid words with hard consonant clusters.
 * Use adjacent words with repeating initial consonants or repeating vowel sounds inside lines.
 * End a balanced mix (35% to 65%) of lines on soft vowel sounds (legato) versus hard consonant stops (staccato).
 * End Verse lines mostly with dark, closed vowels (O, U, OO sounds) and Chorus lines with bright, open vowels (A, E, I sounds).
 
-### 5. Narrative & Lexicon
+## Narrative & Lexicon
 * Direct address pronouns (I, you, me, my, we, us, your) must represent between 8% and 18% of total words.
 * Introduce entirely new metaphors and vocabulary in the `[Bridge]` section (at least 40% new words not used elsewhere).
 * The `[Chorus]` must contain higher emotional and high-arousal word density than the `[Verse]`.
 * Use concrete nouns (e.g., car, rain, window, coffee, mirror) representing 8% to 25% of total words.
 * Keep the entire song in a single grammatical tense (present or past), targeting >= 80% consistency.
-* Use different vocabulary in Verses vs. Choruses (Jaccard similarity &lt; 30%).
+* Use different vocabulary in Verses vs. Choruses (Jaccard similarity < 30%).
 * Sprinkle conversational ad-libs ("oh", "yeah", "hey") and call-and-response questions.
 * Start the first line of the song with at least two of: a question, a pronoun, or a concrete scene word.
 * Use concrete details like proper nouns, street names, days, times, or specific numbers.
@@ -77,26 +67,10 @@ Pop songwriting rules are a formalized set of structural, phonetic, and rhythmic
 * Mix run-on thoughts (enjambed lines) with complete, punctuated thoughts (end-stopped lines).
 * Mix short 1-syllable and long 3+ syllable words in at least 20% of lines.
 
-### 6. Style Choices
+## Style Choices
 Choose exactly one option per group to optimize:
 * Repetition: Relentless key hook line repetition inside Chorus/Post-Chorus OR 30% to 60% of all lines are repeated.
 * Rhythm/Melody: Keep parallel lines' syllable counts consistent OR write at least 60% of lines with 4 to 8 syllables OR shift average syllable counts between Verse and Chorus.
-* Vocabulary: Use simple words of &le; 2 syllables OR use visceral body terms OR mix short and long words in >= 20% of lines.
+* Vocabulary: Use simple words of <= 2 syllables OR use visceral body terms OR mix short and long words in >= 20% of lines.
 * Structure: Follow standard pop outline OR make first and last lines identical.
 * Narrative: Keep a single grammatical tense OR shift pronouns across sections.
-
----
-
-## Challenges
-
-- **Rule Intersections**: Verifying 77+ distinct guidelines simultaneously can create rule conflicts. For instance, maintaining a strict Jaccard vocabulary similarity between sections while utilizing high pronoun density or repeated hooks requires precise lexical balancing.
-- **Syllable Count Tolerances**: Standard English pronunciation can vary, which affects standard deviation calculation and coefficient of variation metrics. Fine-tuning filters to allow a 5-10% boundary error ensures valid structures aren't falsely flagged.
-- **Tense Identification**: Parsing verb tenses reliably client-side without full NLP model dependencies is difficult. The analysis must rely on quick morphological rules (e.g., verb endings, helpers like "will", "did", "have") to keep the library size light.
-
----
-
-## Future Improvements
-
-- **Auto-Optimization (LLM-driven)**: Utilizing small client-side models to suggest exact revisions (e.g., replacing staccato end-words with legato variants to hit target vowel ratios).
-- **Genre Expansion**: Creating specific rule sets for other commercial genres (such as Hip-Hop cadence structures, Indie storytelling specifics, or Country narrative structures).
-- **Real-Time Interactive Piano Roll**: Integrating visual syllable rhythm blocks mapped to midi tracks to visually align melody patterns with lyrical syllable counts.

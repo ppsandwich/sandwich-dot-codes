@@ -138,7 +138,7 @@ export const Experiment = defineDocumentType(() => ({
 
 export const Skill = defineDocumentType(() => ({
   name: "Skill",
-  filePathPattern: "skills/**/*.{md,mdx}",
+  filePathPattern: "skills/**/*.mdx",
   contentType: "mdx",
   fields: {
     title: { type: "string", required: true },
