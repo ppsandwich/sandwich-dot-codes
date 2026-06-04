@@ -67,6 +67,24 @@ export type Project = {
   readingTime: string
   url: string
   firstBodyImage: string
+}
+
+export type Skill = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'Skill'
+  title: string
+  purpose: string
+  date: string
+  tags: string[]
+  cover?: string | undefined
+  /** MDX file body */
+  body: MDX
+  slug: string
+  readingTime: string
+  url: string
+  firstBodyImage: string
 }  
 
 /** Nested types */
@@ -77,8 +95,8 @@ export type Project = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = Article | Experiment | Project
-export type DocumentTypeNames = 'Article' | 'Experiment' | 'Project'
+export type DocumentTypes = Article | Experiment | Project | Skill
+export type DocumentTypeNames = 'Article' | 'Experiment' | 'Project' | 'Skill'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -88,6 +106,7 @@ export type DataExports = {
   allProjects: Project[]
   allArticles: Article[]
   allExperiments: Experiment[]
+  allSkills: Skill[]
 }
 
 
@@ -110,6 +129,7 @@ export type DocumentTypeMap = {
   Article: Article
   Experiment: Experiment
   Project: Project
+  Skill: Skill
 }
 
 export type NestedTypeMap = {
