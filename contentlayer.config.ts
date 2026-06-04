@@ -145,7 +145,6 @@ export const Skill = defineDocumentType(() => ({
     purpose: { type: "string", required: true },
     date: { type: "string", required: true },
     tags: { type: "list", of: { type: "string" }, required: true },
-    cover: { type: "string" },
   },
   computedFields: {
     slug: {
@@ -159,16 +158,6 @@ export const Skill = defineDocumentType(() => ({
     url: {
       type: "string",
       resolve: (doc) => `/skills/${doc._raw.sourceFileName.replace(/\.(md|mdx)$/, "")}`,
-    },
-    firstBodyImage: {
-      type: "string",
-      resolve: (doc) => {
-        const mdMatch = doc.body.raw.match(/!\[.*?\]\(([^)]+)\)/);
-        if (mdMatch) return mdMatch[1];
-        const imgMatch = doc.body.raw.match(/<img[^>]+src=["']([^"']+)["']/);
-        if (imgMatch) return imgMatch[1];
-        return undefined;
-      },
     },
   },
 }));

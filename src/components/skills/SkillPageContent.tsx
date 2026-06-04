@@ -37,15 +37,20 @@ export function SkillPageContent({ skill }: SkillPageContentProps) {
 
             <div className="flex items-start gap-8 lg:gap-12">
               <div className="min-w-0 flex-1">
-                <div className="mb-4 flex flex-wrap gap-2">
-                  {skill.tags.map((tag, i) => {
-                    const rotations = [-2, 1.5, -1, 2, -1.5];
-                    return (
-                      <StickerTag key={tag} variant="mustard" rotation={rotations[i % rotations.length]}>
-                        #{tag}
-                      </StickerTag>
-                    );
-                  })}
+                <div className="mb-4 flex flex-wrap items-center gap-3">
+                  <div className="inline-flex items-center gap-1.5 border-2 border-teal bg-teal/5 px-2.5 py-1 font-heading text-xs font-bold uppercase tracking-wider text-teal">
+                    <span>🤖 AI Agent Instruction Set</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {skill.tags.map((tag, i) => {
+                      const rotations = [-2, 1.5, -1, 2, -1.5];
+                      return (
+                        <StickerTag key={tag} variant="mustard" rotation={rotations[i % rotations.length]}>
+                          #{tag}
+                        </StickerTag>
+                      );
+                    })}
+                  </div>
                 </div>
 
                 <h1 className="font-heading text-headline font-black leading-[0.95] tracking-tighter rotate-[-0.2deg]">
@@ -116,7 +121,7 @@ export function SkillPageContent({ skill }: SkillPageContentProps) {
 
             {/* Main MDX Content */}
             <div className="border-3 border-border bg-background p-5 shadow-tactile paper-grain dark:bg-background-dark sm:p-8">
-              <MDXRenderer code={skill.body.code} />
+              <MDXRenderer code={skill.body.code} components={{ img: () => null }} />
             </div>
           </motion.div>
         </Container>
