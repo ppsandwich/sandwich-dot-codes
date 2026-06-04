@@ -14,8 +14,8 @@ export const siteConfig: SiteConfig = {
 
 export const navItems: NavItem[] = [
   { label: "Projects", href: "/projects" },
-  { label: "Skills", href: "/skills" },
   { label: "Writing", href: "/writing" },
+  { label: "Skills", href: "/skills" },
   { label: "Experiments", href: "/experiments" },
   { label: "Roadmap", href: "/roadmap" },
   { label: "About", href: "/about" },
