@@ -136,9 +136,46 @@ export const Experiment = defineDocumentType(() => ({
   },
 }));
 
+export const Skill = defineDocumentType(() => ({
+  name: "Skill",
+  filePathPattern: "skills/**/*.{md,mdx}",
+  contentType: "mdx",
+  fields: {
+    title: { type: "string", required: true },
+    purpose: { type: "string", required: true },
+    date: { type: "string", required: true },
+    tags: { type: "list", of: { type: "string" }, required: true },
+    cover: { type: "string" },
+  },
+  computedFields: {
+    slug: {
+      type: "string",
+      resolve: (doc) => doc._raw.sourceFileName.replace(/\.(md|mdx)$/, ""),
+    },
+    readingTime: {
+      type: "string",
+      resolve: (doc) => readingTime(doc.body.raw).text,
+    },
+    url: {
+      type: "string",
+      resolve: (doc) => `/skills/${doc._raw.sourceFileName.replace(/\.(md|mdx)$/, "")}`,
+    },
+    firstBodyImage: {
+      type: "string",
+      resolve: (doc) => {
+        const mdMatch = doc.body.raw.match(/!\[.*?\]\(([^)]+)\)/);
+        if (mdMatch) return mdMatch[1];
+        const imgMatch = doc.body.raw.match(/<img[^>]+src=["']([^"']+)["']/);
+        if (imgMatch) return imgMatch[1];
+        return undefined;
+      },
+    },
+  },
+}));
+
 export default makeSource({
   contentDirPath: "content",
-  documentTypes: [Project, Article, Experiment],
+  documentTypes: [Project, Article, Experiment, Skill],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
