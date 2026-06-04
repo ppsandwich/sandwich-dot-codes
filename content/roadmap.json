@@ -81,6 +81,12 @@
           "lane": "write"
         },
         {
+          "id": "card-1779181173057-x9pm0",
+          "title": "The New PM Job: Herding the Robot Into Building the Right Thing",
+          "details": "As AI agents generate more of the code, product work shifts toward intent, constraints, review, and quality control.",
+          "lane": "write"
+        },
+        {
           "id": "card-1779181278941-hzxbk",
           "title": "The Case for Useless-Sounding Apps",
           "details": "A philosophy of making software that is not trying to become SaaS, raise money, or ruin your inbox.",
@@ -114,12 +120,6 @@
           "id": "card-1779055127746-h2z0c",
           "title": "Expecto",
           "details": "Neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation."
-        },
-        {
-          "id": "card-1779181173057-x9pm0",
-          "title": "The New PM Job: Herding the Robot Into Building the Right Thing",
-          "details": "As AI agents generate more of the code, product work shifts toward intent, constraints, review, and quality control.",
-          "lane": "write"
         },
         {
           "id": "card-1779181228717-khnex",
