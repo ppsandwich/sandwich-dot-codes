@@ -27,24 +27,6 @@ export type Article = {
   firstBodyImage: string
 }
 
-export type Experiment = {
-  /** File path relative to `contentDirPath` */
-  _id: string
-  _raw: Local.RawDocumentData
-  type: 'Experiment'
-  title: string
-  description: string
-  date: string
-  tags: string[]
-  demo?: string | undefined
-  github?: string | undefined
-  /** MDX file body */
-  body: MDX
-  slug: string
-  readingTime: string
-  url: string
-}
-
 export type Project = {
   /** File path relative to `contentDirPath` */
   _id: string
@@ -78,13 +60,11 @@ export type Skill = {
   purpose: string
   date: string
   tags: string[]
-  cover?: string | undefined
   /** MDX file body */
   body: MDX
   slug: string
   readingTime: string
   url: string
-  firstBodyImage: string
 }  
 
 /** Nested types */
@@ -95,8 +75,8 @@ export type Skill = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = Article | Experiment | Project | Skill
-export type DocumentTypeNames = 'Article' | 'Experiment' | 'Project' | 'Skill'
+export type DocumentTypes = Article | Project | Skill
+export type DocumentTypeNames = 'Article' | 'Project' | 'Skill'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -105,7 +85,6 @@ export type DataExports = {
   allDocuments: DocumentTypes[]
   allProjects: Project[]
   allArticles: Article[]
-  allExperiments: Experiment[]
   allSkills: Skill[]
 }
 
@@ -127,7 +106,6 @@ declare global {
 
 export type DocumentTypeMap = {
   Article: Article
-  Experiment: Experiment
   Project: Project
   Skill: Skill
 }
