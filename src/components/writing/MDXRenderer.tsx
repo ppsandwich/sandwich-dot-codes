@@ -1,7 +1,12 @@
+"use client";
+
 import { getMDXComponent } from "mdx-bundler/client";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import React, { useRef, useEffect, useState } from "react";
+import { createPortal } from "react-dom";
+import { AnimatePresence, motion } from "framer-motion";
+import { X } from "lucide-react";
 
 const mdxComponents = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -125,6 +130,7 @@ const mdxComponents = {
     if (!src) return null;
     const imgRef = useRef<HTMLImageElement>(null);
     const [isSmall, setIsSmall] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
       const img = imgRef.current;
@@ -145,32 +151,102 @@ const mdxComponents = {
       }
     }, [src]);
 
+    // Handle Escape key to close modal and lock/unlock body scroll
+    useEffect(() => {
+      if (!isOpen) return;
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === "Escape") setIsOpen(false);
+      };
+      window.addEventListener("keydown", handleKeyDown);
+      
+      const originalOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      
+      return () => {
+        window.removeEventListener("keydown", handleKeyDown);
+        document.body.style.overflow = originalOverflow;
+      };
+    }, [isOpen]);
+
     return (
-      <figure
-        className={cn(
-          "my-8",
-          isSmall && "float-right ml-6 mb-4"
-        )}
-        style={isSmall ? { width: "50%", maxWidth: "300px" } : undefined}
-      >
-        <div className="border-3 border-border shadow-tactile">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            ref={imgRef}
-            src={src}
-            alt={alt || ""}
-            className="block max-w-full h-auto"
-            style={!isSmall ? { maxHeight: "600px", maxWidth: "600px" } : undefined}
-            loading="lazy"
-            {...props}
-          />
-        </div>
-        {alt && (
-          <figcaption className="mt-2 text-center text-sm italic text-muted">
-            {alt}
-          </figcaption>
-        )}
-      </figure>
+      <>
+        <figure
+          className={cn(
+            "my-8",
+            isSmall && "float-right ml-6 mb-4"
+          )}
+          style={isSmall ? { width: "50%", maxWidth: "300px" } : undefined}
+        >
+          <div 
+            onClick={() => setIsOpen(true)}
+            className="border-3 border-border shadow-tactile cursor-zoom-in transition-transform duration-200 hover:scale-[1.01]"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              ref={imgRef}
+              src={src}
+              alt={alt || ""}
+              className="block max-w-full h-auto"
+              style={!isSmall ? { maxHeight: "600px", maxWidth: "600px" } : undefined}
+              loading="lazy"
+              {...props}
+            />
+          </div>
+          {alt && (
+            <figcaption className="mt-2 text-center text-sm italic text-muted">
+              {alt}
+            </figcaption>
+          )}
+        </figure>
+
+        <AnimatePresence>
+          {isOpen && typeof document !== "undefined" && createPortal(
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md cursor-zoom-out"
+              onClick={() => setIsOpen(false)}
+            >
+              <motion.button 
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsOpen(false);
+                }}
+                className="absolute top-4 right-4 z-[10000] p-2.5 bg-paper text-ink border-3 border-border shadow-tactile transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-tactile-lg active:translate-x-[0px] active:translate-y-[0px] active:shadow-tactile"
+                aria-label="Close image modal"
+              >
+                <X size={20} strokeWidth={3} />
+              </motion.button>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.95, y: 15 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95, y: 15 }}
+                transition={{ type: "spring", stiffness: 350, damping: 26 }}
+                className="relative max-h-[90vh] max-w-[95vw] border-3 border-border bg-paper p-2 shadow-tactile-lg cursor-default select-none"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={src}
+                  alt={alt || ""}
+                  className="max-h-[80vh] max-w-full object-contain block"
+                />
+                {alt && (
+                  <div className="mt-2 text-center text-sm font-heading font-bold uppercase tracking-wider text-ink">
+                    {alt}
+                  </div>
+                )}
+              </motion.div>
+            </motion.div>,
+            document.body
+          )}
+        </AnimatePresence>
+      </>
     );
   },
   strong: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
