@@ -81,6 +81,12 @@
           "lane": "write"
         },
         {
+          "id": "card-1779181228717-khnex",
+          "title": "The Case for Algorithmic Creativity",
+          "details": "Argue that randomness, rules, MIDI patterns, and Canvas APIs can produce meaningful creative work without generative AI.",
+          "lane": "write"
+        },
+        {
           "id": "card-1779181173057-x9pm0",
           "title": "The New PM Job: Herding the Robot Into Building the Right Thing",
           "details": "As AI agents generate more of the code, product work shifts toward intent, constraints, review, and quality control.",
@@ -114,12 +120,6 @@
           "id": "card-1779055127746-h2z0c",
           "title": "Expecto",
           "details": "Neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation."
-        },
-        {
-          "id": "card-1779181228717-khnex",
-          "title": "The Case for Algorithmic Creativity",
-          "details": "Argue that randomness, rules, MIDI patterns, and Canvas APIs can produce meaningful creative work without generative AI.",
-          "lane": "write"
         },
         {
           "id": "card-1779187671768-7f93s",
