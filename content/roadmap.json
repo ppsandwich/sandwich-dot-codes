@@ -87,6 +87,12 @@
           "lane": "write"
         },
         {
+          "id": "card-1779181173057-x9pm0",
+          "title": "The New PM Job: Herding the Robot Into Building the Right Thing",
+          "details": "As AI agents generate more of the code, product work shifts toward intent, constraints, review, and quality control.",
+          "lane": "write"
+        },
+        {
           "id": "card-1779181278941-hzxbk",
           "title": "The Case for Useless-Sounding Apps",
           "details": "A philosophy of making software that is not trying to become SaaS, raise money, or ruin your inbox.",
@@ -96,12 +102,6 @@
           "id": "card-1779181284518-64y9a",
           "title": "Is This AI-Built App Any Good?",
           "details": "A PM-ish checklist for judging concept, usability, maintainability, accessibility, performance, security, and whether it feels horrible to use.",
-          "lane": "write"
-        },
-        {
-          "id": "card-1779187671768-7f93s",
-          "title": "Product Prioritisation Is Not as Objective as Everyone Pretends",
-          "details": "Feature ranking frameworks look like machines for producing truth, but they mostly produce structured opinions.  This article asks whether objective prioritisation is possible, what “objective enough” might look like, and whether companies actually want objectivity — or just a tidier way to justify difficult choices.",
           "lane": "write"
         },
         {
@@ -122,15 +122,9 @@
           "details": "Neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation."
         },
         {
-          "id": "card-1779181173057-x9pm0",
-          "title": "The New PM Job: Herding the Robot Into Building the Right Thing",
-          "details": "As AI agents generate more of the code, product work shifts toward intent, constraints, review, and quality control.",
-          "lane": "write"
-        },
-        {
-          "id": "card-1780265865354-n8j4o",
-          "title": "How egalitarian is the AI future really?",
-          "details": "The best models are expensive, AI companies prize private datasets, websites are introducing protections against AI scraping - is AI only a 'force multiplier' for the elite? And how expensive will it get?",
+          "id": "card-1779187671768-7f93s",
+          "title": "Product Prioritisation Is Not as Objective as Everyone Pretends",
+          "details": "Feature ranking frameworks look like machines for producing truth, but they mostly produce structured opinions.  This article asks whether objective prioritisation is possible, what “objective enough” might look like, and whether companies actually want objectivity — or just a tidier way to justify difficult choices.",
           "lane": "write"
         }
       ]
@@ -182,6 +176,12 @@
           "title": "Melodestiny",
           "details": "Problem: Writing rhythm is subjective; writers can't easily see sentence length variation, clause density, or pacing patterns.\n\nAlternatives: Hemingway Editor (readability only), ProWritingAid (grammar-focused), no rhythm-specific tools",
           "lane": "build"
+        },
+        {
+          "id": "card-1780265865354-n8j4o",
+          "title": "How egalitarian is the AI future really?",
+          "details": "The best models are expensive, AI companies prize private datasets, websites are introducing protections against AI scraping - is AI only a 'force multiplier' for the elite? And how expensive will it get?",
+          "lane": "write"
         }
       ]
     },
