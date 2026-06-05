@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { allProjects, allArticles, allExperiments } from "contentlayer/generated";
+import { allProjects, allArticles } from "contentlayer/generated";
 import { navItems, siteConfig } from "@/lib/config";
 import { Container } from "@/components/layout/Container";
 import { SearchModal } from "@/components/ui/SearchModal";
@@ -26,13 +26,7 @@ const searchItems = [
     type: "article" as const,
     tags: a.tags,
   })),
-  ...allExperiments.map((e) => ({
-    title: e.title,
-    description: e.description,
-    url: e.url,
-    type: "experiment" as const,
-    tags: e.tags,
-  })),
+
 ];
 
 export function Navbar() {
