@@ -108,34 +108,6 @@ export const Article = defineDocumentType(() => ({
   },
 }));
 
-export const Experiment = defineDocumentType(() => ({
-  name: "Experiment",
-  filePathPattern: "experiments/**/*.mdx",
-  contentType: "mdx",
-  fields: {
-    title: { type: "string", required: true },
-    description: { type: "string", required: true },
-    date: { type: "string", required: true },
-    tags: { type: "list", of: { type: "string" }, required: true },
-    demo: { type: "string" },
-    github: { type: "string" },
-  },
-  computedFields: {
-    slug: {
-      type: "string",
-      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ""),
-    },
-    readingTime: {
-      type: "string",
-      resolve: (doc) => readingTime(doc.body.raw).text,
-    },
-    url: {
-      type: "string",
-      resolve: (doc) => `/experiments/${doc._raw.sourceFileName.replace(/\.mdx$/, "")}`,
-    },
-  },
-}));
-
 export const Skill = defineDocumentType(() => ({
   name: "Skill",
   filePathPattern: "skills/**/*.mdx",
@@ -164,7 +136,7 @@ export const Skill = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "content",
-  documentTypes: [Project, Article, Experiment, Skill],
+  documentTypes: [Project, Article, Skill],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
