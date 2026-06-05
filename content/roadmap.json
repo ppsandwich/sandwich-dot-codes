@@ -63,12 +63,6 @@
       "title": "To Do",
       "cards": [
         {
-          "id": "card-1779054884738-n1tgc",
-          "title": "JIWW (Jump In, Water’s Wet)",
-          "details": "Generate a complete production brief for a new track: tempo, key, drum style, synth palette, bass approach, arrangement, and reference vibe.",
-          "lane": "build"
-        },
-        {
           "id": "card-1779054995100-oy4l1",
           "title": "Acrilyc Pour idea exploration",
           "details": "",
@@ -115,6 +109,12 @@
           "title": "The Case for Algorithmic Creativity",
           "details": "Argue that randomness, rules, MIDI patterns, and Canvas APIs can produce meaningful creative work without generative AI.",
           "lane": "write"
+        },
+        {
+          "id": "card-1779054884738-n1tgc",
+          "title": "JIWW (Jump In, Water’s Wet)",
+          "details": "Generate a complete production brief for a new track: tempo, key, drum style, synth palette, bass approach, arrangement, and reference vibe.",
+          "lane": "build"
         }
       ]
     },
