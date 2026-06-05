@@ -59,7 +59,7 @@ export function SkillsPageContent({ skills, initialTagFilter }: SkillsPageConten
               AI Instructions
             </h1>
             <p className="mt-4 max-w-xl text-lg text-muted rotate-[0.2deg]">
-              Markdown files (such as `skill.md` or `SKILL.md`) that teach AI coding agents and assistants how to perform specific tasks, orchestrate workflows, and execute multi-step tools.
+              Additional layers of spaghetti I'm heaping onto my AI plate
             </p>
           </motion.div>
           <div className="absolute -right-2 top-4 rotate-[8deg] sm:right-4">
