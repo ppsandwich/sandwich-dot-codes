@@ -131,6 +131,11 @@ const mdxComponents = {
     const imgRef = useRef<HTMLImageElement>(null);
     const [isSmall, setIsSmall] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+      setMounted(true);
+    }, []);
 
     useEffect(() => {
       const img = imgRef.current;
@@ -199,53 +204,55 @@ const mdxComponents = {
           )}
         </figure>
 
-        <AnimatePresence>
-          {isOpen && typeof document !== "undefined" && createPortal(
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md cursor-zoom-out"
-              onClick={() => setIsOpen(false)}
-            >
-              <motion.button 
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setIsOpen(false);
-                }}
-                className="absolute top-4 right-4 z-[10000] p-2.5 bg-paper text-ink border-3 border-border shadow-tactile transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-tactile-lg active:translate-x-[0px] active:translate-y-[0px] active:shadow-tactile"
-                aria-label="Close image modal"
-              >
-                <X size={20} strokeWidth={3} />
-              </motion.button>
+        {mounted && createPortal(
+          <AnimatePresence>
+            {isOpen && (
               <motion.div 
-                initial={{ opacity: 0, scale: 0.95, y: 15 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.95, y: 15 }}
-                transition={{ type: "spring", stiffness: 350, damping: 26 }}
-                className="relative max-h-[90vh] max-w-[95vw] border-3 border-border bg-paper p-2 shadow-tactile-lg cursor-default select-none"
-                onClick={(e) => e.stopPropagation()}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md cursor-zoom-out"
+                onClick={() => setIsOpen(false)}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={src}
-                  alt={alt || ""}
-                  className="max-h-[80vh] max-w-full object-contain block"
-                />
-                {alt && (
-                  <div className="mt-2 text-center text-sm font-heading font-bold uppercase tracking-wider text-ink">
-                    {alt}
-                  </div>
-                )}
+                <motion.button 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsOpen(false);
+                  }}
+                  className="absolute top-4 right-4 z-[10000] p-2 text-white/80 transition-all hover:text-white hover:scale-110 active:scale-95 drop-shadow-md"
+                  aria-label="Close image modal"
+                >
+                  <X size={32} strokeWidth={2} />
+                </motion.button>
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95, y: 15 }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
+                  exit={{ opacity: 0, scale: 0.95, y: 15 }}
+                  transition={{ type: "spring", stiffness: 350, damping: 26 }}
+                  className="relative max-h-[90vh] max-w-[95vw] cursor-default select-none"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={src}
+                    alt={alt || ""}
+                    className="max-h-[80vh] max-w-full object-contain block rounded-md shadow-2xl"
+                  />
+                  {alt && (
+                    <div className="mt-4 text-center text-sm font-heading font-bold uppercase tracking-wider text-white/90 drop-shadow-md">
+                      {alt}
+                    </div>
+                  )}
+                </motion.div>
               </motion.div>
-            </motion.div>,
-            document.body
-          )}
-        </AnimatePresence>
+            )}
+          </AnimatePresence>,
+          document.body
+        )}
       </>
     );
   },

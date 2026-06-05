@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, forwardRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   GitCommit,
@@ -74,13 +74,14 @@ function getEventDescription(event: TimelineEvent): string {
   }
 }
 
-function TimelineItem({ event, index }: { event: TimelineEvent; index: number }) {
+const TimelineItem = forwardRef<HTMLDivElement, { event: TimelineEvent; index: number }>(({ event, index }, ref) => {
   const config = eventConfig[event.type];
   const Icon = config.icon;
   const timeAgo = formatDistanceToNow(new Date(event.date), { addSuffix: true });
 
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -132,7 +133,8 @@ function TimelineItem({ event, index }: { event: TimelineEvent; index: number })
       </a>
     </motion.div>
   );
-}
+});
+TimelineItem.displayName = "TimelineItem";
 
 export function GitHubSectionClient({ initialTimeline, initialLanguages }: GitHubSectionClientProps) {
   const [timeline, setTimeline] = useState<TimelineEvent[]>(initialTimeline);
