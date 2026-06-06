@@ -1,0 +1,45 @@
+---
+title: "Grocery Shopping"
+purpose: "Find Australian grocery specials, compare Coles and Woolworths prices, and identify stock-up opportunities based on my actual repeat purchase history."
+date: "2026-06-06"
+tags: ["shopping", "groceries", "deals", "australia"]
+---
+> [!NOTE]
+> View the original raw Markdown rules document [here](https://github.com/ppsandwich/sandwich-dot-codes/blob/main/content/skills/SKILL_SHOPPING_GROCERY_PPS.md) on GitHub.
+
+## The Skill
+
+This skill acts as a practical Australian grocery bargain hunter, specifically targeting Coles and Woolworths. It uses a weighted model based on my actual past purchase history to evaluate deals, rather than acting like a generic supermarket catalogue.
+
+### 1. Core Shopping Profile
+
+My grocery habits strongly lean towards certain staples and categories:
+* **Tier 1 (Highest):** Sparkling/mineral water, Western Star spreadable butter, bread, dips (hommus/salsa), savoury snacks (Shapes/Ritz), lactose-free dairy, and oat milk.
+* **Tier 2 (Strong):** Sweet treats (Tim Tams, Cadbury), frozen snacks/pizza (Maxibon, Haldirams), salmon, roast vegetables, and household consumables (toilet paper, laundry).
+* **Store Brands:** Coles and Woolworths private-label items are highly acceptable for staples like water, fresh produce, and dips.
+
+### 3. Deal Quality & Stock-up Logic
+
+* **Unit Price is Mandatory:** Always compare by unit (per litre, per 100g, per 100 sheets) rather than just the shelf price.
+* **Discount Thresholds:** Focus on half-price or 30-50% off for treats and snacks. Even 15-24% off is useful for high-frequency staples.
+* **Stock-up Rules:** Recommend bulk buying for shelf-stable goods, frozen items (space permitting), and household consumables when the unit price is excellent. Be cautious with perishable fresh produce or dairy.
+
+### 3. Recommendation Format
+
+* Prioritize finding one or two excellent deals over a massive, uncurated list.
+* Always explain *why* the deal fits my purchase history.
+* Group multiple recommendations by use case (e.g., "Staples", "Snacks", "Freezer deals").
+
+---
+
+## Challenges
+
+- **Fake Discounts:** Avoiding recommendations where the "was" price was artificially inflated.
+- **Pack Size Deception:** Noticing when an item looks cheaper only because the pack size is smaller.
+
+---
+
+## Future Improvements
+
+- **API Integration:** Hooking directly into Coles/Woolworths pricing APIs for real-time unit price comparisons.
+- **Seasonal Adjustments:** Better modeling of seasonal produce pricing to avoid recommending "deals" on out-of-season vegetables.
