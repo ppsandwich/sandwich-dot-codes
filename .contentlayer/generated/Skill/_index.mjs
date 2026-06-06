@@ -2,10 +2,9 @@
 
 import skills__skill_frontend_design_ppsMdx from './skills__SKILL_FRONTEND_DESIGN_PPS.mdx.json' with { type: 'json' }
 import skills__skill_inventionMdx from './skills__SKILL_INVENTION.mdx.json' with { type: 'json' }
-import skills__skill_personality_ppsMdx from './skills__SKILL_PERSONALITY_PPS.mdx.json' with { type: 'json' }
 import skills__skill_pop_songwriting_ppsMdx from './skills__SKILL_POP_SONGWRITING_PPS.mdx.json' with { type: 'json' }
 import skills__skill_shopping_general_ppsMdx from './skills__SKILL_SHOPPING_GENERAL_PPS.mdx.json' with { type: 'json' }
 import skills__skill_shopping_grocery_ppsMdx from './skills__SKILL_SHOPPING_GROCERY_PPS.mdx.json' with { type: 'json' }
-import skills__skill_writing_style_ppsMdx from './skills__SKILL_WRITING_STYLE_PPS.mdx.json' with { type: 'json' }
+import skills__skill_writing_as_dylan_ppsMdx from './skills__SKILL_WRITING_AS_DYLAN_PPS.mdx.json' with { type: 'json' }
 
-export const allSkills = [skills__skill_frontend_design_ppsMdx, skills__skill_inventionMdx, skills__skill_personality_ppsMdx, skills__skill_pop_songwriting_ppsMdx, skills__skill_shopping_general_ppsMdx, skills__skill_shopping_grocery_ppsMdx, skills__skill_writing_style_ppsMdx]
+export const allSkills = [skills__skill_frontend_design_ppsMdx, skills__skill_inventionMdx, skills__skill_pop_songwriting_ppsMdx, skills__skill_shopping_general_ppsMdx, skills__skill_shopping_grocery_ppsMdx, skills__skill_writing_as_dylan_ppsMdx]
