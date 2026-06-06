@@ -37,6 +37,19 @@ const TRACKS: Track[] = [
   { id: "2333668478", title: "Storms", number: "10", duration: "3:49", genre: "Ambient" },
 ];
 
+interface Single {
+  id: string;
+  title: string;
+  genre: string;
+}
+
+const SINGLES: Single[] = [
+  { id: "2334436961", title: "Donkey!", genre: "Electronic" },
+  { id: "2334436598", title: "POISON", genre: "Dance & EDM" },
+  { id: "2334436283", title: "Love in S.P.A.C.E.", genre: "Dance & EDM" },
+  { id: "2334436019", title: "I'm ALONE!!", genre: "Dance & EDM" },
+];
+
 export function MusicPageContent() {
   const [activeTrack, setActiveTrack] = useState<Track>(TRACKS[0]);
 
@@ -253,6 +266,50 @@ export function MusicPageContent() {
             </PaperCard>
           </div>
           
+        </div>
+
+        {/* Singles Section */}
+        <div className="mt-20">
+          <div className="relative mb-8">
+            <StickerTag variant="teal" rotation={1} className="mb-4">
+              Latest Drops
+            </StickerTag>
+            <h2 className="font-heading text-4xl md:text-5xl font-black leading-[0.95] tracking-tighter rotate-[0.5deg]">
+              Singles &amp; EPs
+            </h2>
+            <div className="absolute -left-4 -top-2 rotate-[-15deg] sm:-left-8">
+              <DoodleAccent variant="sparkle" color="#E07A5F" size={32} />
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {SINGLES.map((single, i) => {
+              const singleUrl = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${single.id}&color=%233f8f8b&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true`;
+              return (
+                <PaperCard key={single.id} rotation={i % 2 === 0 ? 0.5 : -0.5} className="border-3 border-border p-4 shadow-tactile paper-grain bg-background flex flex-col h-full">
+                  <div className="mb-4">
+                    <span className="font-mono text-[10px] font-bold text-salmon uppercase tracking-widest block mb-1">
+                      {single.genre}
+                    </span>
+                    <h3 className="font-heading text-lg font-black leading-tight text-foreground line-clamp-2">
+                      {single.title}
+                    </h3>
+                  </div>
+                  <div className="border-2 border-border/40 rounded overflow-hidden bg-background/5 mt-auto">
+                    <iframe
+                      width="100%"
+                      height="300"
+                      scrolling="no"
+                      frameBorder="no"
+                      allow="autoplay"
+                      src={singleUrl}
+                      className="block"
+                    />
+                  </div>
+                </PaperCard>
+              );
+            })}
+          </div>
         </div>
       </Container>
     </Section>
