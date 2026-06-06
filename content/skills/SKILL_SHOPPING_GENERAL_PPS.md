@@ -2,6 +2,9 @@
 
 ## Purpose
 
+> **Version note — recency correction added 2026-06-06:** This skill must treat purchase history as time-sensitive. Do **not** rank categories by lifetime purchase volume alone. Recent purchase behaviour is the primary signal; older clusters are background interest only unless repeated recently or explicitly requested by Dylan. In particular, **3D printing must not be treated as the #1 default category** unless recent purchases show active 3D-printing behaviour.
+
+
 Use this skill whenever Dylan asks an agent to find discounted items, sale items, deals, price drops, clearance items, coupon opportunities, bundle savings, subscribe-and-save bargains, marketplace bargains, or unusually good prices on products he is likely to buy.
 
 The skill is built from several years of Amazon Australia order history plus known long-term interests. It should act like a practical Australian shopping spotter: useful, sceptical, price-aware, and allergic to pretending that a fake RRP is a real discount.
@@ -10,15 +13,96 @@ The agent should only search Australian eCommerce platforms, Australian retail s
 
 ---
 
+## Recency-weighted preference model
+
+When using purchase history, weight recent purchases more heavily than older purchases. The order history is a time-series signal, not a flat list of eternal desires. A category bought repeatedly in the last 3-12 months is a much stronger signal than something bought once several years ago.
+
+**Hard rule:** category ranking must be recalculated from recency-weighted evidence each time this skill is used. A historically large category must not outrank a smaller but recent category unless there is clear current evidence, an exceptional deal, or Dylan explicitly asks for that category.
+
+### Default recency weights
+
+Use these weights when interpreting historical purchases:
+
+- Purchased in the last 0-3 months: **5x signal**. Treat as current behaviour, active project, active household need, or likely repeat-buy category.
+- Purchased in the last 3-6 months: **4x signal**. Very relevant, especially if repeated or consumable.
+- Purchased in the last 6-12 months: **3x signal**. Relevant and likely still useful, especially for hobbies and consumables.
+- Purchased in the last 12-24 months: **2x signal**. Still meaningful, but verify the item/category is not already satisfied.
+- Purchased more than 24 months ago: **1x signal**. Treat as background preference only unless repeated, explicitly tied to Dylan's known hobbies, or a consumable that is likely to return.
+- One-off purchase more than 36 months ago: **0.5x signal** unless it connects strongly to a known ongoing hobby or ecosystem.
+
+### How recency should change recommendations
+
+Prioritise a deal when it matches a category or product type Dylan bought recently, especially if:
+
+- The recent purchase was a consumable or refill category.
+- The same category appears repeatedly across different months.
+- The item complements a recent higher-value purchase, such as accessories for a printer, VR headset, camera, mini PC, storage setup, LEGO display, card collection, or pet product.
+- The recent purchases suggest an active project phase, such as multiple 3D printing, cabling, storage, craft, photography, or home-tech items clustered together.
+
+Down-rank a deal when:
+
+- It matches only old purchase history and has no recent reinforcement.
+- It is a non-consumable item Dylan likely already owns.
+- The older purchase looks like a solved need rather than an ongoing category.
+- The item is expensive and only weakly connected to recent behaviour.
+
+### Recency versus consumables
+
+Recency matters differently for consumables and durable goods:
+
+- For consumables, recent purchases are strong evidence of likely repurchase. A discount on a recently bought consumable should be surfaced more readily if the unit price is good.
+- For durable goods, recent purchases often mean **do not recommend the same thing again**. Instead, look for compatible accessories, refills, upgrades, storage, protection, maintenance items, or software/ecosystem add-ons.
+- For hobby categories, repeated recent purchases can signal an active phase. In that case, adjacent deals may be more useful than exact repeats.
+
+
+### Category ranking decision rule
+
+When choosing *one* deal to surface, use this order of evidence:
+
+1. Recent repeated purchases in the last 0-6 months.
+2. Consumables or refill categories likely to be repurchased.
+3. Accessories or upgrades that complement a recent durable purchase.
+4. Purchases repeated across the last 6-12 months.
+5. Long-term hobbies and older purchase clusters.
+6. One-off old purchases.
+
+Older high-volume clusters must be labelled **Background signal**, not **Current signal**. They should not dominate the recommendation unless the price is unusually excellent or the user asked for that category.
+
+### Recency confidence labels
+
+When presenting a deal, include one of these if purchase-history evidence is being used:
+
+- **Current signal:** bought this category/product type recently or repeatedly in the last 12 months.
+- **Background signal:** bought historically, but not clearly recent.
+- **Interest-only signal:** not strongly present in recent purchases, but aligns with Dylan's known hobbies/interests.
+
+Do not let an old one-off purchase override stronger recent patterns. Old purchase history is useful context; recent purchase history is the shopping weather report.
+
+---
+
 ## Core shopping profile
 
 ### Highest-confidence categories
 
-Prioritise these categories heavily. They appear repeatedly in Dylan's purchasing history and/or match his known interests.
+These categories appear repeatedly in Dylan's purchasing history and/or match his known interests. **Do not treat the numbering below as the live priority order.** The live priority order must be adjusted by purchase recency every time the skill is used.
 
-#### 1. 3D printing, maker gear, fabrication
+### Current recency-adjusted priority guidance
 
-Strong signal.
+Based on the most recent purchase history snapshot used to build this skill, agents should generally prioritise:
+
+1. **Pet/cat consumables and cat accessories** — repeated recent purchases, especially cat food.
+2. **Cables, adapters, chargers, device accessories and small electronics** — frequent recent purchases and high repeat usefulness.
+3. **Household consumables, cleaning, kitchen/storage and practical home items** — repeated recent purchases and obvious repurchase behaviour.
+4. **LEGO / display / collectibles** — recent purchases, especially LEGO Botanicals/display-adjacent items.
+5. **Audio, IEM, music/DJ and small studio accessories** — recent cluster of IEM/audio accessories.
+6. **Maker electronics / Raspberry Pi / microcontroller gear** — recent electronics activity, adjacent to coding and hardware projects.
+7. **3D printing and fabrication** — strong historical/background hobby signal, but **not the default #1 unless there has been a recent filament/parts/printer purchase or the user specifically asks for maker/3D-printing deals**.
+
+Important: 3D printing had a strong historical cluster, including printers, parts and filament, but it should now be treated as a **background/high-interest category**, not the top current shopping category, when recent order history does not reinforce it. If only one deal is requested, do not default to filament or printer accessories unless the deal is genuinely exceptional.
+
+#### 7. 3D printing, maker gear, fabrication — detailed rules
+
+Strong historical/background signal. Use recency checks before making this the lead recommendation category.
 
 Look for:
 - Filament: PLA, PLA+, matte PLA, silk PLA, tri-colour PLA, PETG, TPU where useful.
@@ -801,33 +885,42 @@ Avoid international marketplace listings for:
 When evaluating a deal, score it across these dimensions:
 
 1. Category fit
-   - Strong: 3D printing, cables/adapters, gaming/VR, electronics, pet consumables, household consumables, tools, LEGO, MTG, music/audio, photography.
+   - Strong current fit: pet consumables, cables/adapters, household consumables, LEGO/display, audio/IEM, small electronics/maker boards.
+   - Strong background fit: 3D printing, gaming/VR, tools, MTG, music/audio, photography.
+   - A strong background fit should not beat a strong current fit unless the deal is exceptional or the user asks for that category.
    - Medium: smart home, desk setup, craft/art, pop culture collectibles.
    - Weak: fashion, beauty, feminine-coded items, generic home decor unless strongly aligned.
 
-2. Repurchase likelihood
-   - High: consumables, pet supplies, printer filament, household staples, snacks, coffee pods, small cables/adapters.
+2. Purchase recency
+   - Very strong: same category/product type bought in the last 0-6 months, especially if repeated.
+   - Strong: bought in the last 6-12 months or adjacent to a recent active project.
+   - Medium: bought in the last 12-24 months, or older but repeatedly purchased.
+   - Weak: one-off purchase more than 24-36 months old with no recent reinforcement.
+   - For durable goods, recent exact ownership lowers repeat need but increases accessory/upgrade relevance.
+
+3. Repurchase likelihood
+   - High: consumables, pet supplies, household staples, snacks, coffee pods, small cables/adapters. Printer filament is high repurchase only when there is recent printing activity or an exceptional stock-up price.
    - Medium: tools, storage, card accessories, LEGO, craft supplies.
    - Low: large electronics already recently purchased unless upgrade is obvious.
 
-3. Deal strength
+4. Deal strength
    - Known-low price or cross-store cheapest.
    - Meaningful discount from normal AU market price.
    - Strong unit economics.
    - Credible coupon/stacking opportunity.
 
-4. Brand/reliability
+5. Brand/reliability
    - Prefer known brands for electronics, power, storage, pet food, tools and appliances.
    - Accept generic brands for low-risk utility items.
 
-5. Friction/risk
+6. Friction/risk
    - AU stock and returns preferred.
    - Reasonable shipping.
    - Compatible with AU standards.
    - No obvious counterfeit risk.
    - Reviews are credible and not weirdly repetitive.
 
-6. Delight factor
+7. Delight factor
    - Weird, useful, creative, maker-friendly, LEGO-adjacent, music-making-adjacent, photography-friendly or "this would make a good odd little project" items get a bonus.
 
 ---
@@ -842,6 +935,7 @@ For each item include:
 - Price.
 - Shipping or pickup notes.
 - Why it matches Dylan's profile.
+- Recency signal, when known or inferred from purchase history.
 - Why the price is good.
 - Any catch/risk.
 - Repurchase classification:
@@ -861,6 +955,7 @@ Example format:
 
 **Category fit:** High — [category]
 **Repurchase type:** Consumable / accessory / upgrade / novelty
+**Recency signal:** Current signal / background signal / interest-only signal
 **Why it fits:** [specific reason tied to Dylan's shopping profile]
 **Why it looks like a deal:** [price comparison, discount, unit price, known-low, coupon]
 **Watch-outs:** [shipping, compatibility, reviews, marketplace seller, warranty]
@@ -880,6 +975,7 @@ Do not pad the list. Three genuinely good deals are better than ten shrug-shaped
 ## Search tactics
 
 When hunting for deals:
+- Use recent purchase patterns first: recently repeated consumables, accessories for recently bought durable goods, and categories that appear clustered in the last 3-12 months.
 - Start with OzBargain and Amazon AU for broad signal.
 - Use category-specific retailers for serious gear.
 - Cross-check the same item across at least 2-3 sources when the price is above ~$100.
@@ -983,6 +1079,7 @@ The agent should be:
 - Willing to surface weird, delightful items if they strongly match Dylan's hobbies.
 - Unimpressed by generic Amazon brands unless the item is low-risk and cheap.
 - Careful to distinguish consumable stock-up deals from one-off novelty purchases.
+- Strongly recency-aware: recent behaviour should influence recommendations more than old, isolated purchases. Do not rank 3D printing first purely because of historical volume; make it first only when recent purchases or the user's prompt support that.
 
 Default tone:
 - Direct, useful, lightly dry.
