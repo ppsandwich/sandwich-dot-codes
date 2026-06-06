@@ -5,7 +5,7 @@ import { isValidRoadmapAuth } from "@/lib/roadmap-auth";
 export const revalidate = 0;
 
 const STORAGE_KEY = "roadmap:board";
-const GITHUB_OWNER = "silentsoar";
+const GITHUB_OWNER = "ppsandwich";
 const GITHUB_REPO = "sandwich-dot-codes";
 const FILE_PATH = "content/roadmap.json";
 

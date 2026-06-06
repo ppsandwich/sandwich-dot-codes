@@ -1,10 +1,11 @@
-import { allProjects, allArticles } from "contentlayer/generated";
+import { allProjects, allArticles, allSkills } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import fs from "fs";
 import path from "path";
 import { HeroSection } from "@/components/layout/HeroSection";
 import { FeaturedProjectsSection } from "@/components/projects/FeaturedProjectsSection";
 import { WritingPreviewSection } from "@/components/writing/WritingPreviewSection";
+import { SkillsPreviewSection } from "@/components/skills/SkillsPreviewSection";
 import { GitHubSection } from "@/components/layout/GitHubSection";
 import { CrookedDivider } from "@/components/decorative/CrookedDivider";
 
@@ -67,6 +68,10 @@ export default function HomePage() {
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
     .slice(0, 6);
 
+  const recentSkills = allSkills
+    .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+    .slice(0, 4);
+
   const projectTags = getMostUsedTags(allProjects).map((tag) => ({
     label: tag,
     href: `/projects?tag=${encodeURIComponent(tag)}`,
@@ -89,6 +94,8 @@ export default function HomePage() {
       <CrookedDivider variant="wavy" color="#6F9D9A" className="my-4" />
       <WritingPreviewSection articles={recentArticles} />
       <CrookedDivider variant="zigzag" color="#D98B73" className="my-4" />
+      <SkillsPreviewSection skills={recentSkills} />
+      <CrookedDivider variant="wavy" color="#6F9D9A" className="my-4" />
       <GitHubSection />
     </>
   );

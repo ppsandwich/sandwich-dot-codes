@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Enforce LF endings on markdown/MDX files for Contentlayer compatibility on Windows
+*.md text eol=lf
+*.mdx text eol=lf
