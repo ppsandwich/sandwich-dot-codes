@@ -278,7 +278,7 @@ export function MusicPageContent() {
               Singles &amp; EPs
             </h2>
             <div className="absolute -left-4 -top-2 rotate-[-15deg] sm:-left-8">
-              <DoodleAccent variant="sparkle" color="#E07A5F" size={32} />
+              <DoodleAccent variant="star" color="#E07A5F" size={32} />
             </div>
           </div>
           
