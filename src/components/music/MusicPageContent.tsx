@@ -57,10 +57,10 @@ export function MusicPageContent() {
               Original Music
             </StickerTag>
             <h1 className="font-heading text-display font-black leading-[0.95] tracking-tighter rotate-[-0.3deg]">
-              Sound Catalog
+              The Sounds
             </h1>
             <p className="mt-4 max-w-xl text-lg text-muted rotate-[0.2deg]">
-              A showcase of electronic tracks and atmospheric soundscapes. Fully interactive widgets synced directly with SoundCloud.
+              &quot;The Sounds&quot; is the name of a Swedish indie rock band I used to love in my 20s. How fitting.
             </p>
           </motion.div>
           <div className="absolute -right-2 top-4 rotate-[8deg] sm:right-4">
