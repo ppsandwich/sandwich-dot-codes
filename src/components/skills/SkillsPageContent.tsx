@@ -76,10 +76,10 @@ export function SkillsPageContent({ skills, initialTagFilter }: SkillsPageConten
               Agent Skills
             </StickerTag>
             <h1 className="font-heading text-display font-black leading-[0.95] tracking-tighter rotate-[-0.3deg]">
-              AI Instructions
+              The Skills
             </h1>
             <p className="mt-4 max-w-xl text-lg text-muted rotate-[0.2deg]">
-              Additional layers of spaghetti I'm heaping onto my AI plate
+              They don&apos;t pay the bills, but they make AI more effective for my hyper-niche use cases.
             </p>
           </motion.div>
           <div className="absolute -right-2 top-4 rotate-[8deg] sm:right-4">
