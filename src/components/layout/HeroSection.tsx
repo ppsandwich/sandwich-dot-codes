@@ -93,7 +93,7 @@ export function HeroSection({ showcases = [], tags = [] }: HeroSectionProps) {
               className="rotate-[-1deg]"
             >
               <StickerTag variant="mustard" rotation={3} className="mb-6">
-                AI Experiments
+                Creative Code & Sound
               </StickerTag>
             </motion.div>
 
@@ -118,8 +118,8 @@ export function HeroSection({ showcases = [], tags = [] }: HeroSectionProps) {
               className="mt-8 max-w-lg rotate-[0.5deg]"
             >
               <p className="text-lg text-muted sm:text-xl">
-                AI experiments, web toys, and strange digital artifacts from the
-                intersection of code and chaos.
+                A showcase of creative software engineering, original music releases,
+                and structured development playbooks.
               </p>
             </motion.div>
 

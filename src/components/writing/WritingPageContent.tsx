@@ -21,12 +21,32 @@ export function WritingPageContent({ articles, initialTagFilter }: WritingPageCo
   const initialTag = initialTagFilter || "all";
   const [activeTagFilter, setActiveTagFilter] = useState(initialTag);
 
-  const allTags = Array.from(new Set(articles.flatMap((article) => article.tags))).sort((a, b) =>
-    a.localeCompare(b),
-  );
+  const tagCounts = articles.flatMap((article) => article.tags).reduce((acc, tag) => {
+    acc[tag] = (acc[tag] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
+
+  const sortedTags = Array.from(new Set(articles.flatMap((article) => article.tags))).sort((a, b) => {
+    const countA = tagCounts[a] || 0;
+    const countB = tagCounts[b] || 0;
+    if (countB !== countA) {
+      return countB - countA;
+    }
+    return a.localeCompare(b);
+  });
+
+  const topTags = sortedTags.slice(0, 8);
+  const shouldCollapse = sortedTags.length > 8;
+  const isInitialTagHidden = initialTag !== "all" && !topTags.includes(initialTag);
+
+  const [isExpanded, setIsExpanded] = useState(isInitialTagHidden);
+  const displayedTags = shouldCollapse && !isExpanded ? topTags : sortedTags;
 
   useEffect(() => {
     setActiveTagFilter(initialTag);
+    if (initialTag !== "all" && !topTags.includes(initialTag)) {
+      setIsExpanded(true);
+    }
   }, [initialTag]);
 
   const updateTagFilter = (tag: string) => {
@@ -66,7 +86,7 @@ export function WritingPageContent({ articles, initialTagFilter }: WritingPageCo
           </div>
         </div>
 
-        {allTags.length > 0 && (
+        {sortedTags.length > 0 && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -87,7 +107,7 @@ export function WritingPageContent({ articles, initialTagFilter }: WritingPageCo
             >
               All Tags
             </button>
-            {allTags.map((tag) => (
+            {displayedTags.map((tag) => (
               <button
                 key={tag}
                 onClick={() => updateTagFilter(tag)}
@@ -103,6 +123,17 @@ export function WritingPageContent({ articles, initialTagFilter }: WritingPageCo
                 #{tag}
               </button>
             ))}
+            {shouldCollapse && (
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className={cn(
+                  "border-2 border-border px-3 py-1.5 font-heading text-xs font-bold uppercase tracking-wider bg-background text-foreground hover:bg-teal/10",
+                  "transition-all duration-200 hover:scale-105",
+                )}
+              >
+                {isExpanded ? "Show Less" : "Show All"}
+              </button>
+            )}
           </motion.div>
         )}
 

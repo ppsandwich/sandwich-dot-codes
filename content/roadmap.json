@@ -63,12 +63,6 @@
       "title": "To Do",
       "cards": [
         {
-          "id": "card-1779054884738-n1tgc",
-          "title": "JIWW (Jump In, Water’s Wet)",
-          "details": "Generate a complete production brief for a new track: tempo, key, drum style, synth palette, bass approach, arrangement, and reference vibe.",
-          "lane": "build"
-        },
-        {
           "id": "card-1779054995100-oy4l1",
           "title": "Acrilyc Pour idea exploration",
           "details": "",
@@ -81,9 +75,9 @@
           "lane": "write"
         },
         {
-          "id": "card-1779181228717-khnex",
-          "title": "The Case for Algorithmic Creativity",
-          "details": "Argue that randomness, rules, MIDI patterns, and Canvas APIs can produce meaningful creative work without generative AI.",
+          "id": "card-1779181173057-x9pm0",
+          "title": "The New PM Job: Herding the Robot Into Building the Right Thing",
+          "details": "As AI agents generate more of the code, product work shifts toward intent, constraints, review, and quality control.",
           "lane": "write"
         },
         {
@@ -99,10 +93,10 @@
           "lane": "write"
         },
         {
-          "id": "card-1779187671768-7f93s",
-          "title": "Product Prioritisation Is Not as Objective as Everyone Pretends",
-          "details": "Feature ranking frameworks look like machines for producing truth, but they mostly produce structured opinions.  This article asks whether objective prioritisation is possible, what “objective enough” might look like, and whether companies actually want objectivity — or just a tidier way to justify difficult choices.",
-          "lane": "write"
+          "id": "card-1780351296069-8xl7v",
+          "title": "Tracker",
+          "details": "",
+          "lane": "build"
         }
       ]
     },
@@ -111,15 +105,16 @@
       "title": "Doing",
       "cards": [
         {
-          "id": "card-1779055127746-h2z0c",
-          "title": "Expecto",
-          "details": "Neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation."
+          "id": "card-1779181228717-khnex",
+          "title": "The Case for Algorithmic Creativity",
+          "details": "Argue that randomness, rules, MIDI patterns, and Canvas APIs can produce meaningful creative work without generative AI.",
+          "lane": "write"
         },
         {
-          "id": "card-1779181173057-x9pm0",
-          "title": "The New PM Job: Herding the Robot Into Building the Right Thing",
-          "details": "As AI agents generate more of the code, product work shifts toward intent, constraints, review, and quality control.",
-          "lane": "write"
+          "id": "card-1779054884738-n1tgc",
+          "title": "JIWW (Jump In, Water’s Wet)",
+          "details": "Generate a complete production brief for a new track: tempo, key, drum style, synth palette, bass approach, arrangement, and reference vibe.",
+          "lane": "build"
         }
       ]
     },
@@ -131,6 +126,12 @@
           "id": "card-1779055054969-7oul2",
           "title": "Splinched",
           "details": "Automated sample chopper. Test the limits of serverless.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1779055127746-h2z0c",
+          "title": "Expecto",
+          "details": "Neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation.",
           "lane": "build"
         },
         {
@@ -170,6 +171,18 @@
           "title": "Melodestiny",
           "details": "Problem: Writing rhythm is subjective; writers can't easily see sentence length variation, clause density, or pacing patterns.\n\nAlternatives: Hemingway Editor (readability only), ProWritingAid (grammar-focused), no rhythm-specific tools",
           "lane": "build"
+        },
+        {
+          "id": "card-1779187671768-7f93s",
+          "title": "Product Prioritisation Is Not as Objective as Everyone Pretends",
+          "details": "Feature ranking frameworks look like machines for producing truth, but they mostly produce structured opinions.  This article asks whether objective prioritisation is possible, what “objective enough” might look like, and whether companies actually want objectivity — or just a tidier way to justify difficult choices.",
+          "lane": "write"
+        },
+        {
+          "id": "card-1780265865354-n8j4o",
+          "title": "How egalitarian is the AI future really?",
+          "details": "The best models are expensive, AI companies prize private datasets, websites are introducing protections against AI scraping - is AI only a 'force multiplier' for the elite? And how expensive will it get?",
+          "lane": "write"
         }
       ]
     },

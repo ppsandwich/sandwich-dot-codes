@@ -43,7 +43,7 @@ export interface LanguageStat {
   percentage: number;
 }
 
-const GITHUB_USERNAME = "silentsoar";
+const GITHUB_USERNAME = "ppsandwich";
 
 const githubHeaders = {
   Accept: "application/vnd.github.v3+json",

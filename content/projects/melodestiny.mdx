@@ -1,10 +1,10 @@
 ---
 title: "Melodestiny"
-description: "A web-based song lyric analysis tool that scores pop songs on structural and lyrical quality using 15 algorithmic techniques derived from the playbooks of the world's most successful pop songwriters."
-date: "2026-05-30"
+description: "A web-based song lyric analysis tool that scores pop songs on structural and lyrical quality using 25 algorithmic techniques derived from the playbooks of the world's most successful pop songwriters."
+date: "2026-06-04"
 tags: ["music", "lyrics", "analysis", "Rust", "WebAssembly", "songwriting", "NLP"]
 featured: true
-github: "https://github.com/silentsoar/melodestiny"
+github: "https://github.com/ppsandwich/melodestiny"
 demo: "https://melodestiny.vercel.app"
 status: "active"
 cover: "/images/projects/melodestiny-header.png"
@@ -14,11 +14,11 @@ tech: ["Rust", "WebAssembly", "Next.js", "TypeScript", "Tailwind CSS"]
 
 ## Overview
 
-Melodestiny is a web-based song lyric analysis tool that scores pop songs on structural and lyrical quality. You paste in a song title and lyrics, hit Analyze, and get a weighted score out of 100 with a detailed breakdown across 15 algorithmic techniques — each one derived from the playbooks of songwriters like Max Martin, Diane Warren, Jack Antonoff, Pharrell Williams, Julia Michaels, and Ed Sheeran.
+Melodestiny is a web-based song lyric analysis tool that scores pop songs on structural and lyrical quality. You paste in a song title and lyrics, hit Analyze, and get a weighted score out of 100 with a detailed breakdown across 25 algorithmic techniques — each one derived from the playbooks of legendary songwriters like Max Martin, Diane Warren, Jack Antonoff, Pharrell Williams, Julia Michaels, Ed Sheeran, Ryan Tedder, Sia, Benny Blanco, Ilsey Juber, and Linda Perry.
 
-The results include a wax-seal-style score badge, a collapsible technique breakdown table, highlighted lyrics with inline annotations showing where techniques were applied well or where improvements could be made, and a downloadable Markdown copy of the marked-up analysis. The entire analysis runs client-side in the browser via a Rust-compiled WebAssembly module — no server, no API calls, no latency.
+The results include a wax-seal-style score badge, an interactive technique score grid, a collapsible breakdown table, highlighted lyrics with inline annotations, syllable boundary markers, and hoverable line-level feedback badges. It also offers client-side AI lyric generation using OpenRouter, and triggers to export raw lyrics or detailed feedback reports. The entire analysis runs client-side in the browser via a Rust-compiled WebAssembly module — no server, no API calls, no latency.
 
-The design is intentionally anachronistic: parchment backgrounds, serif typography, muted earth tones, and hand-drawn-style dividers. The idea is that analyzing lyrics should feel like opening a well-loved leather journal in a Victorian songwriter's study, not staring at a dashboard.
+The design is intentionally anachronistic: parchment backgrounds, serif typography featuring the calligraphic display font **Mustopha**, muted earth tones, and hand-drawn-style dividers. The idea is that analyzing lyrics should feel like opening a well-loved leather journal in a Victorian songwriter's study, not staring at a dashboard.
 
 ![Melodestiny interface showing lyrics input, score badge, and highlighted analysis](/images/projects/melodestiny-header.png)
 
@@ -32,27 +32,37 @@ These are questions with measurable answers, and Melodestiny measures them.
 
 ## Features
 
-### The 15 Techniques
+### The 25 Techniques
 
 Each technique produces a raw score from 0.0 to 1.0, weighted by importance, then combined into a final score out of 100. The techniques are grouped by the songwriters who popularized them:
 
 | ID | Technique | Author | Weight |
 |---|---|---|---|
-| T01 | Melodic Math (Lyrical Rhythm) | Max Martin | 0.10 |
-| T02 | Chorus-First Structural Check | Max Martin | 0.09 |
-| T03 | Repetition Detection & Variation | Max Martin / Jack Antonoff | 0.08 |
-| T04 | Mantra Density | Jack Antonoff | 0.06 |
-| T05 | Hook/Title Structural Placement | Diane Warren | 0.10 |
-| T06 | Singability Metrics | Max Martin | 0.07 |
-| T07 | Line Length Consistency | Max Martin | 0.06 |
-| T08 | Title Brevity | Diane Warren | 0.04 |
-| T09 | Rhyme Scheme Consistency | Max Martin / Diane Warren | 0.08 |
-| T10 | Section Length Parity | Max Martin | 0.05 |
-| T11 | Vocabulary Simplicity | Diane Warren / Julia Michaels | 0.06 |
-| T12 | Direct Address Pronoun Density | Diane Warren / Julia Michaels | 0.07 |
-| T13 | Post-Chorus Hook Fragment | Pharrell Williams / Ed Sheeran | 0.05 |
-| T14 | Bridge Vocabulary Novelty | Jack Antonoff / Max Martin | 0.04 |
-| T15 | Structural Advisory | Max Martin / Jack Antonoff / Diane Warren | 0.05 |
+| T01 | Melodic Math (Lyrical Rhythm) | Max Martin | 0.080 |
+| T02 | Chorus-First Structural Check | Max Martin | 0.072 |
+| T03 | Repetition Detection & Variation | Max Martin / Jack Antonoff | 0.064 |
+| T04 | Mantra Density | Jack Antonoff | 0.048 |
+| T05 | Hook/Title Structural Placement | Diane Warren | 0.080 |
+| T06 | Singability Metrics | Max Martin | 0.056 |
+| T07 | Line Length Consistency | Max Martin | 0.048 |
+| T08 | Title Brevity | Diane Warren | 0.032 |
+| T09 | Rhyme Scheme Consistency | Max Martin / Diane Warren | 0.064 |
+| T10 | Section Length Parity | Max Martin | 0.040 |
+| T11 | Vocabulary Simplicity | Diane Warren / Julia Michaels | 0.048 |
+| T12 | Direct Address Pronoun Density | Diane Warren / Julia Michaels | 0.056 |
+| T13 | Post-Chorus Hook Fragment | Pharrell Williams / Ed Sheeran | 0.040 |
+| T14 | Bridge Vocabulary Novelty | Jack Antonoff / Max Martin | 0.032 |
+| T15 | Structural Advisory | Max Martin / Jack Antonoff / Diane Warren | 0.040 |
+| T16 | Emotional Arc Progression | Max Martin / Julia Michaels | 0.033 |
+| T17 | Concrete Imagery Density | Julia Michaels / Diane Warren | 0.040 |
+| T18 | Tense Consistency | Diane Warren | 0.027 |
+| T19 | Section Contrast Score | Jack Antonoff | 0.033 |
+| T20 | Conversational Flow | Pharrell Williams / Julia Michaels | 0.027 |
+| T21 | First Line Hook | Ryan Tedder | 0.033 |
+| T22 | Raw Emotion Words | Sia | 0.040 |
+| T23 | Melodic Simplicity Score | Benny Blanco | 0.027 |
+| T24 | Narrative Specificity | Ilsey Juber | 0.033 |
+| T25 | Tension and Release | Linda Perry | 0.033 |
 
 The final score maps to a label:
 
@@ -64,27 +74,40 @@ The final score maps to a label:
 | 45–59 | Work in Progress |
 | 0–44 | Back to the Drawing Board |
 
-### Highlighted Lyrics with Inline Annotations
+### Highlighted Lyrics, Syllables, and Annotation Popovers
 
-The lyrics display is the most interactive part of the app. Every flagged line or phrase gets an underline styled according to its type:
+The lyrics display in **View Analysis** mode is highly interactive, transforming the plain text input into a rich typographical report:
+- **Underlines and Annotations**: Every flagged line or phrase is underlined based on its significance:
+  - **Gold underline** — Positive flag (technique applied well)
+  - **Rust underline** — Warning flag (improvement opportunity)
+  - **Blue-grey dashed underline** — Neutral note/tip
+- **Multi-Annotation Support**: For text segments that trigger multiple songwriting techniques, highlights align cleanly. Tapping the segment opens a multi-annotation popover listing all matching tips, featuring a count badge (e.g., `3 Notes`) and custom scroll list grouping.
+- **Syllable Division Markers & Counts**: Word syllables are split using the onset-principle and marked visually with subtle bullet separators (e.g., `Mel·o·des·ti·ny`). Each line displays its final syllable count (e.g., `8s`) at the right margin.
+- **Line-Level Feedback Badges**: If a line contains feedback, a hoverable/tappable `(i)` badge appears next to the syllable count—colored gold for positive highlights or red for warnings—revealing specific suggestions instantly.
 
-- **Gold underline** — Positive flag (technique applied well)
-- **Rust underline with dot** — Negative flag (improvement opportunity)
-- **Sepia dashed underline** — Neutral/note flag
+### Advanced Section Detection & Auto-Partitioning
 
-Clicking or tapping an underlined segment opens a popover (desktop) or bottom sheet (mobile) showing the technique name, the author attribution, an explanation of why it was flagged, and a suggested improvement if applicable. The annotation panel traps focus for accessibility and is dismissible via Escape or tap-outside.
+Melodestiny automatically structures raw song lyrics into sections. It parses explicit square brackets (e.g., `[Chorus]`), colons (e.g., `Verse 1:`), and common songwriting keywords.
+If no labels are present, a structural auto-partitioning algorithm segments the lyrics based on spacing patterns and repetition, labeling sections (e.g., `[Intro]`, `[Verse]`, `[Chorus]`, `[Outro]`) dynamically and flagging the UI with a notice recommending manual labels for optimal accuracy. Section titles are filtered out during calculation so they do not skew syllable or line-length averages.
 
-### Section Detection
+### AI Lyric Generator (Best-of-Three)
 
-Since users paste plain text, Melodestiny has to figure out which lines are verses, choruses, and bridges on its own. It checks three things in order:
+A built-in AI lyric generation drawer integrates with OpenRouter. Users provide their own API key and choose from top models (like Claude 3.5 Sonnet or GPT-4o). The system uses a **Best-of-Three** workflow:
+1. Generates three distinct variations in parallel.
+2. Automatically passes all three candidates into the client-side Rust-compiled WebAssembly engine.
+3. Compares the scores and injects the highest-scoring candidate directly into the editor for further refining.
 
-1. **Explicit labels** — Lines matching "verse", "chorus", "bridge", "pre-chorus" (case-insensitive, with or without numbers)
-2. **Structural repetition** — Line groups that appear identically 2+ times are marked as choruses
-3. **Auto-partitioning fallback** — If nothing else works, groups every 4 lines as a verse-like section and displays a notice suggesting the user label their sections for more accurate results
+### State Persistence, Reset, and Demo Hits
 
-### Downloadable Markup
+- **State Persistence**: Song titles and lyrics are automatically saved to `localStorage` as the user types, protecting creative progress across tab closures or accidental refreshes.
+- **Application Reset**: A header-level reset button clears local storage and restores the clean, blank editor state immediately.
+- **Demo Song Loader**: When the editor is blank, a prominent `✨ Load Demo Song` overlay lets users load one of 10 pre-loaded historical #1 pop hits (e.g., Max Martin-produced chart-toppers) with a single click to instantly test the tool's capabilities.
 
-The Download button exports the full analysis as a Markdown file: score breakdown table, lyrics with inline annotation comments, and a prioritized improvement opportunities section grouped by high, medium, and low priority. Filename is `{title}_analysis.md`.
+### Lyrical & Report Export
+
+Users can download exports in two formats:
+1. **Clean Raw Lyrics (TXT)**: Formatted copy of the text containing the latest lyric edits, removing all analysis highlights and syllable separator dots.
+2. **Detailed Feedback Report (TXT/MD)**: A structured report containing the final wax-seal score, the 25-technique breakdown table, and a categorized list of high, medium, and low priority improvement opportunities complete with original line references.
 
 ## Architecture
 
@@ -101,9 +124,10 @@ The app is a single Next.js page with a two-column layout on desktop (input left
 │  ┌──────────────▼──────────────────────────┐ │
 │  │        WASM Analysis Engine             │ │
 │  │  (Rust compiled to WebAssembly)         │ │
-│  │  - 15 algorithmic techniques            │ │
+│  │  - 25 algorithmic techniques            │ │
 │  │  - Scoring & weighting                  │ │
 │  │  - Lyric markup generation              │ │
+│  │  - Syllable splitting & counting        │ │
 │  └─────────────────────────────────────────┘ │
 └─────────────────────────────────────────────┘
 ```
@@ -119,11 +143,11 @@ pub fn analyze(title: &str, lyrics: &str) -> JsValue {
 }
 ```
 
-The WASM module is loaded via dynamic import on app mount, cached as a singleton, and served from `/public/wasm/` with `Cache-Control: immutable` headers. The `.wasm` binary targets under 2MB gzipped including bundled word frequency data.
+The WASM module is loaded via dynamic import on app mount, cached as a singleton, and served from `/public/wasm/` with `Cache-Control: immutable` headers. The `.wasm` binary targets under 2MB gzipped, including the bundled 5000-word frequency list and the 2000-word CMU Pronouncing Dictionary subset.
 
 ### Key Algorithms
 
-**Syllable counting** uses the vowel-group method — count groups of consecutive vowels, subtract for trailing silent 'e', add back for '-le' endings, minimum 1 per word:
+**Syllable counting and splitting** uses a multi-layered rule system. The vowel-group method handles base syllables, supplemented with special handling for vowel clusters, silent endings, and consonant splits:
 
 ```rust
 fn count_syllables(word: &str) -> usize {
@@ -132,6 +156,7 @@ fn count_syllables(word: &str) -> usize {
     let mut count = 0;
     let mut prev_was_vowel = false;
 
+    // 1. Count vowel groups
     for ch in word.chars() {
         let is_vowel = vowels.contains(&ch);
         if is_vowel && !prev_was_vowel {
@@ -140,15 +165,38 @@ fn count_syllables(word: &str) -> usize {
         prev_was_vowel = is_vowel;
     }
 
+    // 2. Adjust for magic-e pattern (consonant-vowel-consonant-e)
     if word.ends_with('e') && count > 1 {
-        count -= 1;
+        // Special case: check if it's not a "-le" ending preceded by a consonant
+        let chars: Vec<char> = word.chars().collect();
+        if chars.len() >= 2 && chars[chars.len() - 2] != 'l' {
+            count -= 1;
+        }
+    }
+
+    // 3. Adjust for silent -ed (e.g. "walked", but not "started")
+    if word.ends_with("ed") && count > 1 {
+        let chars: Vec<char> = word.chars().collect();
+        if chars.len() >= 3 {
+            let prev_char = chars[chars.len() - 3];
+            if prev_char != 't' && prev_char != 'd' {
+                count -= 1;
+            }
+        }
     }
 
     count.max(1)
 }
 ```
 
-**Rhyme detection** uses a bundled subset of the CMU Pronouncing Dictionary (~2000 common words) for phonetic matching, with a heuristic fallback that strips common suffixes and compares ending character patterns for words not in the dictionary.
+For displaying visual dividers, the **syllable splitting** algorithm maps words by locating vowel nuclei, adjusting for silent trailing vowels, and applying the **onset principle** (consonants preceding a vowel group are grouped with that vowel's syllable, and multiple medial consonants split after the first consonant).
+
+**Rhyme detection** operates in two tiers. It first queries the compiled CMU Pronouncing Dictionary subset for phonetic endings (stressed vowel and trailing phonemes, e.g., `"love"` -> `"AH V"`). If a word isn't in the subset, the engine falls back to heuristic matching: stripping common suffixes, checking vowel endings, and identifying common spelling rhyme pairs (e.g., `ee` and `ea`).
+
+**Structural advisory (T15)** maps the song sections (e.g., `[Intro]`, `[Verse]`, `[Chorus]`, `[Bridge]`, `[Outro]`) to evaluate arrangement completeness. It checks for:
+- Missing bridges (flagged if there are $\geq 2$ verses and $\geq 2$ choruses but no bridge).
+- Missing pre-choruses (if line count ratio between verse and chorus exceeds $1.5$ or is below $0.67$).
+- Structural errors (like back-to-back consecutive verses without chorus relief, or ending on a verse/bridge instead of the chorus payoff).
 
 **Singability metrics** flag lines with dense consonant clusters (> 0.6 density) or very long syllables (> 4 characters per syllable) — the kinds of lines that are hard to sing a cappella walking down the street.
 
@@ -160,11 +208,11 @@ The entire analysis pipeline runs client-side. No serverless functions, no API c
 
 Rust was the right choice for the analysis engine for three reasons: performance (500 lines of lyrics analyzed in under 200ms), portability (the same crate compiles to WASM for the browser and can be wrapped in Tauri for native iOS/Android later), and correctness (the type system catches the kind of off-by-one errors that plague algorithmic text processing).
 
-The WASM module bundles static data — a top-5000 English word frequency list derived from Google Books n-gram data and a CMU Pronouncing Dictionary subset — so it's self-contained. No external lookups at runtime.
+The WASM module bundles static data — a top-5000 English word frequency list derived from Google Books n-gram data and a 2000-word CMU Pronouncing Dictionary subset — so it's self-contained. No external lookups are required at runtime.
 
 ### Next.js and TypeScript
 
-The frontend is a single-page Next.js app using the App Router. TypeScript throughout, with types defined once and shared between the WASM loader, the UI components, and the annotation system. Tailwind CSS handles styling with a custom design token system for the antique aesthetic.
+The frontend is a single-page Next.js app using the App Router. TypeScript is used throughout, with types defined once in Rust and translated to TypeScript interfaces. Tailwind CSS handles styling with a custom design token system for the antique aesthetic.
 
 ### Design Tokens
 
@@ -175,46 +223,46 @@ The visual system is built on muted earth tones and serif typography:
 | `--color-parchment` | `#F5F0E8` | Main background |
 | `--color-ink` | `#2C2418` | Primary text |
 | `--color-sepia` | `#8B7355` | Secondary text |
-| `--color-gold` | `#C4A265` | Scores, highlights, accents |
+| `--color-gold` | `#C4A265` | Scores, highlights, accents, syllable markers |
 | `--color-rust` | `#A0522D` | Warnings, improvement flags |
 | `--color-sage` | `#7A8B6F` | Positive indicators |
+| `--color-blue-grey` | `#7B8FA1` | Note annotations |
 | `--color-cream` | `#FBF8F1` | Card backgrounds |
 
-Typography is Playfair Display for headings, Lora for body text, and IBM Plex Mono for scores and technical labels. Paper grain texture via CSS noise. No sans-serif anywhere.
+Typography is **Mustopha** (a custom Arabic-inspired display font) for headings, Lora for body text, and IBM Plex Mono for scores and technical labels. Paper grain texture is applied via CSS noise. No sans-serif is used anywhere in the application.
 
 ## UI Design
 
-The interface is a single view — no navigation, no separate screens. On mobile, input stacks above results. On desktop, the left column holds the input form (title, lyrics textarea, analyze button) and the right column shows results. The right column is sticky on desktop so results stay visible while scrolling the lyrics input.
+The interface is a single-view, responsive layout. On mobile, input elements stack above results; on desktop, a two-column layout features independent scrolling, keeping the results sticky on the right. 
 
-The score badge is rendered as a wax-seal-style circular element that scales in with a subtle spring overshoot animation. Score breakdown rows stagger in from the left with 30ms delays between each. Highlighted lyrics annotations underline from left to right in sequence. All animations respect `prefers-reduced-motion` — when enabled, transitions are instant.
+A custom `AnnotatedTextarea` component toggles the input field between **Edit Lyrics** (standard editing textarea) and **View Analysis** (interactive text displaying syllable markers, boundary divisions, hoverable feedback badges, and underlined annotations). The score badge is rendered as a wax-seal-style circular element that scales in with a spring overshoot animation. A 5×3 grid (desktop) or 3×5 grid (mobile) presents progress bars for all 25 technique scores. 
 
-The analyze button text fades to a loading spinner on click, then changes to "Examining your lyrics..." while the WASM module runs. Analysis typically completes in under 500ms.
+A client-side **Dark Mode** toggle switches the workspace to an organic, low-contrast slate-950 and gold theme, optimizing borders and text contrast for low-light studies.
 
 ## What I Learned
 
-- **WASM bundle size is a real constraint.** Bundling a 2000-word phonetic dictionary and a 5000-word frequency list with the Rust crate means the WASM binary pushes toward the 2MB gzip target. Stripping debug symbols, using `wasm-opt`, and compressing the static data to JSON arrays with numeric indices kept it under budget.
-- **Section detection from plain text is harder than it sounds.** Users paste lyrics in wildly different formats — some label sections, some don't, some include timestamps or chord notation. The three-tier detection pipeline (explicit labels, structural repetition, auto-partitioning fallback) handles most cases, but the auto-partitioning notice is essential because the fallback is a rough heuristic.
-- **Syllable counting in English is inherently approximate.** The vowel-group method works well for common words but miscounts edge cases like "fire" (1 or 2 syllables depending on dialect) and "every" (2 or 3). The CMU Dictionary helps for known words, but the fallback heuristic is lossy. This is fine for scoring purposes — the algorithm measures relative consistency, not absolute truth.
-- **Designing for an antique aesthetic without sacrificing usability is a balancing act.** Serif fonts, muted colors, and textured backgrounds can tank readability if the contrast ratios aren't carefully managed. Every color combination was tested against WCAG AA thresholds. The gold accent on parchment background needed a darker variant for text use.
-- **The WASM-to-JS boundary matters for performance.** Serializing the full `AnalysisOutput` struct through `wasm_bindgen` as a `JsValue` and then deserializing it in TypeScript adds overhead. For a 500-line song it's negligible (sub-millisecond), but the types need to be defined on both sides — Rust structs and TypeScript interfaces — and kept in sync manually.
+- **WASM bundle size is a real constraint.** Bundling a 2000-word phonetic dictionary and a 5000-word frequency list with the Rust crate means the WASM binary pushes toward the 2MB gzip target. Stripping debug symbols, using `wasm-opt`, and compressing the static data kept it under budget.
+- **Client-side LLM coordination requires flexibility.** Integrating an AI Lyric Generator in the browser using OpenRouter requires prompting users for their own API keys and handling network requests gracefully. The **Best-of-Three** workflow runs parallel queries, meaning the UI needs to manage multiple loading states smoothly.
+- **Section detection from plain text is harder than it sounds.** Users paste lyrics in wildly different formats — some label sections with brackets or colons, some don't, and some include timestamps or chord notation. The preprocessing pipeline filters out non-lyric data and maps coordinates, but the spacing-based auto-partitioning fallback is crucial for raw inputs.
+- **Syllable splitting in English has massive edge cases.** Heuristics like the vowel-group method are approximate. Adjusting for magic-e, silent -ed endings, and consonant splits required layered exceptions in the Rust engine to avoid miscounts on common pop words (like "walked" or "moved").
+- **Designing for an antique aesthetic without sacrificing usability is a balancing act.** Serif fonts, custom display typefaces like Mustopha, and textured backgrounds can tank readability if contrast ratios aren't managed. Every color combination, including the dark mode palette, was validated against WCAG AA thresholds.
 
 ## Challenges
 
-- **Rhyme detection without a full phonetic dictionary:** The CMU Pronouncing Dictionary is large (~134,000 entries). Bundling the full dictionary would blow the WASM size budget. The compromise was a ~2000-word subset of the most common English words, with a character-based heuristic fallback for everything else. The fallback is good enough for scoring but occasionally misses slant rhymes and near-rhymes that a human would catch.
-- **Flagging without discouraging:** The annotation system needs to point out problems without making the songwriter feel attacked. Every negative flag includes a specific, actionable suggestion phrased as advice from the attributed songwriter, not as a deficiency in the lyrics. The tone calibration took several iterations.
-- **Responsive layout with independent scrolling:** On desktop, the left column (input) and right column (results) scroll independently. Getting sticky positioning, overflow behavior, and the mobile-to-desktop breakpoint transition to work smoothly across browsers required careful CSS debugging, particularly around nested scroll containers and `position: sticky` with `overflow: hidden` ancestors.
-- **Animation performance with many annotations:** A song with 50+ flagged lines means 50+ annotation underlines animating in sequence. Using CSS `@keyframes` with `animation-delay` rather than JavaScript-driven animations kept everything on the compositor thread. The stagger delay (30ms per annotation) is tuned to feel progressive without being sluggish.
+- **Aligning overlays on editable text:** Developing the custom `AnnotatedTextarea` component required overlapping the text layers so highlights align exactly with the editable textarea's scroll position and font sizes.
+- **Rhyme detection without a full phonetic dictionary:** The CMU Pronouncing Dictionary is too large (~134,000 entries) to bundle entirely. Combining a ~2000-word subset of common pop vocabulary with a heuristic suffix/diphthong fallback was necessary to stay within WebAssembly bundle limits.
+- **Multi-annotation overlap management:** When a single line or word triggers multiple techniques (e.g. repetition and pronoun density), stacking highlights became messy. Merging overlaps into a unified popup with count badges and list layouts kept the UI clean.
+- **Animation performance with many annotations:** A song with 50+ flagged lines means 50+ annotation underlines animating in sequence. Using CSS `@keyframes` with `animation-delay` rather than JavaScript-driven animations kept everything on the compositor thread.
 
 ## Future Work
 
-- **LLM-powered techniques** — A second layer of 12 techniques that require language model inference (metaphor analysis, emotional arc detection, narrative coherence) as a premium feature
-- **Audio input** — Upload audio, transcribe to lyrics via Whisper WASM, then analyze
-- **Rhyme suggestions** — Suggest rhyming words for flagged lines using the phonetic dictionary
-- **Multi-language support** — Extend syllable counter and word frequency lists beyond English
-- **Collaboration** — Share analysis links with co-writers
-- **Tauri native app** — Wrap for iOS/Android using the shared Rust core
+- **Audio Input** — Upload audio, transcribe to lyrics via Whisper WASM, then analyze.
+- **Rhyme Suggestions** — Suggest rhyming words for flagged lines using the phonetic dictionary.
+- **Multi-language Support** — Extend the syllable counter and word frequency lists beyond English.
+- **Collaboration** — Share analysis links and co-writing sessions.
+- **Tauri Native App** — Wrap for iOS/Android using the shared Rust core.
 
 ## Links
 
-- [GitHub Repository](https://github.com/silentsoar/melodestiny)
+- [GitHub Repository](https://github.com/ppsandwich/melodestiny)
 - [Live App](https://melodestiny.vercel.app)

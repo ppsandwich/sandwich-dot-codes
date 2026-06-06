@@ -4,6 +4,7 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
+import remarkUnwrapImages from "remark-unwrap-images";
 
 const glsl = () => ({
   name: "GLSL",
@@ -108,22 +109,20 @@ export const Article = defineDocumentType(() => ({
   },
 }));
 
-export const Experiment = defineDocumentType(() => ({
-  name: "Experiment",
-  filePathPattern: "experiments/**/*.mdx",
+export const Skill = defineDocumentType(() => ({
+  name: "Skill",
+  filePathPattern: "skills/**/*.mdx",
   contentType: "mdx",
   fields: {
     title: { type: "string", required: true },
-    description: { type: "string", required: true },
+    purpose: { type: "string", required: true },
     date: { type: "string", required: true },
     tags: { type: "list", of: { type: "string" }, required: true },
-    demo: { type: "string" },
-    github: { type: "string" },
   },
   computedFields: {
     slug: {
       type: "string",
-      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ""),
+      resolve: (doc) => doc._raw.sourceFileName.replace(/\.(md|mdx)$/, ""),
     },
     readingTime: {
       type: "string",
@@ -131,16 +130,16 @@ export const Experiment = defineDocumentType(() => ({
     },
     url: {
       type: "string",
-      resolve: (doc) => `/experiments/${doc._raw.sourceFileName.replace(/\.mdx$/, "")}`,
+      resolve: (doc) => `/skills/${doc._raw.sourceFileName.replace(/\.(md|mdx)$/, "")}`,
     },
   },
 }));
 
 export default makeSource({
   contentDirPath: "content",
-  documentTypes: [Project, Article, Experiment],
+  documentTypes: [Project, Article, Skill],
   mdx: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [remarkGfm, remarkUnwrapImages],
     rehypePlugins: [
       rehypeSlug,
       [rehypeAutolinkHeadings, { behavior: "wrap" }],
