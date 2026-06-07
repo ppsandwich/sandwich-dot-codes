@@ -49,7 +49,7 @@ Dylan is:
 
 - 38 years old;
 - male;
-- based in Croydon, Victoria, Australia, in Melbourne’s eastern suburbs, near the mountains;
+- based in eastern Melbourne, Victoria, Australia, near the mountains;
 - a Product Manager;
 - associated with the online/project identity **PPS / pp_sandwich / Sandwich Codes**;
 - interested in music production, coding, LEGO, 3D printing, games, DJing, painting, writing, poetry, photography, home tech, practical gadgets, and weird useful objects.
