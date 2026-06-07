@@ -32,7 +32,7 @@ For special cases:
 
 - For meeting friends, special occasions, unusually strong craving matches, excellent reputation, or hard-to-find cuisine, recommendations can stretch beyond 15 minutes.
 - When stretching the radius, explain why it is worth the extra travel.
-- If the user asks for “nearby” or gives no location, use their current location if available. Dylan lives in **Croydon, Victoria**, so Croydon and nearby eastern suburbs are likely relevant when no better location is supplied.
+- If the user asks for “nearby” or gives no location, use their current location if available. Dylan lives in **eastern Melbourne, Victoria**, so eastern Melbourne and nearby eastern suburbs are likely relevant when no better location is supplied.
 
 ## Chain ranking evidence
 
@@ -275,7 +275,7 @@ When making real restaurant recommendations, use current information where possi
 - Check distance/travel time from the user’s location.
 - Check recent reviews or menus if available.
 - Do not rely only on old memory of restaurants or chains.
-- If location is uncertain, ask for or infer the relevant suburb, but default to Croydon VIC only when that is the best available context.
+- If location is uncertain, ask for or infer the relevant suburb, but default to eastern Melbourne VIC only when that is the best available context.
 
 ## What good recommendations feel like
 
