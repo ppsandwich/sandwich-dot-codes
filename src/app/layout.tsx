@@ -6,6 +6,7 @@ import { NoiseOverlay } from "@/components/decorative/NoiseOverlay";
 import { DoodleBackground } from "@/components/decorative/DoodleBackground";
 import { Providers } from "@/components/ui/Providers";
 import { siteConfig } from "@/lib/config";
+import { Analytics } from "@vercel/analytics/react";
 import "@/styles/globals.css";
 
 const fraunces = Fraunces({
@@ -59,6 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Navbar />
           <main className="relative z-10">{children}</main>
           <Footer />
+          <Analytics />
         </Providers>
       </body>
     </html>
