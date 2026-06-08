@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { GripVertical, X, Pencil, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -43,6 +43,20 @@ export function KanbanCard({
   const [editDetails, setEditDetails] = useState(details);
   const [isDragging, setIsDragging] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [showButton, setShowButton] = useState(false);
+  const textRef = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    setIsCollapsed(true);
+  }, [details]);
+
+  useEffect(() => {
+    if (textRef.current && isCollapsed) {
+      setShowButton(textRef.current.scrollHeight > textRef.current.clientHeight);
+    }
+  }, [details, isCollapsed]);
 
   const rotation = ((index * 7 + 3) % 5) - 2;
 
@@ -142,9 +156,25 @@ export function KanbanCard({
               {title}
             </h5>
             {details && (
-              <p className="mt-2 whitespace-pre-wrap font-body text-sm leading-relaxed text-foreground/80">
-                {details}
-              </p>
+              <div className="mt-2">
+                <p
+                  ref={textRef}
+                  className={cn(
+                    "whitespace-pre-wrap font-body text-sm leading-relaxed text-foreground/80",
+                    isCollapsed && "line-clamp-5"
+                  )}
+                >
+                  {details}
+                </p>
+                {showButton && (
+                  <button
+                    onClick={() => setIsCollapsed(!isCollapsed)}
+                    className="mt-2 font-heading text-xs font-bold uppercase tracking-wider text-teal hover:text-teal/80 transition-colors block"
+                  >
+                    {isCollapsed ? "Show Details" : "Hide Details"}
+                  </button>
+                )}
+              </div>
             )}
           </div>
         )}
