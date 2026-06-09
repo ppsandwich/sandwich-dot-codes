@@ -109,6 +109,12 @@
           "title": "Dark Pattern Vivarium",
           "details": "A tiny museum of manipulative UI patterns. Users poke buttons, see how the trap works, then learn the ethical alternative.",
           "lane": "build"
+        },
+        {
+          "id": "card-1780985655353-12o7j",
+          "title": "Marketplace Minesweeper",
+          "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
+          "lane": "build"
         }
       ]
     },
