@@ -55,6 +55,48 @@
           "title": "A songwriter’s rhyme assistant that avoids cliché rhymes and suggests more interesting near-rhymes, slant rhymes, and internal rhymes.",
           "details": "",
           "text": "A songwriter’s rhyme assistant that avoids cliché rhymes and suggests more interesting near-rhymes, slant rhymes, and internal rhymes."
+        },
+        {
+          "id": "card-1780963642229-0avrx",
+          "title": "Palette Walk",
+          "details": "Upload photos from a walk and it extracts a colour palette, ambient texture, and printable “field note” card.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780963658863-48rmx",
+          "title": "MIDI Weather Station",
+          "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780963720116-x4jke",
+          "title": "The Backlog Museum",
+          "details": "Turns your unfinished projects into a little virtual museum: each idea becomes an exhibit with status, guilt level, next action, and demo potential.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780963726226-gxfac",
+          "title": "Receipt Aquarium",
+          "details": "Upload grocery receipts and it turns spending patterns into a strange animated aquarium: staples, impulse buys, recurring offenders.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780963751986-w920m",
+          "title": "Bias Biscuit",
+          "details": "A privacy-conscious checker for product research questions, job ads, or survey copy that flags bias, loaded wording, and accidental exclusion.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780964721084-t4d13",
+          "title": "Backlog Taxidermy",
+          "details": "Turns abandoned project ideas into preserved “specimens” with labels: why it died, what remains useful, and whether it should be revived.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780965650162-9b6j0",
+          "title": "Project Autopsy",
+          "details": "Paste a dead project idea and it generates a structured autopsy: cause of death, salvageable organs, next experiment, and memorial plaque.",
+          "lane": "build"
         }
       ]
     },
