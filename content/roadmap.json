@@ -51,6 +51,12 @@
           "text": "” A website that turns a DJ setlist into a visual energy journey, showing peaks, breathers, tempo shifts, and mood changes. Could be merged with PIAB."
         },
         {
+          "id": "card-1780985776141-sv9wv",
+          "title": "Cost of Living Loadout",
+          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
+          "lane": "build"
+        },
+        {
           "id": "card-1779054981093-qgrpl",
           "title": "A songwriter’s rhyme assistant that avoids cliché rhymes and suggests more interesting near-rhymes, slant rhymes, and internal rhymes.",
           "details": "",
@@ -60,12 +66,6 @@
           "id": "card-1780963642229-0avrx",
           "title": "Palette Walk",
           "details": "Upload photos from a walk and it extracts a colour palette, ambient texture, and printable “field note” card.",
-          "lane": "build"
-        },
-        {
-          "id": "card-1780985776141-sv9wv",
-          "title": "Cost of Living Loadout",
-          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
           "lane": "build"
         },
         {
