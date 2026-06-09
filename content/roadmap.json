@@ -91,6 +91,12 @@
           "title": "Backlog Taxidermy",
           "details": "Turns abandoned project ideas into preserved “specimens” with labels: why it died, what remains useful, and whether it should be revived.",
           "lane": "build"
+        },
+        {
+          "id": "card-1780965650162-9b6j0",
+          "title": "Project Autopsy",
+          "details": "Paste a dead project idea and it generates a structured autopsy: cause of death, salvageable organs, next experiment, and memorial plaque.",
+          "lane": "build"
         }
       ]
     },
