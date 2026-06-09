@@ -127,6 +127,12 @@
           "title": "Data Centre Neighbourhood Simulator",
           "details": "A simulation where users balance AI demand, water, power, jobs, land use, emissions, and local resistance.",
           "lane": "build"
+        },
+        {
+          "id": "card-1780985751645-zfsro",
+          "title": "Model Collapse Aquarium",
+          "details": "A visual simulation where AI-generated content feeds future AI training data until the ecosystem gets murky, repetitive, and useless.",
+          "lane": "build"
         }
       ]
     },
