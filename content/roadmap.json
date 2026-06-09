@@ -121,6 +121,12 @@
           "title": "Privacy Receipt",
           "details": "Paste an app’s privacy policy or permissions list and get a plain-English “receipt” of what you’re paying with: location, biometrics, contacts, behaviour, identity.",
           "lane": "build"
+        },
+        {
+          "id": "card-1780985732460-7lt6d",
+          "title": "Data Centre Neighbourhood Simulator",
+          "details": "A simulation where users balance AI demand, water, power, jobs, land use, emissions, and local resistance.",
+          "lane": "build"
         }
       ]
     },
