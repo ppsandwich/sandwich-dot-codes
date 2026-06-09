@@ -103,6 +103,12 @@
           "title": "Slop Forensics",
           "details": "A browser-based tool that analyses a page or pasted article for AI slop signals: repetition, vague sourcing, fake specificity, and “this paragraph has no bones”.",
           "lane": "build"
+        },
+        {
+          "id": "card-1780985644036-0s7xv",
+          "title": "Dark Pattern Vivarium",
+          "details": "A tiny museum of manipulative UI patterns. Users poke buttons, see how the trap works, then learn the ethical alternative.",
+          "lane": "build"
         }
       ]
     },
