@@ -75,6 +75,12 @@
           "lane": "build"
         },
         {
+          "id": "card-1780985776141-sv9wv",
+          "title": "Cost of Living Loadout",
+          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
+          "lane": "build"
+        },
+        {
           "id": "card-1780963751986-w920m",
           "title": "Bias Biscuit",
           "details": "A privacy-conscious checker for product research questions, job ads, or survey copy that flags bias, loaded wording, and accidental exclusion.",
@@ -84,12 +90,6 @@
           "id": "card-1780964721084-t4d13",
           "title": "Backlog Taxidermy",
           "details": "Turns abandoned project ideas into preserved “specimens” with labels: why it died, what remains useful, and whether it should be revived.",
-          "lane": "build"
-        },
-        {
-          "id": "card-1780985776141-sv9wv",
-          "title": "Cost of Living Loadout",
-          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
           "lane": "build"
         },
         {
