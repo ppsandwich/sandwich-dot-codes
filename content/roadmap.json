@@ -67,6 +67,12 @@
           "title": "MIDI Weather Station",
           "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
           "lane": "build"
+        },
+        {
+          "id": "card-1780963720116-x4jke",
+          "title": "The Backlog Museum",
+          "details": "Turns your unfinished projects into a little virtual museum: each idea becomes an exhibit with status, guilt level, next action, and demo potential.",
+          "lane": "build"
         }
       ]
     },
