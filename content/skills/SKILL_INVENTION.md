@@ -325,6 +325,15 @@ Classify the request:
 * Local Melbourne/eastern suburbs tools
 * Weird experiments
 * PRD-ready concepts
+* Tiny games
+* Interactive essays
+* Simulations and sandboxes
+* Browser experiments
+* Creative instruments
+* Professional artefacts
+* Public-interest tools
+* Art objects
+* Provocations
 
 If the user gives constraints, obey them.
 
@@ -358,6 +367,8 @@ Examples:
 * Accounting + video games + product UX → boring finance concepts explained as game mechanics
 * Retail + art + ecommerce → shelf layout simulator for imaginary products
 
+Do not always use the same formula. Some ideas should begin from a tension, a rule system, a physical making problem, an awkward professional truth, a tiny game loop, or an interaction pattern rather than a neat input/output transformation.
+
 ### Step 3: Filter for portfolio value
 
 Prioritise ideas that are:
@@ -384,6 +395,96 @@ Before presenting ideas, mentally score each one from 1–5 across:
 * Potential for a good write-up
 
 Prefer ideas that score highly across most categories, not ideas that are perfect in one category and terrible everywhere else.
+
+## Breadth and novelty controls
+
+Do not overfit to Dylan’s existing project patterns. The skill should generate ideas that belong in Dylan’s world, but not all ideas need to be:
+
+* creative input → structured output
+* data → playful visualisation
+* local-first personal utility
+* music/LEGO/weather/receipt/backlog themed
+* paste/upload something → generate a clever artefact
+
+When generating ideas, deliberately vary the type of project across multiple invention lanes unless the user asks for a specific category. The goal is range: small tools, strange games, interactive arguments, browser experiments, practical professional artefacts, and creative objects that could sit on Sandwich Codes without all using the same skeleton.
+
+### Invention lanes
+
+Use a mix of these lanes unless the user asks for a narrow category:
+
+1. **Practical tool** — solves a small real problem with a polished workflow.
+2. **Creative instrument** — lets the user make sound, image, text, layout, rhythm, structure, or visual systems.
+3. **Tiny game** — has rules, constraints, scoring, failure, progression, randomness, or replayability.
+4. **Interactive essay** — explains an idea through interaction rather than static prose.
+5. **Simulation or sandbox** — lets users manipulate a system and observe consequences.
+6. **Personal utility** — helps organise, decide, reflect, track, plan, compare, or salvage something.
+7. **Public-interest tool** — helps people understand systems, rights, policies, services, risks, or trade-offs.
+8. **Art object** — primarily aesthetic, poetic, strange, atmospheric, or experiential.
+9. **Professional artefact** — shows product, marketing, retail, measurement, strategy, or research thinking.
+10. **Provocation** — makes a point about technology, AI, privacy, creativity, labour, retail, measurement, or culture.
+11. **Browser experiment** — uses web APIs, sensors, canvas, audio, files, gestures, drag/drop, or interaction in an unusual way.
+12. **Hardware-adjacent tool** — supports 3D printing, LEGO, photography, music gear, MIDI, sewing, painting, or physical making.
+
+### Novelty modes
+
+When brainstorming, silently choose or mix one or more novelty modes:
+
+* **Safe** — practical, buildable, obvious portfolio value.
+* **Weird** — memorable, odd, less obviously commercial, but still coherent.
+* **Serious** — professional, product-led, research-led, industry-relevant, or analytically useful.
+* **Art** — expressive, visual, poetic, atmospheric, or primarily experiential.
+* **Game** — interactive, rule-based, replayable, playful, and possibly competitive.
+* **Utility** — genuinely useful, even if small or unglamorous.
+* **Provocation** — raises a question or critique through the product itself.
+
+Do not default to Safe + Utility every time. Dylan often wants ideas that are buildable, but the portfolio also needs range. A good batch may include something useful, something weird, something beautiful, something game-like, something serious, and something that makes a point.
+
+### Anti-repetition rule
+
+Across a list of ideas, avoid repeating the same base pattern more than three times.
+
+For example, do not produce a list where most ideas are:
+
+* upload file → generate artefact
+* paste text → receive critique
+* personal data → whimsical metaphor
+* weather/receipt/backlog → visual output
+* AI assistant for niche creative task
+* dashboard-but-cute
+* generator-but-with-a-better-name
+
+If several ideas share the same pattern, replace some with games, simulations, interactive essays, strange utilities, professional artefacts, physical-making tools, or browser experiments.
+
+### Emotional truth rule
+
+Strong ideas should often begin from a real tension, not just a data source.
+
+Examples:
+
+* Starting projects is easier than finishing them.
+* Creative tools either over-assist or abandon you.
+* Product prioritisation pretends to be objective.
+* Retail measurement is powerful but often creepy.
+* AI makes output cheap but taste more important.
+* People want privacy until convenience quietly eats it.
+* Hobbies are joyful but also full of admin, guilt, storage problems, and tiny expensive objects.
+* Professional work often hides subjective judgement inside fake certainty.
+* A beautiful interface can make a boring workflow feel like an object worth keeping.
+
+Prefer ideas that turn one of these tensions into an interaction model. “Receipts become fish” is a mechanic. “My grocery habits are a tiny domestic biography I did not consent to writing” is an emotional truth. Start from the second one when possible.
+
+### Breadth target for lists
+
+When asked for 10 or more ideas, aim for a spread like this unless the user gives tighter constraints:
+
+* 2–3 practical tools
+* 2–3 creative instruments or art objects
+* 1–2 games or simulations
+* 1–2 professional/product/retail/marketing artefacts
+* 1–2 provocations or interactive essays
+* 1–2 wildcards that are harder to classify
+
+This is a guide, not a spreadsheet wearing a small reflective vest. The point is to stop every idea from coming out of the same mould.
 
 ## Output formats
 
@@ -462,7 +563,7 @@ Because: [brief product/design rationale]
 
 ## Preferred project patterns
 
-Prioritise these patterns.
+Use these patterns as ingredients, not rails. Prioritise them when they fit, but do not let them narrow the idea space.
 
 ### Creative input → structured output
 
@@ -520,9 +621,52 @@ Melbourne/eastern suburbs/mountains context can be used for:
 
 Avoid ideas that require deep local government data unless the user asks for civic tech.
 
+### Games and simulations
+
+Examples:
+
+* A tiny browser game about fighting scope creep
+* A simulator for retail shelf decisions, campaign trade-offs, or product prioritisation
+* A music-theory toy where constraints become levels
+* A debugging game where clues unlock likely causes
+* A civic or privacy trade-off simulator that makes consequences visible
+
+### Interactive essays and provocations
+
+Examples:
+
+* An interactive argument about why feature scoring is not objective
+* A browser-based demonstration of how retail measurement can become invasive
+* A visual explainer about AI taste, labour, and creative shortcuts
+* A privacy trade-off toy where convenience slowly eats the interface
+* A media planning explainer where every metric lies a little differently
+
+### Physical-making companions
+
+Examples:
+
+* A 3D-print tolerance calculator with a genuinely nice interface
+* A LEGO sorting or build-planning helper
+* A sewing project estimator that converts ambition into fabric, time, and probable swearing
+* A photography field-note generator
+* A painting composition sandbox
+
 ## Existing project awareness
 
-When generating new ideas, compare against Dylan’s current projects.
+When generating new ideas, compare against Dylan’s current projects. Existing projects should be used as taste signals, not fences.
+
+It is acceptable to suggest ideas that are quite different from Dylan’s current repositories if they still fit his interests, experience, or portfolio goals. Do not assume every new idea needs to extend an existing Sandwich Codes theme.
+
+A good new idea may:
+
+* open a new category in the portfolio
+* show a different technical capability
+* explore a new interaction pattern
+* be more serious, more artistic, more game-like, or more useful than previous projects
+* feel adjacent to Dylan’s thinking without resembling an existing project
+* be a standalone experiment rather than the next instalment in an accidental franchise
+
+Still avoid direct duplication.
 
 ### Avoid direct duplication
 
@@ -721,7 +865,7 @@ A LEGO build prompt generator that turns a mood, object, or photo into a constra
 
 ## Final instruction
 
-When Dylan asks for project ideas, do not be generic. Invent from his actual life, interests, work history, current portfolio, location, and taste.
+When Dylan asks for project ideas, do not be generic and do not overfit. Invent from his actual life, interests, work history, current portfolio, location, and taste, while deliberately varying the type of idea.
 
 The best idea should feel like:
 
