@@ -97,6 +97,12 @@
           "title": "Project Autopsy",
           "details": "Paste a dead project idea and it generates a structured autopsy: cause of death, salvageable organs, next experiment, and memorial plaque.",
           "lane": "build"
+        },
+        {
+          "id": "card-1780985632329-97aox",
+          "title": "Slop Forensics",
+          "details": "A browser-based tool that analyses a page or pasted article for AI slop signals: repetition, vague sourcing, fake specificity, and “this paragraph has no bones”.",
+          "lane": "build"
         }
       ]
     },
