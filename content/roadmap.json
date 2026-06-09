@@ -69,6 +69,12 @@
           "lane": "build"
         },
         {
+          "id": "card-1780985655353-12o7j",
+          "title": "Marketplace Minesweeper",
+          "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
+          "lane": "build"
+        },
+        {
           "id": "card-1780963720116-x4jke",
           "title": "The Backlog Museum",
           "details": "Turns your unfinished projects into a little virtual museum: each idea becomes an exhibit with status, guilt level, next action, and demo potential.",
@@ -90,12 +96,6 @@
           "id": "card-1780964721084-t4d13",
           "title": "Backlog Taxidermy",
           "details": "Turns abandoned project ideas into preserved “specimens” with labels: why it died, what remains useful, and whether it should be revived.",
-          "lane": "build"
-        },
-        {
-          "id": "card-1780985655353-12o7j",
-          "title": "Marketplace Minesweeper",
-          "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
           "lane": "build"
         },
         {
