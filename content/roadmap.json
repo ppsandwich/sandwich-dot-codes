@@ -55,6 +55,12 @@
           "title": "A songwriter’s rhyme assistant that avoids cliché rhymes and suggests more interesting near-rhymes, slant rhymes, and internal rhymes.",
           "details": "",
           "text": "A songwriter’s rhyme assistant that avoids cliché rhymes and suggests more interesting near-rhymes, slant rhymes, and internal rhymes."
+        },
+        {
+          "id": "card-1780963642229-0avrx",
+          "title": "Palette Walk",
+          "details": "Upload photos from a walk and it extracts a colour palette, ambient texture, and printable “field note” card.",
+          "lane": "build"
         }
       ]
     },
