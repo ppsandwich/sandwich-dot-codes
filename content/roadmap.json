@@ -22,12 +22,6 @@
           "text": "Upload a photo or artwork and convert it into a LEGO mosaic plan with part counts, colour mapping, and build instructions. Already exists - how would mine be better?"
         },
         {
-          "id": "card-1780963658863-48rmx",
-          "title": "MIDI Weather Station",
-          "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
-          "lane": "build"
-        },
-        {
           "id": "card-1779054874676-dw2c2",
           "title": "“Upload a loop or sample and get a visual/metadata mood board: genre tags, texture words, BPM estimate, key estimate, and suggested arrangement ideas.",
           "details": "",
@@ -180,6 +174,12 @@
           "id": "card-1780985655353-12o7j",
           "title": "Marketplace Minesweeper",
           "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780963658863-48rmx",
+          "title": "MIDI Weather Station",
+          "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
           "lane": "build"
         }
       ]
