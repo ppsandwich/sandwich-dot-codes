@@ -69,15 +69,15 @@
           "lane": "build"
         },
         {
-          "id": "card-1780963726226-gxfac",
-          "title": "Receipt Aquarium",
-          "details": "Upload grocery receipts and it turns spending patterns into a strange animated aquarium: staples, impulse buys, recurring offenders.",
-          "lane": "build"
-        },
-        {
           "id": "card-1780985776141-sv9wv",
           "title": "Cost of Living Loadout",
           "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780963726226-gxfac",
+          "title": "Receipt Aquarium",
+          "details": "Upload grocery receipts and it turns spending patterns into a strange animated aquarium: staples, impulse buys, recurring offenders.",
           "lane": "build"
         },
         {
