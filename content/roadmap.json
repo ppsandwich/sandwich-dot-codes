@@ -99,15 +99,15 @@
           "lane": "build"
         },
         {
-          "id": "card-1780985644036-0s7xv",
-          "title": "Dark Pattern Vivarium",
-          "details": "A tiny museum of manipulative UI patterns. Users poke buttons, see how the trap works, then learn the ethical alternative.",
-          "lane": "build"
-        },
-        {
           "id": "card-1780985776141-sv9wv",
           "title": "Cost of Living Loadout",
           "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985644036-0s7xv",
+          "title": "Dark Pattern Vivarium",
+          "details": "A tiny museum of manipulative UI patterns. Users poke buttons, see how the trap works, then learn the ethical alternative.",
           "lane": "build"
         },
         {
