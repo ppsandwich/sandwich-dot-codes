@@ -87,6 +87,12 @@
           "lane": "build"
         },
         {
+          "id": "card-1780985776141-sv9wv",
+          "title": "Cost of Living Loadout",
+          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
+          "lane": "build"
+        },
+        {
           "id": "card-1780965650162-9b6j0",
           "title": "Project Autopsy",
           "details": "Paste a dead project idea and it generates a structured autopsy: cause of death, salvageable organs, next experiment, and memorial plaque.",
@@ -96,12 +102,6 @@
           "id": "card-1780985632329-97aox",
           "title": "Slop Forensics",
           "details": "A browser-based tool that analyses a page or pasted article for AI slop signals: repetition, vague sourcing, fake specificity, and “this paragraph has no bones”.",
-          "lane": "build"
-        },
-        {
-          "id": "card-1780985776141-sv9wv",
-          "title": "Cost of Living Loadout",
-          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
           "lane": "build"
         },
         {
