@@ -45,6 +45,12 @@
           "details": ""
         },
         {
+          "id": "card-1780963658863-48rmx",
+          "title": "MIDI Weather Station",
+          "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
+          "lane": "build"
+        },
+        {
           "id": "card-1779054969743-3hr6z",
           "title": "” A website that turns a DJ setlist into a visual energy journey, showing peaks, breathers, tempo shifts, and mood changes. Could be merged with PIAB.",
           "details": "",
@@ -60,12 +66,6 @@
           "id": "card-1780963642229-0avrx",
           "title": "Palette Walk",
           "details": "Upload photos from a walk and it extracts a colour palette, ambient texture, and printable “field note” card.",
-          "lane": "build"
-        },
-        {
-          "id": "card-1780963658863-48rmx",
-          "title": "MIDI Weather Station",
-          "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
           "lane": "build"
         },
         {
