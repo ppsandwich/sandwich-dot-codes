@@ -133,6 +133,12 @@
           "title": "Model Collapse Aquarium",
           "details": "A visual simulation where AI-generated content feeds future AI training data until the ecosystem gets murky, repetitive, and useless.",
           "lane": "build"
+        },
+        {
+          "id": "card-1780985776141-sv9wv",
+          "title": "Cost of Living Loadout",
+          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
+          "lane": "build"
         }
       ]
     },
