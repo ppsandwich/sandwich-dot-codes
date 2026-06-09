@@ -22,6 +22,12 @@
           "text": "Upload a photo or artwork and convert it into a LEGO mosaic plan with part counts, colour mapping, and build instructions. Already exists - how would mine be better?"
         },
         {
+          "id": "card-1780963658863-48rmx",
+          "title": "MIDI Weather Station",
+          "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
+          "lane": "build"
+        },
+        {
           "id": "card-1779054874676-dw2c2",
           "title": "“Upload a loop or sample and get a visual/metadata mood board: genre tags, texture words, BPM estimate, key estimate, and suggested arrangement ideas.",
           "details": "",
@@ -43,12 +49,6 @@
           "id": "card-1779054961759-3a5l1",
           "title": "”PIAB (Party In A Box)” Generate themed crates for gigs, parties, radio shows, or mixes, such as “sunset warm-up house” or “late-night leftfield breaks.”",
           "details": ""
-        },
-        {
-          "id": "card-1780963658863-48rmx",
-          "title": "MIDI Weather Station",
-          "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
-          "lane": "build"
         },
         {
           "id": "card-1779054969743-3hr6z",
