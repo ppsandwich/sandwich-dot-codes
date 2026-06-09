@@ -93,6 +93,12 @@
           "lane": "build"
         },
         {
+          "id": "card-1780985655353-12o7j",
+          "title": "Marketplace Minesweeper",
+          "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
+          "lane": "build"
+        },
+        {
           "id": "card-1780965650162-9b6j0",
           "title": "Project Autopsy",
           "details": "Paste a dead project idea and it generates a structured autopsy: cause of death, salvageable organs, next experiment, and memorial plaque.",
@@ -108,12 +114,6 @@
           "id": "card-1780985644036-0s7xv",
           "title": "Dark Pattern Vivarium",
           "details": "A tiny museum of manipulative UI patterns. Users poke buttons, see how the trap works, then learn the ethical alternative.",
-          "lane": "build"
-        },
-        {
-          "id": "card-1780985655353-12o7j",
-          "title": "Marketplace Minesweeper",
-          "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
           "lane": "build"
         },
         {
