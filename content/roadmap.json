@@ -73,6 +73,12 @@
           "title": "The Backlog Museum",
           "details": "Turns your unfinished projects into a little virtual museum: each idea becomes an exhibit with status, guilt level, next action, and demo potential.",
           "lane": "build"
+        },
+        {
+          "id": "card-1780963726226-gxfac",
+          "title": "Receipt Aquarium",
+          "details": "Upload grocery receipts and it turns spending patterns into a strange animated aquarium: staples, impulse buys, recurring offenders.",
+          "lane": "build"
         }
       ]
     },
