@@ -63,12 +63,6 @@
           "lane": "build"
         },
         {
-          "id": "card-1780963658863-48rmx",
-          "title": "MIDI Weather Station",
-          "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
-          "lane": "build"
-        },
-        {
           "id": "card-1780963720116-x4jke",
           "title": "The Backlog Museum",
           "details": "Turns your unfinished projects into a little virtual museum: each idea becomes an exhibit with status, guilt level, next action, and demo potential.",
@@ -96,6 +90,36 @@
           "id": "card-1780965650162-9b6j0",
           "title": "Project Autopsy",
           "details": "Paste a dead project idea and it generates a structured autopsy: cause of death, salvageable organs, next experiment, and memorial plaque.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985632329-97aox",
+          "title": "Slop Forensics",
+          "details": "A browser-based tool that analyses a page or pasted article for AI slop signals: repetition, vague sourcing, fake specificity, and “this paragraph has no bones”.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985644036-0s7xv",
+          "title": "Dark Pattern Vivarium",
+          "details": "A tiny museum of manipulative UI patterns. Users poke buttons, see how the trap works, then learn the ethical alternative.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985710700-8gmqq",
+          "title": "Privacy Receipt",
+          "details": "Paste an app’s privacy policy or permissions list and get a plain-English “receipt” of what you’re paying with: location, biometrics, contacts, behaviour, identity.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985732460-7lt6d",
+          "title": "Data Centre Neighbourhood Simulator",
+          "details": "A simulation where users balance AI demand, water, power, jobs, land use, emissions, and local resistance.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985751645-zfsro",
+          "title": "Model Collapse Aquarium",
+          "details": "A visual simulation where AI-generated content feeds future AI training data until the ecosystem gets murky, repetitive, and useless.",
           "lane": "build"
         }
       ]
@@ -138,6 +162,24 @@
           "id": "card-1780351296069-8xl7v",
           "title": "Tracker",
           "details": "",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985655353-12o7j",
+          "title": "Marketplace Minesweeper",
+          "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985776141-sv9wv",
+          "title": "Cost of Living Loadout",
+          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780963658863-48rmx",
+          "title": "MIDI Weather Station",
+          "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
           "lane": "build"
         }
       ]
