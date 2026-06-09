@@ -63,15 +63,15 @@
           "lane": "build"
         },
         {
-          "id": "card-1780963720116-x4jke",
-          "title": "The Backlog Museum",
-          "details": "Turns your unfinished projects into a little virtual museum: each idea becomes an exhibit with status, guilt level, next action, and demo potential.",
-          "lane": "build"
-        },
-        {
           "id": "card-1780985776141-sv9wv",
           "title": "Cost of Living Loadout",
           "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780963720116-x4jke",
+          "title": "The Backlog Museum",
+          "details": "Turns your unfinished projects into a little virtual museum: each idea becomes an exhibit with status, guilt level, next action, and demo potential.",
           "lane": "build"
         },
         {
