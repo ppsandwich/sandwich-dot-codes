@@ -123,12 +123,18 @@ Marketplace Minesweeper instead shows a fictional listing.
 
 The number of suspicious details in that listing equals the number of scam listings in adjacent squares.
 
+When inspecting a listing, the player must enter how many suspicious elements they think the listing contains. This is done using a number input flanked by plus and minus controls.
+
+This player-entered number does **not** affect the underlying game logic. It is a note-taking aid. Once entered, the number is shown on the corresponding Minesweeper board tile to help the player reason about the potential location of scam listings.
+
 Example:
 
 - A safe square has 3 scam listings adjacent to it.
 - The listing shown on that square must contain exactly 3 suspicious details.
 - These details are blended naturally into the listing.
-- The player must inspect the listing and decide there are 3 suspicious signals.
+- The player inspects the listing and decides there are 3 suspicious signals.
+- The player sets the listing’s suspected count to 3.
+- The board tile then displays `3` as the player’s own note.
 
 ---
 
@@ -680,7 +686,8 @@ Opened safe tile:
 
 - Shows as cleared.
 - May show a small marketplace card thumbnail.
-- Does not show the count.
+- Shows the player-entered suspicion count if the player has set one.
+- Does not show the true adjacent mine count unless the game is over.
 - Can be clicked again to reopen the listing popover.
 
 Flagged tile:
@@ -723,17 +730,49 @@ Important:
 - The player can inspect a tile before deciding.
 - On mobile, this should be a bottom sheet.
 
-### 14.6 Do Not Reveal the Count
+### 14.6 Player Suspicion Count Input
+
+When a listing is shown, the player must be able to enter the number of suspicious elements they believe are present in that listing.
+
+The control should use:
+
+- A minus button.
+- A numeric display.
+- A plus button.
+
+Example UI:
+
+```txt
+Suspicious details spotted:  [-]  3  [+]
+```
+
+Rules:
+
+- Minimum value: 0
+- Maximum value: 8
+- Default value: null / unset
+- The control should be usable with mouse, touch, and keyboard.
+- The value is controlled by the player.
+- The value does not validate against the real adjacent mine count during active play.
+- The value does not open, clear, flag, or otherwise affect the game state beyond note-taking.
+- Once set, the value appears on the corresponding board tile.
+
+This allows the player to keep track of their own deduction, similar to writing a number on a Minesweeper square with a slightly suspicious pencil.
+
+### 14.7 Do Not Reveal the True Count
 
 The popover must not say:
 
 - “There are 3 suspicious details.”
 - “Adjacent scams: 3.”
 - “Clue count: 3.”
+- “Correct answer: 3.”
 
 The only clues are the suspicious details themselves.
 
-### 14.7 Optional Post-Game Reveal
+The player-entered suspicion count is allowed to appear, but it must be clearly treated as the player’s own note, not as confirmed truth.
+
+### 14.8 Optional Post-Game Reveal
 
 After win or loss, the game may reveal the underlying count for each opened safe listing.
 
@@ -756,6 +795,7 @@ This can help the game feel learnable.
 - Flag/report mode toggle for mobile
 - Reset
 - Optional seed input
+- Suspicious detail count control inside listing modal
 
 ### 15.2 Desktop Interactions
 
@@ -805,6 +845,7 @@ interface Tile {
   state: TileState;
   adjacentMineCount: number;
   listingId: string;
+  playerSuspicionCount: number | null;
 }
 ```
 
@@ -1230,6 +1271,9 @@ Suggested copy:
 - First clicked tile is never a mine.
 - Every tile has a listing.
 - Safe tile listings contain suspicious details equal to adjacent mine count.
+- Listing modal includes plus/minus controls for the player to enter their suspected number of suspicious elements.
+- Player-entered suspicion count is displayed on the corresponding board tile.
+- Player-entered suspicion count does not affect win/loss logic, mine placement, tile safety, or board generation.
 - Mine tile click ends game.
 - Mine tile click shows the scam listing with a large red **SCAMMED! Game Over** overlay.
 - Game-over overlay includes a working **Replay** button.
