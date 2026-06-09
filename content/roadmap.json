@@ -115,6 +115,12 @@
           "title": "Marketplace Minesweeper",
           "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
           "lane": "build"
+        },
+        {
+          "id": "card-1780985710700-8gmqq",
+          "title": "Privacy Receipt",
+          "details": "Paste an app’s privacy policy or permissions list and get a plain-English “receipt” of what you’re paying with: location, biometrics, contacts, behaviour, identity.",
+          "lane": "build"
         }
       ]
     },
