@@ -176,10 +176,15 @@ If `suspicionCount` is 0, the listing should look broadly normal and trustworthy
 If the player opens a mine tile:
 
 - The game immediately ends.
-- The clicked scam listing is revealed.
-- All scam listings are revealed.
+- The clicked scam listing is shown to the player.
+- The scam listing should remain visible in the listing modal or popover.
+- A large red overlay must appear on top of the scam listing.
+- The overlay text must read: **SCAMMED! Game Over**
+- The overlay must include a clear **Replay** button.
+- Clicking **Replay** starts a new game using the currently selected difficulty.
+- All scam listings are revealed on the board behind the modal.
 - The UI should clearly show that the player was scammed.
-- Use playful but not overly smug copy.
+- Use playful but not overly smug supporting copy.
 
 Example lose message:
 
@@ -688,6 +693,9 @@ Mine tile after game over:
 
 - Shows scam state.
 - The clicked mine gets special exploded styling.
+- The clicked scam listing opens immediately.
+- The listing is covered by a large red **SCAMMED! Game Over** overlay.
+- The overlay includes a **Replay** button.
 
 ### 14.5 Listing Popover
 
@@ -1223,6 +1231,8 @@ Suggested copy:
 - Every tile has a listing.
 - Safe tile listings contain suspicious details equal to adjacent mine count.
 - Mine tile click ends game.
+- Mine tile click shows the scam listing with a large red **SCAMMED! Game Over** overlay.
+- Game-over overlay includes a working **Replay** button.
 - Opening all safe tiles wins game.
 - Player can flag/report suspected scam tiles.
 - Timer starts on first tile interaction.
