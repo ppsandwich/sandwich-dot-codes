@@ -211,7 +211,9 @@ Example win message:
 
 ## 8. Difficulty Modes
 
-Implement three difficulty levels.
+The board should always be a fixed **9 x 9 grid**.
+
+Difficulty changes only the number of mines.
 
 ```ts
 type Difficulty = "easy" | "medium" | "hard";
@@ -219,32 +221,32 @@ type Difficulty = "easy" | "medium" | "hard";
 
 ### 8.1 Easy
 
-- Board: 6 x 6
-- Mines: 6
+- Board: 9 x 9
+- Mines: 8
 - Suitable for first-time players
 
 ### 8.2 Medium
 
-- Board: 8 x 8
-- Mines: 10
+- Board: 9 x 9
+- Mines: 12
 - Default mode
 
 ### 8.3 Hard
 
-- Board: 10 x 10
-- Mines: 18
+- Board: 9 x 9
+- Mines: 16
 - More ambiguous and punishing
 
 ### 8.4 Custom Mode
 
-Optional, not required for v1.
+Do not implement custom mode in v1.
 
-If implemented later:
+If implemented later, custom mode may allow:
 
-- Width
-- Height
 - Mine count
 - Seed value
+
+The board should still default to 9 x 9 unless the user explicitly requests variable board sizes later.
 
 ---
 
@@ -825,9 +827,9 @@ interface GameState {
   difficulty: Difficulty;
   status: "idle" | "playing" | "won" | "lost";
   board: Tile[];
-  width: number;
-  height: number;
-  mineCount: number;
+  width: 9;
+  height: 9;
+  mineCount: 8 | 12 | 16;
   flagsUsed: number;
   startedAt: number | null;
   endedAt: number | null;
@@ -857,7 +859,12 @@ interface Tile {
 
 The board generator must:
 
-- Accept width, height, mine count, seed, and first clicked coordinate.
+- Always generate a 9 x 9 board.
+- Accept mine count, seed, and first clicked coordinate.
+- Use the selected difficulty to determine mine count:
+  - Easy: 8 mines
+  - Medium: 12 mines
+  - Hard: 16 mines
 - Place mines randomly but deterministically from the seed.
 - Ensure first clicked tile is safe.
 - Calculate adjacent mine counts.
@@ -1284,7 +1291,8 @@ Suggested copy:
 
 ### 31.2 UI
 
-- Board renders correctly at all supported difficulties.
+- Board always renders as a 9 x 9 grid.
+- Difficulty changes mine count only: Easy has 8 mines, Medium has 12 mines, and Hard has 16 mines.
 - Listing popover/modal displays all listing details.
 - Suspicious info is not highlighted.
 - Game over reveals scam listings.
