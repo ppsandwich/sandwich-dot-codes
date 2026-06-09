@@ -28,12 +28,6 @@
           "lane": "build"
         },
         {
-          "id": "card-1780985655353-12o7j",
-          "title": "Marketplace Minesweeper",
-          "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
-          "lane": "build"
-        },
-        {
           "id": "card-1779054926509-3lqvb",
           "title": "“Neighborhood Soundwatch” An AI-assisted sample library browser that auto-tags loops by BPM, key, genre, instrument, mood, and energy.",
           "details": "",
@@ -180,6 +174,12 @@
           "id": "card-1780351296069-8xl7v",
           "title": "Tracker",
           "details": "",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985655353-12o7j",
+          "title": "Marketplace Minesweeper",
+          "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
           "lane": "build"
         }
       ]
