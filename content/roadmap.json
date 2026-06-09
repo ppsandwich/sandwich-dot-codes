@@ -28,12 +28,6 @@
           "lane": "build"
         },
         {
-          "id": "card-1780985776141-sv9wv",
-          "title": "Cost of Living Loadout",
-          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
-          "lane": "build"
-        },
-        {
           "id": "card-1779054926509-3lqvb",
           "title": "“Neighborhood Soundwatch” An AI-assisted sample library browser that auto-tags loops by BPM, key, genre, instrument, mood, and energy.",
           "details": "",
@@ -180,6 +174,12 @@
           "id": "card-1780963658863-48rmx",
           "title": "MIDI Weather Station",
           "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985776141-sv9wv",
+          "title": "Cost of Living Loadout",
+          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
           "lane": "build"
         }
       ]
