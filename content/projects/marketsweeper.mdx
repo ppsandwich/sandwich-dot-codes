@@ -7,8 +7,8 @@ featured: false
 github: "https://github.com/ppsandwich/Marketplace-Minesweeper-GPT"
 demo: "https://marketplace-minesweeper-gpt.vercel.app/"
 status: "active"
-cover: "/images/projects/marketsweeper-cover.png"
-showcase: "/images/projects/marketsweeper-cover.png"
+cover: "/images/projects/marketsweeper-main.png"
+showcase: "/images/projects/marketsweeper-main.png"
 tech: ["TypeScript", "Next.js", "React", "Tailwind CSS", "LocalStorage", "Vercel"]
 ---
 
@@ -20,7 +20,7 @@ The goal is edutainment: a small, funny game that helps people get better at ide
 
 The app does not connect to Facebook, Gumtree, eBay, or any real marketplace. All listings are fictional, locally stored, and written as parody-like game content.
 
-![MarketSweeper marketplace listing puzzle board](/images/projects/marketsweeper-cover.png)
+![MarketSweeper marketplace listing puzzle board](/images/projects/marketsweeper-main.png)
 
 ## The Concept
 
@@ -44,9 +44,13 @@ Clicking a tile opens the fictional listing attached to it. From there, the play
 
 If the player opens a scam tile, the game ends immediately with a large **SCAMMED! Game Over** state. If they open every safe listing while avoiding the scam listings, they win.
 
+![MarketSweeper how to play screen explaining the marketplace clue system](/images/projects/marketsweeper-howtoplay.png)
+
 ## Design
 
 The interface sits somewhere between Minesweeper, a marketplace feed, and a suspiciously cheerful internet safety lesson. Hidden tiles feel like listing-card backs. Opened tiles can show the player's own notes. The listing modal carries the important information: item title, price, location, seller details, profile age, description, and listing photos.
+
+![MarketSweeper listing inspection view with seller details and suspicion controls](/images/projects/marketsweeper-listing.png)
 
 The tone is intentionally playful, but the underlying pattern recognition is serious. Many scam signals are mundane on their own, and the game is built around the way those signals add up:
 
@@ -111,6 +115,8 @@ This matters because the game is about pattern recognition, not public shaming. 
 MarketSweeper turns a familiar game mechanic into a practical literacy exercise. Minesweeper already trains players to reason from local clues under uncertainty. Online scam detection asks for a similar habit: inspect the details, weigh the signals, avoid overconfidence, and be suspicious when too many small things point in the same direction.
 
 It is a compact idea, but it has a clear purpose: make people a little sharper before they send a deposit to someone selling a suspiciously cheap couch from "Melbourne-ish".
+
+![MarketSweeper game over state after opening a scam listing](/images/projects/marketsweeper-gameover.png)
 
 ## Links
 
