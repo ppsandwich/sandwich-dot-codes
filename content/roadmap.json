@@ -165,12 +165,6 @@
           "lane": "build"
         },
         {
-          "id": "card-1780985655353-12o7j",
-          "title": "Marketplace Minesweeper",
-          "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
-          "lane": "build"
-        },
-        {
           "id": "card-1780985776141-sv9wv",
           "title": "Cost of Living Loadout",
           "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
@@ -216,6 +210,12 @@
           "id": "card-1779055127746-h2z0c",
           "title": "Expecto",
           "details": "Neural network sandbox. Visual way to understand how NNs work. Do some fancy things with animation.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985655353-12o7j",
+          "title": "Marketplace Minesweeper",
+          "details": "A consumer-safety game where you browse fake online listings and identify unsafe, banned, counterfeit, or suspicious products before buying.",
           "lane": "build"
         },
         {
