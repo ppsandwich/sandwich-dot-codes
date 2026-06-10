@@ -1,0 +1,118 @@
+---
+title: "MarketSweeper"
+description: "A browser-based edutainment game that reimagines Minesweeper as a suspicious marketplace listing puzzle, helping players practise spotting scam signals without using real marketplace data."
+date: "2026-06-10"
+tags: ["edutainment", "game", "scam detection", "Minesweeper", "marketplace safety", "Next.js", "TypeScript"]
+featured: false
+github: "https://github.com/ppsandwich/Marketplace-Minesweeper-GPT"
+demo: "https://marketplace-minesweeper-gpt.vercel.app/"
+status: "active"
+cover: "/images/projects/marketsweeper-cover.png"
+showcase: "/images/projects/marketsweeper-cover.png"
+tech: ["TypeScript", "Next.js", "React", "Tailwind CSS", "LocalStorage", "Vercel"]
+---
+
+## Overview
+
+MarketSweeper is Minesweeper rebuilt as a dodgy online marketplace feed. Every square on the board is a fictional listing. The mines are scam listings, and the safe tiles contain subtle suspicious details that work like the usual Minesweeper numbers.
+
+The goal is edutainment: a small, funny game that helps people get better at identifying suspicious and scam listings on online marketplaces. Instead of lecturing players about fraud, MarketSweeper turns scam literacy into a deduction puzzle. You inspect listings, spot warning signs, flag the ones that feel dangerous, and try to clear the board without getting scammed.
+
+The app does not connect to Facebook, Gumtree, eBay, or any real marketplace. All listings are fictional, locally stored, and written as parody-like game content.
+
+![MarketSweeper marketplace listing puzzle board](/images/projects/marketsweeper-cover.png)
+
+## The Concept
+
+Classic Minesweeper gives you numbers. MarketSweeper gives you marketplace listings.
+
+On a safe tile, the number of suspicious details in the listing equals the number of scam listings in the surrounding eight squares. A listing with three suspicious details means there are three scam tiles adjacent to it. The player has to read the listing, decide how many warning signs they can spot, and enter that number as their own note on the board.
+
+The game never highlights the suspicious clues during active play. A too-cheap console, a brand-new seller profile, a vague location, delivery-only terms, a deposit request, or an oddly defensive "not a scam" line all have to be noticed by the player. The design choice is deliberate: the learning comes from practising judgment, not from following highlighted answers.
+
+## How It Plays
+
+The board is a fixed 9 x 9 grid with three difficulty modes:
+
+| Difficulty | Scam listings |
+|---|---:|
+| Easy | 8 |
+| Medium | 12 |
+| Hard | 16 |
+
+Clicking a tile opens the fictional listing attached to it. From there, the player can mark it as safe, report it as suspicious, or set their own suspected clue count with plus and minus controls. That player-entered count appears on the board as a note, but it does not change the underlying game state.
+
+If the player opens a scam tile, the game ends immediately with a large **SCAMMED! Game Over** state. If they open every safe listing while avoiding the scam listings, they win.
+
+## Design
+
+The interface sits somewhere between Minesweeper, a marketplace feed, and a suspiciously cheerful internet safety lesson. Hidden tiles feel like listing-card backs. Opened tiles can show the player's own notes. The listing modal carries the important information: item title, price, location, seller details, profile age, description, and listing photos.
+
+The tone is intentionally playful, but the underlying pattern recognition is serious. Many scam signals are mundane on their own, and the game is built around the way those signals add up:
+
+- Suspiciously low prices
+- Delivery-only or deposit-first requests
+- Brand-new seller profiles
+- Vague locations
+- Stock-photo-like images
+- Refusal to inspect
+- Payment outside the platform
+- Urgency pressure and copied listing language
+
+## Content Model
+
+Listings are structured data rather than hardcoded UI. Safe listings are grouped by suspicion count from 0 to 8, and scam listings live in their own pool. During board generation, each safe tile gets a listing whose suspicious signal count matches the number of adjacent scam tiles.
+
+That means the content is not just flavour text. It is part of the game logic.
+
+```ts
+export interface MarketplaceListing {
+  id: string;
+  title: string;
+  price: string;
+  location: string;
+  sellerName: string;
+  sellerProfileAge: string;
+  description: string;
+  imageFilenames: string[];
+  suspiciousSignals: SuspiciousSignal[];
+  category: ListingCategory;
+  isScamTemplate?: boolean;
+}
+```
+
+This structure keeps the board generation deterministic, makes it easier to expand the listing pool, and avoids tying gameplay to real marketplace data.
+
+## Architecture
+
+MarketSweeper is designed to run as a static, Vercel-friendly browser game. The PRD deliberately avoids databases, authentication, paid APIs, runtime AI calls, and server-side game state.
+
+The intended architecture is simple:
+
+| Layer | Responsibility |
+|---|---|
+| Next.js App Router | Page structure and deployment |
+| React state | Active game state, selected tile, modal state |
+| TypeScript data files | Fictional listings and scam templates |
+| Client-side board generation | Mines, adjacency counts, tile states |
+| LocalStorage | Optional local persistence |
+| Public assets | Listing images and project screenshots |
+
+The app can run with zero required API endpoints, which keeps it within Vercel Hobby limits and makes the game easy to deploy, fork, and iterate on.
+
+## Safety Boundaries
+
+The most important product constraint is that MarketSweeper must not use real marketplace data. It does not scrape listings, reproduce real seller details, or present real people as examples. The listings are fictional and deliberately written to feel plausible without being copied from actual marketplace posts.
+
+This matters because the game is about pattern recognition, not public shaming. The useful lesson is not "look at this specific listing"; it is "notice how these signals combine when something feels off."
+
+## What I Like About It
+
+MarketSweeper turns a familiar game mechanic into a practical literacy exercise. Minesweeper already trains players to reason from local clues under uncertainty. Online scam detection asks for a similar habit: inspect the details, weigh the signals, avoid overconfidence, and be suspicious when too many small things point in the same direction.
+
+It is a compact idea, but it has a clear purpose: make people a little sharper before they send a deposit to someone selling a suspiciously cheap couch from "Melbourne-ish".
+
+## Links
+
+- [GitHub Repository](https://github.com/ppsandwich/Marketplace-Minesweeper-GPT)
+- [Live Demo](https://marketplace-minesweeper-gpt.vercel.app/)
