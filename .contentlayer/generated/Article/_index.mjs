@@ -6,8 +6,9 @@ import writing__everyoneGetsAiNotEveryoneGetsTheSameAiMdx from './writing__every
 import writing__flashAndTheChangingEconomicsOfCodingMdx from './writing__flash-and-the-changing-economics-of-coding.mdx.json' with { type: 'json' }
 import writing__onBringingHobbiesIntoCodeMdx from './writing__on-bringing-hobbies-into-code.mdx.json' with { type: 'json' }
 import writing__productPrioritisationIsNotObjectiveMdx from './writing__product-prioritisation-is-not-objective.mdx.json' with { type: 'json' }
+import writing__theInternetIsAboutToFindEveryPricingMistakeMdx from './writing__the-internet-is-about-to-find-every-pricing-mistake.mdx.json' with { type: 'json' }
 import writing__turningWeirdLittleIdeasIntoBuildableAppsMdx from './writing__turning-weird-little-ideas-into-buildable-apps.mdx.json' with { type: 'json' }
 import writing__whyIBuildWeirdThingsMdx from './writing__why-i-build-weird-things.mdx.json' with { type: 'json' }
 import writing__willTheShopSeeYouBreathingMdx from './writing__will-the-shop-see-you-breathing.mdx.json' with { type: 'json' }
 
-export const allArticles = [writing__caseAgainstCleanCodeMdx, writing__cmsPostAiMdx, writing__everyoneGetsAiNotEveryoneGetsTheSameAiMdx, writing__flashAndTheChangingEconomicsOfCodingMdx, writing__onBringingHobbiesIntoCodeMdx, writing__productPrioritisationIsNotObjectiveMdx, writing__turningWeirdLittleIdeasIntoBuildableAppsMdx, writing__whyIBuildWeirdThingsMdx, writing__willTheShopSeeYouBreathingMdx]
+export const allArticles = [writing__caseAgainstCleanCodeMdx, writing__cmsPostAiMdx, writing__everyoneGetsAiNotEveryoneGetsTheSameAiMdx, writing__flashAndTheChangingEconomicsOfCodingMdx, writing__onBringingHobbiesIntoCodeMdx, writing__productPrioritisationIsNotObjectiveMdx, writing__theInternetIsAboutToFindEveryPricingMistakeMdx, writing__turningWeirdLittleIdeasIntoBuildableAppsMdx, writing__whyIBuildWeirdThingsMdx, writing__willTheShopSeeYouBreathingMdx]
