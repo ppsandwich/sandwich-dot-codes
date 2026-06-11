@@ -1,0 +1,129 @@
+---
+title: "Cost of Living"
+description: "A mobile-first browser strategy game about feeding an NPC under shrinking budgets, where nutrition, happiness, time, and affordability all fight for space in the same basket."
+date: "2026-06-11"
+tags: ["game", "strategy", "resource management", "edutainment", "mobile-first", "Next.js", "TypeScript"]
+featured: false
+github: "https://github.com/ppsandwich/cost-of-living"
+demo: "https://cost-of-living-snowy.vercel.app/"
+status: "active"
+cover: "/images/projects/costofliving-basket.png"
+showcase: "/images/projects/costofliving-basket.png"
+tech: ["TypeScript", "Next.js", "React", "Tailwind CSS", "LocalStorage", "Vercel"]
+---
+
+## Overview
+
+Cost of Living is a mobile-first browser strategy game about buying food for fictional NPCs under tight budget pressure. Each round gives the player a different person to feed, a fixed amount of money, a 90-second timer, and a limited shop inventory.
+
+The goal is to build a basket that keeps the NPC alive, meets their nutrition target, meets their happiness target, and stays inside budget. The trick is that cheap food is often tempting, filling, and risky in exactly the way a good resource-management game needs it to be.
+
+This is not a diet app, health app, calorie tracker, or medical simulator. It is a satirical shopping puzzle about constrained choices, where the joke lands through play: when the budget shrinks, every "sensible" option starts behaving like a luxury item.
+
+![Cost of Living basket screen showing NPC stats, grocery choices, and budget pressure](/images/projects/costofliving-basket.png)
+
+## The Game Loop
+
+Each run starts at Round 1. The game selects a fictional NPC with their own budget, needs, preferences, restrictions, and danger thresholds. The player then buys food from a generated store inventory while the timer counts down.
+
+Every purchase changes the basket and the NPC's current state:
+
+- Nutrition
+- Happiness
+- Remaining budget
+- Calories
+- Fat
+- Sugar
+- Carbs
+- Protein
+- Fibre
+- Vitamins and minerals
+
+A round can end because the player submits their basket, the timer runs out, no affordable useful options remain, or a danger threshold is exceeded. If the NPC survives and the core targets are met, the player advances to the next round.
+
+## Progressive Pressure
+
+Cost of Living does not use a fixed difficulty selector. The difficulty curve comes from surviving.
+
+Round 1 starts with the NPC's normal budget. Each successful round reduces the next round's available budget, while the timer remains fixed. This keeps the rules readable: the store is not secretly becoming impossible in twelve different ways. The money is just getting worse.
+
+| Round | Budget multiplier |
+|---:|---:|
+| 1 | 1.00 |
+| 2 | 0.95 |
+| 3 | 0.90 |
+| 4 | 0.85 |
+| 5 | 0.80 |
+| 6 | 0.75 |
+| 7 | 0.70 |
+| 8 | 0.65 |
+| 9+ | 0.60 |
+
+The result is a game that starts approachable and becomes increasingly unpleasant in a very legible way.
+
+## NPCs
+
+Each NPC is fictional and designed to create different trade-offs without turning the game into a moral lecture. One person may need cheap filling food before a shift. Another may need high-fibre options, low-sodium choices, or food that works without much kitchen equipment.
+
+The important part is that happiness and nutrition are both real constraints. The game avoids treating food as a spreadsheet where joy is a rounding error. A technically nutritious basket can still be a bleak failure if it ignores the person eating it.
+
+```ts
+export interface NPC {
+  id: string;
+  name: string;
+  ageLabel: string;
+  description: string;
+  baseBudgetCents: number;
+  nutritionTarget: number;
+  happinessTarget: number;
+  preferences: FoodPreference[];
+  restrictions: FoodRestriction[];
+}
+```
+
+## Basket Strategy
+
+The basket is the central tactical object. Food items have prices, category tags, quantity limits, and stat effects. Most items can be bought once, while staples can support multiple purchases.
+
+The player has to balance:
+
+- Cheap calories against nutrition gaps
+- Happiness-heavy treats against sugar and fat risk
+- Fresh food against limited money
+- Variety against repetition penalties
+- Submitting early against waiting for a better plan
+
+The basket drawer stays close to the player's thumb on mobile, showing total spend, money left, selected items, and whether the current plan is legal to submit.
+
+## Mobile-First Design
+
+The PRD is explicit that mobile is the source layout, not a compressed desktop version. Cost of Living is built around a small-screen shopping rhythm: read the NPC, scan the store, tap food cards, check the basket, and submit before the timer makes everything stupid.
+
+The main UI uses:
+
+- A sticky status area for round, budget, and timer
+- Compact nutrition and happiness meters
+- Macro risk warnings when stats get dangerous
+- Large food cards with price and key effects
+- A sticky basket drawer for review and submission
+
+Desktop can widen the same components into columns, but the game is meant to be fully playable on a 360px-wide phone screen.
+
+## Outcomes
+
+Winning a round shows the final basket, final stats, remaining budget, score, and a button to continue. Losing the run shows what failed: the timer, money, unmet needs, or a danger threshold.
+
+![Cost of Living round clear screen showing successful basket stats and next round action](/images/projects/costofliving-roundclear.png)
+
+Scoring rewards success under constraint. A good round considers nutrition, happiness, money left, time left, variety, preference matches, round number, and avoided danger warnings.
+
+## Why It Works
+
+Cost of Living takes a serious subject and turns it into a tight, readable game mechanic. The point is not that the player should find the "correct" food. The point is that under pressure, every choice starts to reveal its trade-offs.
+
+It is funny because the food copy can be absurd. It is stressful because the budget is real inside the rules. It is useful because the system makes an abstract problem feel concrete without turning real hardship into a lecture.
+
+## Links
+
+- [GitHub Repository](https://github.com/ppsandwich/cost-of-living)
+- [Live Demo](https://cost-of-living-snowy.vercel.app/)
