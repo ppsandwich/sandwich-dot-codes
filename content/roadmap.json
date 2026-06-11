@@ -165,12 +165,6 @@
           "lane": "build"
         },
         {
-          "id": "card-1780985776141-sv9wv",
-          "title": "Cost of Living Loadout",
-          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
-          "lane": "build"
-        },
-        {
           "id": "card-1780963658863-48rmx",
           "title": "MIDI Weather Station",
           "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
@@ -228,6 +222,12 @@
           "id": "card-1779055054969-7oul2",
           "title": "Splinched",
           "details": "Automated sample chopper. Test the limits of serverless.",
+          "lane": "build"
+        },
+        {
+          "id": "card-1780985776141-sv9wv",
+          "title": "Cost of Living Loadout",
+          "details": "A tiny game where you build weekly grocery “loadouts” under changing prices, dietary needs, time, energy, and morale.",
           "lane": "build"
         },
         {
