@@ -175,6 +175,12 @@
           "title": "MIDI Weather Station",
           "details": "Generates tiny MIDI loops from weather conditions: temperature, wind, rain, pressure, and general outside unpleasantness.",
           "lane": "build"
+        },
+        {
+          "id": "card-1781216199664-7wj3i",
+          "title": "Subscription Escape Room",
+          "details": "The player has signed up for seven services and must cancel them before another billing cycle begins.\n\nEach company uses a different obstruction: hidden buttons, mandatory phone calls, guilt screens, retention offers, lost passwords and mysterious “technical errors”.\n\nCore loop: Navigate cancellation mazes while a renewal clock counts down.\n\nUnderlying point: Cancelling something should not require the investigative resources of a medium-sized police force.",
+          "lane": "build"
         }
       ]
     },
