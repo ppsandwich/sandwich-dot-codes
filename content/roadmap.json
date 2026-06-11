@@ -193,6 +193,12 @@
           "title": "Green Claims Inspector",
           "details": "You inspect products making sustainability claims such as “natural”, “planet positive”, “carbon neutral” and “responsibly sourced”.\n\nPlayers examine packaging, fine print, offsets, supply-chain evidence and conveniently undefined terminology.\n\nCore loop: Approve, challenge or prosecute claims before the inspection budget runs out.\n\nDifficulty progression: Later rounds introduce technically true claims designed to leave a completely false impression.",
           "lane": "build"
+        },
+        {
+          "id": "card-1781216306186-qoavu",
+          "title": "The Abandoned Cart",
+          "details": "A reverse ecommerce game where the player is the website trying to extract the maximum possible spend from a shopper.\n\nDeploy countdown timers, scarcity claims, bundles, loyalty points, free-shipping thresholds, subscriptions and post-purchase upsells.\n\nCore loop: Increase basket value without causing the customer to abandon the transaction or attracting regulatory attention.\n\nCampaign twist: After completing merchant mode, replay the exact same journey as the shopper and experience the machine you created.",
+          "lane": "build"
         }
       ]
     },
