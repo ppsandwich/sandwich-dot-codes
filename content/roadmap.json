@@ -211,6 +211,12 @@
           "title": "JIWW (Jump In, Water’s Wet)",
           "details": "Generate a complete production brief for a new track: tempo, key, drum style, synth palette, bass approach, arrangement, and reference vibe.",
           "lane": "build"
+        },
+        {
+          "id": "card-1782029133103-dvevx",
+          "title": "Ghost Kitchen Tycoon",
+          "details": "A management roguelike where you run one kitchen that powers multiple delivery-only restaurant brands.\n\nYou balance food quality, staff fatigue, delivery times, menu duplication, reviews and platform ranking.\n\nGenre: Management sim / roguelike\nTopic: Delivery platforms, food transparency\nCore loop: Create brands → fulfil orders → manage reviews → survive algorithm changes.\n\nThe same burger appearing as five different restaurants is already game design. Grim, but efficient.",
+          "lane": "build"
         }
       ]
     },
