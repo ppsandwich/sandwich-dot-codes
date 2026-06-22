@@ -1,0 +1,232 @@
+---
+title: "The Rack-25"
+description: "A browser-based synthesizer with 25 selectable engines — subtractive, FM, wavetable, additive, granular, physical modelling, and more — all running client-side with Web Audio. No server, no login, no API routes. Just press a key."
+date: "2026-06-22"
+tags: ["music", "synthesizer", "Web Audio", "TypeScript", "browser synth", "sound design", "MIDI", "Tone.js"]
+featured: true
+github: "https://github.com/ppsandwich/The-Rack-25"
+demo: "https://the-rack-25.vercel.app"
+status: "active"
+cover: "/images/projects/rack25-header.png"
+showcase: "/images/projects/rack25-showcase.png"
+tech: ["TypeScript", "Vite", "Web Audio API", "Tone.js", "AudioWorklet", "Zustand", "Tailwind CSS", "Vercel"]
+---
+
+## Overview
+
+The Rack-25 is a browser-based synthesizer inspired by Roland ZENOLOGY Pro's "many sounds in one approachable instrument" model, but built entirely for the web. It packs 25 selectable synth engines — covering subtractive, FM, wavetable, additive, granular, physical modelling, chip-tune, formant synthesis, and more — into a single warm, playable interface.
+
+Open the app, press a key, turn a knob. That's the whole idea.
+
+The app runs entirely client-side. No server-side audio rendering, no API routes, no accounts, no cloud sync. Every engine, every preset, every parameter adjustment happens in the browser using Web Audio API, Tone.js, and AudioWorklet. User presets live in localStorage. The whole thing deploys to Vercel Hobby and stays comfortably within the free tier.
+
+The design philosophy is straightforward: it should feel like a warm rack of instruments in a cosy studio, not a stern audio engineering exam. Friendly knobs, clear labels, helpful microcopy, and a piano keybed that invites you to press something.
+
+![The Rack-25 interface showing the engine browser, parameter rack, and piano keybed](/images/projects/rack25-header.png)
+
+## The Problem It Solves
+
+Browser synths exist, but most fall into two camps: either they're one-trick toys that make a single sound, or they're sprawling modular environments that require a PhD in patch cables. There's a gap between "press button, hear bleep" and "here's your blank canvas, good luck."
+
+The Rack-25 fills that gap. Twenty-five meaningfully different sound engines — not 25 skins over the same oscillator — each with their own parameter set, presets, and character. A bass player can grab Mono Furnace for a chunky lead. A sound designer can dive into Granular Cloud for ambient textures. Someone who's never touched a synth can load Zen Rack, press a macro, and immediately make something they like.
+
+The other problem is licensing. Most open-source synths are desktop applications with GPL or unclear licensing. The Rack-25 sources its engine designs from open-source projects but implements them as clean-room browser-native interpretations, tracking licence status per engine and keeping the whole thing deployable without legal headaches.
+
+## Features
+
+### 25 Engines, Real Differences
+
+The engines aren't 25 variations on "saw wave through low-pass filter." They cover 22 distinct synthesis families:
+
+| Engine | Synthesis | Character |
+|--------|-----------|-----------|
+| Warm Analog | Subtractive / virtual analogue | Bread-and-butter basses, leads, plucks, and pads |
+| Soft Poly | Polyphonic subtractive | Smooth chords and patient filter sweeps |
+| Mono Furnace | Monophonic subtractive | Chunky bass and lead with glide and bite |
+| Classic OB | Vintage analogue-style | Wide brass, pads, and slow filter movement |
+| FM Bells | 2–4 operator FM | Bells, glass, electric keys, shiny pokes |
+| DX Stack | 6-operator FM | Complex metallic and percussive sounds |
+| Cartridge FM | DX7-style FM architecture | Classic FM sound design experiments |
+| Wavetable Drift | Wavetable | Moving waves for evolving pads and sharp leads |
+| Surge Hybrid | Hybrid subtractive/wavetable/FM | Flexible modern layered sound design |
+| Additive Lantern | Additive | Harmonic partials, organs, glass, spectral pads |
+| Pad Weaver | PAD / Fourier-style | Lush, evolving, choir-like and string-like textures |
+| Noise Harmonics | Filtered noise bands | Breath, wind, reeds, synthetic bowing |
+| Sampled Keys | Sample playback | Familiar piano, EP, organ, and strings |
+| SoundFont Rack | SoundFont instruments | Bread-and-butter General MIDI-ish sounds |
+| Tiny GM | Lightweight GM-style | Quick sketches and charming fake realism |
+| Chip Arcade | Pulse/triangle/noise chip | 8-bit leads, square basses, noise percussion |
+| Drum Synth Kit | Algorithmic percussion | Synthetic drums mapped across the keyboard |
+| Karplus Pluck | Physical modelling / Karplus-Strong | Plucked strings, harps, rubber bands, resonant twangs |
+| Modal Mallets | Modal synthesis / resonator bank | Marimba, kalimba, bowls, struck bars |
+| Open Piano | Physical-modelled piano | Lightweight piano-like tones with expressive decay |
+| Granular Cloud | Granular | Clouds, sprays, frozen textures, ambient smears |
+| Formant Vox | Formant / vocal filter-bank | Vowel pads, robot choir, talking leads |
+| Byte Crusher | Bitcrushed digital | Crunchy leads, broken toys, intentional browser noises |
+| Vector Blend | Vector synthesis / four-source crossfade | XY-pad blending for evolving hybrid sounds |
+| Zen Rack | Macro hybrid flagship | Broad, preset-friendly, fast to use |
+
+Each engine exposes 8–16+ parameters and 4–8 macro controls. Every engine includes at least 8 built-in presets — that's 200+ presets out of the box.
+
+### Three Ways to Play
+
+**On-screen piano keybed** — Visible by default, spanning C2 to C6. Click, touch, or drag across keys. Octave shift, velocity slider, sustain toggle, and note highlighting included.
+
+**Computer keyboard** — Standard two-row mapping. Lower row for one octave, upper row for the next. `[` and `]` shift octaves. Space toggles sustain. Escape triggers panic.
+
+**MIDI input** — Where Web MIDI is available, connect a keyboard or controller. Note on/off, velocity, pitch bend, mod wheel, sustain pedal, and basic CC mapping all supported. MIDI learn lets you map eligible parameters to hardware controls. When MIDI isn't available, the app shows a friendly message and the other input methods work fine.
+
+### Preset System
+
+Built-in presets are read-only. User presets save to localStorage and survive page reload. Each preset stores engine ID, parameter values, macro values, global effects, tags, and metadata.
+
+Users can:
+
+- Save new presets
+- Overwrite existing user presets
+- Rename, duplicate, and delete
+- Favourite for quick access
+- Export as JSON files
+- Import from JSON with validation
+
+The first preset for every engine is a safe default called `Init: [Engine Name]` — simple, stable, and useful for sound design from scratch.
+
+Preset names have personality: "Sofa Bass," "Sunbeam Pad," "Polite Laser," "Cardboard Prophet," "Small Haunted Toy," "Honey Keys," "Very Legal Supersaw."
+
+### Global Effects
+
+A collapsible master effects chain sits across all engines:
+
+- EQ / tone tilt
+- Chorus
+- Delay (amount, time, feedback)
+- Reverb (amount, size)
+- Master volume
+- Safety limiter
+
+A panic button immediately stops all active voices and resets stuck notes. Default master volume is conservative — no preset loads at painful volume.
+
+### Settings
+
+Performance modes (Eco, Balanced, Fancy) adjust polyphony and effect quality. Global polyphony limit (4/8/16/32 voices). Theme selection (Warm Studio, Dusk Rack, Paper & Walnut). Keybed visibility toggle. Computer keyboard input on/off. MIDI device selector. Export/import all user presets. Reset local data.
+
+## Architecture
+
+The app is a single-page Vite + React application with zero API routes. Everything runs in the browser.
+
+```
+┌─────────────────────────────────────────────────────┐
+│                     Browser                          │
+│  ┌─────────────────────────────────────────────────┐ │
+│  │            React + Zustand Frontend             │ │
+│  │  (Engine Browser, Parameter Rack, Keybed, UI)   │ │
+│  └──────────────────────┬──────────────────────────┘ │
+│                         │                             │
+│  ┌──────────────────────▼──────────────────────────┐ │
+│  │            Audio Engine Host                    │ │
+│  │  ┌───────────────────────────────────────────┐ │ │
+│  │  │  Shared Utilities                         │ │ │
+│  │  │  - Voice allocator                        │ │ │
+│  │  │  - ADSR envelope helper                   │ │ │
+│  │  │  - Oscillator/noise/filter factories      │ │ │
+│  │  │  - Parameter smoothing                    │ │ │
+│  │  │  - MIDI note-to-frequency                 │ │ │
+│  │  │  - Safe gain/limiter                      │ │ │
+│  │  └───────────────────────────────────────────┘ │ │
+│  │  ┌───────────────────────────────────────────┐ │ │
+│  │  │  Engine Modules (lazy-loaded)             │ │ │
+│  │  │  warm-analog/ fm-bells/ granular-cloud/   │ │ │
+│  │  │  chip-arcade/ karplus-pluck/ ...          │ │ │
+│  │  └───────────────────────────────────────────┘ │ │
+│  │  ┌───────────────────────────────────────────┐ │ │
+│  │  │  Global Effects Chain                     │ │ │
+│  │  │  EQ → Chorus → Delay → Reverb → Limiter  │ │ │
+│  │  └───────────────────────────────────────────┘ │ │
+│  └─────────────────────────────────────────────────┘ │
+│  ┌─────────────────────────────────────────────────┐ │
+│  │  localStorage                                    │ │
+│  │  - User presets                                  │ │
+│  │  - Settings, MIDI mappings, last session         │ │
+│  └─────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────┘
+```
+
+### Engine Interface
+
+Every engine implements a shared `SynthEngine` interface. When you select an engine, the host creates an `EngineInstance` with methods for `noteOn`, `noteOff`, `allNotesOff`, `setParameter`, `setMacro`, and `dispose`. Switching engines stops active notes, disposes the old engine, loads the new one, and applies its default preset.
+
+Parameter definitions drive the UI. Each parameter declares its control type (knob, slider, toggle, dropdown, XY pad, drawbar, envelope editor), value range, step size, unit, help text, and whether it's eligible for MIDI learn. The parameter rack renders controls dynamically from this schema.
+
+### Audio Safety
+
+The app includes a master limiter to prevent dangerous volume spikes. Parameter smoothing prevents clicks when adjusting filter cutoff, oscillator frequency, FM index, or gain. Stuck notes are aggressively prevented — `allNotesOff` triggers on engine switch, preset change, MIDI disconnect, browser tab hide, audio context suspend, window blur, and panic button press.
+
+### Performance
+
+Engine switching targets under 500ms for non-sample engines. The app tracks active notes separately for MIDI, computer keyboard, and on-screen keybed to prevent one input method from accidentally releasing notes held by another. Memory leaks are guarded against with clean disposal on every engine switch.
+
+## Technology
+
+### Web Audio and Tone.js
+
+The audio pipeline uses the Web Audio API directly for low-level operations and Tone.js where it simplifies polyphony, scheduling, envelopes, effects, and synth primitives. AudioWorklet is used for custom DSP where performance matters.
+
+### TypeScript and Vite
+
+TypeScript throughout. Vite handles the build. Engines are lazy-loaded via dynamic imports — only the selected engine and shared utilities are loaded at any time.
+
+### Zustand
+
+Lightweight state management for current engine, current preset, parameter values, macro values, active notes, MIDI state, global effects, and UI settings. Persisted to localStorage where appropriate.
+
+### Tailwind CSS
+
+Styled with Tailwind CSS and custom design tokens. The visual direction is warm, tactile, and handcrafted — warm off-white, honey, clay, walnut, soft charcoal, faded orange, and muted teal. Rounded rack panels, large friendly knobs, subtle texture, and gentle animation.
+
+## UI Design
+
+The interface is a single primary page with distinct regions: header, engine browser, preset browser, parameter rack, macro strip, piano keybed, and footer/status bar.
+
+Desktop (1024px+) uses a full rack layout with the engine/preset browser on the left, parameter controls in the centre, and the keybed fixed near the bottom. Tablet (768px–1023px) stacks the layout with collapsible parameter panels. Mobile (below 768px) supports basic engine selection, preset browsing, a simplified keybed, and macro controls — deep sound design is desktop-first.
+
+The engine browser supports search, filtering by sound type (Bass, Lead, Pad, Keys, Percussion, Texture, Experimental), and shows CPU cost and polyphony mode per engine. Switching engines with unsaved changes triggers a lightweight confirm dialog.
+
+An audio unlock overlay appears on first load:
+
+> **Wake the rack**
+>
+> Browsers are shy about audio. Tap once and we'll plug the little beast in.
+>
+> [Start playing]
+
+## What I Learned
+
+- **25 engines is a lot of engines.** Building a shared interface first, then implementing one complete vertical slice (Warm Analog + keybed + presets + panic) prevented the project becoming 25 half-built synths with no playable app around them.
+- **Licence tracking is architecture, not paperwork.** Each engine needs explicit licence metadata — direct dependency, adapted implementation, or reference-only. GPL-family projects default to reference-only clean-room implementations. This has to be decided before coding starts, not after.
+- **Parameter smoothing matters more than you think.** Filter cutoff jumps, FM index changes, and gain adjustments all click harshly without smoothing. Every parameter likely to produce audible artefacts on abrupt change needs a smoothing helper.
+- **Stuck notes are the boss fight.** Three separate input methods (MIDI, computer keyboard, on-screen keybed) each track active notes independently. Engine switch, preset change, MIDI disconnect, tab hide, and window blur all need to trigger `allNotesOff`. Miss one and you get a haunted C#.
+- **Vercel Hobby is a useful constraint.** Zero API routes forces a clean client-side architecture. No serverless cold starts, no backend complexity, no database. The entire app is static files and browser APIs.
+- **The UI has to feel warm, not clever.** Synth interfaces default to black-and-neon-serious. The Rack-25 uses warm creams, walnut tones, friendly knobs, and helpful microcopy to feel inviting instead of intimidating.
+
+## Challenges
+
+- **Engine diversity without bloat.** 25 engines covering 22 synthesis families means different control types, different parameter counts, different polyphony models. The shared interface had to be flexible enough for granular synthesis density controls and drum-mapped percussion without becoming a mess of optional fields.
+- **Preset volume.** 200+ built-in presets (8 per engine) with consistent naming, volume normalization, and meaningful parameter values. Each engine needs a safe `Init` preset plus category-specific presets — bass, lead, pad, weird, showcase.
+- **MIDI as progressive enhancement.** Web MIDI availability varies by browser. The app must be fully playable without it — computer keyboard and on-screen keybed are primary, MIDI is a bonus. The fallback copy and UI states need to feel natural, not apologetic.
+- **Audio safety across 25 engines.** Each engine has different gain staging, different polyphony, different effect sends. The master limiter and per-engine normalization prevent volume spikes when switching between a quiet pad engine and a loud bitcrushed lead.
+- **Responsive synth UI.** A desktop rack of knobs doesn't shrink gracefully to mobile. The tablet and mobile layouts needed to collapse parameter groups, simplify the keybed, and keep macros accessible without cramming 16 knobs into a phone screen.
+
+## Future Work
+
+- **Audio recording/export** — Record performances and export as WAV/MP3
+- **Multi-engine layering** — Split-keyboard zones and engine stacking
+- **Cloud preset sync** — Optional account for syncing presets across devices
+- **WASM engines** — More complex DSP via WebAssembly for engines like DX Stack
+- **Community presets** — Share and discover user-created preset packs
+- **MIDI CC mapping presets** — Save and recall MIDI mapping configurations per engine
+- **Tauri native app** — Wrap for iOS/Android using the shared audio core
+
+## Links
+
+- [GitHub Repository](https://github.com/ppsandwich/The-Rack-25)
+- [Live App](https://the-rack-25.vercel.app)
