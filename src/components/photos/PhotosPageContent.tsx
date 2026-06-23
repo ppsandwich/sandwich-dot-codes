@@ -63,15 +63,10 @@ export function PhotosPageContent({ portfolio }: PhotosPageContentProps) {
               </StickerTag>
 
               <h1 className="font-heading text-5xl font-black leading-[0.9] tracking-tight sm:text-7xl lg:text-8xl">
-                Photos
+                The Images
               </h1>
 
               <CrookedDivider variant="scribble" color="#6F9D9A" className="my-6 max-w-xl" />
-
-              <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-                A living portfolio of photographs by {profile?.name ?? "Dylan Gibbs"}, pulled from
-                the public 500px profile at render time and cached for fast page loads.
-              </p>
 
               {profile?.bio ? (
                 <p className="mt-5 max-w-2xl border-l-4 border-teal pl-4 text-base italic text-foreground">
