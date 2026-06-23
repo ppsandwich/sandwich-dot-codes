@@ -1,0 +1,61 @@
+---
+title: "Bargain Hunting"
+purpose: "A methodology for evaluating online marketplace listings to identify products that could be purchased and resolled for profit, with conservative risk-adjusted analysis."
+date: "2026-06-23"
+tags: ["resale", "bargain-hunting", "marketplace", "e-commerce", "profit-analysis"]
+---
+> [!NOTE]
+> View the original raw Markdown rules document [here](https://github.com/ppsandwich/sandwich-dot-codes/blob/main/content/skills/SKILL_BARGAIN_HUNTING_PPS.md) on GitHub.
+
+## The Skill
+
+This skill defines a structured approach to evaluating whether a product listed online could reasonably be purchased and resold for profit. It is designed for automated or semi-automated bargain-hunting workflows that search online marketplaces, classifieds, auction sites, clearance sales, and retailer listings, then alert Dylan when a product appears meaningfully underpriced.
+
+### 1. Core Principles
+* **Full Resale Equation:** A low asking price is not enough. The agent must estimate expected resale proceeds minus total landed cost, resale costs, risk adjustment, and time/friction cost.
+* **Conservative Estimates:** Prefer the lower-middle of recent sold comps (25th–50th percentile). If profit only exists under optimistic assumptions, mark as speculative or skip.
+* **Sceptical Analyst:** Behave like a sceptical resale analyst, not a motivational arbitrage goblin. Profit is not real until someone buys the item.
+* **Evidence Quality Hierarchy:** Strong evidence (5+ recent sold comps) → Moderate (2–4 comps) → Weak (active listings only) → Insufficient (no data). Adjust confidence accordingly.
+* **Australian Market First:** Default to Melbourne, Victoria, Australia. Prioritise local pickup and Australian resale channels (Facebook Marketplace, Gumtree, eBay Australia, Cash Converters, retailer clearances).
+
+### 2. Scoring System
+Every opportunity receives a 0–100 Bargain Score based on:
+* Expected risk-adjusted profit (0–25 points)
+* Margin after all costs (0–20 points)
+* Evidence quality / benchmark confidence (0–15 points)
+* Demand / liquidity (0–15 points)
+* Listing quality and condition certainty (0–10 points)
+* Seller credibility and scam resistance (0–10 points)
+* Ease of resale / shipping / storage (0–5 points)
+
+Score interpretation: 85+ = Strong Buy Candidate, 70–84 = Good Candidate, 55–69 = Watchlist, 40–54 = Speculative, 0–39 = Reject.
+
+### 3. Category Risk Model
+* **Lower-Risk:** Mainstream consumer electronics, gaming consoles, Apple/Samsung/Google devices, LEGO sets, cameras/lenses with clear model names, popular tools.
+* **Higher-Risk:** Laptops/phones with battery/lock issues, headphones (hygiene/counterfeits), cameras (shutter count/fungus), 3D printers, musical instruments, furniture.
+* **Very High-Risk (Usually Skip):** Luxury fashion, sneakers, perfumes, supplements, unknown-brand electronics, locked devices, items requiring specialist testing.
+
+### 4. Profit Thresholds
+Minimum risk-adjusted profit by total landed cost:
+* Under $50 → at least $20 profit (40% margin)
+* $50–$150 → at least $35 profit (30% margin)
+* $150–$500 → at least $75 profit (25% margin)
+* $500–$1,000 → at least $150 profit (20% margin)
+* $1,000+ → at least $250 profit (18% margin)
+
+---
+
+## Challenges
+
+* **Avoiding Arbitrage Goblin Behaviour:** Resisting the temptation to recommend items that look cheap on the surface but are destroyed by fees, shipping, condition issues, or slow resale.
+* **Evidence Quality Assessment:** Distinguishing between strong sold-comp evidence and wishful-thinking active listings. A dozen optimistic sellers all asking too much does not create a market.
+* **Scam and Counterfeit Detection:** Identifying listings that are too good to be true, including locked devices, counterfeit goods, stolen items, and misleading descriptions.
+* **Cost Calculation Accuracy:** Accounting for all hidden costs including platform fees, payment processing, packaging, fuel, storage, cleaning, testing, and return risk.
+
+---
+
+## Future Improvements
+
+* **Automated Marketplace Scanner:** Building a recurring workflow that searches target categories and sources, extracts structured listing data, and alerts only when thresholds are met.
+* **Price History Tracking:** Maintaining a local database of sold prices and market trends to improve resale price estimates over time.
+* **Category-Specific Templates:** Creating pre-built evaluation templates for high-volume categories (LEGO, Apple devices, camera gear, gaming consoles) to speed up analysis.
