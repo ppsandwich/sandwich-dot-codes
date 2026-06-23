@@ -1,0 +1,56 @@
+---
+title: "PRD Creation"
+purpose: "A methodology for creating production-ready, AI-agent-friendly product requirements documents using my preferred PRD structure."
+date: "2026-06-23"
+tags: ["product-management", "prd", "documentation", "ai-agents", "specification"]
+---
+> [!NOTE]
+> View the original raw Markdown rules document [here](https://github.com/ppsandwich/sandwich-dot-codes/blob/main/content/skills/SKILL_PRD_CREATION.md) on GitHub.
+
+## The Skill
+
+This skill defines a structured approach to writing Product Requirements Documents (PRDs) that are clear enough for AI coding agents to build from, detailed enough to avoid hidden assumptions, and practical enough to become real projects rather than vibes documents wearing a lanyard.
+
+### 1. Core PRD Principles
+* **Research Before Writing:** Verify current facts about APIs, libraries, platform rules, and domain-specific mechanics. Do not rely on stale assumptions.
+* **Build From the Idea, Not Around It:** Preserve the user's distinctive concept while turning it into a buildable system. Avoid inflating small projects into platforms.
+* **AI-Agent-Friendly:** Include concrete requirements, data models, state models, algorithms, component breakdowns, file structures, edge cases, and acceptance criteria.
+* **Call Out Uncertainty:** Use explicit sections for Open Questions, Assumptions, Build Readiness, Risks, and Validation Needed. Do not hide gaps by writing confidently around them.
+* **Separate v1 From Later Ideas:** Protect the MVP from feature creep. Categorise features as v1 required, v1 optional, future, or explicit non-goal.
+* **Production-Ready Detail:** Specify empty states, loading states, error states, invalid input, mobile layout, keyboard support, and accessibility requirements.
+* **Preserve Product Taste:** Web app first, Vercel-friendly, minimal backend, strong visual identity, no unnecessary auth, finished artefacts not SaaS skeletons.
+
+### 2. Standard PRD Structure
+The template includes 28 sections covering:
+* Product Summary, Goals, Non-Goals, Target Audience
+* Platform Constraints, Tech Stack, Core Design, User Flow
+* Feature Requirements, Data Models, Algorithms, Content Requirements
+* UI Requirements, Accessibility, Responsive Behaviour, Persistence
+* Routes/API, File Structure, Error Handling, Performance
+* Privacy/Security, Analytics, Acceptance Criteria, Implementation Phases
+* Open Questions, Assumptions, Build Readiness, Agent Notes
+
+### 3. PRD Variants by Product Type
+* **Browser Games:** Emphasise core loop, win/loss conditions, scoring, progression, state models, content pools, balancing.
+* **Creative Tools:** Emphasise input, transformation logic, preview, editing controls, export/download, presets, output quality.
+* **Data/Analysis Tools:** Emphasise input contract, preprocessing, analysis methods, scoring, output contract, performance targets.
+* **AI-Assisted Products:** Specify why AI is required, model/API choice, prompt structure, privacy implications, fallback behaviour, quality checks.
+* **Mobile-First Apps:** Emphasise thumb-friendly layout, sticky controls, touch targets, offline behaviour.
+* **Cross-Platform Apps:** Specify framework rationale, native permissions, app store considerations, platform-specific limitations.
+
+---
+
+## Challenges
+
+* **Avoiding Vague Language:** Replacing phrases like "make it intuitive" or "use best practices" with concrete, testable requirements that an agent can actually implement.
+* **Balancing Detail vs. Bloat:** Including enough specification for complex systems without turning a small utility into a 40-page governance appendix.
+* **Honest Build Readiness:** Marking PRDs as "Not Ready for Build" when major decisions remain unresolved, rather than being polite and creating confusion later.
+* **Research Integration:** Verifying current facts about APIs, libraries, and platform rules without burying the document in citations.
+
+---
+
+## Future Improvements
+
+* **PRD Review Agent:** Building a sub-agent that reads a drafted PRD and automatically identifies missing data models, undefined state transitions, and ambiguous acceptance criteria.
+* **Template Library:** Creating pre-built PRD templates for common project types (browser game, creative tool, data analyser, mobile-first app) to accelerate drafting.
+* **Build Readiness Scoring:** Developing a quantitative scoring system for PRD completeness based on section coverage, specificity of requirements, and open question severity.
