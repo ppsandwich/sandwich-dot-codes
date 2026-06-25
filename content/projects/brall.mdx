@@ -7,6 +7,7 @@ featured: true
 github: "https://github.com/ppsandwich/remembrall"
 status: "active"
 cover: "/images/projects/brall-cover.png"
+showcase: "/images/projects/brall-showcase.png"
 tech: ["TypeScript", "Next.js", "React", "Supabase", "Electron", "Web Crypto API", "Tailwind CSS", "pnpm"]
 ---
 
@@ -19,6 +20,8 @@ The core promise is three words: **Open. Type or paste. Done.**
 Brall runs across four surfaces: a Next.js web app hosted on Vercel, an Electron desktop tray app, a Chrome extension, and a mobile app. All note bodies are end-to-end encrypted before they leave the device. Supabase stores the locked box, not the thought inside it.
 
 The name comes from the Remembrall owned by Neville Longbottom in Harry Potter — a small glass ball that turns red when you've forgotten something. Brall is that, minus the wizardry: a tiny scratchpad for things you'd otherwise lose.
+
+![Brall web app showing the quick capture input, search bar, and note list in light mode](/images/projects/brall-web.png)
 
 ## The Problem It Solves
 
@@ -157,6 +160,8 @@ Manifest V3 extension with a browser action popup and context menu integration. 
 - Search recent notes after unlock
 
 All captured text is encrypted before storage. If the encryption key is unavailable in the extension context, the extension hands off to the web app's unlock flow.
+
+![Desktop tray popover and Chrome extension popup side by side, showing compact capture UI](/images/projects/brall-desktop-extension.png)
 
 ### Mobile App
 
