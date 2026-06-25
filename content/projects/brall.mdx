@@ -1,0 +1,254 @@
+---
+title: "Brall"
+description: "A speed-first, cross-platform note capture app with end-to-end encryption. Open. Type or paste. Done."
+date: "2026-06-25"
+tags: ["note-taking", "encryption", "Supabase", "Next.js", "Electron", "Chrome extension", "E2EE", "monorepo"]
+featured: true
+github: "https://github.com/ppsandwich/remembrall"
+status: "active"
+cover: "/images/projects/brall-cover.png"
+tech: ["TypeScript", "Next.js", "React", "Supabase", "Electron", "Web Crypto API", "Tailwind CSS", "pnpm"]
+---
+
+## Overview
+
+Brall is a speed-first, cross-platform note capture app designed for the smallest possible gap between "I should save this" and "it is saved." It's inspired by Google Keep, Notion, and QuickNote, but it deliberately avoids becoming a full productivity system. No dashboards, no PARA method, no weekly planning rituals, no stationery cosplay. Just a fast place to dump, find, copy, duplicate, delete, and export text.
+
+The core promise is three words: **Open. Type or paste. Done.**
+
+Brall runs across four surfaces: a Next.js web app hosted on Vercel, an Electron desktop tray app, a Chrome extension, and a mobile app. All note bodies are end-to-end encrypted before they leave the device. Supabase stores the locked box, not the thought inside it.
+
+The name comes from the Remembrall owned by Neville Longbottom in Harry Potter — a small glass ball that turns red when you've forgotten something. Brall is that, minus the wizardry: a tiny scratchpad for things you'd otherwise lose.
+
+## The Problem It Solves
+
+Most note-taking apps ask too much before they let you write. Create an account. Choose a workspace. Pick a template. Name your note. Tag it. File it. By the time you've navigated the ceremony, the thought is gone.
+
+The other problem is privacy. Cloud note services can read your plaintext. They index it, search it, and sometimes train on it. Brall encrypts note bodies client-side before they ever reach Supabase. The server stores ciphertext. Search happens locally after decryption. The encryption passphrase never leaves the device.
+
+The third problem is fragmentation. You capture text on your phone, your laptop, your browser, your desktop. Brall gives every platform the same mental model: create, paste, search, copy, duplicate, delete, export. Platform shells differ, but the user never relearns the app.
+
+## Architecture
+
+### Monorepo
+
+Brall is a pnpm workspace monorepo with four app shells and four shared packages:
+
+```
+/apps
+  /web         — Next.js (Vercel Hobby)
+  /desktop     — Electron tray shell
+  /extension   — Chrome Manifest V3
+  /mobile      — Expo (planned)
+
+/packages
+  /core        — shared types, validation, constants
+  /crypto      — encryption, key derivation, payload schema
+  /export      — Markdown generation, filename utilities
+  /supabase    — client helpers, database types
+```
+
+The desktop app wraps the web app in a narrow popover window (380×620px) that lives in the system tray. It loads the web app's mobile layout through a WebView. The Chrome extension has its own React popup with a compact UI, plus a background service worker for context menu capture.
+
+### Supabase and Vercel
+
+The web app uses zero custom API routes. Supabase handles auth, database, Row Level Security, and CRUD operations. Vercel handles static hosting, Next.js delivery, HTTPS, and preview deployments. This keeps the deployment simple and Hobby-safe.
+
+### Database Schema
+
+Three tables:
+
+- `notes` — encrypted body payload, metadata (timestamps, pinned, archived, source, soft delete), encryption and key versions
+- `user_preferences` — theme, default view, auto-lock timing, desktop shortcut settings
+- `user_encryption_keys` — KDF parameters, salt, verifier (never the raw key or passphrase)
+
+Row Level Security ensures users can only access their own data. Soft delete is the default — deleting sets `deleted_at` and an undo toast appears for five seconds.
+
+## End-to-End Encryption
+
+Encryption is the core technical constraint that shapes everything else.
+
+### How It Works
+
+1. User signs in with Supabase Auth.
+2. On first use, user creates an encryption passphrase.
+3. A key is derived locally using PBKDF2 (upgradeable to Argon2id).
+4. Note bodies are encrypted with AES-256-GCM before sync.
+5. Supabase stores encrypted payloads only — no plaintext ever reaches the server.
+6. Decryption happens locally after unlock.
+
+The encrypted payload is versioned and self-describing:
+
+```typescript
+type EncryptedPayload = {
+  version: 1;
+  algorithm: "AES-GCM";
+  kdf: "PBKDF2" | "Argon2id";
+  ciphertext: string;
+  iv: string;
+  saltId: string;
+  keyVersion: number;
+};
+```
+
+Each encrypted note gets a unique nonce/IV. Metadata (timestamps, pinned state, source) stays unencrypted for query performance.
+
+### The Search Trade-Off
+
+Because note bodies are encrypted, Supabase full-text search can't touch plaintext content. Brall solves this with local decrypted search: after unlock, encrypted notes are fetched from Supabase, decrypted in memory, and searched client-side. This handles at least 5,000 notes with sub-100ms results. No plaintext search terms ever reach the server.
+
+### Lock and Unlock
+
+Notes unlock with the encryption passphrase during a session. Auto-lock kicks in after configurable idle periods — 30 minutes on web and desktop, 5 minutes when the mobile app backgrounds. The locked screen says:
+
+> Notes are locked. Unlock to search, copy, paste, and generally rummage around.
+
+## Core Features
+
+### Quick Capture
+
+The primary capture input is always visible when unlocked. Type directly into the quick capture box and notes auto-save after 400–800ms of idle. No title required. The first non-empty line becomes the preview (max 80 characters). Empty notes aren't saved unless explicitly created.
+
+### Clipboard Dump
+
+A "Dump clipboard" button reads clipboard text (where browser permissions allow) and creates a new encrypted note instantly. Shortcut: `Cmd/Ctrl + Shift + V`. If the browser blocks clipboard access, a fallback paste box appears with the message:
+
+> Browser will not let Brall read the clipboard directly. Paste here instead.
+
+### Search
+
+Search is always visible when unlocked. Press `/` to focus it. Results filter from the local decrypted cache as you type. Case-insensitive, matches full note body text, handles 5,000+ notes without lag.
+
+### Note Management
+
+Every note supports: copy, duplicate, delete, pin/unpin, and export. Text selection inside notes is reliable — drag-select doesn't trigger card drag or bulk mode. Deleting is soft-delete with a five-second undo toast:
+
+> Note deleted. Undo?
+
+Bulk operations support: delete, duplicate, pin, unpin, copy as combined text, and export as Markdown. Entry points include checkboxes, long-press on mobile, and shift-click for range selection.
+
+### Markdown Export
+
+Export happens entirely client-side. Notes are decrypted locally, converted to Markdown, and downloaded as a `.md` file. No server routes, no edge functions. Export formats:
+
+- Current note
+- Selected notes as one file
+- All notes as one file
+
+The export includes metadata (created, updated, source) per note.
+
+## Platform Shells
+
+### Web App
+
+The primary platform. Responsive layout, light mode default, dark mode option. Works in desktop and mobile browsers. Deploys to Vercel Hobby.
+
+### Desktop Tray App
+
+An Electron shell that runs as a system tray app. Clicking the tray icon or pressing a global shortcut (`Cmd/Ctrl + Shift + Space`) opens a narrow popover window displaying the web app's mobile layout. The popover hides on blur unless pinned. Settings include: open at login, auto-detect clipboard on shortcut, configurable shortcut.
+
+### Chrome Extension
+
+Manifest V3 extension with a browser action popup and context menu integration. Users can:
+
+- Save selected text via right-click → "Save selection to Brall"
+- Save the current page title and URL
+- Create notes from the popup
+- Search recent notes after unlock
+
+All captured text is encrypted before storage. If the encryption key is unavailable in the extension context, the extension hands off to the web app's unlock flow.
+
+### Mobile App
+
+React Native / Expo (planned). Supports native share target for plain text and URLs. Shared content is preserved through auth and unlock flows.
+
+## UI Design
+
+The interface is minimalistic, monochromatic, and functional. Light mode default with a warm off-white background (`#FAFAF8`). Dark mode inverts to near-black (`#111111`). No decorative gradients, no heavy cards, no confetti.
+
+Typography uses a clean sans-serif (Inter or system stack). Thin borders, flat surfaces, subtle shadows only where needed. The UI is spare but not cryptic — buttons are clear, shortcuts are discoverable, empty states help:
+
+> Nothing here yet. Dump something in.
+
+The icon is a monochrome folded-note "R" mark — suggesting "remembering" without referencing the Harry Potter Remembrall directly. No glass orb, no smoke, no wizard branding.
+
+## Keyboard Shortcuts
+
+| Shortcut | Action |
+|---|---|
+| `/` | Focus search |
+| `N` | New note |
+| `Cmd/Ctrl + Shift + V` | Dump clipboard |
+| `Escape` | Clear focus / close editor / exit bulk |
+| `Cmd/Ctrl + C` | Copy selected note |
+| `Cmd/Ctrl + D` | Duplicate selected note |
+| `Delete` | Delete selected note |
+| `?` | Show shortcuts |
+
+Desktop global shortcut: `Cmd/Ctrl + Shift + Space` opens the capture popover.
+
+## Technology
+
+### Web Stack
+
+- **Next.js** — App Router, server components where useful
+- **TypeScript** — end-to-end type safety
+- **Supabase** — Auth, Postgres, Row Level Security, realtime (optional)
+- **Web Crypto API** — AES-256-GCM encryption, PBKDF2 key derivation
+- **Tailwind CSS** — utility-first styling
+- **Zustand** — lightweight state management
+- **TanStack Query** — cache and sync layer
+- **Zod** — validation
+
+### Desktop
+
+- **Electron** — tray shell wrapping web app mobile layout
+- Global shortcut via Electron API
+- Customizable tray icon and popover dimensions
+
+### Extension
+
+- **Chrome Manifest V3** — service worker, context menus, popup
+- **React** — popup UI
+- E2EE-safe capture with handoff to web app when needed
+
+### Monorepo Tooling
+
+- **pnpm workspaces** — dependency management across packages
+- **Playwright** — end-to-end testing
+- Shared TypeScript config with `tsconfig.base.json`
+
+## Performance Targets
+
+- Main UI interactive within 2 seconds on desktop broadband
+- Unlock and decrypt 1,000 notes within 2 seconds
+- Search results update within 100ms for cached notes
+- Note creation appears instantly via optimistic update
+- Clipboard dump visible within 300ms
+- Editor opens within 100ms
+- Desktop tray popover opens within 500ms when warm
+- Chrome extension popup opens within 300ms
+
+## What I Learned
+
+- E2EE and fast search are fundamentally in tension. Encrypting note bodies means you can't use server-side full-text search. The solution — decrypt everything locally after unlock and search in memory — works surprisingly well for thousands of notes, but it requires careful management of the decrypted cache and lock lifecycle.
+- Zero API routes is a real constraint, not just an aesthetic choice. It forces all business logic to the client and all data through Supabase's RLS policies. This is simpler to deploy and reason about, but it means complex operations like bulk export or offline sync need creative client-side solutions.
+- The "speed over structure" principle eliminates entire categories of UI decisions. No title field, no tag picker, no folder tree, no template selector. Every one of those would add friction to the core loop of "open, type, done."
+- Electron for a tray app is a pragmatic choice over Tauri. The bundle is larger, but the development speed is worth it for a personal utility. The web app's mobile layout fits naturally in a 380px popover without modification.
+- Chrome extension E2EE is the hardest platform integration. The extension runs in its own context with separate storage, so sharing encryption keys between the extension and the web app requires careful handoff. The MVP solution is to stage captured text and open the web app for unlock when needed.
+
+## Future Ideas
+
+- Google Keep import
+- Tags as secondary organisation
+- Attachments and images
+- Voice capture via transcription
+- Safari and Firefox extensions
+- Raycast extension
+- Alfred workflow
+- Biometric unlock
+- Offline-first sync engine
+- Encrypted search index
+- Recovery phrase for lost passphrases
+
+None of these should compromise the core promise: **Open. Type or paste. Done.**
