@@ -1,0 +1,26 @@
+{
+  "id": "wild-notebook-01C-3",
+  "app": "Wild Notebook",
+  "slug": "wild-notebook",
+  "years": "Years 5–9",
+  "direction": 1,
+  "direction_name": "Field journal",
+  "variation": "C",
+  "variation_name": "Field record",
+  "treatment": "Graphic play",
+  "context": 3,
+  "title": "An unfamiliar leaf",
+  "goal": "Describe observable features before offering an uncertain identification.",
+  "evidence": "Record uses visible shape, edge and arrangement, keeps identification tentative and names evidence needed.",
+  "lesson": "School-ground observation station; compare records before using a teacher-approved field guide.",
+  "brief": "Field record C. Heading 'Describe it before you name it'. Location strip 'School path • fallen leaf • observed today'. Large detailed drawing of ONE oval leaf with serrated edge and branching veins on journal paper; no species label. Three blank labelled observation fields 'Shape', 'Edge', 'Veins'. Right blank 'My possible identification' with 'Uncertain' badge. Blank 'What evidence would help?' Tools 'Add photo', 'Sketch', 'Record voice', primary 'Save field record'. No invented species certainty, no counts to conflict with image. Maintain bold forest-green topbar, ochre panels, cream paper.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-0bf55593-e257-4b80-b8aa-35887230115d.png",
+  "logo": "wild-notebook/01-field-journal/c/logo.png",
+  "path": "wild-notebook/01-field-journal/c/03/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/wild-notebook/01-field-journal/c/03/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/01-field-journal/c/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Wild Notebook, Field journal, variation C Field record. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Describe observable features before offering an uncertain identification.\nSCREEN SPEC: Field record C. Heading 'Describe it before you name it'. Location strip 'School path • fallen leaf • observed today'. Large detailed drawing of ONE oval leaf with serrated edge and branching veins on journal paper; no species label. Three blank labelled observation fields 'Shape', 'Edge', 'Veins'. Right blank 'My possible identification' with 'Uncertain' badge. Blank 'What evidence would help?' Tools 'Add photo', 'Sketch', 'Record voice', primary 'Save field record'. No invented species certainty, no counts to conflict with image. Maintain bold forest-green topbar, ochre panels, cream paper.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

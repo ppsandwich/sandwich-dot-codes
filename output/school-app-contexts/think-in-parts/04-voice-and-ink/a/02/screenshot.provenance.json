@@ -1,0 +1,26 @@
+{
+  "id": "think-in-parts-04A-2",
+  "app": "Think in Parts",
+  "slug": "think-in-parts",
+  "years": "Years 5–9",
+  "direction": 4,
+  "direction_name": "Voice and ink",
+  "variation": "A",
+  "variation_name": "Ink canvas",
+  "treatment": "Quiet clarity",
+  "context": 2,
+  "title": "Change the pivot",
+  "goal": "Use a lever model to explain how pivot position affects the effort required for the same load.",
+  "evidence": "Student relates distances from the pivot to the load and effort and provides a consistent diagram/narration.",
+  "lesson": "Consolidation after a physical lever demonstration; predict before testing.",
+  "brief": "Heading 'Which lever needs less effort? Why?' Two simple horizontal bars A and B left. Same load LEFT end; downward 'Effort' arrow RIGHT end. A triangular pivot halfway; B pivot one-quarter of bar length from LEFT end, nearer load. Label Load, Pivot, Effort and 'Same load. Bars not to scale.' Right blank 'My prediction' with unselected A/B buttons and 'My explanation' canvas. 'Draw links', 'Record explanation', 'Save for feedback'. No answer selected, no effort numbers, no decorative gears. Preserve quiet ink canvas style.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-62f210b9-369e-430e-acba-506c04ad7e82.png",
+  "logo": "think-in-parts/04-voice-and-ink/a/logo.png",
+  "path": "think-in-parts/04-voice-and-ink/a/02/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/think-in-parts/04-voice-and-ink/a/02/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/04-voice-and-ink/a/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Think in Parts, Voice and ink, variation A Ink canvas. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Use a lever model to explain how pivot position affects the effort required for the same load.\nSCREEN SPEC: Heading 'Which lever needs less effort? Why?' Two simple horizontal bars A and B left. Same load LEFT end; downward 'Effort' arrow RIGHT end. A triangular pivot halfway; B pivot one-quarter of bar length from LEFT end, nearer load. Label Load, Pivot, Effort and 'Same load. Bars not to scale.' Right blank 'My prediction' with unselected A/B buttons and 'My explanation' canvas. 'Draw links', 'Record explanation', 'Save for feedback'. No answer selected, no effort numbers, no decorative gears. Preserve quiet ink canvas style.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

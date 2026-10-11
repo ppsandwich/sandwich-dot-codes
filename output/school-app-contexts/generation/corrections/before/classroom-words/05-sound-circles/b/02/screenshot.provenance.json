@@ -1,0 +1,26 @@
+{
+  "id": "classroom-words-05B-2",
+  "app": "Classroom Words",
+  "slug": "classroom-words",
+  "years": "Foundation–Year 2",
+  "direction": 5,
+  "direction_name": "Sound circles",
+  "variation": "B",
+  "variation_name": "Sound buttons",
+  "treatment": "Tactile studio",
+  "context": 2,
+  "title": "Two letters, one sound",
+  "goal": "Read sh as one sound and blend it with other taught correspondences.",
+  "evidence": "Student blends shop without separating s and h, then reads Sam is in a shop.; check a different sh word.",
+  "lesson": "After teaching sh; use ship as the next independent word.",
+  "brief": "Heading 'Two letters can make one sound'. THREE connected sound circles, first contains sh together, next o, next p. Sentence strip 'Sam is in a shop.' Badge 'Teacher set: s a t p i n m d g o sh'. Keep sound circles B paper textures, mascot, colours, logo. 'Record my reading', 'Sound help', footer 'Word → Sentence → New word'. No shop illustration that reveals word, no separate circles for s and h, no prerecorded waveform or completed score.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-2e30b0a9-1a3e-4d59-b750-9877d1068833.png",
+  "logo": "classroom-words/05-sound-circles/b/logo.png",
+  "path": "classroom-words/05-sound-circles/b/02/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/classroom-words/05-sound-circles/b/02/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/classroom-words/05-sound-circles/b/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Classroom Words, Sound circles, variation B Sound buttons. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Read sh as one sound and blend it with other taught correspondences.\nSCREEN SPEC: Heading 'Two letters can make one sound'. THREE connected sound circles, first contains sh together, next o, next p. Sentence strip 'Sam is in a shop.' Badge 'Teacher set: s a t p i n m d g o sh'. Keep sound circles B paper textures, mascot, colours, logo. 'Record my reading', 'Sound help', footer 'Word → Sentence → New word'. No shop illustration that reveals word, no separate circles for s and h, no prerecorded waveform or completed score.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

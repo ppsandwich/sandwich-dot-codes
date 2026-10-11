@@ -1,0 +1,26 @@
+{
+  "id": "classroom-words-05B-1",
+  "app": "Classroom Words",
+  "slug": "classroom-words",
+  "years": "Foundation–Year 2",
+  "direction": 5,
+  "direction_name": "Sound circles",
+  "variation": "B",
+  "variation_name": "Sound buttons",
+  "treatment": "Tactile studio",
+  "context": 1,
+  "title": "New vowel, new word",
+  "goal": "Blend a CVC word with a newly taught vowel and read it in a controlled sentence.",
+  "evidence": "Listen for /d/ /o/ /g/ blended as dog and accurate reading of the sentence; note audio support.",
+  "lesson": "After explicit teaching of short o; transfer to log or got on paper.",
+  "brief": "Replace task with heading 'Read the new word'. Three large linked circles d o g, then separate sentence strip 'Sam got a dog.' Teacher set badge 's a t p i n m d g o'. Keep all original mint-and-peach tactile paper, mascot and logo. 'Record my reading' primary, 'Sound help' secondary. Footer 'Try first. Then listen back.' No dog picture, no word choices, no recorded waveform, no supplied spoken answer. New vowel o may have a subtle teacher-set accent, but no answer highlighting.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-2a95302a-3cee-466d-a2e6-73293f7118ed.png",
+  "logo": "classroom-words/05-sound-circles/b/logo.png",
+  "path": "classroom-words/05-sound-circles/b/01/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/classroom-words/05-sound-circles/b/01/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/classroom-words/05-sound-circles/b/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Classroom Words, Sound circles, variation B Sound buttons. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Blend a CVC word with a newly taught vowel and read it in a controlled sentence.\nSCREEN SPEC: Replace task with heading 'Read the new word'. Three large linked circles d o g, then separate sentence strip 'Sam got a dog.' Teacher set badge 's a t p i n m d g o'. Keep all original mint-and-peach tactile paper, mascot and logo. 'Record my reading' primary, 'Sound help' secondary. Footer 'Try first. Then listen back.' No dog picture, no word choices, no recorded waveform, no supplied spoken answer. New vowel o may have a subtle teacher-set accent, but no answer highlighting.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

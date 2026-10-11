@@ -1,0 +1,27 @@
+{
+  "id": "classroom-words-05B-2-fix1",
+  "app": "Classroom Words",
+  "slug": "classroom-words",
+  "years": "Foundation–Year 2",
+  "direction": 5,
+  "direction_name": "Sound circles",
+  "variation": "B",
+  "variation_name": "Sound buttons",
+  "treatment": "Tactile studio",
+  "context": 2,
+  "title": "Two letters, one sound",
+  "goal": "Read sh as one sound and blend it with other taught correspondences.",
+  "evidence": "Student blends shop without separating s and h, then reads Sam is in a shop.; check a different sh word.",
+  "lesson": "After teaching sh; use ship as the next independent word.",
+  "brief": "Heading 'Two letters can make one sound'. THREE connected sound circles, first contains sh together, next o, next p. Sentence strip 'Sam is in a shop.' Badge 'Teacher set: s a t p i n m d g o sh'. Keep sound circles B paper textures, mascot, colours, logo. 'Record my reading', 'Sound help', footer 'Word → Sentence → New word'. No shop illustration that reveals word, no separate circles for s and h, no prerecorded waveform or completed score.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-213edf30-62d9-4448-a930-9efd9809895a.png",
+  "logo": "classroom-words/05-sound-circles/b/logo.png",
+  "path": "classroom-words/05-sound-circles/b/02/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/classroom-words/05-sound-circles/b/02/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/generation/corrections/before/classroom-words/05-sound-circles/b/02/screenshot.png"
+  ],
+  "prompt": "Edit the provided app screenshot. Change ONLY the sentence 'Sam is in a shop.' to 'Sam sat in a shop.' Keep sh o p circles and everything else exactly. This avoids an untaught /z/ pronunciation of s. Maintain 4:3.",
+  "original_id": "classroom-words-05B-2",
+  "generator": "built-in image_gen"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "switchside-stories-01B-1",
+  "app": "SwitchSide Stories",
+  "slug": "switchside-stories",
+  "years": "Foundation–Year 4",
+  "direction": 1,
+  "direction_name": "Two windows",
+  "variation": "B",
+  "variation_name": "Paper perspectives",
+  "treatment": "Tactile studio",
+  "context": 1,
+  "title": "One glue stick",
+  "goal": "Consider two people’s needs and compare possible ways to share a limited resource.",
+  "evidence": "Student proposes a response, predicts effects for both children and discusses an alternative without a single correct score.",
+  "lesson": "Teacher-guided role-play during a cooperative classroom activity.",
+  "brief": "Paper perspectives B. Heading 'One glue stick, two projects'. Twoequalpaperwindows: Isla working onunfinishedcollageholdingonegluestick; Noahwithloosepaperpieceswaiting. Captions 'Isla wants to finish her collage.' 'Noah needs glue to begin.' Prompt 'What might each person need? How could we ask?' Optionsunselected 'Agree on turns','Work on part together','Another idea'. Blank 'What might happen for Isla?' and 'For Noah?' Primary 'Try a role-play',secondary 'Adult help'. No stars,winningoption,moraljudgmentorforcedsmiles. Preservegreen/mustardcutpaperstyle.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-78ff86ab-34dc-4149-b1db-fc7ebc4112e4.png",
+  "logo": "switchside-stories/01-two-windows/b/logo.png",
+  "path": "switchside-stories/01-two-windows/b/01/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/switchside-stories/01-two-windows/b/01/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/switchside-stories/01-two-windows/b/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for SwitchSide Stories, Two windows, variation B Paper perspectives. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Consider two people’s needs and compare possible ways to share a limited resource.\nSCREEN SPEC: Paper perspectives B. Heading 'One glue stick, two projects'. Twoequalpaperwindows: Isla working onunfinishedcollageholdingonegluestick; Noahwithloosepaperpieceswaiting. Captions 'Isla wants to finish her collage.' 'Noah needs glue to begin.' Prompt 'What might each person need? How could we ask?' Optionsunselected 'Agree on turns','Work on part together','Another idea'. Blank 'What might happen for Isla?' and 'For Noah?' Primary 'Try a role-play',secondary 'Adult help'. No stars,winningoption,moraljudgmentorforcedsmiles. Preservegreen/mustardcutpaperstyle.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

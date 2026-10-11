@@ -1,0 +1,26 @@
+{
+  "id": "plot-a-place-02A-2",
+  "app": "Plot a Place",
+  "slug": "plot-a-place",
+  "years": "Years 1–6",
+  "direction": 2,
+  "direction_name": "Little town planner",
+  "variation": "A",
+  "variation_name": "Neighbourhood plan",
+  "treatment": "Quiet clarity",
+  "context": 2,
+  "title": "A safe way to the oval",
+  "goal": "Plan a route using a map constraint and estimate its distance from a simple scale.",
+  "evidence": "Student avoids the closed square, counts five orthogonal moves from A3 to D1 and explains the detour.",
+  "lesson": "Navigation challenge after reading a map key.",
+  "brief": "Neighbourhood plan A. Heading 'Plan a route to the oval'. Flat4columnsA B C D and3rows1 2 3toptobottom. SchoolA3,OvalD1,closedroadcellB3markedX andkeyClosed. Othercellsplainwalkablesquares. NorthUP. 'One move to a neighbouring square = 50 m. No diagonals.' Prompt 'Avoid the closed square.' Blankdrawingtool 'Draw my route', blank 'Route distance: ___ m', blank 'Explain one turn'. Primary 'Send my route'. No completedpathor250m answer, no accidental4throw. Keepcleanmintblue/claymapstyle.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-032c13cd-811e-4f37-adea-dfe499ffbc2a.png",
+  "logo": "plot-a-place/02-little-town-planner/a/logo.png",
+  "path": "plot-a-place/02-little-town-planner/a/02/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/plot-a-place/02-little-town-planner/a/02/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/02-little-town-planner/a/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Plot a Place, Little town planner, variation A Neighbourhood plan. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Plan a route using a map constraint and estimate its distance from a simple scale.\nSCREEN SPEC: Neighbourhood plan A. Heading 'Plan a route to the oval'. Flat4columnsA B C D and3rows1 2 3toptobottom. SchoolA3,OvalD1,closedroadcellB3markedX andkeyClosed. Othercellsplainwalkablesquares. NorthUP. 'One move to a neighbouring square = 50 m. No diagonals.' Prompt 'Avoid the closed square.' Blankdrawingtool 'Draw my route', blank 'Route distance: ___ m', blank 'Explain one turn'. Primary 'Send my route'. No completedpathor250m answer, no accidental4throw. Keepcleanmintblue/claymapstyle.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

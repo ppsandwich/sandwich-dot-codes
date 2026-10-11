@@ -1,0 +1,26 @@
+{
+  "id": "edit-echidna-01A-3",
+  "app": "Edit Echidna",
+  "slug": "edit-echidna",
+  "years": "Years 2–6",
+  "direction": 1,
+  "direction_name": "Small steps studio",
+  "variation": "A",
+  "variation_name": "Focused edit",
+  "treatment": "Quiet clarity",
+  "context": 3,
+  "title": "Clarify who did what",
+  "goal": "Resolve an ambiguous reference while preserving the writer’s intended meaning.",
+  "evidence": "Student replaces or clarifies an unclear pronoun and explains how the reader can identify the actor.",
+  "lesson": "Revision lesson on cohesion after students have drafted a short recount.",
+  "brief": "Focused edit A. Heading 'Make it clear who did it'. Goal 'Today: clear references'. Draft 'Maya gave Zoe her hat because she was cold.' Writerfragmentbadge 'My meaning: Zoe was cold • Maya owned the hat'. Blank 'My revision' and blank 'What is clearer for the reader now?' Helper 'Keep your meaning. Make the people clear.' Comparemyversionsbutton. No illustrationidentifyinganswerorcompletedrewrite. Preserveechidnapencilmascotquietcreamteal/mustardlayout. Focusoneambiguitygoal; no grammarpolicingorconflictingnewstory.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-76416bb6-b31e-42aa-b74b-014621f37ad1.png",
+  "logo": "edit-echidna/01-small-steps-studio/a/logo.png",
+  "path": "edit-echidna/01-small-steps-studio/a/03/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/edit-echidna/01-small-steps-studio/a/03/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/01-small-steps-studio/a/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Edit Echidna, Small steps studio, variation A Focused edit. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Resolve an ambiguous reference while preserving the writer’s intended meaning.\nSCREEN SPEC: Focused edit A. Heading 'Make it clear who did it'. Goal 'Today: clear references'. Draft 'Maya gave Zoe her hat because she was cold.' Writerfragmentbadge 'My meaning: Zoe was cold • Maya owned the hat'. Blank 'My revision' and blank 'What is clearer for the reader now?' Helper 'Keep your meaning. Make the people clear.' Comparemyversionsbutton. No illustrationidentifyinganswerorcompletedrewrite. Preserveechidnapencilmascotquietcreamteal/mustardlayout. Focusoneambiguitygoal; no grammarpolicingorconflictingnewstory.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

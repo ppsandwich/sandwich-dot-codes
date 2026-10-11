@@ -1,0 +1,26 @@
+{
+  "id": "edit-echidna-01A-1",
+  "app": "Edit Echidna",
+  "slug": "edit-echidna",
+  "years": "Years 2–6",
+  "direction": 1,
+  "direction_name": "Small steps studio",
+  "variation": "A",
+  "variation_name": "Focused edit",
+  "treatment": "Quiet clarity",
+  "context": 1,
+  "title": "A precise description",
+  "goal": "Revise vague wording with relevant detail drawn from the writer’s own notes.",
+  "evidence": "Student adds informative detail, preserves the intended event and explains how it helps a reader.",
+  "lesson": "Focused revision after drafting; teacher assigns description as the single goal.",
+  "brief": "Focused edit A. Heading 'Help the reader picture it'. Goal 'Today: precise description'. 'My notes: small • red • wooden' fragmentsinbadge. Draft 'I found a box.' Blank 'My revision' workspacewithpencil/voiceicons. Blank 'What can the reader picture now?' Primary 'Compare my versions'. Helper 'Use your notes. Keep the same event.' No boxillustrationorsuppliedrevisedsentence. Creamteal/mustardechidnamascot,largecalmwritingareas. Goaldescriptiononly,nosimultaneouspunctuationrubric.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-7ff908f9-1cc1-40ce-9541-0fdfe784fa21.png",
+  "logo": "edit-echidna/01-small-steps-studio/a/logo.png",
+  "path": "edit-echidna/01-small-steps-studio/a/01/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/edit-echidna/01-small-steps-studio/a/01/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/01-small-steps-studio/a/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Edit Echidna, Small steps studio, variation A Focused edit. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Revise vague wording with relevant detail drawn from the writer’s own notes.\nSCREEN SPEC: Focused edit A. Heading 'Help the reader picture it'. Goal 'Today: precise description'. 'My notes: small • red • wooden' fragmentsinbadge. Draft 'I found a box.' Blank 'My revision' workspacewithpencil/voiceicons. Blank 'What can the reader picture now?' Primary 'Compare my versions'. Helper 'Use your notes. Keep the same event.' No boxillustrationorsuppliedrevisedsentence. Creamteal/mustardechidnamascot,largecalmwritingareas. Goaldescriptiononly,nosimultaneouspunctuationrubric.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

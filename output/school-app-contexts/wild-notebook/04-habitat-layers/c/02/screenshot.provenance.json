@@ -1,0 +1,26 @@
+{
+  "id": "wild-notebook-04C-2",
+  "app": "Wild Notebook",
+  "slug": "wild-notebook",
+  "years": "Years 5–9",
+  "direction": 4,
+  "direction_name": "Habitat layers",
+  "variation": "C",
+  "variation_name": "Ground patterns",
+  "treatment": "Graphic play",
+  "context": 2,
+  "title": "Repeat the sample",
+  "goal": "Use repeated counts to describe variation and avoid relying on one sample.",
+  "evidence": "Student cites all three paired samples, identifies the overall pattern and gives a limitation.",
+  "lesson": "After field sampling; teach how repeats strengthen comparison without proving a cause.",
+  "brief": "Heading 'Does one sample tell the whole story?' Ground patterns C. Method 'Slaters counted • each sample 1 m² for 5 minutes'. Results table 'Sample | Garden | Paved edge' rows '1 | 6 | 2', '2 | 2 | 3', '3 | 7 | 1'. Small neutral garden and paved-edge illustrations no animals. Blank 'What pattern do the repeats suggest?' prompt 'Use more than one sample.' Blank 'What remains uncertain?' Button 'Discuss our findings'. No average calculation supplied, no statement garden always higher. Bold forest-green, ochre and cream styling.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-d6864987-253c-4614-a651-980f3d483c01.png",
+  "logo": "wild-notebook/04-habitat-layers/c/logo.png",
+  "path": "wild-notebook/04-habitat-layers/c/02/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/wild-notebook/04-habitat-layers/c/02/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/04-habitat-layers/c/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Wild Notebook, Habitat layers, variation C Ground patterns. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Use repeated counts to describe variation and avoid relying on one sample.\nSCREEN SPEC: Heading 'Does one sample tell the whole story?' Ground patterns C. Method 'Slaters counted • each sample 1 m² for 5 minutes'. Results table 'Sample | Garden | Paved edge' rows '1 | 6 | 2', '2 | 2 | 3', '3 | 7 | 1'. Small neutral garden and paved-edge illustrations no animals. Blank 'What pattern do the repeats suggest?' prompt 'Use more than one sample.' Blank 'What remains uncertain?' Button 'Discuss our findings'. No average calculation supplied, no statement garden always higher. Bold forest-green, ochre and cream styling.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "tinkertest-01B-2",
+  "app": "TinkerTest",
+  "slug": "tinkertest",
+  "years": "Years 5–9",
+  "direction": 1,
+  "direction_name": "Workshop lab",
+  "variation": "B",
+  "variation_name": "Paper instrument",
+  "treatment": "Tactile studio",
+  "context": 2,
+  "title": "Keeping water warm",
+  "goal": "Interpret controlled cooling data and distinguish evidence from a general claim about materials.",
+  "evidence": "Student uses the temperature change or final temperatures, identifies controlled conditions and suggests repeats.",
+  "lesson": "After predicting which wrapping will reduce cooling; compare with a supervised physical test if suitable.",
+  "brief": "Heading 'Which wrapping slows cooling?' Paper instrument B. Three identical lidded cups illustrated small, labels 'No wrap', 'Paper wrap', 'Wool wrap'. Note 'Same cup • 200 mL • starts at 60°C • 10 minutes'. Table 'Example simulation results' 'Wrapping | Final temperature' 'None | 42°C', 'Paper | 46°C', 'Wool | 53°C'. Blank 'My conclusion' prompt 'Use two temperatures.' Blank 'What should we repeat?' Button 'Save explanation'. Badge 'Simulation'. No steam cloud used as data, no prefilled winner, no unsafe real-world handling prompt. Cream notebook, wood, teal and orange identity.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-ac247201-9880-481d-9cdf-403877921768.png",
+  "logo": "tinkertest/01-workshop-lab/b/logo.png",
+  "path": "tinkertest/01-workshop-lab/b/02/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/tinkertest/01-workshop-lab/b/02/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/01-workshop-lab/b/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for TinkerTest, Workshop lab, variation B Paper instrument. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Interpret controlled cooling data and distinguish evidence from a general claim about materials.\nSCREEN SPEC: Heading 'Which wrapping slows cooling?' Paper instrument B. Three identical lidded cups illustrated small, labels 'No wrap', 'Paper wrap', 'Wool wrap'. Note 'Same cup • 200 mL • starts at 60°C • 10 minutes'. Table 'Example simulation results' 'Wrapping | Final temperature' 'None | 42°C', 'Paper | 46°C', 'Wool | 53°C'. Blank 'My conclusion' prompt 'Use two temperatures.' Blank 'What should we repeat?' Button 'Save explanation'. Badge 'Simulation'. No steam cloud used as data, no prefilled winner, no unsafe real-world handling prompt. Cream notebook, wood, teal and orange identity.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

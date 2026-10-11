@@ -1,0 +1,26 @@
+{
+  "id": "town-together-04A-2",
+  "app": "Town Together",
+  "slug": "town-together",
+  "years": "Years 5–9",
+  "direction": 4,
+  "direction_name": "People’s assembly",
+  "variation": "A",
+  "variation_name": "Assembly notes",
+  "treatment": "Quiet clarity",
+  "context": 2,
+  "title": "A weekend street market",
+  "goal": "Compare two public-space proposals using cost, access and competing community interests.",
+  "evidence": "Student uses a cost and both perspectives to justify a choice and proposes a mitigation.",
+  "lesson": "Small-group deliberation before an individual council statement.",
+  "brief": "Heading 'Where should the Saturday market go?' Same assembly notes identity. Budget '$12,000 • six-week trial'. Proposal 'Close High Street: $10,000' with note 'Space for 20 stalls'. Alternative 'Use town car park: $8,000' with note 'Space for 12 stalls'. Trader quote 'More stalls could bring more visitors.' Resident quote 'I need a clear route to my home.' Blank fields 'My recommendation', 'A concern to address', 'Funds left: $'. Button 'Take a position'. No votes, score or selected answer; badge 'Simulated local council'. One compact illustrated town-square plan, not a detailed map requiring measurements.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-de82e09a-727f-4196-8fc4-44f3b6014e4f.png",
+  "logo": "town-together/04-people-s-assembly/a/logo.png",
+  "path": "town-together/04-people-s-assembly/a/02/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/town-together/04-people-s-assembly/a/02/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/04-people-s-assembly/a/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Town Together, People’s assembly, variation A Assembly notes. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Compare two public-space proposals using cost, access and competing community interests.\nSCREEN SPEC: Heading 'Where should the Saturday market go?' Same assembly notes identity. Budget '$12,000 • six-week trial'. Proposal 'Close High Street: $10,000' with note 'Space for 20 stalls'. Alternative 'Use town car park: $8,000' with note 'Space for 12 stalls'. Trader quote 'More stalls could bring more visitors.' Resident quote 'I need a clear route to my home.' Blank fields 'My recommendation', 'A concern to address', 'Funds left: $'. Button 'Take a position'. No votes, score or selected answer; badge 'Simulated local council'. One compact illustrated town-square plan, not a detailed map requiring measurements.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

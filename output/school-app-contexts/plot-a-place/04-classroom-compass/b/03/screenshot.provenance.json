@@ -1,0 +1,27 @@
+{
+  "id": "plot-a-place-04B-3-fix1",
+  "app": "Plot a Place",
+  "slug": "plot-a-place",
+  "years": "Years 1–6",
+  "direction": 4,
+  "direction_name": "Classroom compass",
+  "variation": "B",
+  "variation_name": "Paper classroom",
+  "treatment": "Tactile studio",
+  "context": 3,
+  "title": "Choose useful map symbols",
+  "goal": "Create a consistent map key and use it to explain the location of a landmark.",
+  "evidence": "Student matches each symbol to one place and describes relative position using the map.",
+  "lesson": "Map-making phase before exchanging navigation challenges.",
+  "brief": "Paper classroom B. Heading 'Make a key another class can use'. Simple3x3schoolgardengridABCand123toptobottom. ClearlydrawnsmalltreeatA1,benchC1,pondB3. NOtextnamesonthemapbutlabelledgridandnortharrowUP. Right 'My map key' three correspondingicons withEMPTYnamefields. Belowblank 'Where is the pond compared with the bench?' Tools 'Write','Record',primary 'Share my map'. No directionanswerorfilledkey. Prompt 'Use a different symbol for each place.' Calmforestpaperclassroomidentity,roomforsymbolskeyanddescription.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-5e903b87-0f2b-45a7-84a9-24c5a271b0be.png",
+  "logo": "plot-a-place/04-classroom-compass/b/logo.png",
+  "path": "plot-a-place/04-classroom-compass/b/03/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/plot-a-place/04-classroom-compass/b/03/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/generation/corrections/before/plot-a-place/04-classroom-compass/b/03/screenshot.png"
+  ],
+  "prompt": "Edit the provided app screenshot. Change ONLY the left sidebar's completed key: rename its heading 'Key' to 'Symbols', and remove the words Tree, Bench and Pond beside its three icons, leaving an unlabelled symbol palette. The right-side student key must retain its icons with EMPTY answer lines, and all other map details, prompts and design must stay unchanged. This makes the student supply meanings rather than copy an already completed key. Maintain 4:3.",
+  "original_id": "plot-a-place-04B-3",
+  "generator": "built-in image_gen"
+}

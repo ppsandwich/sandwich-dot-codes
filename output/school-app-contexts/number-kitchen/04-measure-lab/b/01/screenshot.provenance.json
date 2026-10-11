@@ -1,0 +1,26 @@
+{
+  "id": "number-kitchen-04B-1",
+  "app": "Number Kitchen",
+  "slug": "number-kitchen",
+  "years": "Years 1–4",
+  "direction": 4,
+  "direction_name": "Measure lab",
+  "variation": "B",
+  "variation_name": "Measuring bench",
+  "treatment": "Tactile studio",
+  "context": 1,
+  "title": "Read the scale",
+  "goal": "Read a volume from equally spaced graduations and explain the reading.",
+  "evidence": "Student identifies 300 mL using the scale and describes the marked interval; audio/text evidence.",
+  "lesson": "Measurement rotation before using real calibrated containers.",
+  "brief": "Measuring bench B. Heading 'How much is in the jug?' Front-on flat 2D straight-sided jug with equal vertical ticks 0,100,200,300,400,500 mL. Water flat horizontal EXACTLY at 300 tick. No perspective ellipse or decorative wave. Right EMPTY 'My reading' box with mL, blank 'How did the marks help?' Primary 'Save my reading', secondary 'Explain aloud'. Do not show 'Now300' callout or numerical answer outside scale. Cream paper on kitchen bench, green/mustard palette and retained jug logo.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-3855c340-dca6-4552-9ca1-a82b0f78c135.png",
+  "logo": "number-kitchen/04-measure-lab/b/logo.png",
+  "path": "number-kitchen/04-measure-lab/b/01/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/number-kitchen/04-measure-lab/b/01/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/04-measure-lab/b/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Number Kitchen, Measure lab, variation B Measuring bench. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Read a volume from equally spaced graduations and explain the reading.\nSCREEN SPEC: Measuring bench B. Heading 'How much is in the jug?' Front-on flat 2D straight-sided jug with equal vertical ticks 0,100,200,300,400,500 mL. Water flat horizontal EXACTLY at 300 tick. No perspective ellipse or decorative wave. Right EMPTY 'My reading' box with mL, blank 'How did the marks help?' Primary 'Save my reading', secondary 'Explain aloud'. Do not show 'Now300' callout or numerical answer outside scale. Cream paper on kitchen bench, green/mustard palette and retained jug logo.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

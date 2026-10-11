@@ -1,0 +1,27 @@
+{
+  "id": "plot-a-place-04B-2-fix1",
+  "app": "Plot a Place",
+  "slug": "plot-a-place",
+  "years": "Years 1–6",
+  "direction": 4,
+  "direction_name": "Classroom compass",
+  "variation": "B",
+  "variation_name": "Paper classroom",
+  "treatment": "Tactile studio",
+  "context": 2,
+  "title": "A playground route",
+  "goal": "Use cardinal directions and landmarks to communicate a route on a map.",
+  "evidence": "Student describes a route from gate to drinking fountain that avoids a closed square; partner test verifies route.",
+  "lesson": "Geography route planning after a school-ground walk.",
+  "brief": "Paper classroom B. Heading 'Find a route around the closed area'. Flat3x3playgroundgrid ABCcolumns,123rowstoptobottom; GateA3, FountainC1, B2blockedmarked 'Closed'. NortharrowUP. Keygate,fountain,closed. Prompt 'Move between neighbouring squares. No diagonals.' Blank 'My route' writing/drawingarea and 'How will my partner know where to turn?' Primary 'Send to partner'. No routeanswer, nohighlightedpreferredpath, no extragridrows. Tactilecreammaponforestgreenpaper,claybuttons,selectedcompasslogo.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-e8b1f9fd-9626-4595-af9d-9fcd21d3c2a9.png",
+  "logo": "plot-a-place/04-classroom-compass/b/logo.png",
+  "path": "plot-a-place/04-classroom-compass/b/02/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/plot-a-place/04-classroom-compass/b/02/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/generation/corrections/before/plot-a-place/04-classroom-compass/b/02/screenshot.png"
+  ],
+  "prompt": "Edit the provided app screenshot. Add an explicit task instruction 'Start at the gate. Finish at the fountain.' below the heading or inside the left instruction note. Keep all existing grid coordinates, gate A3, fountain C1, blocked square B2, no-diagonals rule, blank student response spaces and visual design unchanged. Maintain 4:3.",
+  "original_id": "plot-a-place-04B-2",
+  "generator": "built-in image_gen"
+}

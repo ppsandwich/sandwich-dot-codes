@@ -1,0 +1,27 @@
+{
+  "id": "wild-notebook-01C-1-fix1",
+  "app": "Wild Notebook",
+  "slug": "wild-notebook",
+  "years": "Years 5–9",
+  "direction": 1,
+  "direction_name": "Field journal",
+  "variation": "C",
+  "variation_name": "Field record",
+  "treatment": "Graphic play",
+  "context": 1,
+  "title": "Weather at one spot",
+  "goal": "Record a temperature comparison with consistent method and separate measured change from explanation.",
+  "evidence": "Student uses units, time and location, identifies a measured difference and proposes a further observation.",
+  "lesson": "Outdoor weather mission followed by a short classroom comparison.",
+  "brief": "Field record C. Heading 'How did the air temperature change?' Green/ochre journal interface. Method strip 'Same shaded spot • same thermometer • 1 m above ground'. Table 'Time | Air temperature' rows '9 am | 16°C', '12 pm | 21°C'. Small field sketch of thermometer in shade without an unreadable numeric scale. Label 'Our class readings'. Blank 'What changed? Use the readings.' and blank 'What might explain it?' plus blank 'What should we record next?' Add photo/Sketch/Record voice and 'Save field record'. No claim that sun alone caused change, no forecast badge conflicting with data, no prefilled inference.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-5aba6d1a-a0ca-49d2-ad49-2d044c5d02a3.png",
+  "logo": "wild-notebook/01-field-journal/c/logo.png",
+  "path": "wild-notebook/01-field-journal/c/01/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/wild-notebook/01-field-journal/c/01/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/generation/corrections/before/wild-notebook/01-field-journal/c/01/screenshot.png"
+  ],
+  "prompt": "Edit the provided app screenshot. Change ONLY the lower-left thermometer illustration. It currently sits at the ground, contradicting the method 1 m above ground. Replace with a close-up sketch of a thermometer suspended vertically on a freestanding support in shade, with ground well below and a clear vertical bracket from ground to bulb labelled '1 m'. Thermometer is not touching the tree or ground. No numeric thermometer graduations. Keep all table values, prompts, navigation, layout, brand and 4:3 aspect ratio.",
+  "original_id": "wild-notebook-01C-1",
+  "generator": "built-in image_gen"
+}

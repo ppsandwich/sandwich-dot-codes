@@ -1,0 +1,26 @@
+{
+  "id": "wild-notebook-01C-2",
+  "app": "Wild Notebook",
+  "slug": "wild-notebook",
+  "years": "Years 5–9",
+  "direction": 1,
+  "direction_name": "Field journal",
+  "variation": "C",
+  "variation_name": "Field record",
+  "treatment": "Graphic play",
+  "context": 2,
+  "title": "A puddle after rain",
+  "goal": "Use repeated observations of one location to describe change while recognising limits of the measurement.",
+  "evidence": "Student distinguishes a shorter puddle from a measured volume loss and proposes a way to improve evidence.",
+  "lesson": "After rainfall observation; revisit safely with teacher and compare class records.",
+  "brief": "Field record C. Heading 'What changed at our puddle?' Method 'Same puddle • same marked line • no new rain'. Table 'Time | Width along the line' '9 am | 80 cm', '1 pm | 45 cm'. Two small overhead observation sketches of broad vs narrower puddle, dashed measurement line across each, caption 'Sketches, not to scale'. Blank 'Our observation' and 'A possible explanation'. Prompt 'Did we measure the amount of water?' with empty 'What should we check next?' Save field record plus photo/sketch/voice. Never show 35 cm as supplied answer or label width as water volume.",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-d5dcaf9c-2999-4ee1-a4c2-8374a5153ff4.png",
+  "logo": "wild-notebook/01-field-journal/c/logo.png",
+  "path": "wild-notebook/01-field-journal/c/02/screenshot.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-contexts/wild-notebook/01-field-journal/c/02/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/01-field-journal/c/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup. Create ONE new landscape 4:3 iPad app screenshot, flat full-screen UI, no device frame. Input image is the exact approved visual style reference for Wild Notebook, Field journal, variation C Field record. Preserve its app logo, palette, typography, illustration language and navigation identity. This is a DIFFERENT learning context inside the same app, not another style direction. Replace original task content completely with the task below. Keep concise, highly legible Australian English and spacious touch targets. Learner response fields must be EMPTY; supplied passages, measurements and draft errors are task stimuli, not answers. Do not add scores, completed answers, reward stars, invented data or developer notes. Educational outcome: Use repeated observations of one location to describe change while recognising limits of the measurement.\nSCREEN SPEC: Field record C. Heading 'What changed at our puddle?' Method 'Same puddle • same marked line • no new rain'. Table 'Time | Width along the line' '9 am | 80 cm', '1 pm | 45 cm'. Two small overhead observation sketches of broad vs narrower puddle, dashed measurement line across each, caption 'Sketches, not to scale'. Blank 'Our observation' and 'A possible explanation'. Prompt 'Did we measure the amount of water?' with empty 'What should we check next?' Save field record plus photo/sketch/voice. Never show 35 cm as supplied answer or label width as water volume.\nOnly show relevant student-facing interface copy from the brief. Do not print these generation instructions or teacher assessment notes. Produce a polished complete screenshot matching the reference's 4:3 dimensions.",
+  "generator": "built-in image_gen"
+}

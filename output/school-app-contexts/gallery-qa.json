@@ -1,0 +1,124 @@
+{
+  "filters": [
+    {
+      "app": "all",
+      "screens": 51,
+      "sections": 17,
+      "text": "51 screenshots \u00b7 17 selected designs \u00b7 12 apps"
+    },
+    {
+      "app": "classroom-words",
+      "screens": 3,
+      "sections": 1,
+      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "think-in-parts",
+      "screens": 3,
+      "sections": 1,
+      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "town-together",
+      "screens": 3,
+      "sections": 1,
+      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "wild-notebook",
+      "screens": 6,
+      "sections": 2,
+      "text": "6 screenshots \u00b7 2 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "tinkertest",
+      "screens": 3,
+      "sections": 1,
+      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "number-kitchen",
+      "screens": 6,
+      "sections": 2,
+      "text": "6 screenshots \u00b7 2 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "storychirps",
+      "screens": 6,
+      "sections": 2,
+      "text": "6 screenshots \u00b7 2 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "plot-a-place",
+      "screens": 6,
+      "sections": 2,
+      "text": "6 screenshots \u00b7 2 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "clue-canopy",
+      "screens": 6,
+      "sections": 2,
+      "text": "6 screenshots \u00b7 2 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "switchside-stories",
+      "screens": 3,
+      "sections": 1,
+      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "instruction-impossible",
+      "screens": 3,
+      "sections": 1,
+      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+    },
+    {
+      "app": "edit-echidna",
+      "screens": 3,
+      "sections": 1,
+      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+    }
+  ],
+  "links": [
+    {
+      "path": "teaching-notes.md",
+      "status": 200
+    },
+    {
+      "path": "app-outcomes.md",
+      "status": 200
+    },
+    {
+      "path": "contexts.csv",
+      "status": 200
+    }
+  ],
+  "modal": {
+    "closed": true,
+    "focusRestored": true,
+    "next": "classroom-words/05-sound-circles/b/02/screenshot.png",
+    "previous": "classroom-words/05-sound-circles/b/01/screenshot.png",
+    "start": "classroom-words/05-sound-circles/b/01/screenshot.png"
+  },
+  "image_decode": {
+    "gallery_images": 85,
+    "failures": 0,
+    "note": "All 85 gallery assets plus the viewer image decoded successfully."
+  },
+  "viewports": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "columns": "311px 311px 311px",
+      "overflow": false,
+      "width": 1024
+    },
+    {
+      "columns": "343px",
+      "overflow": false,
+      "width": 390
+    }
+  ]
+}
