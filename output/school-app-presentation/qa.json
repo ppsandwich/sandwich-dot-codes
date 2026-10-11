@@ -1,0 +1,216 @@
+{
+  "reviewed": "2026-10-11",
+  "desktop": [
+    {
+      "height": 900,
+      "id": "classroom-words",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "think-in-parts",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "town-together",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "wild-notebook",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "tinkertest",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "number-kitchen",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "storychirps",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "plot-a-place",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "clue-canopy",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "switchside-stories",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "instruction-impossible",
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "id": "edit-echidna",
+      "overflow": false,
+      "width": 1440
+    }
+  ],
+  "tablet": {
+    "viewport": "1024 × 768",
+    "slides": [
+      {
+        "app": "classroom-words",
+        "overflow": false
+      },
+      {
+        "app": "think-in-parts",
+        "overflow": false
+      },
+      {
+        "app": "town-together",
+        "overflow": false
+      },
+      {
+        "app": "wild-notebook",
+        "overflow": false
+      },
+      {
+        "app": "tinkertest",
+        "overflow": false
+      },
+      {
+        "app": "number-kitchen",
+        "overflow": false
+      },
+      {
+        "app": "storychirps",
+        "overflow": false
+      },
+      {
+        "app": "plot-a-place",
+        "overflow": false
+      },
+      {
+        "app": "clue-canopy",
+        "overflow": false
+      },
+      {
+        "app": "switchside-stories",
+        "overflow": false
+      },
+      {
+        "app": "instruction-impossible",
+        "overflow": false
+      },
+      {
+        "app": "edit-echidna",
+        "overflow": false
+      }
+    ]
+  },
+  "mobile": {
+    "viewport": "390 × 844",
+    "slides": [
+      {
+        "app": "classroom-words",
+        "overflow": false
+      },
+      {
+        "app": "think-in-parts",
+        "overflow": false
+      },
+      {
+        "app": "town-together",
+        "overflow": false
+      },
+      {
+        "app": "wild-notebook",
+        "overflow": false
+      },
+      {
+        "app": "tinkertest",
+        "overflow": false
+      },
+      {
+        "app": "number-kitchen",
+        "overflow": false
+      },
+      {
+        "app": "storychirps",
+        "overflow": false
+      },
+      {
+        "app": "plot-a-place",
+        "overflow": false
+      },
+      {
+        "app": "clue-canopy",
+        "overflow": false
+      },
+      {
+        "app": "switchside-stories",
+        "overflow": false
+      },
+      {
+        "app": "instruction-impossible",
+        "overflow": false
+      },
+      {
+        "app": "edit-echidna",
+        "overflow": false
+      }
+    ]
+  },
+  "interactions": {
+    "assets": {
+      "count": 36,
+      "loaded": true
+    },
+    "focusRestored": true,
+    "image": {
+      "loaded": true,
+      "open": true
+    },
+    "indexJump": "tinkertest",
+    "indexOpen": true,
+    "keyboardBack": "classroom-words",
+    "last": {
+      "app": "edit-echidna",
+      "nextDisabled": true
+    },
+    "next": "think-in-parts",
+    "research": {
+      "app": "tinkertest",
+      "open": true,
+      "sources": 2
+    },
+    "focusNote": "Rechecked after modal-specific focus restoration update and two animation frames."
+  },
+  "deepLink": {
+    "deepLink": "town-together",
+    "height": 900,
+    "placeholderTokens": false,
+    "title": "Town Together — Small apps. Clear learning.",
+    "visible": 1
+  },
+  "visualReview": "Desktop Classroom Words and Town Together; mobile StoryChirps. All 12 slide layouts checked for overflow. Final retained image bytes validated against source collection."
+}
