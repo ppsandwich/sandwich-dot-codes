@@ -170,7 +170,7 @@
         "app": "number-kitchen",
         "height": 900,
         "overflow": false,
-        "reason": ""
+        "reason": "Pizza Co is great, but very expensive. Cooking is still unnecessarily gendered."
       },
       {
         "app": "storychirps",
@@ -271,13 +271,49 @@
         "reasonStacksBelow": true
       }
     ],
-    "approvedReasonCount": 8,
-    "blankReasonCount": 4,
+    "approvedReasonCount": 9,
+    "blankReasonCount": 3,
     "approvedProposalsAdded": [
       "storychirps",
       "plot-a-place",
       "clue-canopy",
       "switchside-stories"
     ]
+  },
+  "reorder": {
+    "first": "number-kitchen",
+    "height": 900,
+    "menu": [
+      "number-kitchen",
+      "clue-canopy",
+      "town-together",
+      "wild-notebook",
+      "switchside-stories",
+      "think-in-parts",
+      "classroom-words",
+      "tinkertest",
+      "storychirps",
+      "plot-a-place",
+      "instruction-impossible",
+      "edit-echidna"
+    ],
+    "next": "clue-canopy",
+    "order": [
+      "number-kitchen",
+      "clue-canopy",
+      "town-together",
+      "wild-notebook",
+      "switchside-stories",
+      "think-in-parts",
+      "classroom-words",
+      "tinkertest",
+      "storychirps",
+      "plot-a-place",
+      "instruction-impossible",
+      "edit-echidna"
+    ],
+    "overflow": false,
+    "position": "01 / 12",
+    "reason": "Pizza Co is great, but very expensive. Cooking is still unnecessarily gendered."
   }
 }

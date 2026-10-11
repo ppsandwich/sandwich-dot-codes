@@ -1,53 +1,53 @@
 [
   {
-    "slug": "classroom-words",
-    "summary": "Phonics practice that follows the class.",
-    "description": "Teachers choose the sounds already taught. Children practise blending, then read short decodable sentences using those sounds.",
-    "purpose": "Read an unfamiliar word independently using taught sound–letter relationships.",
-    "application": "A short literacy rotation, with the same sound set available for practice at home.",
-    "buyer": "Early years teachers · parents",
-    "peer": "Fast Phonics offers sequenced synthetic phonics lessons.",
-    "value": "The proposed draw: teachers set the sequence, so practice stays in step with this week’s teaching. Parents get a clear starting point.",
+    "slug": "number-kitchen",
+    "summary": "A good reason to use fractions.",
+    "description": "Students resize recipes, share portions and measure quantities in a virtual kitchen. Teachers choose the maths and difficulty.",
+    "purpose": "Find an unknown quantity, explain a valid strategy and check the result.",
+    "application": "A maths rotation that connects to measuring, sharing or cooking off-screen.",
+    "buyer": "Primary teachers · parents",
+    "peer": "Osmo Pizza Co. combines food play with arithmetic, fractions and money.",
+    "value": "Teacher-selected recipe problems and visible working could connect screen practice with everyday maths. No specialist play kit is proposed.",
     "lesson": [
-      "Teach a sound",
-      "8 min: blend and read",
-      "Read a new word on paper"
+      "Model equal sharing",
+      "10 min: resize a recipe",
+      "Check with real materials"
     ],
-    "validation": "Test whether sound-set setup is quick enough for weekly use, and whether children transfer the skill to unseen words.",
-    "route": "Trial with early years teams; test a school licence with teacher-directed home practice.",
+    "validation": "Test whether students explain the operation and apply it to a different recipe without prompts.",
+    "route": "Trial with primary maths teams; separately test parent interest in optional home challenges.",
     "sources": [
       {
-        "name": "Fast Phonics",
-        "url": "https://readingeggs.com.au/schools/fastphonics/who-is-fast-phonics-for/",
-        "fact": "Describes sequenced lessons using systematic synthetic phonics, reinforcing classroom learning."
+        "name": "Osmo Pizza Co.",
+        "url": "https://www.playosmo.com/products/pizza-co",
+        "fact": "Combines tangible play pieces with a pizza business game covering addition, subtraction and fractions."
       }
     ],
-    "reason": ""
+    "reason": "Pizza Co is great, but very expensive. Cooking is still unnecessarily gendered."
   },
   {
-    "slug": "think-in-parts",
-    "summary": "Show the thinking behind the answer.",
-    "description": "Students combine drawing, movement and voice to explain how something works. Teachers set a challenge and review the explanation.",
-    "purpose": "Explain cause and effect, then predict what happens when one part changes.",
-    "application": "A quick check of understanding in science, maths or humanities.",
-    "buyer": "Upper primary · secondary teachers",
-    "peer": "Explain Everything already combines whiteboarding and recorded explanations.",
-    "value": "A focused explanation task could make reasoning easier to assess. The opportunity is useful prompts and review, in a well-served creation category.",
+    "slug": "clue-canopy",
+    "summary": "An answer is better with a clue.",
+    "description": "Students investigate illustrated stories, choose clues from the text and explain motives, predictions or apparent contradictions.",
+    "purpose": "Support a plausible inference with relevant text evidence and explain the connection.",
+    "application": "A guided reading task with spoken, drawn or written reasoning.",
+    "buyer": "Primary literacy · EAL/D teachers",
+    "peer": "ReadTheory adapts comprehension passages and questions to a learner’s reading level.",
+    "value": "The proposed draw is seeing why a child chose an answer. Flexible response modes could make reasoning easier to assess when writing is a barrier.",
     "lesson": [
-      "Model a process",
-      "12 min: draw and explain",
-      "Partner tests a prediction"
+      "Model a text-based inference",
+      "12 min: choose and explain clues",
+      "Compare two possible readings"
     ],
-    "validation": "Compare teacher review time and the misconceptions found against a normal whiteboard recording task.",
-    "route": "Pilot one subject unit with a teaching team before testing a cross-subject school licence.",
+    "validation": "Check whether explanations reveal misconceptions and whether the review workload is manageable in a normal reading group.",
+    "route": "Pilot one reading group, then test a school literacy licence if teachers use the evidence to plan follow-up teaching.",
     "sources": [
       {
-        "name": "Explain Everything",
-        "url": "https://explaineverything.com/explain-everything-in-a-nutshell/",
-        "fact": "Students can record screencasts of their understanding and collaborate on digital whiteboards."
+        "name": "ReadTheory",
+        "url": "https://readtheory.org/homepage/",
+        "fact": "Describes adaptive reading comprehension that matches texts and questions to each student’s reading level."
       }
     ],
-    "reason": "I find Explain Everything too expensive. I want to offer teachers and schools a more affordable way to create and assess explanations."
+    "reason": "A correct answer doesn’t always reveal understanding. I want students to show which clues shaped their thinking."
   },
   {
     "slug": "town-together",
@@ -100,6 +100,81 @@
     "reason": "I feel we’re losing the field-notebook habit. I want to bring it into the digital age, getting students outside to observe, record and explore science in real places."
   },
   {
+    "slug": "switchside-stories",
+    "summary": "Try seeing it from the other side.",
+    "description": "Short school stories let children explore different perspectives and possible responses, with a teacher guiding the conversation.",
+    "purpose": "Consider two viewpoints, compare likely consequences and explain a constructive response.",
+    "application": "A class discussion or small-group role-play, with room for several reasonable answers.",
+    "buyer": "Primary teachers · wellbeing teams",
+    "peer": "Everyday Speech offers illustrated scenarios and perspective-taking activities.",
+    "value": "Short, locally familiar stories could make discussion easier to start. Open responses and teacher facilitation are central to the proposed value.",
+    "lesson": [
+      "Read both perspectives",
+      "10 min: try two responses",
+      "Discuss effects on each person"
+    ],
+    "validation": "Check that children can explain both perspectives; co-design with diverse learners and test teacher confidence facilitating discussion.",
+    "route": "Pilot through classroom and wellbeing teams; assess repeat use without positioning it as therapy or a behaviour score.",
+    "sources": [
+      {
+        "name": "Everyday Speech",
+        "url": "https://everydayspeech.com/blog-posts/general/free-elementary-perspective-taking-material/",
+        "fact": "Offers illustrated school scenarios with prompts for discussing feelings and perspectives in elementary settings."
+      }
+    ],
+    "reason": "Everyday disagreements offer useful learning opportunities. I want children to explore different perspectives without being pushed towards one supposedly correct response."
+  },
+  {
+    "slug": "think-in-parts",
+    "summary": "Show the thinking behind the answer.",
+    "description": "Students combine drawing, movement and voice to explain how something works. Teachers set a challenge and review the explanation.",
+    "purpose": "Explain cause and effect, then predict what happens when one part changes.",
+    "application": "A quick check of understanding in science, maths or humanities.",
+    "buyer": "Upper primary · secondary teachers",
+    "peer": "Explain Everything already combines whiteboarding and recorded explanations.",
+    "value": "A focused explanation task could make reasoning easier to assess. The opportunity is useful prompts and review, in a well-served creation category.",
+    "lesson": [
+      "Model a process",
+      "12 min: draw and explain",
+      "Partner tests a prediction"
+    ],
+    "validation": "Compare teacher review time and the misconceptions found against a normal whiteboard recording task.",
+    "route": "Pilot one subject unit with a teaching team before testing a cross-subject school licence.",
+    "sources": [
+      {
+        "name": "Explain Everything",
+        "url": "https://explaineverything.com/explain-everything-in-a-nutshell/",
+        "fact": "Students can record screencasts of their understanding and collaborate on digital whiteboards."
+      }
+    ],
+    "reason": "I find Explain Everything too expensive. I want to offer teachers and schools a more affordable way to create and assess explanations."
+  },
+  {
+    "slug": "classroom-words",
+    "summary": "Phonics practice that follows the class.",
+    "description": "Teachers choose the sounds already taught. Children practise blending, then read short decodable sentences using those sounds.",
+    "purpose": "Read an unfamiliar word independently using taught sound–letter relationships.",
+    "application": "A short literacy rotation, with the same sound set available for practice at home.",
+    "buyer": "Early years teachers · parents",
+    "peer": "Fast Phonics offers sequenced synthetic phonics lessons.",
+    "value": "The proposed draw: teachers set the sequence, so practice stays in step with this week’s teaching. Parents get a clear starting point.",
+    "lesson": [
+      "Teach a sound",
+      "8 min: blend and read",
+      "Read a new word on paper"
+    ],
+    "validation": "Test whether sound-set setup is quick enough for weekly use, and whether children transfer the skill to unseen words.",
+    "route": "Trial with early years teams; test a school licence with teacher-directed home practice.",
+    "sources": [
+      {
+        "name": "Fast Phonics",
+        "url": "https://readingeggs.com.au/schools/fastphonics/who-is-fast-phonics-for/",
+        "fact": "Describes sequenced lessons using systematic synthetic phonics, reinforcing classroom learning."
+      }
+    ],
+    "reason": ""
+  },
+  {
     "slug": "tinkertest",
     "summary": "Practise the thinking behind a fair test.",
     "description": "Students choose variables, predict outcomes and interpret virtual experiments when a physical investigation is impractical.",
@@ -128,31 +203,6 @@
       }
     ],
     "reason": "Physical experiments aren’t always practical or possible. I want to make them accessible through clear visual simulations, giving schools more ways to run meaningful science lessons."
-  },
-  {
-    "slug": "number-kitchen",
-    "summary": "A good reason to use fractions.",
-    "description": "Students resize recipes, share portions and measure quantities in a virtual kitchen. Teachers choose the maths and difficulty.",
-    "purpose": "Find an unknown quantity, explain a valid strategy and check the result.",
-    "application": "A maths rotation that connects to measuring, sharing or cooking off-screen.",
-    "buyer": "Primary teachers · parents",
-    "peer": "Osmo Pizza Co. combines food play with arithmetic, fractions and money.",
-    "value": "Teacher-selected recipe problems and visible working could connect screen practice with everyday maths. No specialist play kit is proposed.",
-    "lesson": [
-      "Model equal sharing",
-      "10 min: resize a recipe",
-      "Check with real materials"
-    ],
-    "validation": "Test whether students explain the operation and apply it to a different recipe without prompts.",
-    "route": "Trial with primary maths teams; separately test parent interest in optional home challenges.",
-    "sources": [
-      {
-        "name": "Osmo Pizza Co.",
-        "url": "https://www.playosmo.com/products/pizza-co",
-        "fact": "Combines tangible play pieces with a pizza business game covering addition, subtraction and fractions."
-      }
-    ],
-    "reason": ""
   },
   {
     "slug": "storychirps",
@@ -203,56 +253,6 @@
       }
     ],
     "reason": "I want children to understand maps by making places and testing directions with someone else."
-  },
-  {
-    "slug": "clue-canopy",
-    "summary": "An answer is better with a clue.",
-    "description": "Students investigate illustrated stories, choose clues from the text and explain motives, predictions or apparent contradictions.",
-    "purpose": "Support a plausible inference with relevant text evidence and explain the connection.",
-    "application": "A guided reading task with spoken, drawn or written reasoning.",
-    "buyer": "Primary literacy · EAL/D teachers",
-    "peer": "ReadTheory adapts comprehension passages and questions to a learner’s reading level.",
-    "value": "The proposed draw is seeing why a child chose an answer. Flexible response modes could make reasoning easier to assess when writing is a barrier.",
-    "lesson": [
-      "Model a text-based inference",
-      "12 min: choose and explain clues",
-      "Compare two possible readings"
-    ],
-    "validation": "Check whether explanations reveal misconceptions and whether the review workload is manageable in a normal reading group.",
-    "route": "Pilot one reading group, then test a school literacy licence if teachers use the evidence to plan follow-up teaching.",
-    "sources": [
-      {
-        "name": "ReadTheory",
-        "url": "https://readtheory.org/homepage/",
-        "fact": "Describes adaptive reading comprehension that matches texts and questions to each student’s reading level."
-      }
-    ],
-    "reason": "A correct answer doesn’t always reveal understanding. I want students to show which clues shaped their thinking."
-  },
-  {
-    "slug": "switchside-stories",
-    "summary": "Try seeing it from the other side.",
-    "description": "Short school stories let children explore different perspectives and possible responses, with a teacher guiding the conversation.",
-    "purpose": "Consider two viewpoints, compare likely consequences and explain a constructive response.",
-    "application": "A class discussion or small-group role-play, with room for several reasonable answers.",
-    "buyer": "Primary teachers · wellbeing teams",
-    "peer": "Everyday Speech offers illustrated scenarios and perspective-taking activities.",
-    "value": "Short, locally familiar stories could make discussion easier to start. Open responses and teacher facilitation are central to the proposed value.",
-    "lesson": [
-      "Read both perspectives",
-      "10 min: try two responses",
-      "Discuss effects on each person"
-    ],
-    "validation": "Check that children can explain both perspectives; co-design with diverse learners and test teacher confidence facilitating discussion.",
-    "route": "Pilot through classroom and wellbeing teams; assess repeat use without positioning it as therapy or a behaviour score.",
-    "sources": [
-      {
-        "name": "Everyday Speech",
-        "url": "https://everydayspeech.com/blog-posts/general/free-elementary-perspective-taking-material/",
-        "fact": "Offers illustrated school scenarios with prompts for discussing feelings and perspectives in elementary settings."
-      }
-    ],
-    "reason": "Everyday disagreements offer useful learning opportunities. I want children to explore different perspectives without being pushed towards one supposedly correct response."
   },
   {
     "slug": "instruction-impossible",

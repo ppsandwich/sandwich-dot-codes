@@ -6,33 +6,33 @@ Reviewed 11 October 2026. Official product sources describe comparable offerings
 
 Start with teacher-led pilots within an existing lesson. Check preparation and review time, repeat use, willingness to pay and transfer to unfamiliar tasks. School purchasing and system approval vary; a teacher trial does not establish a procurement pathway. Before school use, validate accessibility with diverse learners, private classroom access, minimal data collection and deletion controls, device availability and adult supervision. Outdoor tasks also need school safety procedures. These are requirements to test, not implemented capabilities evidenced by the screenshots.
 
-## Classroom Words
+## Number Kitchen
 
-**Audience:** Early years teachers · parents. Foundation–Year 2. Literacy.
+**Audience:** Primary teachers · parents. Years 1–4. Mathematics.
 
-**Proposed value:** The proposed draw: teachers set the sequence, so practice stays in step with this week’s teaching. Parents get a clear starting point.
+**Proposed value:** Teacher-selected recipe problems and visible working could connect screen practice with everyday maths. No specialist play kit is proposed.
 
-**Proposed buyer route:** Trial with early years teams; test a school licence with teacher-directed home practice.
+**Proposed buyer route:** Trial with primary maths teams; separately test parent interest in optional home challenges.
 
-**Validation question:** Test whether sound-set setup is quick enough for weekly use, and whether children transfer the skill to unseen words.
+**Validation question:** Test whether students explain the operation and apply it to a different recipe without prompts.
 
-**Suggested lesson:** Teach a sound → 8 min: blend and read → Read a new word on paper.
+**Suggested lesson:** Model equal sharing → 10 min: resize a recipe → Check with real materials.
 
-- [Fast Phonics](https://readingeggs.com.au/schools/fastphonics/who-is-fast-phonics-for/): Describes sequenced lessons using systematic synthetic phonics, reinforcing classroom learning.
+- [Osmo Pizza Co.](https://www.playosmo.com/products/pizza-co): Combines tangible play pieces with a pizza business game covering addition, subtraction and fractions.
 
-## Think in Parts
+## Clue Canopy
 
-**Audience:** Upper primary · secondary teachers. Years 5–9. Cross-curricular explanation.
+**Audience:** Primary literacy · EAL/D teachers. Years 2–6. English and EAL/D.
 
-**Proposed value:** A focused explanation task could make reasoning easier to assess. The opportunity is useful prompts and review, in a well-served creation category.
+**Proposed value:** The proposed draw is seeing why a child chose an answer. Flexible response modes could make reasoning easier to assess when writing is a barrier.
 
-**Proposed buyer route:** Pilot one subject unit with a teaching team before testing a cross-subject school licence.
+**Proposed buyer route:** Pilot one reading group, then test a school literacy licence if teachers use the evidence to plan follow-up teaching.
 
-**Validation question:** Compare teacher review time and the misconceptions found against a normal whiteboard recording task.
+**Validation question:** Check whether explanations reveal misconceptions and whether the review workload is manageable in a normal reading group.
 
-**Suggested lesson:** Model a process → 12 min: draw and explain → Partner tests a prediction.
+**Suggested lesson:** Model a text-based inference → 12 min: choose and explain clues → Compare two possible readings.
 
-- [Explain Everything](https://explaineverything.com/explain-everything-in-a-nutshell/): Students can record screencasts of their understanding and collaborate on digital whiteboards.
+- [ReadTheory](https://readtheory.org/homepage/): Describes adaptive reading comprehension that matches texts and questions to each student’s reading level.
 
 ## Town Together
 
@@ -62,6 +62,48 @@ Start with teacher-led pilots within an existing lesson. Check preparation and r
 
 - [Seek by iNaturalist](https://www.inaturalist.org/pages/seek_app): Uses image recognition to identify organisms, with badges and observation challenges.
 
+## SwitchSide Stories
+
+**Audience:** Primary teachers · wellbeing teams. Foundation–Year 4. Personal and social capability; HASS.
+
+**Proposed value:** Short, locally familiar stories could make discussion easier to start. Open responses and teacher facilitation are central to the proposed value.
+
+**Proposed buyer route:** Pilot through classroom and wellbeing teams; assess repeat use without positioning it as therapy or a behaviour score.
+
+**Validation question:** Check that children can explain both perspectives; co-design with diverse learners and test teacher confidence facilitating discussion.
+
+**Suggested lesson:** Read both perspectives → 10 min: try two responses → Discuss effects on each person.
+
+- [Everyday Speech](https://everydayspeech.com/blog-posts/general/free-elementary-perspective-taking-material/): Offers illustrated school scenarios with prompts for discussing feelings and perspectives in elementary settings.
+
+## Think in Parts
+
+**Audience:** Upper primary · secondary teachers. Years 5–9. Cross-curricular explanation.
+
+**Proposed value:** A focused explanation task could make reasoning easier to assess. The opportunity is useful prompts and review, in a well-served creation category.
+
+**Proposed buyer route:** Pilot one subject unit with a teaching team before testing a cross-subject school licence.
+
+**Validation question:** Compare teacher review time and the misconceptions found against a normal whiteboard recording task.
+
+**Suggested lesson:** Model a process → 12 min: draw and explain → Partner tests a prediction.
+
+- [Explain Everything](https://explaineverything.com/explain-everything-in-a-nutshell/): Students can record screencasts of their understanding and collaborate on digital whiteboards.
+
+## Classroom Words
+
+**Audience:** Early years teachers · parents. Foundation–Year 2. Literacy.
+
+**Proposed value:** The proposed draw: teachers set the sequence, so practice stays in step with this week’s teaching. Parents get a clear starting point.
+
+**Proposed buyer route:** Trial with early years teams; test a school licence with teacher-directed home practice.
+
+**Validation question:** Test whether sound-set setup is quick enough for weekly use, and whether children transfer the skill to unseen words.
+
+**Suggested lesson:** Teach a sound → 8 min: blend and read → Read a new word on paper.
+
+- [Fast Phonics](https://readingeggs.com.au/schools/fastphonics/who-is-fast-phonics-for/): Describes sequenced lessons using systematic synthetic phonics, reinforcing classroom learning.
+
 ## TinkerTest
 
 **Audience:** Science teachers · departments. Years 5–9. Science.
@@ -76,20 +118,6 @@ Start with teacher-led pilots within an existing lesson. Check preparation and r
 
 - [PhET](https://phet.colorado.edu/en/teaching-resources/teaching-with-phet/facilitation): Provides simulations and classroom facilitation strategies for inquiry.
 - [ExploreLearning Gizmos](https://gizmos.explorelearning.com/resources/insights/accelerated-learning-using-gizmos): Describes inquiry-based virtual labs where students can repeat experiments and investigate concepts.
-
-## Number Kitchen
-
-**Audience:** Primary teachers · parents. Years 1–4. Mathematics.
-
-**Proposed value:** Teacher-selected recipe problems and visible working could connect screen practice with everyday maths. No specialist play kit is proposed.
-
-**Proposed buyer route:** Trial with primary maths teams; separately test parent interest in optional home challenges.
-
-**Validation question:** Test whether students explain the operation and apply it to a different recipe without prompts.
-
-**Suggested lesson:** Model equal sharing → 10 min: resize a recipe → Check with real materials.
-
-- [Osmo Pizza Co.](https://www.playosmo.com/products/pizza-co): Combines tangible play pieces with a pizza business game covering addition, subtraction and fractions.
 
 ## StoryChirps
 
@@ -118,34 +146,6 @@ Start with teacher-led pilots within an existing lesson. Check preparation and r
 **Suggested lesson:** Walk and notice landmarks → 15 min: build a map → Swap and test directions.
 
 - [National Geographic MapMaker](https://www.esri.com/en-us/industries/k-12-education/mapmaker): Offers curated maps and activities, 2D/3D exploration, sketching and custom maps for students.
-
-## Clue Canopy
-
-**Audience:** Primary literacy · EAL/D teachers. Years 2–6. English and EAL/D.
-
-**Proposed value:** The proposed draw is seeing why a child chose an answer. Flexible response modes could make reasoning easier to assess when writing is a barrier.
-
-**Proposed buyer route:** Pilot one reading group, then test a school literacy licence if teachers use the evidence to plan follow-up teaching.
-
-**Validation question:** Check whether explanations reveal misconceptions and whether the review workload is manageable in a normal reading group.
-
-**Suggested lesson:** Model a text-based inference → 12 min: choose and explain clues → Compare two possible readings.
-
-- [ReadTheory](https://readtheory.org/homepage/): Describes adaptive reading comprehension that matches texts and questions to each student’s reading level.
-
-## SwitchSide Stories
-
-**Audience:** Primary teachers · wellbeing teams. Foundation–Year 4. Personal and social capability; HASS.
-
-**Proposed value:** Short, locally familiar stories could make discussion easier to start. Open responses and teacher facilitation are central to the proposed value.
-
-**Proposed buyer route:** Pilot through classroom and wellbeing teams; assess repeat use without positioning it as therapy or a behaviour score.
-
-**Validation question:** Check that children can explain both perspectives; co-design with diverse learners and test teacher confidence facilitating discussion.
-
-**Suggested lesson:** Read both perspectives → 10 min: try two responses → Discuss effects on each person.
-
-- [Everyday Speech](https://everydayspeech.com/blog-posts/general/free-elementary-perspective-taking-material/): Offers illustrated school scenarios with prompts for discussing feelings and perspectives in elementary settings.
 
 ## Instruction Impossible
 

@@ -8,7 +8,7 @@ The deck uses the retained screens from `../school-app-contexts/`, preserving th
 
 ## Content and research
 
-- `content.json`: concise slide copy, sources, market hypotheses and founder reasons. Eight approved reasons appear beside their descriptions; Classroom Words, Number Kitchen, Instruction Impossible and Edit Echidna remain blank.
+- `content.json`: concise slide copy, sources, market hypotheses and founder reasons. Nine approved reasons appear beside their descriptions; Classroom Words, Instruction Impossible and Edit Echidna remain blank.
 - `research.md`: dated research notes, customer routes and questions for pilots.
 - `index.html`: generated presentation, ready to open or host as static files.
 - `template.html`, `style.css`, `app.js`: source presentation components.
