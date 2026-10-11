@@ -1,5 +1,5 @@
 {
-  "scope": "Visual inspection of all 51 final screenshots; five targeted corrections re-inspected. Design review, not classroom efficacy testing.",
+  "scope": "Visual inspection records for the 24 retained screenshots. Original screen numbers are preserved. Design review, not classroom efficacy testing.",
   "screens": [
     {
       "id": "classroom-words-05B-1",
@@ -22,16 +22,6 @@
       "correction_rechecked": true
     },
     {
-      "id": "classroom-words-05B-3",
-      "path": "classroom-words/05-sound-circles/b/03/screenshot.png",
-      "sha256": "1568c6f6c9352a839453e6b4744bf5fe5ba0333ea3865ba999c7f04709ca0bd6",
-      "status": "reviewed",
-      "outcome": "Blend an initial consonant cluster without omitting either consonant.",
-      "review": "Taught correspondences, phoneme grouping, controlled sentences and reading response checked.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
       "id": "think-in-parts-04A-1",
       "path": "think-in-parts/04-voice-and-ink/a/01/screenshot.png",
       "sha256": "a86f7ff94579f0f7e5af17dcf707ce13651dd18894ea35305c8aaa39a21ce2c2",
@@ -52,31 +42,11 @@
       "correction_rechecked": false
     },
     {
-      "id": "think-in-parts-04A-3",
-      "path": "think-in-parts/04-voice-and-ink/a/03/screenshot.png",
-      "sha256": "1a4174b45c916846a06961627ce82a5259e1044df0f11d6ab8537443deb7e770",
-      "status": "reviewed",
-      "outcome": "Explain a possible indirect effect in a simple food-chain model and state an assumption.",
-      "review": "Explanations require causal links, prediction or model assumptions; diagrams leave reasoning open.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
       "id": "town-together-04A-1",
       "path": "town-together/04-people-s-assembly/a/01/screenshot.png",
       "sha256": "d4708fa7fc6a32a54b2b6e97a13e8c4f5989b2522d22d416c1fbf08cc0defad1",
       "status": "reviewed",
       "outcome": "Recommend a council project within a budget while addressing competing access and comfort needs.",
-      "review": "Budget amounts, competing views, uncertainty and justification prompts checked.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "town-together-04A-2",
-      "path": "town-together/04-people-s-assembly/a/02/screenshot.png",
-      "sha256": "6990bff2600194586391b12e450f77f81878c2f75a4e3852c5c278efb672e2a7",
-      "status": "reviewed",
-      "outcome": "Compare two public-space proposals using cost, access and competing community interests.",
       "review": "Budget amounts, competing views, uncertainty and justification prompts checked.",
       "correction": null,
       "correction_rechecked": false
@@ -108,56 +78,6 @@
       "status": "reviewed",
       "outcome": "Use repeated observations of one location to describe change while recognising limits of the measurement.",
       "review": "Observation data, units and method match the task; observation and explanation are separated.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "wild-notebook-01C-3",
-      "path": "wild-notebook/01-field-journal/c/03/screenshot.png",
-      "sha256": "6654ba6dc88781e7756bb95270155e25004f381af71d0006f749e8a8ab2e3ccc",
-      "status": "reviewed",
-      "outcome": "Describe observable features before offering an uncertain identification.",
-      "review": "Observation data, units and method match the task; observation and explanation are separated.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "wild-notebook-04C-1",
-      "path": "wild-notebook/04-habitat-layers/c/01/screenshot.png",
-      "sha256": "639b689175e30fb997169e00c59febf3add74c01c8b4d820165cf190b3b5d1da",
-      "status": "reviewed",
-      "outcome": "Distinguish abundance from the number of observed organism groups using comparable samples.",
-      "review": "Counts, sampling effort and limits support comparison without conflating abundance and variety.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "wild-notebook-04C-2",
-      "path": "wild-notebook/04-habitat-layers/c/02/screenshot.png",
-      "sha256": "e3e0c7b6319bebc81b80c36b65443763dbf17986a71e953af677c2e33a301f34",
-      "status": "reviewed",
-      "outcome": "Use repeated counts to describe variation and avoid relying on one sample.",
-      "review": "Counts, sampling effort and limits support comparison without conflating abundance and variety.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "wild-notebook-04C-3",
-      "path": "wild-notebook/04-habitat-layers/c/03/screenshot.png",
-      "sha256": "d53d617a866fd1fd0906aa5cc1a1abb62a96670354c3fc788fd8bc40f3597533",
-      "status": "reviewed",
-      "outcome": "Identify unequal sampling effort and redesign a fairer habitat comparison.",
-      "review": "Counts, sampling effort and limits support comparison without conflating abundance and variety.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "tinkertest-01B-1",
-      "path": "tinkertest/01-workshop-lab/b/01/screenshot.png",
-      "sha256": "43d06b1806537a6442036807eed58d3e6012e3a7167a3762b6a531082f5a5426",
-      "status": "reviewed",
-      "outcome": "Identify the changed variable and justify a conclusion using controlled simulation results.",
-      "review": "Variables, controls, units and data are consistent; conclusions or predictions remain for the learner.",
       "correction": null,
       "correction_rechecked": false
     },
@@ -202,46 +122,6 @@
       "correction_rechecked": false
     },
     {
-      "id": "number-kitchen-02B-3",
-      "path": "number-kitchen/02-recipe-notebook/b/03/screenshot.png",
-      "sha256": "5dab51ef0ace5250374ed24434182250087153577ffa4294e6cbaa4ce9da8499",
-      "status": "reviewed",
-      "outcome": "Scale ingredient quantities by a factor of three and justify the multiplicative relationship.",
-      "review": "Ingredient quantities and pictured counts match; scaled quantities and reasoning remain blank.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "number-kitchen-04B-1",
-      "path": "number-kitchen/04-measure-lab/b/01/screenshot.png",
-      "sha256": "1b3b6b48adce2d808b528b65e319039e3e0370994975590940d8b3526affdf2a",
-      "status": "reviewed",
-      "outcome": "Read a volume from equally spaced graduations and explain the reading.",
-      "review": "Volume markings, equal units and sharing quantities are consistent; answers remain blank.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "number-kitchen-04B-2",
-      "path": "number-kitchen/04-measure-lab/b/02/screenshot.png",
-      "sha256": "64b31fed8dd04719546f6e4c5167f7af0e1f445bd4c15faf308492adb6f3031e",
-      "status": "reviewed",
-      "outcome": "Connect repeated equal measures to a target volume and explain the calculation.",
-      "review": "Volume markings, equal units and sharing quantities are consistent; answers remain blank.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "number-kitchen-04B-3",
-      "path": "number-kitchen/04-measure-lab/b/03/screenshot.png",
-      "sha256": "aeaaf21971218edd01798a615b1d7c41568354d35c8f4fbc3df2fdfe7a29818e",
-      "status": "reviewed",
-      "outcome": "Find equal portions of a given volume and explain a division strategy.",
-      "review": "Volume markings, equal units and sharing quantities are consistent; answers remain blank.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
       "id": "storychirps-04C-1",
       "path": "storychirps/04-little-story-stage/c/01/screenshot.png",
       "sha256": "2d74b0a264d279bddcec3ba4dd53dcace7de844a9933ff49c7ca90ba962737bf",
@@ -262,46 +142,6 @@
       "correction_rechecked": false
     },
     {
-      "id": "storychirps-04C-3",
-      "path": "storychirps/04-little-story-stage/c/03/screenshot.png",
-      "sha256": "2ca1cf72a4cba8e8ad384f15fda53c8c72a3e7fe6a0b8718542b64d9cd6aaf35",
-      "status": "reviewed",
-      "outcome": "Explain causal connections in an oral narrative and consider a plausible ending.",
-      "review": "Picture continuity and oral rehearsal, reflection and retelling controls support the language goal.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "storychirps-02A-1",
-      "path": "storychirps/02-story-nest/a/01/screenshot.png",
-      "sha256": "cf3a71e42c023b91479a39c5943a29564ee3aef4b78d67328858e5cc0ea66e1a",
-      "status": "reviewed",
-      "outcome": "Organise a picture sequence and retell it with clear time language.",
-      "review": "Prompts support coherent oral storytelling, audience clarity and revision; no model story supplied.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "storychirps-02A-2",
-      "path": "storychirps/02-story-nest/a/02/screenshot.png",
-      "sha256": "59652815379328f3ea631b44db8e936e962a651b468263fdfd1e863b8cf2b274",
-      "status": "reviewed",
-      "outcome": "Give a clear oral explanation of a familiar sequence for a new classmate.",
-      "review": "Prompts support coherent oral storytelling, audience clarity and revision; no model story supplied.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "storychirps-02A-3",
-      "path": "storychirps/02-story-nest/a/03/screenshot.png",
-      "sha256": "6e8d652aef616b980a980e4882e1ce9df73ce23d702536ee97782ed675ff34cf",
-      "status": "reviewed",
-      "outcome": "Develop a coherent oral narrative while distinguishing visible detail from imagined events.",
-      "review": "Prompts support coherent oral storytelling, audience clarity and revision; no model story supplied.",
-      "correction": "Edit the provided app screenshot. Change ONLY the empty reflection recording panel under 'Will my listener understand?': remove the grey waveform and playback progress line, replace with a plain dotted horizontal empty recording line and a single '0:00' duration. Keep microphone, all other panels, existing My first telling waveform 0:00 / 0:30, illustration, logo and 4:3 layout unchanged.",
-      "correction_rechecked": true
-    },
-    {
       "id": "plot-a-place-04B-1",
       "path": "plot-a-place/04-classroom-compass/b/01/screenshot.png",
       "sha256": "6d0227f832a54150e19f45e0d136d0bedb1d8d157b312e17b305b3d483e9c88b",
@@ -312,16 +152,6 @@
       "correction_rechecked": false
     },
     {
-      "id": "plot-a-place-04B-2",
-      "path": "plot-a-place/04-classroom-compass/b/02/screenshot.png",
-      "sha256": "8b404a8c708393e504f0ceeea2010727ea87a526518b18ed7ccdefde31bae9e7",
-      "status": "reviewed",
-      "outcome": "Use cardinal directions and landmarks to communicate a route on a map.",
-      "review": "Coordinates, symbols, compass and route constraints checked; students supply routes or key meanings.",
-      "correction": "Edit the provided app screenshot. Add an explicit task instruction 'Start at the gate. Finish at the fountain.' below the heading or inside the left instruction note. Keep all existing grid coordinates, gate A3, fountain C1, blocked square B2, no-diagonals rule, blank student response spaces and visual design unchanged. Maintain 4:3.",
-      "correction_rechecked": true
-    },
-    {
       "id": "plot-a-place-04B-3",
       "path": "plot-a-place/04-classroom-compass/b/03/screenshot.png",
       "sha256": "ce24cec20f8af809af27655baf1792c22d00cb32a5861bc783db0d8952fa204d",
@@ -330,46 +160,6 @@
       "review": "Coordinates, symbols, compass and route constraints checked; students supply routes or key meanings.",
       "correction": "Edit the provided app screenshot. Change ONLY the left sidebar's completed key: rename its heading 'Key' to 'Symbols', and remove the words Tree, Bench and Pond beside its three icons, leaving an unlabelled symbol palette. The right-side student key must retain its icons with EMPTY answer lines, and all other map details, prompts and design must stay unchanged. This makes the student supply meanings rather than copy an already completed key. Maintain 4:3.",
       "correction_rechecked": true
-    },
-    {
-      "id": "plot-a-place-02A-1",
-      "path": "plot-a-place/02-little-town-planner/a/01/screenshot.png",
-      "sha256": "11f8079c3152b6b34ecca91c22b36858b8247a90772641a6cd1ecda4c78ba94e",
-      "status": "reviewed",
-      "outcome": "Compare candidate service locations by walking distance and justify a spatial decision.",
-      "review": "Grid scale, landmarks, blocked squares and competing needs allow reasoned spatial decisions.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "plot-a-place-02A-2",
-      "path": "plot-a-place/02-little-town-planner/a/02/screenshot.png",
-      "sha256": "260883234a51589bef43b4b572e91518b8c681d1d2f1d4419a767e7ee800805d",
-      "status": "reviewed",
-      "outcome": "Plan a route using a map constraint and estimate its distance from a simple scale.",
-      "review": "Grid scale, landmarks, blocked squares and competing needs allow reasoned spatial decisions.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "plot-a-place-02A-3",
-      "path": "plot-a-place/02-little-town-planner/a/03/screenshot.png",
-      "sha256": "e0d8a42ddfdb550ac4160f516b7487d2fafd7c04866a264f18e9e5c8af32f04a",
-      "status": "reviewed",
-      "outcome": "Use map distance and information about users to justify a location decision with trade-offs.",
-      "review": "Grid scale, landmarks, blocked squares and competing needs allow reasoned spatial decisions.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "clue-canopy-02B-1",
-      "path": "clue-canopy/02-evidence-board/b/01/screenshot.png",
-      "sha256": "682c72d1b78003c3c31df019dd9f3f2548253bca5fd43bb5b688a89eb539b178",
-      "status": "reviewed",
-      "outcome": "Infer a character’s possible motivation from textual clues without treating inference as fact.",
-      "review": "Passage provides usable clues; claims, alternatives and evidence remain open for the reader.",
-      "correction": null,
-      "correction_rechecked": false
     },
     {
       "id": "clue-canopy-02B-2",
@@ -388,46 +178,6 @@
       "status": "reviewed",
       "outcome": "Reconcile apparently conflicting statements by considering sequence and limits of knowledge.",
       "review": "Passage provides usable clues; claims, alternatives and evidence remain open for the reader.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "clue-canopy-04B-1",
-      "path": "clue-canopy/04-margin-detective/b/01/screenshot.png",
-      "sha256": "0ec1e35d4ccea4595392d8d3239d53bf35c6bc69bc3da622f45fa8c76f1106ee",
-      "status": "reviewed",
-      "outcome": "Infer emotion from action and context while allowing more than one interpretation.",
-      "review": "Text evidence, revised inference and uncertainty prompts align with the comprehension goal.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "clue-canopy-04B-2",
-      "path": "clue-canopy/04-margin-detective/b/02/screenshot.png",
-      "sha256": "d4c418396508fa938b7d50a720dd3d412fd2b4a58ef2cb3ea6fee83bc77fc348",
-      "status": "reviewed",
-      "outcome": "Revise an inference when a new clue weakens the first explanation.",
-      "review": "Text evidence, revised inference and uncertainty prompts align with the comprehension goal.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "clue-canopy-04B-3",
-      "path": "clue-canopy/04-margin-detective/b/03/screenshot.png",
-      "sha256": "e744fc1aabbc73e6026191e6ed8c6d71dd38a2d63631e199111900d983a9efee",
-      "status": "reviewed",
-      "outcome": "Compare two accounts against a third piece of textual evidence and explain uncertainty.",
-      "review": "Text evidence, revised inference and uncertainty prompts align with the comprehension goal.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "switchside-stories-01B-1",
-      "path": "switchside-stories/01-two-windows/b/01/screenshot.png",
-      "sha256": "472f2db8bda2eab80d2d26d75c20559ad6a3fba6d7be4a25a2b04c4818592302",
-      "status": "reviewed",
-      "outcome": "Consider two people’s needs and compare possible ways to share a limited resource.",
-      "review": "Both perspectives and multiple reasonable responses are represented; no single social answer scored.",
       "correction": null,
       "correction_rechecked": false
     },
@@ -472,31 +222,11 @@
       "correction_rechecked": false
     },
     {
-      "id": "instruction-impossible-03A-3",
-      "path": "instruction-impossible/03-paper-pilot/a/03/screenshot.png",
-      "sha256": "75bf32341ecde8073fe5fdec993e6f7b41f1fd3c7c81deae2c08e56be77172f1",
-      "status": "reviewed",
-      "outcome": "Add a clear stopping condition to an instruction and explain how it prevents unintended movement.",
-      "review": "Visible scene matches the instruction problem; students revise reference, sequence or stopping condition.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
       "id": "edit-echidna-01A-1",
       "path": "edit-echidna/01-small-steps-studio/a/01/screenshot.png",
       "sha256": "8693a132a3919d2c02a8649d9c91b1b87769f122c68d53f895d3a360da45c745",
       "status": "reviewed",
       "outcome": "Revise vague wording with relevant detail drawn from the writer’s own notes.",
-      "review": "One revision goal, source meaning, blank revision and reader-effect explanation are visible.",
-      "correction": null,
-      "correction_rechecked": false
-    },
-    {
-      "id": "edit-echidna-01A-2",
-      "path": "edit-echidna/01-small-steps-studio/a/02/screenshot.png",
-      "sha256": "a95caf1e04501f4007be5429a329be5035c1a444044b1d2c2b2ccda821350cb4",
-      "status": "reviewed",
-      "outcome": "Add a relevant supporting reason to an opinion using the writer’s intended idea.",
       "review": "One revision goal, source meaning, blank revision and reader-effect explanation are visible.",
       "correction": null,
       "correction_rechecked": false

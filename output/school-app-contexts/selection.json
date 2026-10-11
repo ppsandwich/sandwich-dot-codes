@@ -1,0 +1,31 @@
+{
+  "screens": 24,
+  "designs": 12,
+  "apps": 12,
+  "retained_ids": [
+    "classroom-words-05B-1",
+    "classroom-words-05B-2",
+    "think-in-parts-04A-1",
+    "think-in-parts-04A-2",
+    "town-together-04A-1",
+    "town-together-04A-3",
+    "wild-notebook-01C-1",
+    "wild-notebook-01C-2",
+    "tinkertest-01B-2",
+    "tinkertest-01B-3",
+    "number-kitchen-02B-1",
+    "number-kitchen-02B-2",
+    "storychirps-04C-1",
+    "storychirps-04C-2",
+    "plot-a-place-04B-1",
+    "plot-a-place-04B-3",
+    "clue-canopy-02B-2",
+    "clue-canopy-02B-3",
+    "switchside-stories-01B-2",
+    "switchside-stories-01B-3",
+    "instruction-impossible-03A-1",
+    "instruction-impossible-03A-2",
+    "edit-echidna-01A-1",
+    "edit-echidna-01A-3"
+  ]
+}

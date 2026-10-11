@@ -1,124 +1,81 @@
 {
+  "designs": 12,
   "filters": [
     {
       "app": "all",
-      "screens": 51,
-      "sections": 17,
-      "text": "51 screenshots \u00b7 17 selected designs \u00b7 12 apps"
+      "screens": 24,
+      "text": "24 screenshots \u00b7 12 selected designs \u00b7 12 apps"
     },
     {
       "app": "classroom-words",
-      "screens": 3,
-      "sections": 1,
-      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "think-in-parts",
-      "screens": 3,
-      "sections": 1,
-      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "town-together",
-      "screens": 3,
-      "sections": 1,
-      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "wild-notebook",
-      "screens": 6,
-      "sections": 2,
-      "text": "6 screenshots \u00b7 2 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "tinkertest",
-      "screens": 3,
-      "sections": 1,
-      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "number-kitchen",
-      "screens": 6,
-      "sections": 2,
-      "text": "6 screenshots \u00b7 2 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "storychirps",
-      "screens": 6,
-      "sections": 2,
-      "text": "6 screenshots \u00b7 2 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "plot-a-place",
-      "screens": 6,
-      "sections": 2,
-      "text": "6 screenshots \u00b7 2 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "clue-canopy",
-      "screens": 6,
-      "sections": 2,
-      "text": "6 screenshots \u00b7 2 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "switchside-stories",
-      "screens": 3,
-      "sections": 1,
-      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "instruction-impossible",
-      "screens": 3,
-      "sections": 1,
-      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     },
     {
       "app": "edit-echidna",
-      "screens": 3,
-      "sections": 1,
-      "text": "3 screenshots \u00b7 1 selected designs \u00b7 1 apps"
+      "screens": 2,
+      "text": "2 screenshots \u00b7 1 selected design \u00b7 1 app"
     }
   ],
-  "links": [
-    {
-      "path": "teaching-notes.md",
-      "status": 200
-    },
-    {
-      "path": "app-outcomes.md",
-      "status": 200
-    },
-    {
-      "path": "contexts.csv",
-      "status": 200
-    }
-  ],
+  "image_decode": {
+    "count": 48,
+    "failed": []
+  },
   "modal": {
     "closed": true,
-    "focusRestored": true,
     "next": "classroom-words/05-sound-circles/b/02/screenshot.png",
-    "previous": "classroom-words/05-sound-circles/b/01/screenshot.png",
     "start": "classroom-words/05-sound-circles/b/01/screenshot.png"
   },
-  "image_decode": {
-    "gallery_images": 85,
-    "failures": 0,
-    "note": "All 85 gallery assets plus the viewer image decoded successfully."
-  },
-  "viewports": [
-    {
-      "width": 1440,
-      "overflow": false
-    },
-    {
-      "columns": "311px 311px 311px",
-      "overflow": false,
-      "width": 1024
-    },
-    {
-      "columns": "343px",
-      "overflow": false,
-      "width": 390
-    }
-  ]
+  "overflow": false,
+  "screens": 24
 }

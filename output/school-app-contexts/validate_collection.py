@@ -8,11 +8,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 jobs = json.loads((ROOT / 'contexts.json').read_text())
-assert len(jobs) == 51
-assert len({j['id'] for j in jobs}) == 51
-assert len({j['slug'] for j in jobs}) == 12
+selection = json.loads((ROOT / 'selection.json').read_text())
+assert len(jobs) == selection['screens']
+assert {j['id'] for j in jobs} == set(selection['retained_ids'])
+assert len({j['id'] for j in jobs}) == len(jobs)
+assert len({j['slug'] for j in jobs}) == selection['apps']
 groups = Counter((j['slug'], j['direction'], j['variation']) for j in jobs)
-assert len(groups) == 17 and set(groups.values()) == {3}
+assert len(groups) == selection['designs'] and set(groups.values()) == {2}
 review = {r['id']: r for r in json.loads((ROOT / 'visual-review.json').read_text())['screens']}
 hashes = set()
 for j in jobs:
@@ -38,8 +40,10 @@ for j in jobs:
             assert copy.read_bytes() == original.read_bytes(), copy
 with (ROOT / 'contexts.csv').open() as f:
     rows = list(csv.DictReader(f))
-assert len(rows) == 51 and {r['path'] for r in rows} == {j['path'] for j in jobs}
+assert len(rows) == len(jobs) and {r['path'] for r in rows} == {j['path'] for j in jobs}
 page = (ROOT / 'index.html').read_text()
 assert all(j['path'] in page for j in jobs)
 assert all(j['title'] in (ROOT / 'teaching-notes.md').read_text() for j in jobs)
-print('PASS: 51 unique 4:3 screenshots; 17 selections; 12 apps; reference integrity; provenance; review hashes; CSV and gallery coverage.')
+assert {str(p.relative_to(ROOT)) for p in ROOT.glob('*/*/*/*/screenshot.png') if p.relative_to(ROOT).parts[0] != 'references'} == {j['path'] for j in jobs}
+assert set(review) == {j['id'] for j in jobs}
+print(f"PASS: {len(jobs)} unique 4:3 screenshots; {len(groups)} selections; reference integrity; provenance; review hashes; CSV and gallery coverage.")

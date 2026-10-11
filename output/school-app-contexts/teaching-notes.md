@@ -1,6 +1,6 @@
 # Teaching notes for the additional app contexts
 
-51 separate screenshots: three new tasks for each of the 17 selected designs across 12 apps. These extend the selected visual styles; the original screenshots and logos are preserved.
+24 retained screenshots across 12 selected designs and 12 apps. Original screen numbers are preserved. Each screen includes an outcome, assessment evidence and lesson use.
 
 Each screenshot is a static design concept. The controls show proposed app behaviour. Outcomes describe what to assess, not proven learning effects. Use the task after relevant teaching, record prompts and support, and check transfer to an unfamiliar example. Context numbers identify tasks; they are not a fixed year-level progression.
 
@@ -32,16 +32,6 @@ Selected direction: Sound circles. Treatment: Tactile studio.
 
 [Open screenshot](classroom-words/05-sound-circles/b/02/screenshot.png)
 
-### 3. Keep every sound
-
-**Outcome:** Blend an initial consonant cluster without omitting either consonant.
-
-**Evidence:** Teacher hears all five phonemes in stamp, accurate stamps in the sentence and transfer to another taught cluster word.
-
-**Lesson use:** Consolidation when individual correspondences are secure; contrast stamp with another cluster word orally.
-
-[Open screenshot](classroom-words/05-sound-circles/b/03/screenshot.png)
-
 ## Think in Parts · 4A · Ink canvas
 
 Selected direction: Voice and ink. Treatment: Quiet clarity.
@@ -66,16 +56,6 @@ Selected direction: Voice and ink. Treatment: Quiet clarity.
 
 [Open screenshot](think-in-parts/04-voice-and-ink/a/02/screenshot.png)
 
-### 3. A change in a food chain
-
-**Outcome:** Explain a possible indirect effect in a simple food-chain model and state an assumption.
-
-**Evidence:** Narration connects fewer caterpillars to their food and predators; student explains uncertainty rather than claiming certainty.
-
-**Lesson use:** After teaching food-chain arrow meaning; compare the simplified chain with an actual habitat.
-
-[Open screenshot](think-in-parts/04-voice-and-ink/a/03/screenshot.png)
-
 ## Town Together · 4A · Assembly notes
 
 Selected direction: People’s assembly. Treatment: Quiet clarity.
@@ -89,16 +69,6 @@ Selected direction: People’s assembly. Treatment: Quiet clarity.
 **Lesson use:** Apply agreed decision criteria after learning about local services.
 
 [Open screenshot](town-together/04-people-s-assembly/a/01/screenshot.png)
-
-### 2. A weekend street market
-
-**Outcome:** Compare two public-space proposals using cost, access and competing community interests.
-
-**Evidence:** Student uses a cost and both perspectives to justify a choice and proposes a mitigation.
-
-**Lesson use:** Small-group deliberation before an individual council statement.
-
-[Open screenshot](town-together/04-people-s-assembly/a/02/screenshot.png)
 
 ### 3. A service beyond the trial
 
@@ -134,63 +104,9 @@ Selected direction: Field journal. Treatment: Graphic play.
 
 [Open screenshot](wild-notebook/01-field-journal/c/02/screenshot.png)
 
-### 3. An unfamiliar leaf
-
-**Outcome:** Describe observable features before offering an uncertain identification.
-
-**Evidence:** Record uses visible shape, edge and arrangement, keeps identification tentative and names evidence needed.
-
-**Lesson use:** School-ground observation station; compare records before using a teacher-approved field guide.
-
-[Open screenshot](wild-notebook/01-field-journal/c/03/screenshot.png)
-
-## Wild Notebook · 4C · Ground patterns
-
-Selected direction: Habitat layers. Treatment: Graphic play.
-
-### 1. More individuals or more groups?
-
-**Outcome:** Distinguish abundance from the number of observed organism groups using comparable samples.
-
-**Evidence:** Student compares totals and represented groups, and avoids treating broad groups as species counts.
-
-**Lesson use:** Classroom analysis following consistent garden and mulch sampling.
-
-[Open screenshot](wild-notebook/04-habitat-layers/c/01/screenshot.png)
-
-### 2. Repeat the sample
-
-**Outcome:** Use repeated counts to describe variation and avoid relying on one sample.
-
-**Evidence:** Student cites all three paired samples, identifies the overall pattern and gives a limitation.
-
-**Lesson use:** After field sampling; teach how repeats strengthen comparison without proving a cause.
-
-[Open screenshot](wild-notebook/04-habitat-layers/c/02/screenshot.png)
-
-### 3. Can these counts be compared?
-
-**Outcome:** Identify unequal sampling effort and redesign a fairer habitat comparison.
-
-**Evidence:** Student spots area and duration differences and specifies a common repeat method before drawing conclusions.
-
-**Lesson use:** Use as a diagnostic task before the next outdoor investigation.
-
-[Open screenshot](wild-notebook/04-habitat-layers/c/03/screenshot.png)
-
 ## TinkerTest · 1B · Paper instrument
 
 Selected direction: Workshop lab. Treatment: Tactile studio.
-
-### 1. Surface and stopping distance
-
-**Outcome:** Identify the changed variable and justify a conclusion using controlled simulation results.
-
-**Evidence:** Student compares distances, names surface as changed variable and proposes a useful repeat or extension.
-
-**Lesson use:** Virtual investigation after explicitly modelling fair tests.
-
-[Open screenshot](tinkertest/01-workshop-lab/b/01/screenshot.png)
 
 ### 2. Keeping water warm
 
@@ -236,50 +152,6 @@ Selected direction: Recipe notebook. Treatment: Tactile studio.
 
 [Open screenshot](number-kitchen/02-recipe-notebook/b/02/screenshot.png)
 
-### 3. A recipe for six
-
-**Outcome:** Scale ingredient quantities by a factor of three and justify the multiplicative relationship.
-
-**Evidence:** Student triples both quantities rather than adding the same number to each.
-
-**Lesson use:** Year 3–4 recipe scaling after equal-groups modelling.
-
-[Open screenshot](number-kitchen/02-recipe-notebook/b/03/screenshot.png)
-
-## Number Kitchen · 4B · Measuring bench
-
-Selected direction: Measure lab. Treatment: Tactile studio.
-
-### 1. Read the scale
-
-**Outcome:** Read a volume from equally spaced graduations and explain the reading.
-
-**Evidence:** Student identifies 300 mL using the scale and describes the marked interval; audio/text evidence.
-
-**Lesson use:** Measurement rotation before using real calibrated containers.
-
-[Open screenshot](number-kitchen/04-measure-lab/b/01/screenshot.png)
-
-### 2. Use equal measures
-
-**Outcome:** Connect repeated equal measures to a target volume and explain the calculation.
-
-**Evidence:** Student calculates four 250 mL measures for 1 L and checks the unit relationship.
-
-**Lesson use:** After modelling 1 L = 1000 mL with containers.
-
-[Open screenshot](number-kitchen/04-measure-lab/b/02/screenshot.png)
-
-### 3. Share a litre
-
-**Outcome:** Find equal portions of a given volume and explain a division strategy.
-
-**Evidence:** Student calculates 250 mL each for four equal portions and shows the total is conserved.
-
-**Lesson use:** Application after equal sharing with physical water or counters.
-
-[Open screenshot](number-kitchen/04-measure-lab/b/03/screenshot.png)
-
 ## StoryChirps · 4C · On the story stage
 
 Selected direction: Little story stage. Treatment: Graphic play.
@@ -304,50 +176,6 @@ Selected direction: Little story stage. Treatment: Graphic play.
 
 [Open screenshot](storychirps/04-little-story-stage/c/02/screenshot.png)
 
-### 3. The windy picnic
-
-**Outcome:** Explain causal connections in an oral narrative and consider a plausible ending.
-
-**Evidence:** Student uses because/so meaningfully, keeps events coherent and improves clarity after playback.
-
-**Lesson use:** Lesson on connecting events rather than simply listing pictures.
-
-[Open screenshot](storychirps/04-little-story-stage/c/03/screenshot.png)
-
-## StoryChirps · 2A · Story circle
-
-Selected direction: Story nest. Treatment: Quiet clarity.
-
-### 1. A seed story
-
-**Outcome:** Organise a picture sequence and retell it with clear time language.
-
-**Evidence:** Recording links planting, watering and later growth with appropriate sequence terms.
-
-**Lesson use:** Speaking and listening lesson after a simple class planting experience.
-
-[Open screenshot](storychirps/02-story-nest/a/01/screenshot.png)
-
-### 2. Explain a classroom routine
-
-**Outcome:** Give a clear oral explanation of a familiar sequence for a new classmate.
-
-**Evidence:** Listener can identify necessary steps and their order; revised recording fills a missing step.
-
-**Lesson use:** Speaking lesson on audience awareness; test by asking a partner to retell the routine.
-
-[Open screenshot](storychirps/02-story-nest/a/02/screenshot.png)
-
-### 3. One picture, different stories
-
-**Outcome:** Develop a coherent oral narrative while distinguishing visible detail from imagined events.
-
-**Evidence:** Student describes the shared picture, supplies a coherent own story and revises for listener clarity; different stories are acceptable.
-
-**Lesson use:** Pair storytelling task comparing two interpretations of the same image.
-
-[Open screenshot](storychirps/02-story-nest/a/03/screenshot.png)
-
 ## Plot a Place · 4B · Paper classroom
 
 Selected direction: Classroom compass. Treatment: Tactile studio.
@@ -362,16 +190,6 @@ Selected direction: Classroom compass. Treatment: Tactile studio.
 
 [Open screenshot](plot-a-place/04-classroom-compass/b/01/screenshot.png)
 
-### 2. A playground route
-
-**Outcome:** Use cardinal directions and landmarks to communicate a route on a map.
-
-**Evidence:** Student describes a route from gate to fountain that avoids a closed square; partner test verifies route.
-
-**Lesson use:** Geography route planning after a school-ground walk.
-
-[Open screenshot](plot-a-place/04-classroom-compass/b/02/screenshot.png)
-
 ### 3. Choose useful map symbols
 
 **Outcome:** Create a consistent map key and use it to explain the location of a landmark.
@@ -382,53 +200,9 @@ Selected direction: Classroom compass. Treatment: Tactile studio.
 
 [Open screenshot](plot-a-place/04-classroom-compass/b/03/screenshot.png)
 
-## Plot a Place · 2A · Neighbourhood plan
-
-Selected direction: Little town planner. Treatment: Quiet clarity.
-
-### 1. A place to borrow books
-
-**Outcome:** Compare candidate service locations by walking distance and justify a spatial decision.
-
-**Evidence:** Student counts orthogonal moves accurately and explains whose access improves or worsens.
-
-**Lesson use:** Settlement planning task after teaching grid movement and scale.
-
-[Open screenshot](plot-a-place/02-little-town-planner/a/01/screenshot.png)
-
-### 2. A safe way to the oval
-
-**Outcome:** Plan a route using a map constraint and estimate its distance from a simple scale.
-
-**Evidence:** Student avoids the closed square, counts five orthogonal moves from A3 to D1 and explains the detour.
-
-**Lesson use:** Navigation challenge after reading a map key.
-
-[Open screenshot](plot-a-place/02-little-town-planner/a/02/screenshot.png)
-
-### 3. Two parks, different needs
-
-**Outcome:** Use map distance and information about users to justify a location decision with trade-offs.
-
-**Evidence:** Student compares both sites from homes and school and explains why no site meets every need equally.
-
-**Lesson use:** Group planning followed by an individual geographic justification.
-
-[Open screenshot](plot-a-place/02-little-town-planner/a/03/screenshot.png)
-
 ## Clue Canopy · 2B · Pinned clues
 
 Selected direction: Evidence board. Treatment: Tactile studio.
-
-### 1. The unopened invitation
-
-**Outcome:** Infer a character’s possible motivation from textual clues without treating inference as fact.
-
-**Evidence:** Student cites the hidden invitation and question, explains a plausible motive and offers an alternative.
-
-**Lesson use:** Guided comprehension discussion on character motives.
-
-[Open screenshot](clue-canopy/02-evidence-board/b/01/screenshot.png)
 
 ### 2. Before the rain
 
@@ -450,53 +224,9 @@ Selected direction: Evidence board. Treatment: Tactile studio.
 
 [Open screenshot](clue-canopy/02-evidence-board/b/03/screenshot.png)
 
-## Clue Canopy · 4B · Annotated page
-
-Selected direction: Margin detective. Treatment: Tactile studio.
-
-### 1. Reading between the words
-
-**Outcome:** Infer emotion from action and context while allowing more than one interpretation.
-
-**Evidence:** Student quotes observable actions, explains the inference and identifies another plausible interpretation.
-
-**Lesson use:** Close-reading mini-lesson before independent inference practice.
-
-[Open screenshot](clue-canopy/04-margin-detective/b/01/screenshot.png)
-
-### 2. A clue that changes the idea
-
-**Outcome:** Revise an inference when a new clue weakens the first explanation.
-
-**Evidence:** Student identifies which evidence challenges the claim and gives a better-supported alternative.
-
-**Lesson use:** Teacher-led think-aloud followed by individual revised inference.
-
-[Open screenshot](clue-canopy/04-margin-detective/b/02/screenshot.png)
-
-### 3. Whose account fits?
-
-**Outcome:** Compare two accounts against a third piece of textual evidence and explain uncertainty.
-
-**Evidence:** Student distinguishes statements from corroborating evidence and avoids claiming more than the text establishes.
-
-**Lesson use:** Comprehension extension on differing viewpoints and evidence.
-
-[Open screenshot](clue-canopy/04-margin-detective/b/03/screenshot.png)
-
 ## SwitchSide Stories · 1B · Paper perspectives
 
 Selected direction: Two windows. Treatment: Tactile studio.
-
-### 1. One glue stick
-
-**Outcome:** Consider two people’s needs and compare possible ways to share a limited resource.
-
-**Evidence:** Student proposes a response, predicts effects for both children and discusses an alternative without a single correct score.
-
-**Lesson use:** Teacher-guided role-play during a cooperative classroom activity.
-
-[Open screenshot](switchside-stories/01-two-windows/b/01/screenshot.png)
 
 ### 2. A quiet place to work
 
@@ -542,16 +272,6 @@ Selected direction: Paper pilot. Treatment: Quiet clarity.
 
 [Open screenshot](instruction-impossible/03-paper-pilot/a/02/screenshot.png)
 
-### 3. Say when to stop
-
-**Outcome:** Add a clear stopping condition to an instruction and explain how it prevents unintended movement.
-
-**Evidence:** Student names a visible stopping point before the bridge, tests it and revises if necessary.
-
-**Lesson use:** Extension after precise action verbs and directions have been taught.
-
-[Open screenshot](instruction-impossible/03-paper-pilot/a/03/screenshot.png)
-
 ## Edit Echidna · 1A · Focused edit
 
 Selected direction: Small steps studio. Treatment: Quiet clarity.
@@ -565,16 +285,6 @@ Selected direction: Small steps studio. Treatment: Quiet clarity.
 **Lesson use:** Focused revision after drafting; teacher assigns description as the single goal.
 
 [Open screenshot](edit-echidna/01-small-steps-studio/a/01/screenshot.png)
-
-### 2. Support an opinion
-
-**Outcome:** Add a relevant supporting reason to an opinion using the writer’s intended idea.
-
-**Evidence:** Revision links opinion and reason, avoids unrelated detail and explains the reader benefit.
-
-**Lesson use:** Persuasive-writing conference focusing on one reason.
-
-[Open screenshot](edit-echidna/01-small-steps-studio/a/02/screenshot.png)
 
 ### 3. Clarify who did what
 
