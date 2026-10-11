@@ -1,79 +1,106 @@
 {
-  "reviewed": "2026-10-11",
-  "desktop": [
-    {
-      "height": 900,
-      "id": "classroom-words",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "think-in-parts",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "town-together",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "wild-notebook",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "tinkertest",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "number-kitchen",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "storychirps",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "plot-a-place",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "clue-canopy",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "switchside-stories",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "instruction-impossible",
-      "overflow": false,
-      "width": 1440
-    },
-    {
-      "height": 900,
-      "id": "edit-echidna",
-      "overflow": false,
-      "width": 1440
-    }
-  ],
+  "theme": "Dark monochrome with sans serif typography and logo-only visual app headings",
+  "desktop": {
+    "viewport": "1440 × 900",
+    "slides": [
+      {
+        "height": 900,
+        "id": "classroom-words",
+        "logoHeight": 219.99996948242188,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "Classroom Words"
+      },
+      {
+        "height": 900,
+        "id": "think-in-parts",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "Think in Parts"
+      },
+      {
+        "height": 900,
+        "id": "town-together",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "Town Together"
+      },
+      {
+        "height": 900,
+        "id": "wild-notebook",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "Wild Notebook"
+      },
+      {
+        "height": 900,
+        "id": "tinkertest",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "TinkerTest"
+      },
+      {
+        "height": 900,
+        "id": "number-kitchen",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "Number Kitchen"
+      },
+      {
+        "height": 900,
+        "id": "storychirps",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "StoryChirps"
+      },
+      {
+        "height": 900,
+        "id": "plot-a-place",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "Plot a Place"
+      },
+      {
+        "height": 900,
+        "id": "clue-canopy",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "Clue Canopy"
+      },
+      {
+        "height": 900,
+        "id": "switchside-stories",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "SwitchSide Stories"
+      },
+      {
+        "height": 900,
+        "id": "instruction-impossible",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "Instruction Impossible"
+      },
+      {
+        "height": 900,
+        "id": "edit-echidna",
+        "logoHeight": 220,
+        "logoWidth": 240,
+        "overflow": false,
+        "accessibleName": "Edit Echidna"
+      }
+    ]
+  },
   "tablet": {
     "viewport": "1024 × 768",
     "slides": [
@@ -132,85 +159,72 @@
     "slides": [
       {
         "app": "classroom-words",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "think-in-parts",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "town-together",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "wild-notebook",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "tinkertest",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "number-kitchen",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "storychirps",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "plot-a-place",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "clue-canopy",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "switchside-stories",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "instruction-impossible",
+        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "edit-echidna",
+        "logoWidth": 240,
         "overflow": false
       }
     ]
   },
-  "interactions": {
-    "assets": {
-      "count": 36,
-      "loaded": true
-    },
-    "focusRestored": true,
-    "image": {
-      "loaded": true,
-      "open": true
-    },
-    "indexJump": "tinkertest",
-    "indexOpen": true,
-    "keyboardBack": "classroom-words",
-    "last": {
-      "app": "edit-echidna",
-      "nextDisabled": true
-    },
-    "next": "think-in-parts",
-    "research": {
-      "app": "tinkertest",
-      "open": true,
-      "sources": 2
-    },
-    "focusNote": "Rechecked after modal-specific focus restoration update and two animation frames."
-  },
-  "deepLink": {
-    "deepLink": "town-together",
-    "height": 900,
-    "placeholderTokens": false,
-    "title": "Town Together — Small apps. Clear learning.",
-    "visible": 1
-  },
-  "visualReview": "Desktop Classroom Words and Town Together; mobile StoryChirps. All 12 slide layouts checked for overflow. Final retained image bytes validated against source collection."
+  "checks": [
+    "All 12 desktop slides fit within 900px height.",
+    "No horizontal overflow at desktop, tablet or mobile widths.",
+    "All 12 monochrome logos visually reviewed in the app index.",
+    "Logos are 240px wide on slides; duplicate names are screen-reader-only.",
+    "Navigation, research logo, screenshot enlargement and modal focus restoration checked.",
+    "Original screenshots and logo files match retained source assets."
+  ]
 }
