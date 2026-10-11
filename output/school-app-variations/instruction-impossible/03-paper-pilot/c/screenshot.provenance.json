@@ -1,15 +1,15 @@
 {
-  "job_id": "instruction-impossible-03-C-screenshot-map-fix",
+  "job_id": "instruction-impossible-03-C-pedagogy-fix1",
   "app": "Instruction Impossible",
   "direction": 3,
   "variation": "C",
   "type": "screenshot",
   "generator": "built-in image_gen",
-  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-d2f67675-be84-4f01-86cd-108c3e1598b6.png",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-5d1e4f10-239b-44c9-b7d0-351d454eccf3.png",
   "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/c/screenshot.png",
   "references": [
-    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/c/screenshot.png"
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/instruction-impossible/03-paper-pilot/c/screenshot.png"
   ],
-  "prompt": "Edit this exact screenshot minimally. In the right-hand scene ONLY remove both dashed green route arrows on the far bank (upper right), and remove the small map-symbol sign next to the tree on that far bank. Replace removed elements with matching path/landscape. Keep the tree as scenery, bridge, river, foreground path and character in the flowerbed. The character is in a flowerbed on the near bank BEFORE crossing the bridge. Preserve all typography, instructions, buttons, logo and colours. No route arrows or start markers on the far bank. 4:3 landscape.",
-  "edit_target_snapshot": "generation/revisions/instruction-03-c-before.png"
+  "prompt": "Edit this screenshot to make the failed test consistent with the map. Preserve logo, palette, 4:3, instruction list and empty Rewrite step 3 field. Map must show start at bottom, path north, horizontal river crossed by one bridge, then a T-junction on the far/north bank, flag at the west/left end of its cross-path. Place the pilot EXACTLY AT THE CENTRE OF THE T-JUNCTION on the NORTH/far side after crossing, facing NORTH. Do not leave the pilot at the start or between bridge and junction. Label the bottom start point 'Start'. Add a clearly legible feedback strip 'Stopped at step 3: which way should I turn?' Keep steps exactly '1. Walk to the bridge.' '2. Cross the bridge.' '3. Turn.' '4. Walk to the flag.' Keep step 3 highlighted. Do not supply the word left, a replacement sentence or a successful path. Retain Test again and partner follow-up.",
+  "revision": "pedagogical alignment"
 }

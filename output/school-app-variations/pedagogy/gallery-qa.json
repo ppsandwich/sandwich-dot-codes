@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-11",
+  "browser": "T3 collaborative preview",
+  "docs": [
+    {
+      "path": "pedagogical-outcomes.md",
+      "status": 200
+    },
+    {
+      "path": "app-descriptions.csv",
+      "status": 200
+    },
+    {
+      "path": "pedagogy/alignment-review.md",
+      "status": 200
+    },
+    {
+      "path": "variations.csv",
+      "status": 200
+    }
+  ],
+  "modes": [
+    {
+      "applied": true,
+      "mode": "logos"
+    },
+    {
+      "applied": true,
+      "mode": "screens"
+    },
+    {
+      "applied": true,
+      "mode": "pairs"
+    }
+  ],
+  "shortlist": {
+    "exportRows": 2,
+    "restored": true,
+    "shortlistedView": "1 pair · 1 direction · 1 app · Shortlist view",
+    "toggled": true
+  },
+  "images": {
+    "count": 192,
+    "failed": []
+  },
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false
+    },
+    {
+      "cards": 72,
+      "columns": "312.328px 312.328px 312.344px",
+      "height": 768,
+      "overflow": false,
+      "width": 1024
+    },
+    {
+      "columns": "343px",
+      "height": 844,
+      "overflow": false,
+      "width": 390
+    }
+  ],
+  "app_filters": {
+    "tested": 12,
+    "visible_pairs_per_app": 6
+  },
+  "modal": {
+    "opened": true,
+    "next": true,
+    "previous": true,
+    "closed": true
+  },
+  "content": {
+    "apps": 12,
+    "outcomes": 12,
+    "tasks": 24,
+    "screens": 72
+  }
+}

@@ -1,0 +1,938 @@
+[
+  {
+    "id": "classroom-words-03-A-pedagogy",
+    "app": "Classroom Words",
+    "slug": "classroom-words",
+    "direction": 3,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Classroom Words iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation A (Ticket desk). Preserve its recognisable logo/header identity and palette: Chalk white #F5F3EC, brick #A84432, muted cobalt #345B89. Printed railway tickets and a bold geometric type family. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Foundation–Year 2. Outcome (design context, do not print as jargon): Blend a printed word before hearing a model. REPLACE the old task content with this exact coherent learning state: Keep the train-ticket identity but simplify scenery. Main heading 'Read it yourself'. Teacher-set badge 's a t p i n'. Three large coupled letter tickets p i n. No picture of a pin. Main microphone button 'Record my reading'. Secondary 'Sound help'. Small footer 'Try first. Ask for help if you need it.' Progress strip '1 Read • 2 Listen back • 3 New word'. Do not show a recorded waveform or mark correct before an attempt. No whole-word answer audio as primary action. Only student decoding stimulus is pin; adult instructions may use ordinary English. Generous space for three letters, no distracting letter bank. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/classroom-words/03-sound-station/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/classroom-words/03-sound-station/a/screenshot.png"
+  },
+  {
+    "id": "classroom-words-03-B-pedagogy",
+    "app": "Classroom Words",
+    "slug": "classroom-words",
+    "direction": 3,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Classroom Words iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation B (Paper platform). Preserve its recognisable logo/header identity and palette: Chalk white #F5F3EC, brick #A84432, muted cobalt #345B89. Printed railway tickets and a bold geometric type family. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Foundation–Year 2. Outcome (design context, do not print as jargon): Blend a printed word before hearing a model. REPLACE the old task content with this exact coherent learning state: Keep the train-ticket identity but simplify scenery. Main heading 'Read it yourself'. Teacher-set badge 's a t p i n'. Three large coupled letter tickets p i n. No picture of a pin. Main microphone button 'Record my reading'. Secondary 'Sound help'. Small footer 'Try first. Ask for help if you need it.' Progress strip '1 Read • 2 Listen back • 3 New word'. Do not show a recorded waveform or mark correct before an attempt. No whole-word answer audio as primary action. Only student decoding stimulus is pin; adult instructions may use ordinary English. Generous space for three letters, no distracting letter bank. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/classroom-words/03-sound-station/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/classroom-words/03-sound-station/b/screenshot.png"
+  },
+  {
+    "id": "classroom-words-03-C-pedagogy",
+    "app": "Classroom Words",
+    "slug": "classroom-words",
+    "direction": 3,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Classroom Words iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation C (Sound express). Preserve its recognisable logo/header identity and palette: Chalk white #F5F3EC, brick #A84432, muted cobalt #345B89. Printed railway tickets and a bold geometric type family. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Foundation–Year 2. Outcome (design context, do not print as jargon): Blend a printed word before hearing a model. REPLACE the old task content with this exact coherent learning state: Keep the train-ticket identity but simplify scenery. Main heading 'Read it yourself'. Teacher-set badge 's a t p i n'. Three large coupled letter tickets p i n. No picture of a pin. Main microphone button 'Record my reading'. Secondary 'Sound help'. Small footer 'Try first. Ask for help if you need it.' Progress strip '1 Read • 2 Listen back • 3 New word'. Do not show a recorded waveform or mark correct before an attempt. No whole-word answer audio as primary action. Only student decoding stimulus is pin; adult instructions may use ordinary English. Generous space for three letters, no distracting letter bank. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/classroom-words/03-sound-station/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/classroom-words/03-sound-station/c/screenshot.png"
+  },
+  {
+    "id": "classroom-words-05-A-pedagogy",
+    "app": "Classroom Words",
+    "slug": "classroom-words",
+    "direction": 5,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Classroom Words iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 5, variation A (Listening space). Preserve its recognisable logo/header identity and palette: Mint #D9EEE5, dark teal #164F4C, peach #F4B090. Extremely clean touch-first concentric sound circles and broad rounded typography. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Foundation–Year 2. Outcome (design context, do not print as jargon): Blend a word, then apply the same correspondences in a short sentence. REPLACE the old task content with this exact coherent learning state: Keep mint, peach and linked circles. Heading 'Read, then read again'. Large linked circles t a p. Under them a clearly separate sentence strip 'Pat taps.' Capital P is the same taught letter. Badge 'Teacher set: s a t p i n'. Primary 'Record my reading', secondary 'Sound help'. Small progress line 'Word → Sentence → New word'. No tap/pin/sat multiple-choice cards, no picture revealing the word, no completed recording, no automatic accuracy score. Small helper 'Read to your teacher.' Adult UI may use normal English; decoding material only tap and Pat taps. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/classroom-words/05-sound-circles/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/classroom-words/05-sound-circles/a/screenshot.png"
+  },
+  {
+    "id": "classroom-words-05-B-pedagogy",
+    "app": "Classroom Words",
+    "slug": "classroom-words",
+    "direction": 5,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Classroom Words iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 5, variation B (Sound buttons). Preserve its recognisable logo/header identity and palette: Mint #D9EEE5, dark teal #164F4C, peach #F4B090. Extremely clean touch-first concentric sound circles and broad rounded typography. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Foundation–Year 2. Outcome (design context, do not print as jargon): Blend a word, then apply the same correspondences in a short sentence. REPLACE the old task content with this exact coherent learning state: Keep mint, peach and linked circles. Heading 'Read, then read again'. Large linked circles t a p. Under them a clearly separate sentence strip 'Pat taps.' Capital P is the same taught letter. Badge 'Teacher set: s a t p i n'. Primary 'Record my reading', secondary 'Sound help'. Small progress line 'Word → Sentence → New word'. No tap/pin/sat multiple-choice cards, no picture revealing the word, no completed recording, no automatic accuracy score. Small helper 'Read to your teacher.' Adult UI may use normal English; decoding material only tap and Pat taps. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/classroom-words/05-sound-circles/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/classroom-words/05-sound-circles/b/screenshot.png"
+  },
+  {
+    "id": "classroom-words-05-C-pedagogy",
+    "app": "Classroom Words",
+    "slug": "classroom-words",
+    "direction": 5,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Classroom Words iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 5, variation C (Circle rhythm). Preserve its recognisable logo/header identity and palette: Mint #D9EEE5, dark teal #164F4C, peach #F4B090. Extremely clean touch-first concentric sound circles and broad rounded typography. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Foundation–Year 2. Outcome (design context, do not print as jargon): Blend a word, then apply the same correspondences in a short sentence. REPLACE the old task content with this exact coherent learning state: Keep mint, peach and linked circles. Heading 'Read, then read again'. Large linked circles t a p. Under them a clearly separate sentence strip 'Pat taps.' Capital P is the same taught letter. Badge 'Teacher set: s a t p i n'. Primary 'Record my reading', secondary 'Sound help'. Small progress line 'Word → Sentence → New word'. No tap/pin/sat multiple-choice cards, no picture revealing the word, no completed recording, no automatic accuracy score. Small helper 'Read to your teacher.' Adult UI may use normal English; decoding material only tap and Pat taps. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/classroom-words/05-sound-circles/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/classroom-words/05-sound-circles/c/screenshot.png"
+  },
+  {
+    "id": "think-in-parts-04-A-pedagogy",
+    "app": "Think in Parts",
+    "slug": "think-in-parts",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Think in Parts iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation A (Ink canvas). Preserve its recognisable logo/header identity and palette: Soft white #F6F3EB, bottle green #25574C, salmon #D88D73. Minimal sketchbook studio, inky drawn annotations, asymmetric margin notes. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Explain a circuit relationship and predict the effect of a change. REPLACE the old task content with this exact coherent learning state: Heading 'Why does the lamp light?' Keep ink-and-voice studio. Left: standard schematic rectangular series circuit. Cell symbol on left side: two unequal parallel bars. Lamp symbol on right side: circle containing X. Closed switch on top side: two contacts joined by a straight horizontal conductor, no raised blade. Wires connect both terminals of each symbol in one continuous loop. Labels 'Cell', 'Lamp', 'Closed switch'. Right: large blank 'My explanation' workspace with 'Draw links' and 'Record explanation'. Prompt 'Explain how the parts work together.' Below a separate blank prediction box 'What if the switch opens? Why?' Footer primary 'Save for feedback'. No provided causal paragraph, no completed narration, no electrical current arrows or extra branches. A subtle lamp halo is permissible only with the visibly closed switch. No realistic battery or glass bulb; use circuit symbols. No recording waveform before a response. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/think-in-parts/04-voice-and-ink/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/04-voice-and-ink/a/screenshot.png"
+  },
+  {
+    "id": "think-in-parts-04-B-pedagogy",
+    "app": "Think in Parts",
+    "slug": "think-in-parts",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Think in Parts iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation B (Voice journal). Preserve its recognisable logo/header identity and palette: Soft white #F6F3EB, bottle green #25574C, salmon #D88D73. Minimal sketchbook studio, inky drawn annotations, asymmetric margin notes. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Explain a circuit relationship and predict the effect of a change. REPLACE the old task content with this exact coherent learning state: Heading 'Why does the lamp light?' Keep ink-and-voice studio. Left: standard schematic rectangular series circuit. Cell symbol on left side: two unequal parallel bars. Lamp symbol on right side: circle containing X. Closed switch on top side: two contacts joined by a straight horizontal conductor, no raised blade. Wires connect both terminals of each symbol in one continuous loop. Labels 'Cell', 'Lamp', 'Closed switch'. Right: large blank 'My explanation' workspace with 'Draw links' and 'Record explanation'. Prompt 'Explain how the parts work together.' Below a separate blank prediction box 'What if the switch opens? Why?' Footer primary 'Save for feedback'. No provided causal paragraph, no completed narration, no electrical current arrows or extra branches. A subtle lamp halo is permissible only with the visibly closed switch. No realistic battery or glass bulb; use circuit symbols. No recording waveform before a response. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/think-in-parts/04-voice-and-ink/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/04-voice-and-ink/b/screenshot.png"
+  },
+  {
+    "id": "think-in-parts-04-C-pedagogy",
+    "app": "Think in Parts",
+    "slug": "think-in-parts",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Think in Parts iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation C (Signal studio). Preserve its recognisable logo/header identity and palette: Soft white #F6F3EB, bottle green #25574C, salmon #D88D73. Minimal sketchbook studio, inky drawn annotations, asymmetric margin notes. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Explain a circuit relationship and predict the effect of a change. REPLACE the old task content with this exact coherent learning state: Heading 'Why does the lamp light?' Keep ink-and-voice studio. Left: standard schematic rectangular series circuit. Cell symbol on left side: two unequal parallel bars. Lamp symbol on right side: circle containing X. Closed switch on top side: two contacts joined by a straight horizontal conductor, no raised blade. Wires connect both terminals of each symbol in one continuous loop. Labels 'Cell', 'Lamp', 'Closed switch'. Right: large blank 'My explanation' workspace with 'Draw links' and 'Record explanation'. Prompt 'Explain how the parts work together.' Below a separate blank prediction box 'What if the switch opens? Why?' Footer primary 'Save for feedback'. No provided causal paragraph, no completed narration, no electrical current arrows or extra branches. A subtle lamp halo is permissible only with the visibly closed switch. No realistic battery or glass bulb; use circuit symbols. No recording waveform before a response. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/think-in-parts/04-voice-and-ink/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/04-voice-and-ink/c/screenshot.png"
+  },
+  {
+    "id": "think-in-parts-01-A-pedagogy",
+    "app": "Think in Parts",
+    "slug": "think-in-parts",
+    "direction": 1,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Think in Parts iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation A (Mechanism desk). Preserve its recognisable logo/header identity and palette: Warm paper #F3EBDD, charcoal #263C3B, burnt orange #BB6239. Folded-paper diagrams, editorial serif headings with clean humanist controls. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Predict how changing a lever affects the effort needed and explain why. REPLACE the old task content with this exact coherent learning state: Heading 'Move the fulcrum. Explain the change.' Paper mechanism studio. Two accurate simple horizontal lever diagrams labelled 'Before' and 'After': same load on LEFT end and downward effort arrow at RIGHT end. Before fulcrum at centre; After fulcrum closer to load at left, clearly longer right effort arm. No decorative gears. Short prompt 'Same load. Which needs less effort? Why?' Right-hand blank 'My prediction' area, tools 'Draw' and 'Record'. Blank 'My explanation' field beneath. Primary 'Share for feedback'. Labels 'Load', 'Fulcrum', 'Effort'. No completed answer or numerical mechanical advantage. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/think-in-parts/01-paper-mechanism/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/01-paper-mechanism/a/screenshot.png"
+  },
+  {
+    "id": "think-in-parts-01-B-pedagogy",
+    "app": "Think in Parts",
+    "slug": "think-in-parts",
+    "direction": 1,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Think in Parts iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation B (Folded explanation). Preserve its recognisable logo/header identity and palette: Warm paper #F3EBDD, charcoal #263C3B, burnt orange #BB6239. Folded-paper diagrams, editorial serif headings with clean humanist controls. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Predict how changing a lever affects the effort needed and explain why. REPLACE the old task content with this exact coherent learning state: Heading 'Move the fulcrum. Explain the change.' Paper mechanism studio. Two accurate simple horizontal lever diagrams labelled 'Before' and 'After': same load on LEFT end and downward effort arrow at RIGHT end. Before fulcrum at centre; After fulcrum closer to load at left, clearly longer right effort arm. No decorative gears. Short prompt 'Same load. Which needs less effort? Why?' Right-hand blank 'My prediction' area, tools 'Draw' and 'Record'. Blank 'My explanation' field beneath. Primary 'Share for feedback'. Labels 'Load', 'Fulcrum', 'Effort'. No completed answer or numerical mechanical advantage. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/think-in-parts/01-paper-mechanism/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/01-paper-mechanism/b/screenshot.png"
+  },
+  {
+    "id": "think-in-parts-01-C-pedagogy",
+    "app": "Think in Parts",
+    "slug": "think-in-parts",
+    "direction": 1,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Think in Parts iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation C (Parts in motion). Preserve its recognisable logo/header identity and palette: Warm paper #F3EBDD, charcoal #263C3B, burnt orange #BB6239. Folded-paper diagrams, editorial serif headings with clean humanist controls. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Predict how changing a lever affects the effort needed and explain why. REPLACE the old task content with this exact coherent learning state: Heading 'Move the fulcrum. Explain the change.' Paper mechanism studio. Two accurate simple horizontal lever diagrams labelled 'Before' and 'After': same load on LEFT end and downward effort arrow at RIGHT end. Before fulcrum at centre; After fulcrum closer to load at left, clearly longer right effort arm. No decorative gears. Short prompt 'Same load. Which needs less effort? Why?' Right-hand blank 'My prediction' area, tools 'Draw' and 'Record'. Blank 'My explanation' field beneath. Primary 'Share for feedback'. Labels 'Load', 'Fulcrum', 'Effort'. No completed answer or numerical mechanical advantage. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/think-in-parts/01-paper-mechanism/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/01-paper-mechanism/c/screenshot.png"
+  },
+  {
+    "id": "town-together-01-A-pedagogy",
+    "app": "Town Together",
+    "slug": "town-together",
+    "direction": 1,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Town Together iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation A (Council plan). Preserve its recognisable logo/header identity and palette: Paper #F4EBD9, forest #244D3D, ochre #CCA148. Tactile tabletop town model and council-paper side panels, mature rounded sans. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Choose a proposal within a budget and justify the trade-off. REPLACE the old task content with this exact coherent learning state: Heading 'Which proposal should council fund?' Badge 'Simulated local council'. Budget '$30,000 • one-off project funds'. Two equally weighted proposals: 'Community garden — $20,000' with quote 'We need a quiet place to meet.'; 'Sports court — $30,000' with quote 'We need space to play after school.' Neither preselected. Lower response area 'My recommendation' with two unselected choice buttons, blank 'Funds left: $ ____', blank 'My reason and trade-off' and prompt 'Use both views. What would we give up?' Primary 'Prepare council statement'. Do not show votes, winner or preferred proposal. Preserve council-table identity with restrained site illustrations. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/town-together/01-council-table/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/01-council-table/a/screenshot.png"
+  },
+  {
+    "id": "town-together-01-B-pedagogy",
+    "app": "Town Together",
+    "slug": "town-together",
+    "direction": 1,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Town Together iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation B (Tabletop town). Preserve its recognisable logo/header identity and palette: Paper #F4EBD9, forest #244D3D, ochre #CCA148. Tactile tabletop town model and council-paper side panels, mature rounded sans. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Choose a proposal within a budget and justify the trade-off. REPLACE the old task content with this exact coherent learning state: Heading 'Which proposal should council fund?' Badge 'Simulated local council'. Budget '$30,000 • one-off project funds'. Two equally weighted proposals: 'Community garden — $20,000' with quote 'We need a quiet place to meet.'; 'Sports court — $30,000' with quote 'We need space to play after school.' Neither preselected. Lower response area 'My recommendation' with two unselected choice buttons, blank 'Funds left: $ ____', blank 'My reason and trade-off' and prompt 'Use both views. What would we give up?' Primary 'Prepare council statement'. Do not show votes, winner or preferred proposal. Preserve council-table identity with restrained site illustrations. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/town-together/01-council-table/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/01-council-table/b/screenshot.png"
+  },
+  {
+    "id": "town-together-01-C-pedagogy",
+    "app": "Town Together",
+    "slug": "town-together",
+    "direction": 1,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Town Together iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation C (Public choices). Preserve its recognisable logo/header identity and palette: Paper #F4EBD9, forest #244D3D, ochre #CCA148. Tactile tabletop town model and council-paper side panels, mature rounded sans. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Choose a proposal within a budget and justify the trade-off. REPLACE the old task content with this exact coherent learning state: Heading 'Which proposal should council fund?' Badge 'Simulated local council'. Budget '$30,000 • one-off project funds'. Two equally weighted proposals: 'Community garden — $20,000' with quote 'We need a quiet place to meet.'; 'Sports court — $30,000' with quote 'We need space to play after school.' Neither preselected. Lower response area 'My recommendation' with two unselected choice buttons, blank 'Funds left: $ ____', blank 'My reason and trade-off' and prompt 'Use both views. What would we give up?' Primary 'Prepare council statement'. Do not show votes, winner or preferred proposal. Preserve council-table identity with restrained site illustrations. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/town-together/01-council-table/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/01-council-table/c/screenshot.png"
+  },
+  {
+    "id": "town-together-04-A-pedagogy",
+    "app": "Town Together",
+    "slug": "town-together",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Town Together iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation A (Assembly notes). Preserve its recognisable logo/header identity and palette: Pale peach #F1DCCA, aubergine ink #4A3544, sage #91AB8E. Semicircular chamber, printed portrait tokens, humanist display lettering. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Weigh access against service costs in a council decision. REPLACE the old task content with this exact coherent learning state: People’s assembly identity. Heading 'Should the library open on Sundays?' Badge 'Simulated local council'. Budget '$25,000 • one-year trial'. Proposal 'Sunday opening' table 'Staff $18,000', 'Security $5,000', 'Utilities $2,000', 'Total $25,000'. Alternative 'Keep current hours • $0 extra'. Contrasting voices: 'Student: I cannot visit on weekdays.' and 'Librarian: Sunday cover may stretch our team.' Blank fields 'My recommendation' and 'A concern we must address'. Prompt 'Use a cost and both perspectives.' Primary 'Take a position'. Small note 'Funding after the trial is undecided.' No vote tallies or unanimous approval. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/town-together/04-people-s-assembly/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/04-people-s-assembly/a/screenshot.png"
+  },
+  {
+    "id": "town-together-04-B-pedagogy",
+    "app": "Town Together",
+    "slug": "town-together",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Town Together iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation B (Voices at the table). Preserve its recognisable logo/header identity and palette: Pale peach #F1DCCA, aubergine ink #4A3544, sage #91AB8E. Semicircular chamber, printed portrait tokens, humanist display lettering. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Weigh access against service costs in a council decision. REPLACE the old task content with this exact coherent learning state: People’s assembly identity. Heading 'Should the library open on Sundays?' Badge 'Simulated local council'. Budget '$25,000 • one-year trial'. Proposal 'Sunday opening' table 'Staff $18,000', 'Security $5,000', 'Utilities $2,000', 'Total $25,000'. Alternative 'Keep current hours • $0 extra'. Contrasting voices: 'Student: I cannot visit on weekdays.' and 'Librarian: Sunday cover may stretch our team.' Blank fields 'My recommendation' and 'A concern we must address'. Prompt 'Use a cost and both perspectives.' Primary 'Take a position'. Small note 'Funding after the trial is undecided.' No vote tallies or unanimous approval. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/town-together/04-people-s-assembly/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/04-people-s-assembly/b/screenshot.png"
+  },
+  {
+    "id": "town-together-04-C-pedagogy",
+    "app": "Town Together",
+    "slug": "town-together",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Town Together iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation C (The hearing room). Preserve its recognisable logo/header identity and palette: Pale peach #F1DCCA, aubergine ink #4A3544, sage #91AB8E. Semicircular chamber, printed portrait tokens, humanist display lettering. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Weigh access against service costs in a council decision. REPLACE the old task content with this exact coherent learning state: People’s assembly identity. Heading 'Should the library open on Sundays?' Badge 'Simulated local council'. Budget '$25,000 • one-year trial'. Proposal 'Sunday opening' table 'Staff $18,000', 'Security $5,000', 'Utilities $2,000', 'Total $25,000'. Alternative 'Keep current hours • $0 extra'. Contrasting voices: 'Student: I cannot visit on weekdays.' and 'Librarian: Sunday cover may stretch our team.' Blank fields 'My recommendation' and 'A concern we must address'. Prompt 'Use a cost and both perspectives.' Primary 'Take a position'. Small note 'Funding after the trial is undecided.' No vote tallies or unanimous approval. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/town-together/04-people-s-assembly/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/04-people-s-assembly/c/screenshot.png"
+  },
+  {
+    "id": "wild-notebook-01-A-pedagogy",
+    "app": "Wild Notebook",
+    "slug": "wild-notebook",
+    "direction": 1,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Wild Notebook iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation A (Observation sheet). Preserve its recognisable logo/header identity and palette: Oat #F4EBD5, fern #34513A, rust #B75D39. Botanical field journal, fine specimen drawings and elegant serif headings. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Make a field record another group can interpret. REPLACE the old task content with this exact coherent learning state: Field journal heading 'Record what you observe'. Method strip 'Garden bed A • 1 m² • 5 minutes'. Example field record labelled 'Our observation': '3 small dark beetles seen under fallen leaves.' Small beetle sketch labelled 'Identification uncertain'. Separate blank area 'What might explain this?' with helper 'An idea, not an observation'. Blank 'What should we check next?' Tools 'Add photo', 'Sketch', 'Record voice'. Primary 'Save field record'. Small note 'Use the same method at the next site.' No invented character counter, automatic species identification, biodiversity score or causal conclusion. A quiet journal with most space for observation and reasoning. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/wild-notebook/01-field-journal/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/01-field-journal/a/screenshot.png"
+  },
+  {
+    "id": "wild-notebook-01-B-pedagogy",
+    "app": "Wild Notebook",
+    "slug": "wild-notebook",
+    "direction": 1,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Wild Notebook iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation B (Pressed pages). Preserve its recognisable logo/header identity and palette: Oat #F4EBD5, fern #34513A, rust #B75D39. Botanical field journal, fine specimen drawings and elegant serif headings. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Make a field record another group can interpret. REPLACE the old task content with this exact coherent learning state: Field journal heading 'Record what you observe'. Method strip 'Garden bed A • 1 m² • 5 minutes'. Example field record labelled 'Our observation': '3 small dark beetles seen under fallen leaves.' Small beetle sketch labelled 'Identification uncertain'. Separate blank area 'What might explain this?' with helper 'An idea, not an observation'. Blank 'What should we check next?' Tools 'Add photo', 'Sketch', 'Record voice'. Primary 'Save field record'. Small note 'Use the same method at the next site.' No invented character counter, automatic species identification, biodiversity score or causal conclusion. A quiet journal with most space for observation and reasoning. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/wild-notebook/01-field-journal/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/01-field-journal/b/screenshot.png"
+  },
+  {
+    "id": "wild-notebook-01-C-pedagogy",
+    "app": "Wild Notebook",
+    "slug": "wild-notebook",
+    "direction": 1,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Wild Notebook iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation C (Field record). Preserve its recognisable logo/header identity and palette: Oat #F4EBD5, fern #34513A, rust #B75D39. Botanical field journal, fine specimen drawings and elegant serif headings. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Make a field record another group can interpret. REPLACE the old task content with this exact coherent learning state: Field journal heading 'Record what you observe'. Method strip 'Garden bed A • 1 m² • 5 minutes'. Example field record labelled 'Our observation': '3 small dark beetles seen under fallen leaves.' Small beetle sketch labelled 'Identification uncertain'. Separate blank area 'What might explain this?' with helper 'An idea, not an observation'. Blank 'What should we check next?' Tools 'Add photo', 'Sketch', 'Record voice'. Primary 'Save field record'. Small note 'Use the same method at the next site.' No invented character counter, automatic species identification, biodiversity score or causal conclusion. A quiet journal with most space for observation and reasoning. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/wild-notebook/01-field-journal/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/01-field-journal/c/screenshot.png"
+  },
+  {
+    "id": "wild-notebook-04-A-pedagogy",
+    "app": "Wild Notebook",
+    "slug": "wild-notebook",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Wild Notebook iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation A (Habitat comparison). Preserve its recognisable logo/header identity and palette: Sand #EEDFC5, moss #45613C, terracotta #BA6548. Layered paper-cut soil cross-section, organic panels and warm compact sans. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Compare samples fairly and limit a conclusion to the evidence. REPLACE the old task content with this exact coherent learning state: Heading 'What do these samples show?' Habitat layers identity. Method 'Each site: 1 m², 5 minutes, same morning'. One readable table with columns 'Group', 'Garden', 'Paved edge'; rows 'Ants | 12 | 6', 'Slaters | 5 | 1', 'Spiders | 4 | 1', 'Unidentified | 2 | 3'. No totals or charts needed. Two restrained labelled habitat illustrations. Blank 'My comparison' with prompt 'Use numbers from both sites.' Blank 'One limit of our evidence'. Primary 'Discuss our findings'. Small reminder 'More individuals does not always mean more kinds.' All categories exactly consistent; no leaf icons for animal counts and no prewritten conclusion. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/wild-notebook/04-habitat-layers/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/04-habitat-layers/a/screenshot.png"
+  },
+  {
+    "id": "wild-notebook-04-B-pedagogy",
+    "app": "Wild Notebook",
+    "slug": "wild-notebook",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Wild Notebook iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation B (Layers of life). Preserve its recognisable logo/header identity and palette: Sand #EEDFC5, moss #45613C, terracotta #BA6548. Layered paper-cut soil cross-section, organic panels and warm compact sans. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Compare samples fairly and limit a conclusion to the evidence. REPLACE the old task content with this exact coherent learning state: Heading 'What do these samples show?' Habitat layers identity. Method 'Each site: 1 m², 5 minutes, same morning'. One readable table with columns 'Group', 'Garden', 'Paved edge'; rows 'Ants | 12 | 6', 'Slaters | 5 | 1', 'Spiders | 4 | 1', 'Unidentified | 2 | 3'. No totals or charts needed. Two restrained labelled habitat illustrations. Blank 'My comparison' with prompt 'Use numbers from both sites.' Blank 'One limit of our evidence'. Primary 'Discuss our findings'. Small reminder 'More individuals does not always mean more kinds.' All categories exactly consistent; no leaf icons for animal counts and no prewritten conclusion. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/wild-notebook/04-habitat-layers/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/04-habitat-layers/b/screenshot.png"
+  },
+  {
+    "id": "wild-notebook-04-C-pedagogy",
+    "app": "Wild Notebook",
+    "slug": "wild-notebook",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Wild Notebook iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation C (Ground patterns). Preserve its recognisable logo/header identity and palette: Sand #EEDFC5, moss #45613C, terracotta #BA6548. Layered paper-cut soil cross-section, organic panels and warm compact sans. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Compare samples fairly and limit a conclusion to the evidence. REPLACE the old task content with this exact coherent learning state: Heading 'What do these samples show?' Habitat layers identity. Method 'Each site: 1 m², 5 minutes, same morning'. One readable table with columns 'Group', 'Garden', 'Paved edge'; rows 'Ants | 12 | 6', 'Slaters | 5 | 1', 'Spiders | 4 | 1', 'Unidentified | 2 | 3'. No totals or charts needed. Two restrained labelled habitat illustrations. Blank 'My comparison' with prompt 'Use numbers from both sites.' Blank 'One limit of our evidence'. Primary 'Discuss our findings'. Small reminder 'More individuals does not always mean more kinds.' All categories exactly consistent; no leaf icons for animal counts and no prewritten conclusion. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/wild-notebook/04-habitat-layers/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/04-habitat-layers/c/screenshot.png"
+  },
+  {
+    "id": "tinkertest-05-A-pedagogy",
+    "app": "TinkerTest",
+    "slug": "tinkertest",
+    "direction": 5,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing TinkerTest iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 5, variation A (Evidence desk). Preserve its recognisable logo/header identity and palette: Paper #F0E8D5, ink #263F54, rust #B65738. Bold three-stage horizontal workflow with graph-paper plotting area and humanist sans. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Use a controlled simulation to test a prediction about pendulum length. REPLACE the old task content with this exact coherent learning state: Evidence-engine lab. Heading 'Does length change the swing time?' Step strip 'Predict → Test → Explain'; active Explain. Small saved student prediction 'I think a longer pendulum takes longer.' Label this explicitly 'My saved prediction'. Controls 'Mass 100 g • Release angle 10° • Gravity unchanged'. Results table 'Length (m) | One full swing (s)' rows '0.25 | 1.00', '0.50 | 1.42', '1.00 | 2.01'. Note 'Idealised simulation; one swing returns to the starting side.' Blank large response 'Do the results support my prediction? Use two results.' Primary 'Save conclusion'; secondary 'Run another length'. Small pendulum diagram at rest, one vertical bob only, no swing ghosts or arcs. Discrete length chips 0.25 m, 0.50 m, 1.00 m instead of a slider. No auto-completed conclusion or claim that virtual results prove every real case. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/tinkertest/05-evidence-engine/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/05-evidence-engine/a/screenshot.png"
+  },
+  {
+    "id": "tinkertest-05-B-pedagogy",
+    "app": "TinkerTest",
+    "slug": "tinkertest",
+    "direction": 5,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing TinkerTest iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 5, variation B (Experiment ledger). Preserve its recognisable logo/header identity and palette: Paper #F0E8D5, ink #263F54, rust #B65738. Bold three-stage horizontal workflow with graph-paper plotting area and humanist sans. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Use a controlled simulation to test a prediction about pendulum length. REPLACE the old task content with this exact coherent learning state: Evidence-engine lab. Heading 'Does length change the swing time?' Step strip 'Predict → Test → Explain'; active Explain. Small saved student prediction 'I think a longer pendulum takes longer.' Label this explicitly 'My saved prediction'. Controls 'Mass 100 g • Release angle 10° • Gravity unchanged'. Results table 'Length (m) | One full swing (s)' rows '0.25 | 1.00', '0.50 | 1.42', '1.00 | 2.01'. Note 'Idealised simulation; one swing returns to the starting side.' Blank large response 'Do the results support my prediction? Use two results.' Primary 'Save conclusion'; secondary 'Run another length'. Small pendulum diagram at rest, one vertical bob only, no swing ghosts or arcs. Discrete length chips 0.25 m, 0.50 m, 1.00 m instead of a slider. No auto-completed conclusion or claim that virtual results prove every real case. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/tinkertest/05-evidence-engine/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/05-evidence-engine/b/screenshot.png"
+  },
+  {
+    "id": "tinkertest-05-C-pedagogy",
+    "app": "TinkerTest",
+    "slug": "tinkertest",
+    "direction": 5,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing TinkerTest iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 5, variation C (Predict, test, explain). Preserve its recognisable logo/header identity and palette: Paper #F0E8D5, ink #263F54, rust #B65738. Bold three-stage horizontal workflow with graph-paper plotting area and humanist sans. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Use a controlled simulation to test a prediction about pendulum length. REPLACE the old task content with this exact coherent learning state: Evidence-engine lab. Heading 'Does length change the swing time?' Step strip 'Predict → Test → Explain'; active Explain. Small saved student prediction 'I think a longer pendulum takes longer.' Label this explicitly 'My saved prediction'. Controls 'Mass 100 g • Release angle 10° • Gravity unchanged'. Results table 'Length (m) | One full swing (s)' rows '0.25 | 1.00', '0.50 | 1.42', '1.00 | 2.01'. Note 'Idealised simulation; one swing returns to the starting side.' Blank large response 'Do the results support my prediction? Use two results.' Primary 'Save conclusion'; secondary 'Run another length'. Small pendulum diagram at rest, one vertical bob only, no swing ghosts or arcs. Discrete length chips 0.25 m, 0.50 m, 1.00 m instead of a slider. No auto-completed conclusion or claim that virtual results prove every real case. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/tinkertest/05-evidence-engine/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/05-evidence-engine/c/screenshot.png"
+  },
+  {
+    "id": "tinkertest-01-A-pedagogy",
+    "app": "TinkerTest",
+    "slug": "tinkertest",
+    "direction": 1,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing TinkerTest iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation A (Controlled bench). Preserve its recognisable logo/header identity and palette: Warm grey #ECE9DE, petrol #22505A, orange #C8753D. Matte instrument bench, substantial controls, clean scientific typography. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Relate ramp height to measured travel distance while controlling other conditions. REPLACE the old task content with this exact coherent learning state: Workshop lab heading 'How does ramp height affect travel?' Clean schematic side-view ramp on horizontal floor with ball at top, endpoint marker beyond ramp foot. Measurement arrow starts exactly at ramp foot and ends at endpoint; label 'Travel distance'. No ruler or height ticks on drawing. Label 'Diagram not to scale'. Controls 'Same ball • Same ramp • Same surface • Release from rest'. Table 'Height (cm) | Distance (cm)' rows '10 | 28', '20 | 49', '30 | 71', caption 'Example simulation results'. Blank response 'What pattern do you see? Use two results.' Blank 'What should we test next?' Primary 'Save explanation'. No prefilled conclusion or decorative scale that contradicts data. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/tinkertest/01-workshop-lab/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/01-workshop-lab/a/screenshot.png"
+  },
+  {
+    "id": "tinkertest-01-B-pedagogy",
+    "app": "TinkerTest",
+    "slug": "tinkertest",
+    "direction": 1,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing TinkerTest iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation B (Paper instrument). Preserve its recognisable logo/header identity and palette: Warm grey #ECE9DE, petrol #22505A, orange #C8753D. Matte instrument bench, substantial controls, clean scientific typography. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Relate ramp height to measured travel distance while controlling other conditions. REPLACE the old task content with this exact coherent learning state: Workshop lab heading 'How does ramp height affect travel?' Clean schematic side-view ramp on horizontal floor with ball at top, endpoint marker beyond ramp foot. Measurement arrow starts exactly at ramp foot and ends at endpoint; label 'Travel distance'. No ruler or height ticks on drawing. Label 'Diagram not to scale'. Controls 'Same ball • Same ramp • Same surface • Release from rest'. Table 'Height (cm) | Distance (cm)' rows '10 | 28', '20 | 49', '30 | 71', caption 'Example simulation results'. Blank response 'What pattern do you see? Use two results.' Blank 'What should we test next?' Primary 'Save explanation'. No prefilled conclusion or decorative scale that contradicts data. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/tinkertest/01-workshop-lab/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/01-workshop-lab/b/screenshot.png"
+  },
+  {
+    "id": "tinkertest-01-C-pedagogy",
+    "app": "TinkerTest",
+    "slug": "tinkertest",
+    "direction": 1,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing TinkerTest iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation C (Variable board). Preserve its recognisable logo/header identity and palette: Warm grey #ECE9DE, petrol #22505A, orange #C8753D. Matte instrument bench, substantial controls, clean scientific typography. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 5–9. Outcome (design context, do not print as jargon): Relate ramp height to measured travel distance while controlling other conditions. REPLACE the old task content with this exact coherent learning state: Workshop lab heading 'How does ramp height affect travel?' Clean schematic side-view ramp on horizontal floor with ball at top, endpoint marker beyond ramp foot. Measurement arrow starts exactly at ramp foot and ends at endpoint; label 'Travel distance'. No ruler or height ticks on drawing. Label 'Diagram not to scale'. Controls 'Same ball • Same ramp • Same surface • Release from rest'. Table 'Height (cm) | Distance (cm)' rows '10 | 28', '20 | 49', '30 | 71', caption 'Example simulation results'. Blank response 'What pattern do you see? Use two results.' Blank 'What should we test next?' Primary 'Save explanation'. No prefilled conclusion or decorative scale that contradicts data. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/tinkertest/01-workshop-lab/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/01-workshop-lab/c/screenshot.png"
+  },
+  {
+    "id": "number-kitchen-02-A-pedagogy",
+    "app": "Number Kitchen",
+    "slug": "number-kitchen",
+    "direction": 2,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Number Kitchen iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation A (Recipe columns). Preserve its recognisable logo/header identity and palette: Paper #F2E5CC, deep blue #315170, lemon #DDBE56. Illustrated recipe notebook spread with handwritten quantity annotations and friendly serif titles. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 1–4. Outcome (design context, do not print as jargon): Scale every ingredient by the same factor. REPLACE the old task content with this exact coherent learning state: Recipe notebook, Year 2 task. Heading 'Make enough for 4'. Left recipe 'For 2 bowls' showing exactly 1 banana and 2 strawberries with labels. Right worksheet 'For 4 bowls' with blank quantity boxes '___ bananas' and '___ strawberries'. No ingredient pictures beside the blank target quantities. Do not draw the required target quantities. Large prompt 'Show how you worked it out.' Blank drawing area with counter and pencil tools; microphone 'Tell my strategy'. Primary 'Check my recipe'. Keep bowls as portions, no fractions in this task, no completed doubling equation, no correct ticks before response. Clear touch-sized inputs and warm restrained kitchen illustration. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/number-kitchen/02-recipe-notebook/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/02-recipe-notebook/a/screenshot.png"
+  },
+  {
+    "id": "number-kitchen-02-B-pedagogy",
+    "app": "Number Kitchen",
+    "slug": "number-kitchen",
+    "direction": 2,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Number Kitchen iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation B (Kitchen scrapbook). Preserve its recognisable logo/header identity and palette: Paper #F2E5CC, deep blue #315170, lemon #DDBE56. Illustrated recipe notebook spread with handwritten quantity annotations and friendly serif titles. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 1–4. Outcome (design context, do not print as jargon): Scale every ingredient by the same factor. REPLACE the old task content with this exact coherent learning state: Recipe notebook, Year 2 task. Heading 'Make enough for 4'. Left recipe 'For 2 bowls' showing exactly 1 banana and 2 strawberries with labels. Right worksheet 'For 4 bowls' with blank quantity boxes '___ bananas' and '___ strawberries'. No ingredient pictures beside the blank target quantities. Do not draw the required target quantities. Large prompt 'Show how you worked it out.' Blank drawing area with counter and pencil tools; microphone 'Tell my strategy'. Primary 'Check my recipe'. Keep bowls as portions, no fractions in this task, no completed doubling equation, no correct ticks before response. Clear touch-sized inputs and warm restrained kitchen illustration. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/number-kitchen/02-recipe-notebook/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/02-recipe-notebook/b/screenshot.png"
+  },
+  {
+    "id": "number-kitchen-02-C-pedagogy",
+    "app": "Number Kitchen",
+    "slug": "number-kitchen",
+    "direction": 2,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Number Kitchen iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation C (Double the batch). Preserve its recognisable logo/header identity and palette: Paper #F2E5CC, deep blue #315170, lemon #DDBE56. Illustrated recipe notebook spread with handwritten quantity annotations and friendly serif titles. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 1–4. Outcome (design context, do not print as jargon): Scale every ingredient by the same factor. REPLACE the old task content with this exact coherent learning state: Recipe notebook, Year 2 task. Heading 'Make enough for 4'. Left recipe 'For 2 bowls' showing exactly 1 banana and 2 strawberries with labels. Right worksheet 'For 4 bowls' with blank quantity boxes '___ bananas' and '___ strawberries'. No ingredient pictures beside the blank target quantities. Do not draw the required target quantities. Large prompt 'Show how you worked it out.' Blank drawing area with counter and pencil tools; microphone 'Tell my strategy'. Primary 'Check my recipe'. Keep bowls as portions, no fractions in this task, no completed doubling equation, no correct ticks before response. Clear touch-sized inputs and warm restrained kitchen illustration. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/number-kitchen/02-recipe-notebook/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/02-recipe-notebook/c/screenshot.png"
+  },
+  {
+    "id": "number-kitchen-04-A-pedagogy",
+    "app": "Number Kitchen",
+    "slug": "number-kitchen",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Number Kitchen iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation A (Clear measures). Preserve its recognisable logo/header identity and palette: Cool milk #F0F0DF, forest #275747, ochre #CCA346. Montessori-like translucent measurement vessels, clean geometric type and pale tiled workspace. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 1–4. Outcome (design context, do not print as jargon): Find the missing volume needed to reach a target. REPLACE the old task content with this exact coherent learning state: Measure lab, Year 3 task. Heading 'How much more makes 500 mL?' A flat front-view transparent measuring jug diagram, no perspective or elliptical water surface, with evenly spaced scale 0, 100, 200, 300, 400, 500 mL, each at correct equal heights. Water at exactly halfway between 200 and 300; nearby label 'Now: 250 mL'. Target badge 'Target: 500 mL'. Blank large input 'I will add ___ mL'. Blank workspace 'Show my strategy'. Primary 'Save prediction', secondary disabled-looking 'Pour and check' with helper 'Predict first'. Do not print the missing answer anywhere. No arbitrary cup sizes, no off-scale target marker. Child-friendly precision, no distracting cooking scene. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/number-kitchen/04-measure-lab/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/04-measure-lab/a/screenshot.png"
+  },
+  {
+    "id": "number-kitchen-04-B-pedagogy",
+    "app": "Number Kitchen",
+    "slug": "number-kitchen",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Number Kitchen iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation B (Measuring bench). Preserve its recognisable logo/header identity and palette: Cool milk #F0F0DF, forest #275747, ochre #CCA346. Montessori-like translucent measurement vessels, clean geometric type and pale tiled workspace. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 1–4. Outcome (design context, do not print as jargon): Find the missing volume needed to reach a target. REPLACE the old task content with this exact coherent learning state: Measure lab, Year 3 task. Heading 'How much more makes 500 mL?' A flat front-view transparent measuring jug diagram, no perspective or elliptical water surface, with evenly spaced scale 0, 100, 200, 300, 400, 500 mL, each at correct equal heights. Water at exactly halfway between 200 and 300; nearby label 'Now: 250 mL'. Target badge 'Target: 500 mL'. Blank large input 'I will add ___ mL'. Blank workspace 'Show my strategy'. Primary 'Save prediction', secondary disabled-looking 'Pour and check' with helper 'Predict first'. Do not print the missing answer anywhere. No arbitrary cup sizes, no off-scale target marker. Child-friendly precision, no distracting cooking scene. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/number-kitchen/04-measure-lab/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/04-measure-lab/b/screenshot.png"
+  },
+  {
+    "id": "number-kitchen-04-C-pedagogy",
+    "app": "Number Kitchen",
+    "slug": "number-kitchen",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Number Kitchen iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation C (Fill the target). Preserve its recognisable logo/header identity and palette: Cool milk #F0F0DF, forest #275747, ochre #CCA346. Montessori-like translucent measurement vessels, clean geometric type and pale tiled workspace. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 1–4. Outcome (design context, do not print as jargon): Find the missing volume needed to reach a target. REPLACE the old task content with this exact coherent learning state: Measure lab, Year 3 task. Heading 'How much more makes 500 mL?' A flat front-view transparent measuring jug diagram, no perspective or elliptical water surface, with evenly spaced scale 0, 100, 200, 300, 400, 500 mL, each at correct equal heights. Water at exactly halfway between 200 and 300; nearby label 'Now: 250 mL'. Target badge 'Target: 500 mL'. Blank large input 'I will add ___ mL'. Blank workspace 'Show my strategy'. Primary 'Save prediction', secondary disabled-looking 'Pour and check' with helper 'Predict first'. Do not print the missing answer anywhere. No arbitrary cup sizes, no off-scale target marker. Child-friendly precision, no distracting cooking scene. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/number-kitchen/04-measure-lab/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/04-measure-lab/c/screenshot.png"
+  },
+  {
+    "id": "storychirps-04-A-pedagogy",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing StoryChirps iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation A (Story frame). Preserve its recognisable logo/header identity and palette: Cream #F1E3CD, aubergine #573F58, orange #C38A50. Paper theatre with restrained curtain shapes and friendly bold display lettering. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Foundation–Year 3. Outcome (design context, do not print as jargon): Improve the clarity of a spoken retelling for a listener. REPLACE the old task content with this exact coherent learning state: Little story stage. Heading 'Help your listener follow the story'. Three numbered illustrations: 1 child wearing red hat in park, 2 wind lifts hat, 3 child retrieves hat from low branch. Same child and hat throughout. Goal strip 'Tell who, where and what happened.' Recording panel 'My first telling' with playback control, short waveform and duration '0:00 / 0:30'; below 'Listen back: What needs to be clearer?' with blank voice-note field. Large primary 'Record a clearer telling'. Small 'Tell it your way' and 'Private classroom collection'. No printed finished story, correctness score, automatic language judgement or public share button. Keep expressive stage identity while picture sequence and listening controls dominate. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/storychirps/04-little-story-stage/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/04-little-story-stage/a/screenshot.png"
+  },
+  {
+    "id": "storychirps-04-B-pedagogy",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing StoryChirps iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation B (Paper playhouse). Preserve its recognisable logo/header identity and palette: Cream #F1E3CD, aubergine #573F58, orange #C38A50. Paper theatre with restrained curtain shapes and friendly bold display lettering. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Foundation–Year 3. Outcome (design context, do not print as jargon): Improve the clarity of a spoken retelling for a listener. REPLACE the old task content with this exact coherent learning state: Little story stage. Heading 'Help your listener follow the story'. Three numbered illustrations: 1 child wearing red hat in park, 2 wind lifts hat, 3 child retrieves hat from low branch. Same child and hat throughout. Goal strip 'Tell who, where and what happened.' Recording panel 'My first telling' with playback control, short waveform and duration '0:00 / 0:30'; below 'Listen back: What needs to be clearer?' with blank voice-note field. Large primary 'Record a clearer telling'. Small 'Tell it your way' and 'Private classroom collection'. No printed finished story, correctness score, automatic language judgement or public share button. Keep expressive stage identity while picture sequence and listening controls dominate. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/storychirps/04-little-story-stage/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/04-little-story-stage/b/screenshot.png"
+  },
+  {
+    "id": "storychirps-04-C-pedagogy",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing StoryChirps iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation C (On the story stage). Preserve its recognisable logo/header identity and palette: Cream #F1E3CD, aubergine #573F58, orange #C38A50. Paper theatre with restrained curtain shapes and friendly bold display lettering. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Foundation–Year 3. Outcome (design context, do not print as jargon): Improve the clarity of a spoken retelling for a listener. REPLACE the old task content with this exact coherent learning state: Little story stage. Heading 'Help your listener follow the story'. Three numbered illustrations: 1 child wearing red hat in park, 2 wind lifts hat, 3 child retrieves hat from low branch. Same child and hat throughout. Goal strip 'Tell who, where and what happened.' Recording panel 'My first telling' with playback control, short waveform and duration '0:00 / 0:30'; below 'Listen back: What needs to be clearer?' with blank voice-note field. Large primary 'Record a clearer telling'. Small 'Tell it your way' and 'Private classroom collection'. No printed finished story, correctness score, automatic language judgement or public share button. Keep expressive stage identity while picture sequence and listening controls dominate. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/storychirps/04-little-story-stage/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/04-little-story-stage/c/screenshot.png"
+  },
+  {
+    "id": "storychirps-02-A-pedagogy",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 2,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing StoryChirps iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation A (Story circle). Preserve its recognisable logo/header identity and palette: Pale sage #E0E8D0, dark green #3E573E, ochre #CCAA51. Soft illustrated nest metaphor, linen story stage and warm serif headings. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Foundation–Year 3. Outcome (design context, do not print as jargon): Use sequence language and revise an unclear connection in an oral story. REPLACE the old task content with this exact coherent learning state: Story nest paper picture cards. Heading 'Make the story easy to follow'. Subtitle 'Arrange the pictures to match your story.' Three reorderable numbered cards: child opens umbrella in rain; same child and umbrella beside a puddle; same child closes umbrella as sun comes out. Small optional prompt chips 'First', 'Then', 'Finally'. 'My first telling' playback and waveform. Blank reflection field 'Did I explain how the events connect?' Large 'Record my next telling'. Helper 'Listen with a partner. Choose one part to improve.' Small privacy badge 'Classroom only'. No transcribed model story or single correct plot. Keep cards large and provide voice-supported controls for early readers. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/storychirps/02-story-nest/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/02-story-nest/a/screenshot.png"
+  },
+  {
+    "id": "storychirps-02-B-pedagogy",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 2,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing StoryChirps iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation B (Collected stories). Preserve its recognisable logo/header identity and palette: Pale sage #E0E8D0, dark green #3E573E, ochre #CCAA51. Soft illustrated nest metaphor, linen story stage and warm serif headings. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Foundation–Year 3. Outcome (design context, do not print as jargon): Use sequence language and revise an unclear connection in an oral story. REPLACE the old task content with this exact coherent learning state: Story nest paper picture cards. Heading 'Make the story easy to follow'. Subtitle 'Arrange the pictures to match your story.' Three reorderable numbered cards: child opens umbrella in rain; same child and umbrella beside a puddle; same child closes umbrella as sun comes out. Small optional prompt chips 'First', 'Then', 'Finally'. 'My first telling' playback and waveform. Blank reflection field 'Did I explain how the events connect?' Large 'Record my next telling'. Helper 'Listen with a partner. Choose one part to improve.' Small privacy badge 'Classroom only'. No transcribed model story or single correct plot. Keep cards large and provide voice-supported controls for early readers. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/storychirps/02-story-nest/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/02-story-nest/b/screenshot.png"
+  },
+  {
+    "id": "storychirps-02-C-pedagogy",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 2,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing StoryChirps iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation C (Your voice, your order). Preserve its recognisable logo/header identity and palette: Pale sage #E0E8D0, dark green #3E573E, ochre #CCAA51. Soft illustrated nest metaphor, linen story stage and warm serif headings. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Foundation–Year 3. Outcome (design context, do not print as jargon): Use sequence language and revise an unclear connection in an oral story. REPLACE the old task content with this exact coherent learning state: Story nest paper picture cards. Heading 'Make the story easy to follow'. Subtitle 'Arrange the pictures to match your story.' Three reorderable numbered cards: child opens umbrella in rain; same child and umbrella beside a puddle; same child closes umbrella as sun comes out. Small optional prompt chips 'First', 'Then', 'Finally'. 'My first telling' playback and waveform. Blank reflection field 'Did I explain how the events connect?' Large 'Record my next telling'. Helper 'Listen with a partner. Choose one part to improve.' Small privacy badge 'Classroom only'. No transcribed model story or single correct plot. Keep cards large and provide voice-supported controls for early readers. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/storychirps/02-story-nest/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/02-story-nest/c/screenshot.png"
+  },
+  {
+    "id": "plot-a-place-04-A-pedagogy",
+    "app": "Plot a Place",
+    "slug": "plot-a-place",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Plot a Place iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation A (Classroom plan). Preserve its recognisable logo/header identity and palette: Chalk #F3EEDC, deep green #315747, terracotta #B77550. Overhead classroom floor-plan with tactile furniture symbols and large friendly labels. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 1–6. Outcome (design context, do not print as jargon): Write and test a route using a consistent classroom map. REPLACE the old task content with this exact coherent learning state: Classroom compass. Heading 'Can a partner follow your route?' Accurate simple 4 by 4 square grid, columns A B C D left to right, rows 1 2 3 4 top to bottom. North arrow points up. Door symbol at A4, book symbol 'Reading corner' at D1, one desk symbol at B2. Compact key 'Door', 'Reading corner', 'Desk'; icons match map. No physical metre scale. Task 'Start at the door. Reach the reading corner.' Right blank numbered route editor 1, 2, 3. Tools 'Draw route', 'Record directions'. Primary 'Send to partner'; small next step 'Test the route, then revise'. No pre-drawn route or supplied directions. Crisp overhead map with readable coordinates. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/plot-a-place/04-classroom-compass/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/04-classroom-compass/a/screenshot.png"
+  },
+  {
+    "id": "plot-a-place-04-B-pedagogy",
+    "app": "Plot a Place",
+    "slug": "plot-a-place",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Plot a Place iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation B (Paper classroom). Preserve its recognisable logo/header identity and palette: Chalk #F3EEDC, deep green #315747, terracotta #B77550. Overhead classroom floor-plan with tactile furniture symbols and large friendly labels. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 1–6. Outcome (design context, do not print as jargon): Write and test a route using a consistent classroom map. REPLACE the old task content with this exact coherent learning state: Classroom compass. Heading 'Can a partner follow your route?' Accurate simple 4 by 4 square grid, columns A B C D left to right, rows 1 2 3 4 top to bottom. North arrow points up. Door symbol at A4, book symbol 'Reading corner' at D1, one desk symbol at B2. Compact key 'Door', 'Reading corner', 'Desk'; icons match map. No physical metre scale. Task 'Start at the door. Reach the reading corner.' Right blank numbered route editor 1, 2, 3. Tools 'Draw route', 'Record directions'. Primary 'Send to partner'; small next step 'Test the route, then revise'. No pre-drawn route or supplied directions. Crisp overhead map with readable coordinates. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/plot-a-place/04-classroom-compass/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/04-classroom-compass/b/screenshot.png"
+  },
+  {
+    "id": "plot-a-place-04-C-pedagogy",
+    "app": "Plot a Place",
+    "slug": "plot-a-place",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Plot a Place iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation C (Place and explain). Preserve its recognisable logo/header identity and palette: Chalk #F3EEDC, deep green #315747, terracotta #B77550. Overhead classroom floor-plan with tactile furniture symbols and large friendly labels. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 1–6. Outcome (design context, do not print as jargon): Write and test a route using a consistent classroom map. REPLACE the old task content with this exact coherent learning state: Classroom compass. Heading 'Can a partner follow your route?' Accurate simple 4 by 4 square grid, columns A B C D left to right, rows 1 2 3 4 top to bottom. North arrow points up. Door symbol at A4, book symbol 'Reading corner' at D1, one desk symbol at B2. Compact key 'Door', 'Reading corner', 'Desk'; icons match map. No physical metre scale. Task 'Start at the door. Reach the reading corner.' Right blank numbered route editor 1, 2, 3. Tools 'Draw route', 'Record directions'. Primary 'Send to partner'; small next step 'Test the route, then revise'. No pre-drawn route or supplied directions. Crisp overhead map with readable coordinates. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/plot-a-place/04-classroom-compass/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/04-classroom-compass/c/screenshot.png"
+  },
+  {
+    "id": "plot-a-place-02-A-pedagogy",
+    "app": "Plot a Place",
+    "slug": "plot-a-place",
+    "direction": 2,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Plot a Place iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation A (Neighbourhood plan). Preserve its recognisable logo/header identity and palette: Pale mint #DFE9D9, brick #B75A3D, ink #354B51. Friendly flat town planning board and chunky accessible type. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 1–6. Outcome (design context, do not print as jargon): Justify a map placement using distance and a community need. REPLACE the old task content with this exact coherent learning state: Little town planner. Heading 'Where should the new park go?' Flat accurate 4 by 4 square grid, columns A B C D, rows 1 2 3 4, north upwards. School symbol at A1, homes symbol at D4, candidate P at A3, candidate Q at C4. Key 'School', 'Homes', 'Possible park'. Scale text 'One move to a neighbouring square = 50 m'. Note 'Count moves between squares. No diagonals.' No graphical scale bar. Both P and Q appear in the key as possible park sites. No diagonal routes or misleading 3D perspective. Right blank choice 'My site: P / Q' neither selected; blank 'Distance from homes: ___ m'; blank 'Why this site meets a need'. Primary 'Explain my plan'. Small prompt 'Consider both school and homes.' Do not provide distances or a preferred answer. Map should occupy half the screen at least. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/plot-a-place/02-little-town-planner/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/02-little-town-planner/a/screenshot.png"
+  },
+  {
+    "id": "plot-a-place-02-B-pedagogy",
+    "app": "Plot a Place",
+    "slug": "plot-a-place",
+    "direction": 2,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Plot a Place iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation B (Paper neighbourhood). Preserve its recognisable logo/header identity and palette: Pale mint #DFE9D9, brick #B75A3D, ink #354B51. Friendly flat town planning board and chunky accessible type. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 1–6. Outcome (design context, do not print as jargon): Justify a map placement using distance and a community need. REPLACE the old task content with this exact coherent learning state: Little town planner. Heading 'Where should the new park go?' Flat accurate 4 by 4 square grid, columns A B C D, rows 1 2 3 4, north upwards. School symbol at A1, homes symbol at D4, candidate P at A3, candidate Q at C4. Key 'School', 'Homes', 'Possible park'. Scale text 'One move to a neighbouring square = 50 m'. Note 'Count moves between squares. No diagonals.' No graphical scale bar. Both P and Q appear in the key as possible park sites. No diagonal routes or misleading 3D perspective. Right blank choice 'My site: P / Q' neither selected; blank 'Distance from homes: ___ m'; blank 'Why this site meets a need'. Primary 'Explain my plan'. Small prompt 'Consider both school and homes.' Do not provide distances or a preferred answer. Map should occupy half the screen at least. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/plot-a-place/02-little-town-planner/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/02-little-town-planner/b/screenshot.png"
+  },
+  {
+    "id": "plot-a-place-02-C-pedagogy",
+    "app": "Plot a Place",
+    "slug": "plot-a-place",
+    "direction": 2,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Plot a Place iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation C (Build a neighbourhood). Preserve its recognisable logo/header identity and palette: Pale mint #DFE9D9, brick #B75A3D, ink #354B51. Friendly flat town planning board and chunky accessible type. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 1–6. Outcome (design context, do not print as jargon): Justify a map placement using distance and a community need. REPLACE the old task content with this exact coherent learning state: Little town planner. Heading 'Where should the new park go?' Flat accurate 4 by 4 square grid, columns A B C D, rows 1 2 3 4, north upwards. School symbol at A1, homes symbol at D4, candidate P at A3, candidate Q at C4. Key 'School', 'Homes', 'Possible park'. Scale text 'One move to a neighbouring square = 50 m'. Note 'Count moves between squares. No diagonals.' No graphical scale bar. Both P and Q appear in the key as possible park sites. No diagonal routes or misleading 3D perspective. Right blank choice 'My site: P / Q' neither selected; blank 'Distance from homes: ___ m'; blank 'Why this site meets a need'. Primary 'Explain my plan'. Small prompt 'Consider both school and homes.' Do not provide distances or a preferred answer. Map should occupy half the screen at least. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/plot-a-place/02-little-town-planner/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/02-little-town-planner/c/screenshot.png"
+  },
+  {
+    "id": "clue-canopy-02-A-pedagogy",
+    "app": "Clue Canopy",
+    "slug": "clue-canopy",
+    "direction": 2,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Clue Canopy iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation A (Evidence desk). Preserve its recognisable logo/header identity and palette: Paper #EFE2C8, ink #354657, brick #AD5039. Restrained detective pinboard with evidence threads and strong editorial type. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Infer a possible event and explain how a text clue supports it. REPLACE the old task content with this exact coherent learning state: Evidence board. Heading 'What might have happened?' Readable story card: 'Mia left her lunchbox on the bench. When she returned, the lid was open. Crumbs lay beside it. Leo stood nearby, holding his own sandwich.' None of text highlighted yet. Prompt 'Select a clue from the text.' Empty evidence slot 'My chosen words'. Two blank response cards 'I think… because…' and 'Another possibility…'. Tools 'Speak', 'Draw', 'Write'. Primary 'Share my reasoning'. Restrained neutral illustration of bench and closed neutral figures; do not show culprit, theft, guilty face or animals eating. No red guilt strings, points or correct answer. Text evidence must drive the inference. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/clue-canopy/02-evidence-board/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/clue-canopy/02-evidence-board/a/screenshot.png"
+  },
+  {
+    "id": "clue-canopy-02-B-pedagogy",
+    "app": "Clue Canopy",
+    "slug": "clue-canopy",
+    "direction": 2,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Clue Canopy iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation B (Pinned clues). Preserve its recognisable logo/header identity and palette: Paper #EFE2C8, ink #354657, brick #AD5039. Restrained detective pinboard with evidence threads and strong editorial type. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Infer a possible event and explain how a text clue supports it. REPLACE the old task content with this exact coherent learning state: Evidence board. Heading 'What might have happened?' Readable story card: 'Mia left her lunchbox on the bench. When she returned, the lid was open. Crumbs lay beside it. Leo stood nearby, holding his own sandwich.' None of text highlighted yet. Prompt 'Select a clue from the text.' Empty evidence slot 'My chosen words'. Two blank response cards 'I think… because…' and 'Another possibility…'. Tools 'Speak', 'Draw', 'Write'. Primary 'Share my reasoning'. Restrained neutral illustration of bench and closed neutral figures; do not show culprit, theft, guilty face or animals eating. No red guilt strings, points or correct answer. Text evidence must drive the inference. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/clue-canopy/02-evidence-board/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/clue-canopy/02-evidence-board/b/screenshot.png"
+  },
+  {
+    "id": "clue-canopy-02-C-pedagogy",
+    "app": "Clue Canopy",
+    "slug": "clue-canopy",
+    "direction": 2,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Clue Canopy iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation C (Connect the evidence). Preserve its recognisable logo/header identity and palette: Paper #EFE2C8, ink #354657, brick #AD5039. Restrained detective pinboard with evidence threads and strong editorial type. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Infer a possible event and explain how a text clue supports it. REPLACE the old task content with this exact coherent learning state: Evidence board. Heading 'What might have happened?' Readable story card: 'Mia left her lunchbox on the bench. When she returned, the lid was open. Crumbs lay beside it. Leo stood nearby, holding his own sandwich.' None of text highlighted yet. Prompt 'Select a clue from the text.' Empty evidence slot 'My chosen words'. Two blank response cards 'I think… because…' and 'Another possibility…'. Tools 'Speak', 'Draw', 'Write'. Primary 'Share my reasoning'. Restrained neutral illustration of bench and closed neutral figures; do not show culprit, theft, guilty face or animals eating. No red guilt strings, points or correct answer. Text evidence must drive the inference. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/clue-canopy/02-evidence-board/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/clue-canopy/02-evidence-board/c/screenshot.png"
+  },
+  {
+    "id": "clue-canopy-04-A-pedagogy",
+    "app": "Clue Canopy",
+    "slug": "clue-canopy",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Clue Canopy iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation A (Reading margin). Preserve its recognisable logo/header identity and palette: Warm white #F4EDE1, petrol #275760, muted orange #CB8B58. Beautiful annotated reading page, underlines and spacious margin reasoning cards. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Distinguish what a text states from a reasonable inference. REPLACE the old task content with this exact coherent learning state: Margin detective reading page. Heading 'What can you infer?' Exact short passage: 'At lunchtime, Ava placed her umbrella beside the door. After school, the umbrella was gone. A trail of small wet patches led towards the gate.' No highlighted phrases initially. Margin tools 'Select words', 'Add a note'. Large blank response panel 'The text says…' then 'This makes me think…' then 'What else could explain it?' Primary 'Save my inference'; microphone alternative. One small neutral umbrella silhouette in margin only, no scene showing what happened, no wet patches or footprints in the artwork. Do not supply missing character, answer, automatic tick or finished sentence. Mature readable cream-and-ink page with generous annotation room. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/clue-canopy/04-margin-detective/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/clue-canopy/04-margin-detective/a/screenshot.png"
+  },
+  {
+    "id": "clue-canopy-04-B-pedagogy",
+    "app": "Clue Canopy",
+    "slug": "clue-canopy",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Clue Canopy iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation B (Annotated page). Preserve its recognisable logo/header identity and palette: Warm white #F4EDE1, petrol #275760, muted orange #CB8B58. Beautiful annotated reading page, underlines and spacious margin reasoning cards. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Distinguish what a text states from a reasonable inference. REPLACE the old task content with this exact coherent learning state: Margin detective reading page. Heading 'What can you infer?' Exact short passage: 'At lunchtime, Ava placed her umbrella beside the door. After school, the umbrella was gone. A trail of small wet patches led towards the gate.' No highlighted phrases initially. Margin tools 'Select words', 'Add a note'. Large blank response panel 'The text says…' then 'This makes me think…' then 'What else could explain it?' Primary 'Save my inference'; microphone alternative. One small neutral umbrella silhouette in margin only, no scene showing what happened, no wet patches or footprints in the artwork. Do not supply missing character, answer, automatic tick or finished sentence. Mature readable cream-and-ink page with generous annotation room. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/clue-canopy/04-margin-detective/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/clue-canopy/04-margin-detective/b/screenshot.png"
+  },
+  {
+    "id": "clue-canopy-04-C-pedagogy",
+    "app": "Clue Canopy",
+    "slug": "clue-canopy",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Clue Canopy iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation C (The close read). Preserve its recognisable logo/header identity and palette: Warm white #F4EDE1, petrol #275760, muted orange #CB8B58. Beautiful annotated reading page, underlines and spacious margin reasoning cards. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Distinguish what a text states from a reasonable inference. REPLACE the old task content with this exact coherent learning state: Margin detective reading page. Heading 'What can you infer?' Exact short passage: 'At lunchtime, Ava placed her umbrella beside the door. After school, the umbrella was gone. A trail of small wet patches led towards the gate.' No highlighted phrases initially. Margin tools 'Select words', 'Add a note'. Large blank response panel 'The text says…' then 'This makes me think…' then 'What else could explain it?' Primary 'Save my inference'; microphone alternative. One small neutral umbrella silhouette in margin only, no scene showing what happened, no wet patches or footprints in the artwork. Do not supply missing character, answer, automatic tick or finished sentence. Mature readable cream-and-ink page with generous annotation room. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/clue-canopy/04-margin-detective/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/clue-canopy/04-margin-detective/c/screenshot.png"
+  },
+  {
+    "id": "switchside-stories-02-A-pedagogy",
+    "app": "SwitchSide Stories",
+    "slug": "switchside-stories",
+    "direction": 2,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing SwitchSide Stories iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation A (Balanced views). Preserve its recognisable logo/header identity and palette: Sky #DFE9E9, brick #B7654B, ink #344655. Paper-cut story playground, centred balanced composition and large friendly text. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Foundation–Year 4. Outcome (design context, do not print as jargon): Consider two needs and compare responses to a shared-material disagreement. REPLACE the old task content with this exact coherent learning state: Story seesaw. Heading 'One blue pencil, two plans'. Two equal illustrated panels: 'Sam wants to finish the sky.' and 'Jo needs blue for a river.' Exactly one blue pencil shared between them. Prompt 'What could each person need?' Three unselected response tiles 'Take turns', 'Agree on a time', 'Another idea'. Blank response area 'What might happen for Sam? For Jo?' Primary 'Talk it through'. Smaller 'Ask an adult for help'. Footer 'More than one response may help.' No smiles indicating correct option, scores, emotional labels imposed on children, or duplicate blue pencils. Keep teacher-guided discussion obvious through conversation controls. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/switchside-stories/02-story-seesaw/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/switchside-stories/02-story-seesaw/a/screenshot.png"
+  },
+  {
+    "id": "switchside-stories-02-B-pedagogy",
+    "app": "SwitchSide Stories",
+    "slug": "switchside-stories",
+    "direction": 2,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing SwitchSide Stories iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation B (Shared story table). Preserve its recognisable logo/header identity and palette: Sky #DFE9E9, brick #B7654B, ink #344655. Paper-cut story playground, centred balanced composition and large friendly text. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Foundation–Year 4. Outcome (design context, do not print as jargon): Consider two needs and compare responses to a shared-material disagreement. REPLACE the old task content with this exact coherent learning state: Story seesaw. Heading 'One blue pencil, two plans'. Two equal illustrated panels: 'Sam wants to finish the sky.' and 'Jo needs blue for a river.' Exactly one blue pencil shared between them. Prompt 'What could each person need?' Three unselected response tiles 'Take turns', 'Agree on a time', 'Another idea'. Blank response area 'What might happen for Sam? For Jo?' Primary 'Talk it through'. Smaller 'Ask an adult for help'. Footer 'More than one response may help.' No smiles indicating correct option, scores, emotional labels imposed on children, or duplicate blue pencils. Keep teacher-guided discussion obvious through conversation controls. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/switchside-stories/02-story-seesaw/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/switchside-stories/02-story-seesaw/b/screenshot.png"
+  },
+  {
+    "id": "switchside-stories-02-C-pedagogy",
+    "app": "SwitchSide Stories",
+    "slug": "switchside-stories",
+    "direction": 2,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing SwitchSide Stories iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation C (Try each side). Preserve its recognisable logo/header identity and palette: Sky #DFE9E9, brick #B7654B, ink #344655. Paper-cut story playground, centred balanced composition and large friendly text. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Foundation–Year 4. Outcome (design context, do not print as jargon): Consider two needs and compare responses to a shared-material disagreement. REPLACE the old task content with this exact coherent learning state: Story seesaw. Heading 'One blue pencil, two plans'. Two equal illustrated panels: 'Sam wants to finish the sky.' and 'Jo needs blue for a river.' Exactly one blue pencil shared between them. Prompt 'What could each person need?' Three unselected response tiles 'Take turns', 'Agree on a time', 'Another idea'. Blank response area 'What might happen for Sam? For Jo?' Primary 'Talk it through'. Smaller 'Ask an adult for help'. Footer 'More than one response may help.' No smiles indicating correct option, scores, emotional labels imposed on children, or duplicate blue pencils. Keep teacher-guided discussion obvious through conversation controls. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/switchside-stories/02-story-seesaw/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/switchside-stories/02-story-seesaw/c/screenshot.png"
+  },
+  {
+    "id": "switchside-stories-01-A-pedagogy",
+    "app": "SwitchSide Stories",
+    "slug": "switchside-stories",
+    "direction": 1,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing SwitchSide Stories iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation A (Equal windows). Preserve its recognisable logo/header identity and palette: Pale peach #F4DFD1, green #355D4B, gold #CFAC56. Two equal story windows with expressive picture-book figures and calm round type. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Foundation–Year 4. Outcome (design context, do not print as jargon): Explore possible perspectives when someone wants to join a game. REPLACE the old task content with this exact coherent learning state: Two windows identity. Heading 'Joining the game'. Window one shows two children playing a ball game; caption 'The game has already started.' Window two shows a child nearby; caption 'Riley would like to join.' No thought bubbles specifying feelings. Prompt 'What might each person be thinking? How could we ask?' Two unselected choices 'Ask how to join' and 'Offer a role in the game'. Blank area 'What might happen next?' with 'For Riley' and 'For the group' blank lines. Primary 'Try a role-play'. Secondary 'Another idea' and small 'Adult help'. No right-answer ticks, social score or forced reconciliation. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/switchside-stories/01-two-windows/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/switchside-stories/01-two-windows/a/screenshot.png"
+  },
+  {
+    "id": "switchside-stories-01-B-pedagogy",
+    "app": "SwitchSide Stories",
+    "slug": "switchside-stories",
+    "direction": 1,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing SwitchSide Stories iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation B (Paper perspectives). Preserve its recognisable logo/header identity and palette: Pale peach #F4DFD1, green #355D4B, gold #CFAC56. Two equal story windows with expressive picture-book figures and calm round type. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Foundation–Year 4. Outcome (design context, do not print as jargon): Explore possible perspectives when someone wants to join a game. REPLACE the old task content with this exact coherent learning state: Two windows identity. Heading 'Joining the game'. Window one shows two children playing a ball game; caption 'The game has already started.' Window two shows a child nearby; caption 'Riley would like to join.' No thought bubbles specifying feelings. Prompt 'What might each person be thinking? How could we ask?' Two unselected choices 'Ask how to join' and 'Offer a role in the game'. Blank area 'What might happen next?' with 'For Riley' and 'For the group' blank lines. Primary 'Try a role-play'. Secondary 'Another idea' and small 'Adult help'. No right-answer ticks, social score or forced reconciliation. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/switchside-stories/01-two-windows/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/switchside-stories/01-two-windows/b/screenshot.png"
+  },
+  {
+    "id": "switchside-stories-01-C-pedagogy",
+    "app": "SwitchSide Stories",
+    "slug": "switchside-stories",
+    "direction": 1,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing SwitchSide Stories iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation C (Side by side). Preserve its recognisable logo/header identity and palette: Pale peach #F4DFD1, green #355D4B, gold #CFAC56. Two equal story windows with expressive picture-book figures and calm round type. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Foundation–Year 4. Outcome (design context, do not print as jargon): Explore possible perspectives when someone wants to join a game. REPLACE the old task content with this exact coherent learning state: Two windows identity. Heading 'Joining the game'. Window one shows two children playing a ball game; caption 'The game has already started.' Window two shows a child nearby; caption 'Riley would like to join.' No thought bubbles specifying feelings. Prompt 'What might each person be thinking? How could we ask?' Two unselected choices 'Ask how to join' and 'Offer a role in the game'. Blank area 'What might happen next?' with 'For Riley' and 'For the group' blank lines. Primary 'Try a role-play'. Secondary 'Another idea' and small 'Adult help'. No right-answer ticks, social score or forced reconciliation. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/switchside-stories/01-two-windows/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/switchside-stories/01-two-windows/c/screenshot.png"
+  },
+  {
+    "id": "instruction-impossible-03-A-pedagogy",
+    "app": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "direction": 3,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Instruction Impossible iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation A (Flight plan). Preserve its recognisable logo/header identity and palette: Sky #DDE9ED, olive #5A653E, terracotta #BB7353. Folded-paper world, numbered flight-path cards and editorial serif headers. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Find and revise an ambiguous navigation step. REPLACE the old task content with this exact coherent learning state: Paper pilot. Heading 'Fix the step that stopped the pilot'. Simple overhead map: start at bottom centre, straight path north to a horizontal river, one bridge crosses north, T-junction immediately after bridge, goal flag at west end of upper path. Clear north-up orientation and pilot exactly at the T-junction on the far/north bank, facing north. Label the bottom start point Start. Editable instructions exactly '1. Walk to the bridge.' '2. Cross the bridge.' '3. Turn.' '4. Walk to the flag.' Step 3 outlined, not corrected. Test feedback 'Stopped at step 3: which way should I turn?' Blank editor 'Rewrite step 3'. Primary 'Test again'. Small 'Then give your instructions to a partner.' Do not provide left as an answer or draw a successful route. Scene must match the ordered steps precisely. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/instruction-impossible/03-paper-pilot/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/a/screenshot.png"
+  },
+  {
+    "id": "instruction-impossible-03-B-pedagogy",
+    "app": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "direction": 3,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Instruction Impossible iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation B (Fold and follow). Preserve its recognisable logo/header identity and palette: Sky #DDE9ED, olive #5A653E, terracotta #BB7353. Folded-paper world, numbered flight-path cards and editorial serif headers. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Find and revise an ambiguous navigation step. REPLACE the old task content with this exact coherent learning state: Paper pilot. Heading 'Fix the step that stopped the pilot'. Simple overhead map: start at bottom centre, straight path north to a horizontal river, one bridge crosses north, T-junction immediately after bridge, goal flag at west end of upper path. Clear north-up orientation and pilot exactly at the T-junction on the far/north bank, facing north. Label the bottom start point Start. Editable instructions exactly '1. Walk to the bridge.' '2. Cross the bridge.' '3. Turn.' '4. Walk to the flag.' Step 3 outlined, not corrected. Test feedback 'Stopped at step 3: which way should I turn?' Blank editor 'Rewrite step 3'. Primary 'Test again'. Small 'Then give your instructions to a partner.' Do not provide left as an answer or draw a successful route. Scene must match the ordered steps precisely. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/instruction-impossible/03-paper-pilot/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/b/screenshot.png"
+  },
+  {
+    "id": "instruction-impossible-03-C-pedagogy",
+    "app": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "direction": 3,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Instruction Impossible iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation C (Paper route). Preserve its recognisable logo/header identity and palette: Sky #DDE9ED, olive #5A653E, terracotta #BB7353. Folded-paper world, numbered flight-path cards and editorial serif headers. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Find and revise an ambiguous navigation step. REPLACE the old task content with this exact coherent learning state: Paper pilot. Heading 'Fix the step that stopped the pilot'. Simple overhead map: start at bottom centre, straight path north to a horizontal river, one bridge crosses north, T-junction immediately after bridge, goal flag at west end of upper path. Clear north-up orientation and pilot exactly at the T-junction on the far/north bank, facing north. Label the bottom start point Start. Editable instructions exactly '1. Walk to the bridge.' '2. Cross the bridge.' '3. Turn.' '4. Walk to the flag.' Step 3 outlined, not corrected. Test feedback 'Stopped at step 3: which way should I turn?' Blank editor 'Rewrite step 3'. Primary 'Test again'. Small 'Then give your instructions to a partner.' Do not provide left as an answer or draw a successful route. Scene must match the ordered steps precisely. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/instruction-impossible/03-paper-pilot/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/c/screenshot.png"
+  },
+  {
+    "id": "instruction-impossible-05-A-pedagogy",
+    "app": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "direction": 5,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Instruction Impossible iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 5, variation A (Step editor). Preserve its recognisable logo/header identity and palette: Paper #EEE7D5, cobalt #3F5D86, marigold #D3AE48. Graphic obstacle workshop with grid floor and large printed step numerals. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Specify actions, direction and target so a literal reader can complete a procedure. REPLACE the old task content with this exact coherent learning state: Direction workshop. Heading 'Make every step clear'. Overhead 3 by 3 grid with columns A B C and rows 1 2 3. Robot at A1 facing east, blue block at C3 and red block at A3; all other cells empty. Label 'Start A1, facing east'. Task 'Collect the blue block at C3.' Right procedure editor with draft '1. Move.' '2. Turn.' '3. Pick it up.' Feedback 'Step 1 needs a distance.' Blank editing lines with prompt 'Use steps, turns and an exact object.' Primary 'Run my instructions'; secondary 'Explain my change'. No successful path, arrows giving solution, supplied correct procedure or unearned success. Labels must match objects and positions exactly. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/instruction-impossible/05-direction-workshop/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/05-direction-workshop/a/screenshot.png"
+  },
+  {
+    "id": "instruction-impossible-05-B-pedagogy",
+    "app": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "direction": 5,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Instruction Impossible iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 5, variation B (Workshop cards). Preserve its recognisable logo/header identity and palette: Paper #EEE7D5, cobalt #3F5D86, marigold #D3AE48. Graphic obstacle workshop with grid floor and large printed step numerals. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Specify actions, direction and target so a literal reader can complete a procedure. REPLACE the old task content with this exact coherent learning state: Direction workshop. Heading 'Make every step clear'. Overhead 3 by 3 grid with columns A B C and rows 1 2 3. Robot at A1 facing east, blue block at C3 and red block at A3; all other cells empty. Label 'Start A1, facing east'. Task 'Collect the blue block at C3.' Right procedure editor with draft '1. Move.' '2. Turn.' '3. Pick it up.' Feedback 'Step 1 needs a distance.' Blank editing lines with prompt 'Use steps, turns and an exact object.' Primary 'Run my instructions'; secondary 'Explain my change'. No successful path, arrows giving solution, supplied correct procedure or unearned success. Labels must match objects and positions exactly. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/instruction-impossible/05-direction-workshop/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/05-direction-workshop/b/screenshot.png"
+  },
+  {
+    "id": "instruction-impossible-05-C-pedagogy",
+    "app": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "direction": 5,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Instruction Impossible iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 5, variation C (Turn by turn). Preserve its recognisable logo/header identity and palette: Paper #EEE7D5, cobalt #3F5D86, marigold #D3AE48. Graphic obstacle workshop with grid floor and large printed step numerals. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Specify actions, direction and target so a literal reader can complete a procedure. REPLACE the old task content with this exact coherent learning state: Direction workshop. Heading 'Make every step clear'. Overhead 3 by 3 grid with columns A B C and rows 1 2 3. Robot at A1 facing east, blue block at C3 and red block at A3; all other cells empty. Label 'Start A1, facing east'. Task 'Collect the blue block at C3.' Right procedure editor with draft '1. Move.' '2. Turn.' '3. Pick it up.' Feedback 'Step 1 needs a distance.' Blank editing lines with prompt 'Use steps, turns and an exact object.' Primary 'Run my instructions'; secondary 'Explain my change'. No successful path, arrows giving solution, supplied correct procedure or unearned success. Labels must match objects and positions exactly. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/instruction-impossible/05-direction-workshop/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/05-direction-workshop/c/screenshot.png"
+  },
+  {
+    "id": "edit-echidna-01-A-pedagogy",
+    "app": "Edit Echidna",
+    "slug": "edit-echidna",
+    "direction": 1,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Edit Echidna iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation A (Focused edit). Preserve its recognisable logo/header identity and palette: Warm paper #F4E9D2, teal #2D5658, ochre #D1A950. Gentle echidna line mascot, spacious writing desk and friendly serif headings. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Revise event order to match the author’s intended sequence. REPLACE the old task content with this exact coherent learning state: Small steps studio. Heading 'Make the order clear'. Goal strip 'Today: sequence events'. Author’s plan in small separate strip 'Walk to park → Eat lunch → Walk home'. 'My draft' exact text 'We ate lunch. We walked to the park. We walked home.' Beside it blank editable 'My revision' with pencil and microphone support. Prompt 'Keep your planned events. Help the reader follow the order.' Blank 'What did I change, and why?' Primary 'Compare my versions'. No supplied finished revision, no auto-rewrite, spelling score or invented story events. A small echidna supports the workspace without dominating it. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/edit-echidna/01-small-steps-studio/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/01-small-steps-studio/a/screenshot.png"
+  },
+  {
+    "id": "edit-echidna-01-B-pedagogy",
+    "app": "Edit Echidna",
+    "slug": "edit-echidna",
+    "direction": 1,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Edit Echidna iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation B (Drafting desk). Preserve its recognisable logo/header identity and palette: Warm paper #F4E9D2, teal #2D5658, ochre #D1A950. Gentle echidna line mascot, spacious writing desk and friendly serif headings. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Revise event order to match the author’s intended sequence. REPLACE the old task content with this exact coherent learning state: Small steps studio. Heading 'Make the order clear'. Goal strip 'Today: sequence events'. Author’s plan in small separate strip 'Walk to park → Eat lunch → Walk home'. 'My draft' exact text 'We ate lunch. We walked to the park. We walked home.' Beside it blank editable 'My revision' with pencil and microphone support. Prompt 'Keep your planned events. Help the reader follow the order.' Blank 'What did I change, and why?' Primary 'Compare my versions'. No supplied finished revision, no auto-rewrite, spelling score or invented story events. A small echidna supports the workspace without dominating it. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/edit-echidna/01-small-steps-studio/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/01-small-steps-studio/b/screenshot.png"
+  },
+  {
+    "id": "edit-echidna-01-C-pedagogy",
+    "app": "Edit Echidna",
+    "slug": "edit-echidna",
+    "direction": 1,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Edit Echidna iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation C (One useful change). Preserve its recognisable logo/header identity and palette: Warm paper #F4E9D2, teal #2D5658, ochre #D1A950. Gentle echidna line mascot, spacious writing desk and friendly serif headings. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Revise event order to match the author’s intended sequence. REPLACE the old task content with this exact coherent learning state: Small steps studio. Heading 'Make the order clear'. Goal strip 'Today: sequence events'. Author’s plan in small separate strip 'Walk to park → Eat lunch → Walk home'. 'My draft' exact text 'We ate lunch. We walked to the park. We walked home.' Beside it blank editable 'My revision' with pencil and microphone support. Prompt 'Keep your planned events. Help the reader follow the order.' Blank 'What did I change, and why?' Primary 'Compare my versions'. No supplied finished revision, no auto-rewrite, spelling score or invented story events. A small echidna supports the workspace without dominating it. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/edit-echidna/01-small-steps-studio/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/01-small-steps-studio/c/screenshot.png"
+  },
+  {
+    "id": "edit-echidna-03-A-pedagogy",
+    "app": "Edit Echidna",
+    "slug": "edit-echidna",
+    "direction": 3,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Edit Echidna iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation A (Clear comparison). Preserve its recognisable logo/header identity and palette: Cream #F0E4CE, ink #3D4D65, coral #C87964. Editorial split-page comparison with bold typographic change markers. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Add a relevant detail and explain its effect on the reader. REPLACE the old task content with this exact coherent learning state: Before and better. Heading 'Add one detail that helps your reader'. Goal strip 'Today: supporting detail'. A small student-authored brainstorming note labelled My notes containing only the fragment 'gap in fence'. Left 'My draft' text 'The dog ran away.' Right blank editable 'My revision'. Prompt 'Use your idea. Keep the same event.' Below blank reflection 'What can the reader understand now?' Tools 'Write', 'Speak'. Primary 'Compare versions'. Small note 'One useful change is enough.' Do not draw a fence or a suggested revision scene. Do not fill in the revised sentence, add irrelevant adjectives, invent new events, award points or display an automatic quality rating. Preserve mature editorial comparison layout and restrained echidna identity. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/edit-echidna/03-before-and-better/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/03-before-and-better/a/screenshot.png"
+  },
+  {
+    "id": "edit-echidna-03-B-pedagogy",
+    "app": "Edit Echidna",
+    "slug": "edit-echidna",
+    "direction": 3,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Edit Echidna iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation B (Paper revisions). Preserve its recognisable logo/header identity and palette: Cream #F0E4CE, ink #3D4D65, coral #C87964. Editorial split-page comparison with bold typographic change markers. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Add a relevant detail and explain its effect on the reader. REPLACE the old task content with this exact coherent learning state: Before and better. Heading 'Add one detail that helps your reader'. Goal strip 'Today: supporting detail'. A small student-authored brainstorming note labelled My notes containing only the fragment 'gap in fence'. Left 'My draft' text 'The dog ran away.' Right blank editable 'My revision'. Prompt 'Use your idea. Keep the same event.' Below blank reflection 'What can the reader understand now?' Tools 'Write', 'Speak'. Primary 'Compare versions'. Small note 'One useful change is enough.' Do not draw a fence or a suggested revision scene. Do not fill in the revised sentence, add irrelevant adjectives, invent new events, award points or display an automatic quality rating. Preserve mature editorial comparison layout and restrained echidna identity. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/edit-echidna/03-before-and-better/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/03-before-and-better/b/screenshot.png"
+  },
+  {
+    "id": "edit-echidna-03-C-pedagogy",
+    "app": "Edit Echidna",
+    "slug": "edit-echidna",
+    "direction": 3,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Use case: ui-mockup edit. Revise this existing Edit Echidna iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation C (Details that matter). Preserve its recognisable logo/header identity and palette: Cream #F0E4CE, ink #3D4D65, coral #C87964. Editorial split-page comparison with bold typographic change markers. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 2–6. Outcome (design context, do not print as jargon): Add a relevant detail and explain its effect on the reader. REPLACE the old task content with this exact coherent learning state: Before and better. Heading 'Add one detail that helps your reader'. Goal strip 'Today: supporting detail'. A small student-authored brainstorming note labelled My notes containing only the fragment 'gap in fence'. Left 'My draft' text 'The dog ran away.' Right blank editable 'My revision'. Prompt 'Use your idea. Keep the same event.' Below blank reflection 'What can the reader understand now?' Tools 'Write', 'Speak'. Primary 'Compare versions'. Small note 'One useful change is enough.' Do not draw a fence or a suggested revision scene. Do not fill in the revised sentence, add irrelevant adjectives, invent new events, award points or display an automatic quality rating. Preserve mature editorial comparison layout and restrained echidna identity. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/edit-echidna/03-before-and-better/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/03-before-and-better/c/screenshot.png"
+  }
+]

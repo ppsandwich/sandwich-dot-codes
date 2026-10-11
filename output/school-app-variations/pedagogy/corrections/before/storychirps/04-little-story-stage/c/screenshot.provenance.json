@@ -1,0 +1,15 @@
+{
+  "job_id": "storychirps-04-C-pedagogy",
+  "app": "StoryChirps",
+  "direction": 4,
+  "variation": "C",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-3a8a7a22-1579-4f4e-929f-b160bd27fc1c.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/04-little-story-stage/c/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/storychirps/04-little-story-stage/c/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup edit. Revise this existing StoryChirps iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation C (On the story stage). Preserve its recognisable logo/header identity and palette: Cream #F1E3CD, aubergine #573F58, orange #C38A50. Paper theatre with restrained curtain shapes and friendly bold display lettering. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Foundation\u2013Year 3. Outcome (design context, do not print as jargon): Improve the clarity of a spoken retelling for a listener. REPLACE the old task content with this exact coherent learning state: Little story stage. Heading 'Help your listener follow the story'. Three numbered illustrations: 1 child wearing red hat in park, 2 wind lifts hat, 3 child retrieves hat from low branch. Same child and hat throughout. Goal strip 'Tell who, where and what happened.' Recording panel 'My first telling' with playback control and short waveform; below 'Listen back: What needs to be clearer?' with blank voice-note field. Large primary 'Record a clearer telling'. Small 'Tell it your way' and 'Private classroom collection'. No printed finished story, correctness score, automatic language judgement or public share button. Keep expressive stage identity while picture sequence and listening controls dominate. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+  "revision": "pedagogical alignment"
+}

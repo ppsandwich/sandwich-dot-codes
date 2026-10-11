@@ -1,0 +1,15 @@
+{
+  "job_id": "clue-canopy-04-A-pedagogy",
+  "app": "Clue Canopy",
+  "direction": 4,
+  "variation": "A",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-6e337cc2-ab1a-4368-bfbd-c2802aa87536.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/clue-canopy/04-margin-detective/a/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/clue-canopy/04-margin-detective/a/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup edit. Revise this existing Clue Canopy iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation A (Reading margin). Preserve its recognisable logo/header identity and palette: Warm white #F4EDE1, petrol #275760, muted orange #CB8B58. Beautiful annotated reading page, underlines and spacious margin reasoning cards. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 2\u20136. Outcome (design context, do not print as jargon): Distinguish what a text states from a reasonable inference. REPLACE the old task content with this exact coherent learning state: Margin detective reading page. Heading 'What can you infer?' Exact short passage: 'At lunchtime, Ava placed her umbrella beside the door. After school, the umbrella was gone. A trail of small wet patches led towards the gate.' No highlighted phrases initially. Margin tools 'Select words', 'Add a note'. Large blank response panel 'The text says\u2026' then 'This makes me think\u2026' then 'What else could explain it?' Primary 'Save my inference'; microphone alternative. Neutral umbrella silhouette in margin only, no scene showing what happened. Do not supply missing character, answer, automatic tick or finished sentence. Mature readable cream-and-ink page with generous annotation room. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+  "revision": "pedagogical alignment"
+}

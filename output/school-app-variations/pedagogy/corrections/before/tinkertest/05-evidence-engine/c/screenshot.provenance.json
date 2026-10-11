@@ -1,0 +1,15 @@
+{
+  "job_id": "tinkertest-05-C-pedagogy",
+  "app": "TinkerTest",
+  "direction": 5,
+  "variation": "C",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-da2eb795-1dd9-486c-9fec-a06cc3332f0f.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/05-evidence-engine/c/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/tinkertest/05-evidence-engine/c/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup edit. Revise this existing TinkerTest iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 5, variation C (Predict, test, explain). Preserve its recognisable logo/header identity and palette: Paper #F0E8D5, ink #263F54, rust #B65738. Bold three-stage horizontal workflow with graph-paper plotting area and humanist sans. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 5\u20139. Outcome (design context, do not print as jargon): Use a controlled simulation to test a prediction about pendulum length. REPLACE the old task content with this exact coherent learning state: Evidence-engine lab. Heading 'Does length change the swing time?' Step strip 'Predict \u2192 Test \u2192 Explain'; active Explain. Small saved student prediction 'I think a longer pendulum takes longer.' Label this explicitly 'My saved prediction'. Controls 'Mass 100 g \u2022 Release angle 10\u00b0 \u2022 Gravity unchanged'. Results table 'Length (m) | One full swing (s)' rows '0.25 | 1.00', '0.50 | 1.42', '1.00 | 2.01'. Note 'Idealised simulation; one swing returns to the starting side.' Blank large response 'Do the results support my prediction? Use two results.' Primary 'Save conclusion'; secondary 'Run another length'. Small scientifically coherent pendulum illustration. No auto-completed conclusion or claim that virtual results prove every real case. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+  "revision": "pedagogical alignment"
+}

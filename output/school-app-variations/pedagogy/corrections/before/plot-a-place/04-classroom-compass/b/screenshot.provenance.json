@@ -1,0 +1,15 @@
+{
+  "job_id": "plot-a-place-04-B-pedagogy",
+  "app": "Plot a Place",
+  "direction": 4,
+  "variation": "B",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-642d862c-5ea4-4593-b3f2-7571de1cbc7b.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/04-classroom-compass/b/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/plot-a-place/04-classroom-compass/b/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup edit. Revise this existing Plot a Place iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation B (Paper classroom). Preserve its recognisable logo/header identity and palette: Chalk #F3EEDC, deep green #315747, terracotta #B77550. Overhead classroom floor-plan with tactile furniture symbols and large friendly labels. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 1\u20136. Outcome (design context, do not print as jargon): Write and test a route using a consistent classroom map. REPLACE the old task content with this exact coherent learning state: Classroom compass. Heading 'Can a partner follow your route?' Accurate simple 4 by 4 square grid, columns A B C D left to right, rows 1 2 3 4 top to bottom. North arrow points up. Door symbol at A4, book symbol 'Reading corner' at D1, one desk symbol at B2. Compact key 'Door', 'Reading corner', 'Desk'; icons match map. No physical metre scale. Task 'Start at the door. Reach the reading corner.' Right blank numbered route editor 1, 2, 3. Tools 'Draw route', 'Record directions'. Primary 'Send to partner'; small next step 'Test the route, then revise'. No pre-drawn route or supplied directions. Crisp overhead map with readable coordinates. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+  "revision": "pedagogical alignment"
+}

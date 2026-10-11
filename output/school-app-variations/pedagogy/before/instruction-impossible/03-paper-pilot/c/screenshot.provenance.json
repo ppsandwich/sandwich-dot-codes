@@ -1,0 +1,15 @@
+{
+  "job_id": "instruction-impossible-03-C-screenshot-map-fix",
+  "app": "Instruction Impossible",
+  "direction": 3,
+  "variation": "C",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-d2f67675-be84-4f01-86cd-108c3e1598b6.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/c/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/c/screenshot.png"
+  ],
+  "prompt": "Edit this exact screenshot minimally. In the right-hand scene ONLY remove both dashed green route arrows on the far bank (upper right), and remove the small map-symbol sign next to the tree on that far bank. Replace removed elements with matching path/landscape. Keep the tree as scenery, bridge, river, foreground path and character in the flowerbed. The character is in a flowerbed on the near bank BEFORE crossing the bridge. Preserve all typography, instructions, buttons, logo and colours. No route arrows or start markers on the far bank. 4:3 landscape.",
+  "edit_target_snapshot": "generation/revisions/instruction-03-c-before.png"
+}

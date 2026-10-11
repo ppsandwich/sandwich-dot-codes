@@ -1,0 +1,15 @@
+{
+  "job_id": "instruction-impossible-03-C-pedagogy",
+  "app": "Instruction Impossible",
+  "direction": 3,
+  "variation": "C",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-e9cec4ad-ff3d-4e11-af86-3fbf961cb272.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/c/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/instruction-impossible/03-paper-pilot/c/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup edit. Revise this existing Instruction Impossible iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation C (Paper route). Preserve its recognisable logo/header identity and palette: Sky #DDE9ED, olive #5A653E, terracotta #BB7353. Folded-paper world, numbered flight-path cards and editorial serif headers. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Years 2\u20136. Outcome (design context, do not print as jargon): Find and revise an ambiguous navigation step. REPLACE the old task content with this exact coherent learning state: Paper pilot. Heading 'Fix the step that stopped the pilot'. Simple overhead map: start at bottom centre, straight path north to a horizontal river, one bridge crosses north, T-junction immediately after bridge, goal flag at west end of upper path. Clear north-up orientation and pilot at far side of bridge facing north. Editable instructions exactly '1. Walk to the bridge.' '2. Cross the bridge.' '3. Turn.' '4. Walk to the flag.' Step 3 outlined, not corrected. Test feedback 'Stopped at step 3: which way should I turn?' Blank editor 'Rewrite step 3'. Primary 'Test again'. Small 'Then give your instructions to a partner.' Do not provide left as an answer or draw a successful route. Scene must match the ordered steps precisely. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+  "revision": "pedagogical alignment"
+}

@@ -1,0 +1,15 @@
+{
+  "job_id": "storychirps-02-C-pedagogy",
+  "app": "StoryChirps",
+  "direction": 2,
+  "variation": "C",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-2456cd89-d3d2-4eaf-819f-7a74142b71ee.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/02-story-nest/c/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/storychirps/02-story-nest/c/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup edit. Revise this existing StoryChirps iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 2, variation C (Your voice, your order). Preserve its recognisable logo/header identity and palette: Pale sage #E0E8D0, dark green #3E573E, ochre #CCAA51. Soft illustrated nest metaphor, linen story stage and warm serif headings. Preserve its Graphic play treatment and distinctive composition where compatible with learning. Audience Foundation\u2013Year 3. Outcome (design context, do not print as jargon): Use sequence language and revise an unclear connection in an oral story. REPLACE the old task content with this exact coherent learning state: Story nest paper picture cards. Heading 'Make the story easy to follow'. Three reorderable numbered cards: child opens umbrella in rain; same child and umbrella beside a puddle; same child closes umbrella as sun comes out. Small optional prompt chips 'First', 'Then', 'Finally'. 'My first telling' playback and waveform. Blank reflection field 'Did I explain how the events connect?' Large 'Record my next telling'. Helper 'Listen with a partner. Choose one part to improve.' Small privacy badge 'Classroom only'. No transcribed model story or single correct plot. Keep cards large and provide voice-supported controls for early readers. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+  "revision": "pedagogical alignment"
+}

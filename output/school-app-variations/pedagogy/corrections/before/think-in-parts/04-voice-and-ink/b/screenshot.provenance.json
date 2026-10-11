@@ -1,0 +1,15 @@
+{
+  "job_id": "think-in-parts-04-B-pedagogy",
+  "app": "Think in Parts",
+  "direction": 4,
+  "variation": "B",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-ecc7e4e1-ce72-4558-841f-9dec7d2b09aa.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/04-voice-and-ink/b/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/think-in-parts/04-voice-and-ink/b/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup edit. Revise this existing Think in Parts iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation B (Voice journal). Preserve its recognisable logo/header identity and palette: Soft white #F6F3EB, bottle green #25574C, salmon #D88D73. Minimal sketchbook studio, inky drawn annotations, asymmetric margin notes. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 5\u20139. Outcome (design context, do not print as jargon): Explain a circuit relationship and predict the effect of a change. REPLACE the old task content with this exact coherent learning state: Heading 'Why does the lamp light?' Keep ink-and-voice studio. Left: clean closed series circuit with one cell, one lamp and one CLOSED switch, continuous wire joins both terminals of each component. Labels 'Cell', 'Lamp', 'Closed switch'. Right: large blank 'My explanation' workspace with 'Draw links' and 'Record explanation'. Prompt 'Explain how the parts work together.' Below a separate blank prediction box 'What if the switch opens? Why?' Footer primary 'Save for feedback'. No provided causal paragraph, no completed narration, no electrical current arrows or extra branches. Lamp may glow gently only with visibly closed switch. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+  "revision": "pedagogical alignment"
+}

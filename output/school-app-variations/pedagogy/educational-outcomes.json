@@ -1,0 +1,230 @@
+[
+  {
+    "name": "Classroom Words",
+    "slug": "classroom-words",
+    "area": "Literacy",
+    "years": "Foundation–Year 2",
+    "description": "Teachers select the sound–letter relationships already taught. Students blend and segment words, then read controlled decodable text using that sequence. Teachers listen to independent attempts, note the support needed and check transfer to unfamiliar words.",
+    "summary": "Decode new words using taught sounds",
+    "outcome": "Read an unfamiliar word made from taught sound–letter relationships, blending independently before using audio support.",
+    "outcomes": [
+      "Recognise taught sound–letter relationships: connect a written letter or letter group with its corresponding sound.",
+      "Blend sounds to read words: move from identifying individual sounds to combining them into a spoken word.",
+      "Segment words for spelling: identify the sounds in a spoken word and select the corresponding taught letters.",
+      "Read connected text: apply decoding to short sentences, then reread with increasing accuracy and appropriate phrasing.",
+      "Monitor meaning: notice when a decoded word does not make sense, revisit it and explain the meaning of a short passage."
+    ],
+    "lesson": "guided practice immediately after explicit phonics teaching, a short literacy rotation or targeted consolidation with a teacher.",
+    "evidence": "accurate reading of new words, fewer prompts, successful blending and a brief explanation of the passage’s meaning. Game completion alone provides limited evidence.",
+    "transfer": "Read different words on paper and spell a dictated word using the same correspondences."
+  },
+  {
+    "name": "Think in Parts",
+    "slug": "think-in-parts",
+    "area": "Cross-curricular explanation",
+    "years": "Years 5–9",
+    "description": "Students construct an explanation using drawing, voice, animation and interactive diagrams. Structured challenges require them to show a relationship, predict what happens when one part changes and revise after feedback. Teachers assess the accuracy and reasoning in the explanation.",
+    "summary": "Explain how parts affect a whole",
+    "outcome": "Explain a causal relationship with a consistent diagram and narration, then justify a prediction when one component changes.",
+    "outcomes": [
+      "Break a concept into meaningful components: identify the parts, stages or factors that matter.",
+      "Explain relationships: show how one part affects another, distinguishing a description from a causal explanation.",
+      "Choose an appropriate representation: use an arrow for movement, a sequence for change over time or a diagram for structure.",
+      "Coordinate representations: ensure narration, labels and animation communicate a consistent explanation.",
+      "Revise understanding: identify a missing link or contradiction and improve the explanation after feedback."
+    ],
+    "lesson": "an initial diagnostic task, consolidation after an investigation or an assessed explanation near the end of a unit.",
+    "evidence": "conceptual accuracy, connected reasoning and the ability to answer a follow-up question. Assess visual polish separately so sophisticated animation does not obscure weak understanding.",
+    "transfer": "Explain a related example without replaying the finished presentation."
+  },
+  {
+    "name": "Town Together",
+    "slug": "town-together",
+    "area": "Humanities",
+    "years": "Years 5–9",
+    "description": "Students investigate a public issue, compare proposals and stakeholder evidence, and calculate costs within a defined budget. In a simulated council or parliamentary process, they justify a recommendation, acknowledge a trade-off and respond to an objection. Each scenario identifies the decision-making body and its responsibilities.",
+    "summary": "Make and defend an informed civic decision",
+    "outcome": "Recommend a feasible proposal using evidence from competing perspectives, accurate budget reasoning and an explicit trade-off.",
+    "outcomes": [
+      "Identify the public issue: explain what needs deciding and which institution has responsibility.",
+      "Interpret stakeholder perspectives: distinguish a preference from the interests or circumstances behind it.",
+      "Evaluate proposals against criteria: consider cost, access, likely benefit, environmental effects and fairness.",
+      "Explain trade-offs: identify what becomes possible, what is forgone and who may be disadvantaged.",
+      "Participate in deliberation: question proposals, respond to objections and revise a position when evidence warrants it."
+    ],
+    "lesson": "the application stage of a civics unit, after teaching the relevant decision-making body.",
+    "evidence": "a recommendation supported by evidence, accurate budget reasoning and an individual explanation of the trade-off. Winning the vote is not evidence of stronger reasoning.",
+    "transfer": "Write an individual recommendation for a different community issue and identify the responsible institution."
+  },
+  {
+    "name": "Wild Notebook",
+    "slug": "wild-notebook",
+    "area": "Science",
+    "years": "Years 5–9",
+    "description": "Students investigate biodiversity, weather, water and habitats through school-ground fieldwork. They record observations using agreed methods, compare data and distinguish what they observed from what they infer. Classroom discussion tests explanations against the evidence and identifies uncertainty or further observations needed.",
+    "summary": "Build explanations from field evidence",
+    "outcome": "Make a comparison supported by systematically collected observations and state a limitation of the evidence.",
+    "outcomes": [
+      "Ask an investigable question: turn broad curiosity into something observable or measurable.",
+      "Record consistently: use agreed categories, units, locations and sampling procedures.",
+      "Separate observation from inference: distinguish a count from an explanation for it.",
+      "Compare data: identify patterns between locations or across time.",
+      "Evaluate uncertainty: recognise incomplete identification, uneven sampling and the limits of a small dataset."
+    ],
+    "lesson": "fieldwork preparation, outdoor data collection and subsequent discussion, or a repeated investigation across a term.",
+    "evidence": "records another group can interpret, comparisons using actual data and conclusions limited to those observations. “We found more organisms in these garden samples” is more defensible than “Gardens always have more biodiversity.”",
+    "transfer": "Repeat sampling at another location or time using the same method and reconsider the explanation."
+  },
+  {
+    "name": "TinkerTest",
+    "slug": "tinkertest",
+    "area": "Science",
+    "years": "Years 5–9",
+    "description": "Students identify a testable question, choose an independent variable, hold relevant conditions constant and make a prediction. They run a virtual investigation, interpret results and revise a conclusion using numerical evidence. Teachers help students distinguish simulation results from claims requiring physical investigation.",
+    "summary": "Design a test and reason from its results",
+    "outcome": "Identify what changes, what is measured and what stays constant; use results to support or revise a prediction.",
+    "outcomes": [
+      "Make a reasoned prediction: state an expected relationship and explain the reasoning.",
+      "Identify variables: specify what changes, what is measured and what is held constant.",
+      "Plan an informative test: choose useful values and a procedure addressing the question.",
+      "Interpret results: connect tables or graphs to the original prediction.",
+      "Evaluate the model: distinguish simulated results from physical measurements and identify assumptions."
+    ],
+    "lesson": "investigation rehearsal before practical work, exploration when equipment is unavailable or extension after practical work.",
+    "evidence": "an appropriate plan, correctly interpreted results and an evidence-based conclusion. A prediction that turns out to be wrong can still demonstrate productive reasoning.",
+    "transfer": "Design a physical investigation of a related question and identify limitations of the virtual model."
+  },
+  {
+    "name": "Number Kitchen",
+    "slug": "number-kitchen",
+    "area": "Mathematics",
+    "years": "Years 1–4",
+    "description": "Students solve cooking challenges involving quantities, equal sharing, fractions, measurement and money. Teachers choose one mathematical focus and level of difficulty. Students predict an amount, represent their strategy and check the result, with optional hands-on measuring and sharing to test transfer.",
+    "summary": "Explain and check everyday mathematics",
+    "outcome": "Find an unknown quantity in a recipe or measuring task, represent a valid strategy and check that the result meets the target.",
+    "outcomes": [
+      "Connect quantities and representations: relate objects, pictures, spoken number language and calculations.",
+      "Use grouping and sharing: form equal groups, distribute fairly and explain remainders where appropriate.",
+      "Understand fractions: identify the whole and explain why parts must be equal.",
+      "Measure purposefully: select units, read scales and compare estimated and measured quantities.",
+      "Check reasonableness: decide whether a quantity, cost or answer makes sense in context."
+    ],
+    "lesson": "guided application after explicit teaching, a mathematics rotation or a bridge between physical materials and symbolic work.",
+    "evidence": "correct quantities across all ingredients and an explanation of the relationship. Correct answers reached by repeated guessing need a follow-up check.",
+    "transfer": "Solve a similar problem with real measuring equipment or counters, without the app scaffold."
+  },
+  {
+    "name": "StoryChirps",
+    "slug": "storychirps",
+    "area": "English and EAL/D",
+    "years": "Foundation–Year 3",
+    "description": "Students arrange picture sequences and record a story for a listener. Teacher prompts focus on sequencing, description or audience clarity. Students listen back, identify one point to improve and record a revised retelling. Different interpretations are welcome, with recordings retained in a private classroom collection.",
+    "summary": "Tell, listen and improve a clear story",
+    "outcome": "Tell a connected oral story, identify a point a listener may not understand and improve that point in a second recording.",
+    "outcomes": [
+      "Sequence events: establish a meaningful order and communicate it through language.",
+      "Connect ideas: use words such as “first”, “after”, “because” and “finally” appropriately.",
+      "Add useful detail: identify characters, settings and actions without relying on the listener seeing the pictures.",
+      "Adapt to an audience: include needed information and make references clear.",
+      "Listen and revise: identify confusion or missing information in a recording and improve it."
+    ],
+    "lesson": "oral-language groups, preparation for writing, responses to shared texts or short formative assessments.",
+    "evidence": "clearer order, precise references and a revision that helps the listener understand. Preserve early and later recordings for comparison against an explicit language focus.",
+    "transfer": "Retell a new picture sequence to a partner and check what the listener understood."
+  },
+  {
+    "name": "Plot a Place",
+    "slug": "plot-a-place",
+    "area": "Geography",
+    "years": "Years 1–6",
+    "description": "Students make maps of familiar and imaginary places using symbols, a key, directions and age-appropriate scale. They write navigation challenges, test a partner’s route and revise unclear instructions or map features. They also explain how the location of a feature serves a particular need.",
+    "summary": "Make maps others can use",
+    "outcome": "Create or interpret a consistent map, give a route another person can follow and justify one placement decision.",
+    "outcomes": [
+      "Represent a place from above: translate lived experience into a plan or map.",
+      "Use symbols consistently: create and interpret a key.",
+      "Communicate location and direction: describe routes with increasingly precise spatial language.",
+      "Apply scale appropriately: connect map distances and real distances when ready.",
+      "Reason about place: explain how paths, facilities and landmarks affect different users."
+    ],
+    "lesson": "after a local walk, within a mapping sequence or as a design-and-justify task.",
+    "evidence": "another student can interpret the map and reach the destination. The mapmaker can explain why a feature belongs in its location.",
+    "transfer": "Use a paper map during a school walk, then revise it after testing the route."
+  },
+  {
+    "name": "Clue Canopy",
+    "slug": "clue-canopy",
+    "area": "English and EAL/D",
+    "years": "Years 2–6",
+    "description": "Students investigate illustrated stories by selecting relevant textual clues and explaining what those clues suggest. They distinguish observation from inference, consider another plausible explanation and revise a prediction when new evidence appears. Speech, drawing and writing reveal reasoning without requiring a single predetermined interpretation.",
+    "summary": "Support reading inferences with evidence",
+    "outcome": "State a plausible inference, select a relevant text detail and explain the connection while acknowledging uncertainty.",
+    "outcomes": [
+      "Distinguish explicit information from inference: identify what is stated and what they are working out.",
+      "Select relevant evidence: choose a detail that supports the particular claim.",
+      "Explain the connection: articulate how the clue leads to the interpretation.",
+      "Consider alternatives: recognise when more than one explanation remains plausible.",
+      "Update an interpretation: change a prediction or inference when new evidence appears."
+    ],
+    "lesson": "guided reading, comprehension mini-lessons, paired discussion or diagnostic reasoning checks.",
+    "evidence": "a plausible claim, relevant evidence and an explicit connection. Guessing the ending is less informative than explaining the reasoning.",
+    "transfer": "Make and defend an inference from a fresh short passage without suggested answers."
+  },
+  {
+    "name": "SwitchSide Stories",
+    "slug": "switchside-stories",
+    "area": "Personal and social capability; HASS",
+    "years": "Foundation–Year 4",
+    "description": "Through teacher-guided illustrated scenarios, students explore disagreements, joining games and working together. They identify different needs, consider possible perspectives and compare likely consequences of more than one response. Students rehearse a constructive response and reflect, with room for several reasonable answers and adult support.",
+    "summary": "Consider perspectives and practise responses",
+    "outcome": "Identify two possible perspectives, compare the likely effects of two responses and explain a constructive choice.",
+    "outcomes": [
+      "Describe possible feelings and needs: use tentative language when interpreting another person.",
+      "Recognise different perspectives: explain how the same event can be experienced differently.",
+      "Generate responses: suggest more than one constructive action.",
+      "Anticipate consequences: consider how a response affects each person.",
+      "Practise communication and help-seeking: ask, clarify, negotiate or seek adult support when needed."
+    ],
+    "lesson": "teacher-led discussion, a planned relationships lesson or preparation for cooperative work.",
+    "evidence": "acknowledging multiple perspectives, suggesting a workable response and explaining its likely effect. Do not score personality, empathy or a preferred communication style.",
+    "transfer": "Rehearse a similar situation in a supported role-play and discuss how the response affected each person."
+  },
+  {
+    "name": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "area": "English and procedural reasoning",
+    "years": "Years 2–6",
+    "description": "Students write directions for a character that follows explicit steps. A test reveals missing information, ambiguous language or an incorrect sequence. Students use the visible result to revise their instructions, retest them and exchange challenges so a classmate can follow the final version.",
+    "summary": "Write precise instructions and test them",
+    "outcome": "Write an ordered procedure with clear actions and reference points; use a failed test to revise it so another reader can complete the task.",
+    "outcomes": [
+      "Sequence necessary actions: include steps in an order that makes the task possible.",
+      "Use precise language: specify action, object, direction, quantity or stopping point.",
+      "Anticipate reader knowledge: identify information the writer has assumed.",
+      "Diagnose ambiguity: connect an unexpected result to a missing or unclear instruction.",
+      "Revise and retest: make a purposeful change and check whether it resolves the problem."
+    ],
+    "lesson": "procedural writing, preparation for a science method or a connection between English and algorithmic thinking.",
+    "evidence": "successful execution by a new reader, fewer missing steps and an explanation of why a revision helped. The wording matters as much as reaching the destination.",
+    "transfer": "Give a partner a new physical or paper-based task using only written instructions, then revise from their feedback."
+  },
+  {
+    "name": "Edit Echidna",
+    "slug": "edit-echidna",
+    "area": "English and EAL/D",
+    "years": "Years 2–6",
+    "description": "Teachers assign one revision goal, such as clearer sequencing or stronger supporting detail. Students revise a short passage from their own writing, compare the versions and explain how a specific change helps the reader. The original meaning and the student’s authorship remain central.",
+    "summary": "Revise writing with a clear purpose",
+    "outcome": "Make a focused change that meets a stated writing goal, preserves intended meaning and can be explained in terms of its effect on the reader.",
+    "outcomes": [
+      "Understand a revision goal: recognise clearer sequencing, stronger detail or better support.",
+      "Locate a weakness: identify a part of their own writing needing attention.",
+      "Choose an effective change: add, remove, reorder or replace material for a reason.",
+      "Compare versions: explain how the revision changes the reader’s understanding.",
+      "Transfer the strategy: apply it to another piece with less prompting."
+    ],
+    "lesson": "the revision stage of a writing workshop, immediately after feedback or in a short teacher conference.",
+    "evidence": "an improvement tied to the goal and a credible explanation of its effect. More words, longer sentences or more adjectives do not automatically indicate better writing.",
+    "transfer": "Apply the same revision goal to a new piece of the student’s writing without sentence-level suggestions."
+  }
+]

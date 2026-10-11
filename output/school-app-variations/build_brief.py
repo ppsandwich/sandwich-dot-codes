@@ -154,3 +154,6 @@ with (ROOT/'variations.csv').open('w',newline='') as f:
             for v in d['variants']:
                 w.writerow([a['name'],d['number'],d['title'],v['id'],v['title'],v['treatment'],v['folder']+'/screenshot.png',v['folder']+'/logo.png',d['tagline']])
 print(f'{len(apps)} apps, 24 selected directions, 72 variations, {len(jobs)} generation jobs')
+if (ROOT / 'pedagogical-outcomes.md').exists():
+    import runpy
+    runpy.run_path(str(ROOT / 'build_pedagogy.py'), run_name='__main__')

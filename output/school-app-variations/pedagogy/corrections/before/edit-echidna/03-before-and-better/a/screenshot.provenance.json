@@ -1,0 +1,15 @@
+{
+  "job_id": "edit-echidna-03-A-pedagogy",
+  "app": "Edit Echidna",
+  "direction": 3,
+  "variation": "A",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-c054d409-49c3-4b3b-a020-bcc61b84d17e.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/03-before-and-better/a/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/edit-echidna/03-before-and-better/a/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup edit. Revise this existing Edit Echidna iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 3, variation A (Clear comparison). Preserve its recognisable logo/header identity and palette: Cream #F0E4CE, ink #3D4D65, coral #C87964. Editorial split-page comparison with bold typographic change markers. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 2\u20136. Outcome (design context, do not print as jargon): Add a relevant detail and explain its effect on the reader. REPLACE the old task content with this exact coherent learning state: Before and better. Heading 'Add one detail that helps your reader'. Goal strip 'Today: supporting detail'. Author note 'The dog ran away through a gap in the fence.' Left 'My draft' text 'The dog ran away.' Right blank editable 'My revision'. Prompt 'Use your idea. Keep the same event.' Below blank reflection 'What can the reader understand now?' Tools 'Write', 'Speak'. Primary 'Compare versions'. Small note 'One useful change is enough.' Do not fill in the revised sentence, add irrelevant adjectives, invent new events, award points or display an automatic quality rating. Preserve mature editorial comparison layout and restrained echidna identity. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+  "revision": "pedagogical alignment"
+}

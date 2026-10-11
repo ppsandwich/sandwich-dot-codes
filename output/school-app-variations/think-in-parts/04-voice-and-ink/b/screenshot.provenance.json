@@ -1,15 +1,15 @@
 {
-  "job_id": "think-in-parts-04-B-screenshot-circuit-fix",
+  "job_id": "think-in-parts-04-B-pedagogy-fix1",
   "app": "Think in Parts",
   "direction": 4,
   "variation": "B",
   "type": "screenshot",
   "generator": "built-in image_gen",
-  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-ad789de5-ec8b-4a21-833b-ca9c7ac66044.png",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-58fe2857-a7ea-4261-b8ab-fad5907c299d.png",
   "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/04-voice-and-ink/b/screenshot.png",
   "references": [
-    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/04-voice-and-ink/b/screenshot.png"
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/think-in-parts/04-voice-and-ink/b/screenshot.png"
   ],
-  "prompt": "Edit this exact screenshot with minimal changes. Correct the scientific diagram: the switch labelled 'switch (closed)' is currently drawn with a raised diagonal blade. REMOVE that raised diagonal blade entirely. Draw the switch blade as one HORIZONTAL dark bar physically joining the two circular switch contacts, touching both contacts, so it is unmistakably CLOSED. Keep the lit bulb and complete wire loop. All coral direction arrows must follow clockwise conventional current: right across top, down right, left across bottom, up left toward battery. Correct any bottom-left arrow pointing right so it points upward toward battery. Preserve every other UI element, typography, colours, exact text and layout. Landscape 4:3, same size. Do not introduce any raised switch lever.",
-  "edit_target_snapshot": "generation/revisions/think-04-b-before.png"
+  "prompt": "Edit this screenshot narrowly to correct the electrical diagram. Preserve all UI, typography, colours, empty response fields, logo and 4:3 landscape size. REPLACE the entire circuit drawing with a clean standard schematic: rectangular series loop. On LEFT vertical side one cell symbol consisting of two unequal parallel horizontal bars, with wire connected to each bar externally. On TOP side a CLOSED switch drawn as two small contact circles joined by ONE STRAIGHT HORIZONTAL conductor touching both circles. Absolutely no angled lever, raised blade, wedge or open gap. On RIGHT vertical side a lamp symbol, a circle containing X, wire meets circle at top and bottom. Bottom side plain continuous wire. Keep labels Cell, Closed switch, Lamp. A subtle yellow halo may surround lamp symbol. No battery or glass lightbulb illustrations, because their previous wire connections were misleading. No extra branch or bypass. Remove any existing recording waveforms and replace with a plain empty dotted recording line; preserve Record explanation and the blank My explanation and prediction fields. Return the finished screenshot, no annotation outside UI.",
+  "revision": "pedagogical alignment"
 }

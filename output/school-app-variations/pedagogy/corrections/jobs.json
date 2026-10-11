@@ -1,0 +1,431 @@
+[
+  {
+    "id": "think-in-parts-04-A-pedagogy-fix1",
+    "app": "Think in Parts",
+    "slug": "think-in-parts",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly to correct the electrical diagram. Preserve all UI, typography, colours, empty response fields, logo and 4:3 landscape size. REPLACE the entire circuit drawing with a clean standard schematic: rectangular series loop. On LEFT vertical side one cell symbol consisting of two unequal parallel horizontal bars, with wire connected to each bar externally. On TOP side a CLOSED switch drawn as two small contact circles joined by ONE STRAIGHT HORIZONTAL conductor touching both circles. Absolutely no angled lever, raised blade, wedge or open gap. On RIGHT vertical side a lamp symbol, a circle containing X, wire meets circle at top and bottom. Bottom side plain continuous wire. Keep labels Cell, Closed switch, Lamp. A subtle yellow halo may surround lamp symbol. No battery or glass lightbulb illustrations, because their previous wire connections were misleading. No extra branch or bypass. Remove any existing recording waveforms and replace with a plain empty dotted recording line; preserve Record explanation and the blank My explanation and prediction fields. Return the finished screenshot, no annotation outside UI.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/think-in-parts/04-voice-and-ink/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/04-voice-and-ink/a/screenshot.png"
+  },
+  {
+    "id": "think-in-parts-04-B-pedagogy-fix1",
+    "app": "Think in Parts",
+    "slug": "think-in-parts",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly to correct the electrical diagram. Preserve all UI, typography, colours, empty response fields, logo and 4:3 landscape size. REPLACE the entire circuit drawing with a clean standard schematic: rectangular series loop. On LEFT vertical side one cell symbol consisting of two unequal parallel horizontal bars, with wire connected to each bar externally. On TOP side a CLOSED switch drawn as two small contact circles joined by ONE STRAIGHT HORIZONTAL conductor touching both circles. Absolutely no angled lever, raised blade, wedge or open gap. On RIGHT vertical side a lamp symbol, a circle containing X, wire meets circle at top and bottom. Bottom side plain continuous wire. Keep labels Cell, Closed switch, Lamp. A subtle yellow halo may surround lamp symbol. No battery or glass lightbulb illustrations, because their previous wire connections were misleading. No extra branch or bypass. Remove any existing recording waveforms and replace with a plain empty dotted recording line; preserve Record explanation and the blank My explanation and prediction fields. Return the finished screenshot, no annotation outside UI.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/think-in-parts/04-voice-and-ink/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/04-voice-and-ink/b/screenshot.png"
+  },
+  {
+    "id": "think-in-parts-04-C-pedagogy-fix1",
+    "app": "Think in Parts",
+    "slug": "think-in-parts",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly to correct the electrical diagram. Preserve all UI, typography, colours, empty response fields, logo and 4:3 landscape size. REPLACE the entire circuit drawing with a clean standard schematic: rectangular series loop. On LEFT vertical side one cell symbol consisting of two unequal parallel horizontal bars, with wire connected to each bar externally. On TOP side a CLOSED switch drawn as two small contact circles joined by ONE STRAIGHT HORIZONTAL conductor touching both circles. Absolutely no angled lever, raised blade, wedge or open gap. On RIGHT vertical side a lamp symbol, a circle containing X, wire meets circle at top and bottom. Bottom side plain continuous wire. Keep labels Cell, Closed switch, Lamp. A subtle yellow halo may surround lamp symbol. No battery or glass lightbulb illustrations, because their previous wire connections were misleading. No extra branch or bypass. Remove any existing recording waveforms and replace with a plain empty dotted recording line; preserve Record explanation and the blank My explanation and prediction fields. Return the finished screenshot, no annotation outside UI.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/think-in-parts/04-voice-and-ink/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/04-voice-and-ink/c/screenshot.png"
+  },
+  {
+    "id": "town-together-01-B-pedagogy-fix1",
+    "app": "Town Together",
+    "slug": "town-together",
+    "direction": 1,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. Preserve 4:3, logo, palette, two proposal cards and blank student fields. Add a highly legible budget strip immediately below the main question: 'Budget: $30,000 • one-off project funds'. This crucial budget is currently missing. Make room by reducing decorative centre scenery if needed. Keep proposal prices $20,000 community garden and $30,000 sports court. Do not fill in remaining funds or any student answer. Everything else should remain recognisable.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/town-together/01-council-table/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/01-council-table/b/screenshot.png"
+  },
+  {
+    "id": "town-together-04-A-pedagogy-fix1",
+    "app": "Town Together",
+    "slug": "town-together",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. Preserve all learning fields, costs, characters, colours, logo and 4:3 landscape. Replace the subtitle 'People’s assembly identity. Weigh access against service costs.' with exactly 'Consider access, costs and different needs.' The word identity is a leaked design instruction and must not appear. Keep 'Simulated local council', both contrasting quotes, $25,000 one-year trial, correct cost table, empty recommendation and concern fields. No new content.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/town-together/04-people-s-assembly/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/04-people-s-assembly/a/screenshot.png"
+  },
+  {
+    "id": "wild-notebook-04-A-pedagogy-fix1",
+    "app": "Wild Notebook",
+    "slug": "wild-notebook",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. Preserve 4:3, logo, all table values and blank My comparison / One limit of our evidence fields. Replace the lower-right empty input box labelled Discuss our findings with a large clear solid green BUTTON 'Discuss our findings'. Remove Leaf litter, Topsoil, Roots and Subsoil callout labels from both habitat illustrations; keep the habitat headings Garden and Paved edge. Add a small caption below the pair or above table 'Illustrations show habitat types; use the recorded counts.' Do not alter counts, sample method or student response fields.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/wild-notebook/04-habitat-layers/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/04-habitat-layers/a/screenshot.png"
+  },
+  {
+    "id": "tinkertest-05-A-pedagogy-fix1",
+    "app": "TinkerTest",
+    "slug": "tinkertest",
+    "direction": 5,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. Preserve the table (0.25 m→1.00 s, 0.50 m→1.42 s, 1.00 m→2.01 s), saved prediction, blank reasoning field, colours, logo, controls and 4:3 format. Remove BOTH ghost pendulum positions, all dashed swing arcs and all angled strings. Show only ONE bob hanging vertically at rest from its pivot. Add small caption 'Diagram at rest'. The release-angle setting remains 10° but no drawn angle or motion arc is shown. Replace the misleading nonuniform slider with three equal-size selectable chips '0.25 m', '0.50 m', '1.00 m', with 0.50 m selected. Label chips 'Pendulum length'. Keep controls Mass 100 g, Release angle 10°, Gravity unchanged. If the current step strip highlights Test, make Explain the only highlighted step. Do not add a completed explanation or imply results prove every real pendulum.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/tinkertest/05-evidence-engine/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/05-evidence-engine/a/screenshot.png"
+  },
+  {
+    "id": "tinkertest-05-B-pedagogy-fix1",
+    "app": "TinkerTest",
+    "slug": "tinkertest",
+    "direction": 5,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. Preserve the table (0.25 m→1.00 s, 0.50 m→1.42 s, 1.00 m→2.01 s), saved prediction, blank reasoning field, colours, logo, controls and 4:3 format. Remove BOTH ghost pendulum positions, all dashed swing arcs and all angled strings. Show only ONE bob hanging vertically at rest from its pivot. Add small caption 'Diagram at rest'. The release-angle setting remains 10° but no drawn angle or motion arc is shown. Replace the misleading nonuniform slider with three equal-size selectable chips '0.25 m', '0.50 m', '1.00 m', with 0.50 m selected. Label chips 'Pendulum length'. Keep controls Mass 100 g, Release angle 10°, Gravity unchanged. If the current step strip highlights Test, make Explain the only highlighted step. Do not add a completed explanation or imply results prove every real pendulum.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/tinkertest/05-evidence-engine/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/05-evidence-engine/b/screenshot.png"
+  },
+  {
+    "id": "tinkertest-05-C-pedagogy-fix1",
+    "app": "TinkerTest",
+    "slug": "tinkertest",
+    "direction": 5,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. Preserve the table (0.25 m→1.00 s, 0.50 m→1.42 s, 1.00 m→2.01 s), saved prediction, blank reasoning field, colours, logo, controls and 4:3 format. Remove BOTH ghost pendulum positions, all dashed swing arcs and all angled strings. Show only ONE bob hanging vertically at rest from its pivot. Add small caption 'Diagram at rest'. The release-angle setting remains 10° but no drawn angle or motion arc is shown. Replace the misleading nonuniform slider with three equal-size selectable chips '0.25 m', '0.50 m', '1.00 m', with 0.50 m selected. Label chips 'Pendulum length'. Keep controls Mass 100 g, Release angle 10°, Gravity unchanged. If the current step strip highlights Test, make Explain the only highlighted step. Do not add a completed explanation or imply results prove every real pendulum.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/tinkertest/05-evidence-engine/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/05-evidence-engine/c/screenshot.png"
+  },
+  {
+    "id": "number-kitchen-02-A-pedagogy-fix1",
+    "app": "Number Kitchen",
+    "slug": "number-kitchen",
+    "direction": 2,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. In the RIGHT 'For 4 bowls' panel, remove the whole banana illustration and the two whole strawberry illustrations next to the empty input boxes. They misleadingly suggest unchanged ingredient amounts. Keep both quantity boxes completely empty, their bananas/strawberries labels, and the four portion bowls. Preserve the LEFT given recipe exactly 1 banana and 2 strawberries for 2 bowls. Preserve all other UI, artwork, logo and 4:3 size. Do not supply the answer or any target ingredient count.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/number-kitchen/02-recipe-notebook/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/02-recipe-notebook/a/screenshot.png"
+  },
+  {
+    "id": "number-kitchen-04-A-pedagogy-fix1",
+    "app": "Number Kitchen",
+    "slug": "number-kitchen",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly to make measurement unambiguous. Replace ONLY the jug with a flat front-view transparent jug diagram, no 3D perspective, no elliptical water surface, straight vertical sides. Scale 0,100,200,300,400,500 mL with exactly equal spacing, 0 at interior bottom. A perfectly horizontal flat blue water surface at EXACTLY halfway between the 200 and 300 marks, which is 250 mL. Short halfway ticks allowed. The Now: 250 mL pointer must meet that exact surface. Keep Target: 500 mL, blank I will add ___ mL input, blank Show my strategy, Save prediction and disabled Pour and check. Do not fill the answer. Preserve palette, logo, all other content, distinct composition and 4:3 format. This is a teaching diagram and the numerical scale must agree with the water height.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/number-kitchen/04-measure-lab/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/04-measure-lab/a/screenshot.png"
+  },
+  {
+    "id": "number-kitchen-04-B-pedagogy-fix1",
+    "app": "Number Kitchen",
+    "slug": "number-kitchen",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly to make measurement unambiguous. Replace ONLY the jug with a flat front-view transparent jug diagram, no 3D perspective, no elliptical water surface, straight vertical sides. Scale 0,100,200,300,400,500 mL with exactly equal spacing, 0 at interior bottom. A perfectly horizontal flat blue water surface at EXACTLY halfway between the 200 and 300 marks, which is 250 mL. Short halfway ticks allowed. The Now: 250 mL pointer must meet that exact surface. Keep Target: 500 mL, blank I will add ___ mL input, blank Show my strategy, Save prediction and disabled Pour and check. Do not fill the answer. Preserve palette, logo, all other content, distinct composition and 4:3 format. This is a teaching diagram and the numerical scale must agree with the water height.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/number-kitchen/04-measure-lab/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/04-measure-lab/b/screenshot.png"
+  },
+  {
+    "id": "number-kitchen-04-C-pedagogy-fix1",
+    "app": "Number Kitchen",
+    "slug": "number-kitchen",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly to make measurement unambiguous. Replace ONLY the jug with a flat front-view transparent jug diagram, no 3D perspective, no elliptical water surface, straight vertical sides. Scale 0,100,200,300,400,500 mL with exactly equal spacing, 0 at interior bottom. A perfectly horizontal flat blue water surface at EXACTLY halfway between the 200 and 300 marks, which is 250 mL. Short halfway ticks allowed. The Now: 250 mL pointer must meet that exact surface. Keep Target: 500 mL, blank I will add ___ mL input, blank Show my strategy, Save prediction and disabled Pour and check. Do not fill the answer. Preserve palette, logo, all other content, distinct composition and 4:3 format. This is a teaching diagram and the numerical scale must agree with the water height.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/number-kitchen/04-measure-lab/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/04-measure-lab/c/screenshot.png"
+  },
+  {
+    "id": "storychirps-04-A-pedagogy-fix1",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit only the playback duration on this screenshot. 'My first telling' already shows a saved recording waveform, so change its duration from '0:00 / 0:00' to '0:00 / 0:30'. Keep the reflection recording at 0:00 because that response is empty. Preserve every other element, picture sequence, blank reflection area, logo, typography and 4:3 size. Do not add a story or assessment score.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/storychirps/04-little-story-stage/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/04-little-story-stage/a/screenshot.png"
+  },
+  {
+    "id": "storychirps-04-B-pedagogy-fix1",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit only the playback duration on this screenshot. 'My first telling' already shows a saved recording waveform, so change its duration from '0:00 / 0:00' to '0:00 / 0:30'. Keep the reflection recording at 0:00 because that response is empty. Preserve every other element, picture sequence, blank reflection area, logo, typography and 4:3 size. Do not add a story or assessment score.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/storychirps/04-little-story-stage/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/04-little-story-stage/b/screenshot.png"
+  },
+  {
+    "id": "storychirps-04-C-pedagogy-fix1",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Edit only the playback duration on this screenshot. 'My first telling' already shows a saved recording waveform, so change its duration from '0:00 / 0:00' to '0:00 / 0:30'. Keep the reflection recording at 0:00 because that response is empty. Preserve every other element, picture sequence, blank reflection area, logo, typography and 4:3 size. Do not add a story or assessment score.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/storychirps/04-little-story-stage/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/04-little-story-stage/c/screenshot.png"
+  },
+  {
+    "id": "storychirps-02-A-pedagogy-fix1",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 2,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit only the subtitle under 'Make the story easy to follow'. Replace 'Drag the pictures to put the story in the best order' or 'Drag the pictures to put them in order' with exactly 'Arrange the pictures to match your story.' Several coherent stories are allowed. Keep every picture, recording control, reflection prompt, logo, colour, layout and 4:3 size. Do not add a correct order, answer, score or completed story.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/storychirps/02-story-nest/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/02-story-nest/a/screenshot.png"
+  },
+  {
+    "id": "storychirps-02-B-pedagogy-fix1",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 2,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit only the subtitle under 'Make the story easy to follow'. Replace 'Drag the pictures to put the story in the best order' or 'Drag the pictures to put them in order' with exactly 'Arrange the pictures to match your story.' Several coherent stories are allowed. Keep every picture, recording control, reflection prompt, logo, colour, layout and 4:3 size. Do not add a correct order, answer, score or completed story.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/storychirps/02-story-nest/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/02-story-nest/b/screenshot.png"
+  },
+  {
+    "id": "storychirps-02-C-pedagogy-fix1",
+    "app": "StoryChirps",
+    "slug": "storychirps",
+    "direction": 2,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Edit only the subtitle under 'Make the story easy to follow'. Replace 'Drag the pictures to put the story in the best order' or 'Drag the pictures to put them in order' with exactly 'Arrange the pictures to match your story.' Several coherent stories are allowed. Keep every picture, recording control, reflection prompt, logo, colour, layout and 4:3 size. Do not add a correct order, answer, score or completed story.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/storychirps/02-story-nest/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/02-story-nest/c/screenshot.png"
+  },
+  {
+    "id": "plot-a-place-02-A-pedagogy-fix1",
+    "app": "Plot a Place",
+    "slug": "plot-a-place",
+    "direction": 2,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly to clarify distance measurement. Preserve all map objects in their current labelled grid squares, north arrow, blank student response fields, logo, palette and 4:3 layout. Remove any graphical scale BAR with tick marks below the map because it does not match the drawn square size. Keep only text 'One move to a neighbouring square = 50 m'. Replace 'Travel along grid lines' with 'Count moves between squares. No diagonals.' In the map key replace the P-only possible-park symbol with two small P and Q symbols together labelled 'Possible park sites'. Keep the distance input empty and do not add a route or answer. Do not change the consistent row/column labels or object positions.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/plot-a-place/02-little-town-planner/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/02-little-town-planner/a/screenshot.png"
+  },
+  {
+    "id": "plot-a-place-02-B-pedagogy-fix1",
+    "app": "Plot a Place",
+    "slug": "plot-a-place",
+    "direction": 2,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly to clarify distance measurement. Preserve all map objects in their current labelled grid squares, north arrow, blank student response fields, logo, palette and 4:3 layout. Remove any graphical scale BAR with tick marks below the map because it does not match the drawn square size. Keep only text 'One move to a neighbouring square = 50 m'. Replace 'Travel along grid lines' with 'Count moves between squares. No diagonals.' In the map key replace the P-only possible-park symbol with two small P and Q symbols together labelled 'Possible park sites'. Keep the distance input empty and do not add a route or answer. Do not change the consistent row/column labels or object positions.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/plot-a-place/02-little-town-planner/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/02-little-town-planner/b/screenshot.png"
+  },
+  {
+    "id": "plot-a-place-02-C-pedagogy-fix1",
+    "app": "Plot a Place",
+    "slug": "plot-a-place",
+    "direction": 2,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly to clarify distance measurement. Preserve all map objects in their current labelled grid squares, north arrow, blank student response fields, logo, palette and 4:3 layout. Remove any graphical scale BAR with tick marks below the map because it does not match the drawn square size. Keep only text 'One move to a neighbouring square = 50 m'. Replace 'Travel along grid lines' with 'Count moves between squares. No diagonals.' In the map key replace the P-only possible-park symbol with two small P and Q symbols together labelled 'Possible park sites'. Keep the distance input empty and do not add a route or answer. Do not change the consistent row/column labels or object positions.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/plot-a-place/02-little-town-planner/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/02-little-town-planner/c/screenshot.png"
+  },
+  {
+    "id": "plot-a-place-04-B-pedagogy-fix1",
+    "app": "Plot a Place",
+    "slug": "plot-a-place",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. Correct the tiny compass letters around the HEADER LOGO: N at top, E at right, S at bottom, W at left. Currently some letters are wrong. Keep the central logo emblem and wordmark. Also change the signpost icon on the 'Record directions' button to a microphone, preserving its label. Preserve the entire accurate 4x4 classroom map, north arrow, key, empty route inputs, other controls and 4:3 format.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/plot-a-place/04-classroom-compass/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/04-classroom-compass/b/screenshot.png"
+  },
+  {
+    "id": "clue-canopy-04-A-pedagogy-fix1",
+    "app": "Clue Canopy",
+    "slug": "clue-canopy",
+    "direction": 4,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. Preserve all story text, empty evidence and inference fields, tools, logo, colours and 4:3 layout. Remove the illustration of wet footprints/patches and any doorway scene: these add visual evidence that the student is meant to infer from the words. Replace those illustrations with ONE small neutral umbrella outline in the margin, no floor, footprints, water drops, trail, person or door. Leave generous plain reading space. The learner should choose clues from the passage, and no answer should be supplied by the artwork.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/clue-canopy/04-margin-detective/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/clue-canopy/04-margin-detective/a/screenshot.png"
+  },
+  {
+    "id": "clue-canopy-04-B-pedagogy-fix1",
+    "app": "Clue Canopy",
+    "slug": "clue-canopy",
+    "direction": 4,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. Preserve all story text, empty evidence and inference fields, tools, logo, colours and 4:3 layout. Remove the illustration of wet footprints/patches and any doorway scene: these add visual evidence that the student is meant to infer from the words. Replace those illustrations with ONE small neutral umbrella outline in the margin, no floor, footprints, water drops, trail, person or door. Leave generous plain reading space. The learner should choose clues from the passage, and no answer should be supplied by the artwork.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/clue-canopy/04-margin-detective/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/clue-canopy/04-margin-detective/b/screenshot.png"
+  },
+  {
+    "id": "clue-canopy-04-C-pedagogy-fix1",
+    "app": "Clue Canopy",
+    "slug": "clue-canopy",
+    "direction": 4,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot narrowly. Preserve all story text, empty evidence and inference fields, tools, logo, colours and 4:3 layout. Remove the illustration of wet footprints/patches and any doorway scene: these add visual evidence that the student is meant to infer from the words. Replace those illustrations with ONE small neutral umbrella outline in the margin, no floor, footprints, water drops, trail, person or door. Leave generous plain reading space. The learner should choose clues from the passage, and no answer should be supplied by the artwork.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/clue-canopy/04-margin-detective/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/clue-canopy/04-margin-detective/c/screenshot.png"
+  },
+  {
+    "id": "instruction-impossible-03-A-pedagogy-fix1",
+    "app": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "direction": 3,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot to make the failed test consistent with the map. Preserve logo, palette, 4:3, instruction list and empty Rewrite step 3 field. Map must show start at bottom, path north, horizontal river crossed by one bridge, then a T-junction on the far/north bank, flag at the west/left end of its cross-path. Place the pilot EXACTLY AT THE CENTRE OF THE T-JUNCTION on the NORTH/far side after crossing, facing NORTH. Do not leave the pilot at the start or between bridge and junction. Label the bottom start point 'Start'. Add a clearly legible feedback strip 'Stopped at step 3: which way should I turn?' Keep steps exactly '1. Walk to the bridge.' '2. Cross the bridge.' '3. Turn.' '4. Walk to the flag.' Keep step 3 highlighted. Do not supply the word left, a replacement sentence or a successful path. Retain Test again and partner follow-up.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/instruction-impossible/03-paper-pilot/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/a/screenshot.png"
+  },
+  {
+    "id": "instruction-impossible-03-B-pedagogy-fix1",
+    "app": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "direction": 3,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot to make the failed test consistent with the map. Preserve logo, palette, 4:3, instruction list and empty Rewrite step 3 field. Map must show start at bottom, path north, horizontal river crossed by one bridge, then a T-junction on the far/north bank, flag at the west/left end of its cross-path. Place the pilot EXACTLY AT THE CENTRE OF THE T-JUNCTION on the NORTH/far side after crossing, facing NORTH. Do not leave the pilot at the start or between bridge and junction. Label the bottom start point 'Start'. Add a clearly legible feedback strip 'Stopped at step 3: which way should I turn?' Keep steps exactly '1. Walk to the bridge.' '2. Cross the bridge.' '3. Turn.' '4. Walk to the flag.' Keep step 3 highlighted. Do not supply the word left, a replacement sentence or a successful path. Retain Test again and partner follow-up.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/instruction-impossible/03-paper-pilot/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/b/screenshot.png"
+  },
+  {
+    "id": "instruction-impossible-03-C-pedagogy-fix1",
+    "app": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "direction": 3,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot to make the failed test consistent with the map. Preserve logo, palette, 4:3, instruction list and empty Rewrite step 3 field. Map must show start at bottom, path north, horizontal river crossed by one bridge, then a T-junction on the far/north bank, flag at the west/left end of its cross-path. Place the pilot EXACTLY AT THE CENTRE OF THE T-JUNCTION on the NORTH/far side after crossing, facing NORTH. Do not leave the pilot at the start or between bridge and junction. Label the bottom start point 'Start'. Add a clearly legible feedback strip 'Stopped at step 3: which way should I turn?' Keep steps exactly '1. Walk to the bridge.' '2. Cross the bridge.' '3. Turn.' '4. Walk to the flag.' Keep step 3 highlighted. Do not supply the word left, a replacement sentence or a successful path. Retain Test again and partner follow-up.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/instruction-impossible/03-paper-pilot/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/c/screenshot.png"
+  },
+  {
+    "id": "instruction-impossible-05-A-pedagogy-fix1",
+    "app": "Instruction Impossible",
+    "slug": "instruction-impossible",
+    "direction": 5,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit only the grid labels on this screenshot. Keep the 3 by 3 play grid, character at A1, red block at A3, blue block at C3, all task copy, empty revision area and 4:3 format. Place column labels A B C ABOVE the actual three playable columns, each centred on the same column as the cells. Remove the current misaligned bottom A B C label strip. Keep row labels 1 2 3 in a separate narrow gutter to the LEFT, each aligned with its row. Three columns of equal width and three rows of equal height, no extra playable row or column. Preserve 'Start A1, facing east'.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/instruction-impossible/05-direction-workshop/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/05-direction-workshop/a/screenshot.png"
+  },
+  {
+    "id": "edit-echidna-03-A-pedagogy-fix1",
+    "app": "Edit Echidna",
+    "slug": "edit-echidna",
+    "direction": 3,
+    "variant": "A",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot to preserve student authorship. Keep draft 'The dog ran away.', learning goal, logo, colours, 4:3, blank revision and blank reflection. Replace the full Author note sentence with a small note labelled 'My notes' containing only 'gap in fence' as an unfinished idea, not a model sentence. If no author note exists, add this small note above or beside the revision workspace. Remove any fence or dog-through-fence illustration from UNDER THE REVISION; that area must be available for the learner's writing, not a supplied answer. The running dog illustration under the original draft may remain. Keep 'Use your idea. Keep the same event.' and 'What can the reader understand now?' and Compare versions. Do not fill the revised sentence or add any model answer.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/edit-echidna/03-before-and-better/a/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/03-before-and-better/a/screenshot.png"
+  },
+  {
+    "id": "edit-echidna-03-B-pedagogy-fix1",
+    "app": "Edit Echidna",
+    "slug": "edit-echidna",
+    "direction": 3,
+    "variant": "B",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot to preserve student authorship. Keep draft 'The dog ran away.', learning goal, logo, colours, 4:3, blank revision and blank reflection. Replace the full Author note sentence with a small note labelled 'My notes' containing only 'gap in fence' as an unfinished idea, not a model sentence. If no author note exists, add this small note above or beside the revision workspace. Remove any fence or dog-through-fence illustration from UNDER THE REVISION; that area must be available for the learner's writing, not a supplied answer. The running dog illustration under the original draft may remain. Keep 'Use your idea. Keep the same event.' and 'What can the reader understand now?' and Compare versions. Do not fill the revised sentence or add any model answer.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/edit-echidna/03-before-and-better/b/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/03-before-and-better/b/screenshot.png"
+  },
+  {
+    "id": "edit-echidna-03-C-pedagogy-fix1",
+    "app": "Edit Echidna",
+    "slug": "edit-echidna",
+    "direction": 3,
+    "variant": "C",
+    "kind": "screenshot",
+    "prompt": "Edit this screenshot to preserve student authorship. Keep draft 'The dog ran away.', learning goal, logo, colours, 4:3, blank revision and blank reflection. Replace the full Author note sentence with a small note labelled 'My notes' containing only 'gap in fence' as an unfinished idea, not a model sentence. If no author note exists, add this small note above or beside the revision workspace. Remove any fence or dog-through-fence illustration from UNDER THE REVISION; that area must be available for the learner's writing, not a supplied answer. The running dog illustration under the original draft may remain. Keep 'Use your idea. Keep the same event.' and 'What can the reader understand now?' and Compare versions. Do not fill the revised sentence or add any model answer.",
+    "references": [
+      "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/corrections/before/edit-echidna/03-before-and-better/c/screenshot.png"
+    ],
+    "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/03-before-and-better/c/screenshot.png"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "job_id": "town-together-01-B-pedagogy",
+  "app": "Town Together",
+  "direction": 1,
+  "variation": "B",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-43dbf873-f1a7-4143-9733-b52537f999a5.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/01-council-table/b/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/town-together/01-council-table/b/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup edit. Revise this existing Town Together iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 1, variation B (Tabletop town). Preserve its recognisable logo/header identity and palette: Paper #F4EBD9, forest #244D3D, ochre #CCA148. Tactile tabletop town model and council-paper side panels, mature rounded sans. Preserve its Tactile studio treatment and distinctive composition where compatible with learning. Audience Years 5\u20139. Outcome (design context, do not print as jargon): Choose a proposal within a budget and justify the trade-off. REPLACE the old task content with this exact coherent learning state: Heading 'Which proposal should council fund?' Badge 'Simulated local council'. Budget '$30,000 \u2022 one-off project funds'. Two equally weighted proposals: 'Community garden \u2014 $20,000' with quote 'We need a quiet place to meet.'; 'Sports court \u2014 $30,000' with quote 'We need space to play after school.' Neither preselected. Lower response area 'My recommendation' with two unselected choice buttons, blank 'Funds left: $ ____', blank 'My reason and trade-off' and prompt 'Use both views. What would we give up?' Primary 'Prepare council statement'. Do not show votes, winner or preferred proposal. Preserve council-table identity with restrained site illustrations. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+  "revision": "pedagogical alignment"
+}

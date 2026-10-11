@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "classroom-words",
+    "direction": 3,
+    "goal": "Blend a printed word before hearing a model.",
+    "evidence": "Teacher listens for correct blending of pin, records prompts and checks a different word afterwards.",
+    "issue": "Audio controls and completed word-building did not distinguish independent decoding from copying a model.",
+    "brief": "Keep the train-ticket identity but simplify scenery. Main heading 'Read it yourself'. Teacher-set badge 's a t p i n'. Three large coupled letter tickets p i n. No picture of a pin. Main microphone button 'Record my reading'. Secondary 'Sound help'. Small footer 'Try first. Ask for help if you need it.' Progress strip '1 Read • 2 Listen back • 3 New word'. Do not show a recorded waveform or mark correct before an attempt. No whole-word answer audio as primary action. Only student decoding stimulus is pin; adult instructions may use ordinary English. Generous space for three letters, no distracting letter bank."
+  },
+  {
+    "slug": "classroom-words",
+    "direction": 5,
+    "goal": "Blend a word, then apply the same correspondences in a short sentence.",
+    "evidence": "Teacher hears the word and sentence, notes accuracy and support, then checks an unfamiliar word.",
+    "issue": "Matching tap to an identical written choice could be completed without decoding.",
+    "brief": "Keep mint, peach and linked circles. Heading 'Read, then read again'. Large linked circles t a p. Under them a clearly separate sentence strip 'Pat taps.' Capital P is the same taught letter. Badge 'Teacher set: s a t p i n'. Primary 'Record my reading', secondary 'Sound help'. Small progress line 'Word → Sentence → New word'. No tap/pin/sat multiple-choice cards, no picture revealing the word, no completed recording, no automatic accuracy score. Small helper 'Read to your teacher.' Adult UI may use normal English; decoding material only tap and Pat taps."
+  },
+  {
+    "slug": "think-in-parts",
+    "direction": 4,
+    "goal": "Explain a circuit relationship and predict the effect of a change.",
+    "evidence": "Narration links the complete conducting path to the lamp and justifies a prediction about opening the switch.",
+    "issue": "A finished explanation and labels replaced the student’s causal reasoning.",
+    "brief": "Heading 'Why does the lamp light?' Keep ink-and-voice studio. Left: standard schematic rectangular series circuit. Cell symbol on left side: two unequal parallel bars. Lamp symbol on right side: circle containing X. Closed switch on top side: two contacts joined by a straight horizontal conductor, no raised blade. Wires connect both terminals of each symbol in one continuous loop. Labels 'Cell', 'Lamp', 'Closed switch'. Right: large blank 'My explanation' workspace with 'Draw links' and 'Record explanation'. Prompt 'Explain how the parts work together.' Below a separate blank prediction box 'What if the switch opens? Why?' Footer primary 'Save for feedback'. No provided causal paragraph, no completed narration, no electrical current arrows or extra branches. A subtle lamp halo is permissible only with the visibly closed switch. No realistic battery or glass bulb; use circuit symbols. No recording waveform before a response."
+  },
+  {
+    "slug": "think-in-parts",
+    "direction": 1,
+    "goal": "Predict how changing a lever affects the effort needed and explain why.",
+    "evidence": "Student connects relative lever-arm lengths to effort, with a consistent diagram and explanation.",
+    "issue": "A labelled diagram and supplied paragraph did not require an explanation from the student.",
+    "brief": "Heading 'Move the fulcrum. Explain the change.' Paper mechanism studio. Two accurate simple horizontal lever diagrams labelled 'Before' and 'After': same load on LEFT end and downward effort arrow at RIGHT end. Before fulcrum at centre; After fulcrum closer to load at left, clearly longer right effort arm. No decorative gears. Short prompt 'Same load. Which needs less effort? Why?' Right-hand blank 'My prediction' area, tools 'Draw' and 'Record'. Blank 'My explanation' field beneath. Primary 'Share for feedback'. Labels 'Load', 'Fulcrum', 'Effort'. No completed answer or numerical mechanical advantage."
+  },
+  {
+    "slug": "town-together",
+    "direction": 1,
+    "goal": "Choose a proposal within a budget and justify the trade-off.",
+    "evidence": "Recommendation cites two stakeholder needs, gives correct remaining funds and acknowledges what is forgone.",
+    "issue": "The proposals showed benefits without requiring a budget calculation or reasoned recommendation.",
+    "brief": "Heading 'Which proposal should council fund?' Badge 'Simulated local council'. Budget '$30,000 • one-off project funds'. Two equally weighted proposals: 'Community garden — $20,000' with quote 'We need a quiet place to meet.'; 'Sports court — $30,000' with quote 'We need space to play after school.' Neither preselected. Lower response area 'My recommendation' with two unselected choice buttons, blank 'Funds left: $ ____', blank 'My reason and trade-off' and prompt 'Use both views. What would we give up?' Primary 'Prepare council statement'. Do not show votes, winner or preferred proposal. Preserve council-table identity with restrained site illustrations."
+  },
+  {
+    "slug": "town-together",
+    "direction": 4,
+    "goal": "Weigh access against service costs in a council decision.",
+    "evidence": "Student uses contrasting stakeholder evidence and project costs to justify a trial or an alternative.",
+    "issue": "A unanimous positive scenario concealed competing needs and the limits of a funding decision.",
+    "brief": "People’s assembly identity. Heading 'Should the library open on Sundays?' Badge 'Simulated local council'. Budget '$25,000 • one-year trial'. Proposal 'Sunday opening' table 'Staff $18,000', 'Security $5,000', 'Utilities $2,000', 'Total $25,000'. Alternative 'Keep current hours • $0 extra'. Contrasting voices: 'Student: I cannot visit on weekdays.' and 'Librarian: Sunday cover may stretch our team.' Blank fields 'My recommendation' and 'A concern we must address'. Prompt 'Use a cost and both perspectives.' Primary 'Take a position'. Small note 'Funding after the trial is undecided.' No vote tallies or unanimous approval."
+  },
+  {
+    "slug": "wild-notebook",
+    "direction": 1,
+    "goal": "Make a field record another group can interpret.",
+    "evidence": "Record includes place, duration, area, observation and a separately marked tentative inference.",
+    "issue": "The observation lacked a sampling method and did not separate identification uncertainty from evidence.",
+    "brief": "Field journal heading 'Record what you observe'. Method strip 'Garden bed A • 1 m² • 5 minutes'. Example field record labelled 'Our observation': '3 small dark beetles seen under fallen leaves.' Small beetle sketch labelled 'Identification uncertain'. Separate blank area 'What might explain this?' with helper 'An idea, not an observation'. Blank 'What should we check next?' Tools 'Add photo', 'Sketch', 'Record voice'. Primary 'Save field record'. Small note 'Use the same method at the next site.' No invented character counter, automatic species identification, biodiversity score or causal conclusion. A quiet journal with most space for observation and reasoning."
+  },
+  {
+    "slug": "wild-notebook",
+    "direction": 4,
+    "goal": "Compare samples fairly and limit a conclusion to the evidence.",
+    "evidence": "Student cites counts from both sites, distinguishes abundance from variety and states a sampling limitation.",
+    "issue": "Unequal or unspecified sampling and inconsistent categories could support an invalid biodiversity conclusion.",
+    "brief": "Heading 'What do these samples show?' Habitat layers identity. Method 'Each site: 1 m², 5 minutes, same morning'. One readable table with columns 'Group', 'Garden', 'Paved edge'; rows 'Ants | 12 | 6', 'Slaters | 5 | 1', 'Spiders | 4 | 1', 'Unidentified | 2 | 3'. No totals or charts needed. Two restrained labelled habitat illustrations. Blank 'My comparison' with prompt 'Use numbers from both sites.' Blank 'One limit of our evidence'. Primary 'Discuss our findings'. Small reminder 'More individuals does not always mean more kinds.' All categories exactly consistent; no leaf icons for animal counts and no prewritten conclusion."
+  },
+  {
+    "slug": "tinkertest",
+    "direction": 5,
+    "goal": "Use a controlled simulation to test a prediction about pendulum length.",
+    "evidence": "Student identifies the variable and controls, cites two data points and explains whether results support the prediction.",
+    "issue": "Supplied predictions and conclusions removed the investigation’s reasoning steps.",
+    "brief": "Evidence-engine lab. Heading 'Does length change the swing time?' Step strip 'Predict → Test → Explain'; active Explain. Small saved student prediction 'I think a longer pendulum takes longer.' Label this explicitly 'My saved prediction'. Controls 'Mass 100 g • Release angle 10° • Gravity unchanged'. Results table 'Length (m) | One full swing (s)' rows '0.25 | 1.00', '0.50 | 1.42', '1.00 | 2.01'. Note 'Idealised simulation; one swing returns to the starting side.' Blank large response 'Do the results support my prediction? Use two results.' Primary 'Save conclusion'; secondary 'Run another length'. Small pendulum diagram at rest, one vertical bob only, no swing ghosts or arcs. Discrete length chips 0.25 m, 0.50 m, 1.00 m instead of a slider. No auto-completed conclusion or claim that virtual results prove every real case."
+  },
+  {
+    "slug": "tinkertest",
+    "direction": 1,
+    "goal": "Relate ramp height to measured travel distance while controlling other conditions.",
+    "evidence": "Student names height as the changed variable and distance as the measurement, and justifies a pattern using results.",
+    "issue": "Ramp geometry and measurement scale were inconsistent, and the result explanation was supplied.",
+    "brief": "Workshop lab heading 'How does ramp height affect travel?' Clean schematic side-view ramp on horizontal floor with ball at top, endpoint marker beyond ramp foot. Measurement arrow starts exactly at ramp foot and ends at endpoint; label 'Travel distance'. No ruler or height ticks on drawing. Label 'Diagram not to scale'. Controls 'Same ball • Same ramp • Same surface • Release from rest'. Table 'Height (cm) | Distance (cm)' rows '10 | 28', '20 | 49', '30 | 71', caption 'Example simulation results'. Blank response 'What pattern do you see? Use two results.' Blank 'What should we test next?' Primary 'Save explanation'. No prefilled conclusion or decorative scale that contradicts data."
+  },
+  {
+    "slug": "number-kitchen",
+    "direction": 2,
+    "goal": "Scale every ingredient by the same factor.",
+    "evidence": "Student finds quantities for four portions, explains doubling and checks with physical counters.",
+    "issue": "The completed recipe provided the quantities the child was meant to calculate.",
+    "brief": "Recipe notebook, Year 2 task. Heading 'Make enough for 4'. Left recipe 'For 2 bowls' showing exactly 1 banana and 2 strawberries with labels. Right worksheet 'For 4 bowls' with blank quantity boxes '___ bananas' and '___ strawberries'. No ingredient pictures beside the blank target quantities. Do not draw the required target quantities. Large prompt 'Show how you worked it out.' Blank drawing area with counter and pencil tools; microphone 'Tell my strategy'. Primary 'Check my recipe'. Keep bowls as portions, no fractions in this task, no completed doubling equation, no correct ticks before response. Clear touch-sized inputs and warm restrained kitchen illustration."
+  },
+  {
+    "slug": "number-kitchen",
+    "direction": 4,
+    "goal": "Find the missing volume needed to reach a target.",
+    "evidence": "Student calculates the difference with units, predicts before pouring and checks the final measurement.",
+    "issue": "The extra amount was already displayed, eliminating the missing-quantity problem.",
+    "brief": "Measure lab, Year 3 task. Heading 'How much more makes 500 mL?' A flat front-view transparent measuring jug diagram, no perspective or elliptical water surface, with evenly spaced scale 0, 100, 200, 300, 400, 500 mL, each at correct equal heights. Water at exactly halfway between 200 and 300; nearby label 'Now: 250 mL'. Target badge 'Target: 500 mL'. Blank large input 'I will add ___ mL'. Blank workspace 'Show my strategy'. Primary 'Save prediction', secondary disabled-looking 'Pour and check' with helper 'Predict first'. Do not print the missing answer anywhere. No arbitrary cup sizes, no off-scale target marker. Child-friendly precision, no distracting cooking scene."
+  },
+  {
+    "slug": "storychirps",
+    "direction": 4,
+    "goal": "Improve the clarity of a spoken retelling for a listener.",
+    "evidence": "Two recordings and a listener’s response show whether who, where and event sequence became clearer.",
+    "issue": "The screen offered recording without a specific listening or revision purpose.",
+    "brief": "Little story stage. Heading 'Help your listener follow the story'. Three numbered illustrations: 1 child wearing red hat in park, 2 wind lifts hat, 3 child retrieves hat from low branch. Same child and hat throughout. Goal strip 'Tell who, where and what happened.' Recording panel 'My first telling' with playback control, short waveform and duration '0:00 / 0:30'; below 'Listen back: What needs to be clearer?' with blank voice-note field. Large primary 'Record a clearer telling'. Small 'Tell it your way' and 'Private classroom collection'. No printed finished story, correctness score, automatic language judgement or public share button. Keep expressive stage identity while picture sequence and listening controls dominate."
+  },
+  {
+    "slug": "storychirps",
+    "direction": 2,
+    "goal": "Use sequence language and revise an unclear connection in an oral story.",
+    "evidence": "Student connects the picture events in speech and improves one transition after listening or partner feedback.",
+    "issue": "Picture ordering alone did not reveal whether the student could produce a connected oral narrative.",
+    "brief": "Story nest paper picture cards. Heading 'Make the story easy to follow'. Subtitle 'Arrange the pictures to match your story.' Three reorderable numbered cards: child opens umbrella in rain; same child and umbrella beside a puddle; same child closes umbrella as sun comes out. Small optional prompt chips 'First', 'Then', 'Finally'. 'My first telling' playback and waveform. Blank reflection field 'Did I explain how the events connect?' Large 'Record my next telling'. Helper 'Listen with a partner. Choose one part to improve.' Small privacy badge 'Classroom only'. No transcribed model story or single correct plot. Keep cards large and provide voice-supported controls for early readers."
+  },
+  {
+    "slug": "plot-a-place",
+    "direction": 4,
+    "goal": "Write and test a route using a consistent classroom map.",
+    "evidence": "A partner reaches the intended landmark using the student’s route; the student revises an unclear step.",
+    "issue": "The design suggested a layout but did not require an authored navigation task or a peer test.",
+    "brief": "Classroom compass. Heading 'Can a partner follow your route?' Accurate simple 4 by 4 square grid, columns A B C D left to right, rows 1 2 3 4 top to bottom. North arrow points up. Door symbol at A4, book symbol 'Reading corner' at D1, one desk symbol at B2. Compact key 'Door', 'Reading corner', 'Desk'; icons match map. No physical metre scale. Task 'Start at the door. Reach the reading corner.' Right blank numbered route editor 1, 2, 3. Tools 'Draw route', 'Record directions'. Primary 'Send to partner'; small next step 'Test the route, then revise'. No pre-drawn route or supplied directions. Crisp overhead map with readable coordinates."
+  },
+  {
+    "slug": "plot-a-place",
+    "direction": 2,
+    "goal": "Justify a map placement using distance and a community need.",
+    "evidence": "Student uses the key and scale to compare route distances and explains how a chosen location meets a need.",
+    "issue": "The neighbourhood was decorative and did not elicit spatial reasoning from the student.",
+    "brief": "Little town planner. Heading 'Where should the new park go?' Flat accurate 4 by 4 square grid, columns A B C D, rows 1 2 3 4, north upwards. School symbol at A1, homes symbol at D4, candidate P at A3, candidate Q at C4. Key 'School', 'Homes', 'Possible park'. Scale text 'One move to a neighbouring square = 50 m'. Note 'Count moves between squares. No diagonals.' No graphical scale bar. Both P and Q appear in the key as possible park sites. No diagonal routes or misleading 3D perspective. Right blank choice 'My site: P / Q' neither selected; blank 'Distance from homes: ___ m'; blank 'Why this site meets a need'. Primary 'Explain my plan'. Small prompt 'Consider both school and homes.' Do not provide distances or a preferred answer. Map should occupy half the screen at least."
+  },
+  {
+    "slug": "clue-canopy",
+    "direction": 2,
+    "goal": "Infer a possible event and explain how a text clue supports it.",
+    "evidence": "Student states a plausible claim, selects relevant words and explains a connection without asserting unsupported guilt.",
+    "issue": "A leading question and selected clues encouraged accusation rather than evidence-based inference.",
+    "brief": "Evidence board. Heading 'What might have happened?' Readable story card: 'Mia left her lunchbox on the bench. When she returned, the lid was open. Crumbs lay beside it. Leo stood nearby, holding his own sandwich.' None of text highlighted yet. Prompt 'Select a clue from the text.' Empty evidence slot 'My chosen words'. Two blank response cards 'I think… because…' and 'Another possibility…'. Tools 'Speak', 'Draw', 'Write'. Primary 'Share my reasoning'. Restrained neutral illustration of bench and closed neutral figures; do not show culprit, theft, guilty face or animals eating. No red guilt strings, points or correct answer. Text evidence must drive the inference."
+  },
+  {
+    "slug": "clue-canopy",
+    "direction": 4,
+    "goal": "Distinguish what a text states from a reasonable inference.",
+    "evidence": "Student quotes a relevant clue, explains its implication and recognises that more than one explanation may fit.",
+    "issue": "The supplied explanation and illustrative answer reduced the need to interpret the text.",
+    "brief": "Margin detective reading page. Heading 'What can you infer?' Exact short passage: 'At lunchtime, Ava placed her umbrella beside the door. After school, the umbrella was gone. A trail of small wet patches led towards the gate.' No highlighted phrases initially. Margin tools 'Select words', 'Add a note'. Large blank response panel 'The text says…' then 'This makes me think…' then 'What else could explain it?' Primary 'Save my inference'; microphone alternative. One small neutral umbrella silhouette in margin only, no scene showing what happened, no wet patches or footprints in the artwork. Do not supply missing character, answer, automatic tick or finished sentence. Mature readable cream-and-ink page with generous annotation room."
+  },
+  {
+    "slug": "switchside-stories",
+    "direction": 2,
+    "goal": "Consider two needs and compare responses to a shared-material disagreement.",
+    "evidence": "Student explains likely effects on both children and rehearses a response, without being graded on a prescribed emotion.",
+    "issue": "Response options alone did not ask students to consider both needs or likely consequences.",
+    "brief": "Story seesaw. Heading 'One blue pencil, two plans'. Two equal illustrated panels: 'Sam wants to finish the sky.' and 'Jo needs blue for a river.' Exactly one blue pencil shared between them. Prompt 'What could each person need?' Three unselected response tiles 'Take turns', 'Agree on a time', 'Another idea'. Blank response area 'What might happen for Sam? For Jo?' Primary 'Talk it through'. Smaller 'Ask an adult for help'. Footer 'More than one response may help.' No smiles indicating correct option, scores, emotional labels imposed on children, or duplicate blue pencils. Keep teacher-guided discussion obvious through conversation controls."
+  },
+  {
+    "slug": "switchside-stories",
+    "direction": 1,
+    "goal": "Explore possible perspectives when someone wants to join a game.",
+    "evidence": "Student considers uncertain perspectives, compares two responses and rehearses a constructive invitation or request.",
+    "issue": "Predetermined thought bubbles substituted adult assumptions for students’ perspective-taking.",
+    "brief": "Two windows identity. Heading 'Joining the game'. Window one shows two children playing a ball game; caption 'The game has already started.' Window two shows a child nearby; caption 'Riley would like to join.' No thought bubbles specifying feelings. Prompt 'What might each person be thinking? How could we ask?' Two unselected choices 'Ask how to join' and 'Offer a role in the game'. Blank area 'What might happen next?' with 'For Riley' and 'For the group' blank lines. Primary 'Try a role-play'. Secondary 'Another idea' and small 'Adult help'. No right-answer ticks, social score or forced reconciliation."
+  },
+  {
+    "slug": "instruction-impossible",
+    "direction": 3,
+    "goal": "Find and revise an ambiguous navigation step.",
+    "evidence": "Student adds the missing direction or landmark, retests the complete sequence and checks a partner can follow it.",
+    "issue": "The suggested correction duplicated a later bridge-crossing step and conflicted with the map.",
+    "brief": "Paper pilot. Heading 'Fix the step that stopped the pilot'. Simple overhead map: start at bottom centre, straight path north to a horizontal river, one bridge crosses north, T-junction immediately after bridge, goal flag at west end of upper path. Clear north-up orientation and pilot exactly at the T-junction on the far/north bank, facing north. Label the bottom start point Start. Editable instructions exactly '1. Walk to the bridge.' '2. Cross the bridge.' '3. Turn.' '4. Walk to the flag.' Step 3 outlined, not corrected. Test feedback 'Stopped at step 3: which way should I turn?' Blank editor 'Rewrite step 3'. Primary 'Test again'. Small 'Then give your instructions to a partner.' Do not provide left as an answer or draw a successful route. Scene must match the ordered steps precisely."
+  },
+  {
+    "slug": "instruction-impossible",
+    "direction": 5,
+    "goal": "Specify actions, direction and target so a literal reader can complete a procedure.",
+    "evidence": "Student resolves ambiguity in a procedure, tests the complete sequence and names what changed.",
+    "issue": "The task lacked a defined starting orientation and a complete testable instruction sequence.",
+    "brief": "Direction workshop. Heading 'Make every step clear'. Overhead 3 by 3 grid with columns A B C and rows 1 2 3. Robot at A1 facing east, blue block at C3 and red block at A3; all other cells empty. Label 'Start A1, facing east'. Task 'Collect the blue block at C3.' Right procedure editor with draft '1. Move.' '2. Turn.' '3. Pick it up.' Feedback 'Step 1 needs a distance.' Blank editing lines with prompt 'Use steps, turns and an exact object.' Primary 'Run my instructions'; secondary 'Explain my change'. No successful path, arrows giving solution, supplied correct procedure or unearned success. Labels must match objects and positions exactly."
+  },
+  {
+    "slug": "edit-echidna",
+    "direction": 1,
+    "goal": "Revise event order to match the author’s intended sequence.",
+    "evidence": "Student restores the planned sequence, adds a useful link and explains how the change helps a reader.",
+    "issue": "The model revision reversed events without establishing the author’s intended meaning.",
+    "brief": "Small steps studio. Heading 'Make the order clear'. Goal strip 'Today: sequence events'. Author’s plan in small separate strip 'Walk to park → Eat lunch → Walk home'. 'My draft' exact text 'We ate lunch. We walked to the park. We walked home.' Beside it blank editable 'My revision' with pencil and microphone support. Prompt 'Keep your planned events. Help the reader follow the order.' Blank 'What did I change, and why?' Primary 'Compare my versions'. No supplied finished revision, no auto-rewrite, spelling score or invented story events. A small echidna supports the workspace without dominating it."
+  },
+  {
+    "slug": "edit-echidna",
+    "direction": 3,
+    "goal": "Add a relevant detail and explain its effect on the reader.",
+    "evidence": "Student adds a detail that clarifies an existing event and explains its purpose while retaining meaning.",
+    "issue": "The polished supplied version changed the action and made the student’s revision decision invisible.",
+    "brief": "Before and better. Heading 'Add one detail that helps your reader'. Goal strip 'Today: supporting detail'. A small student-authored brainstorming note labelled My notes containing only the fragment 'gap in fence'. Left 'My draft' text 'The dog ran away.' Right blank editable 'My revision'. Prompt 'Use your idea. Keep the same event.' Below blank reflection 'What can the reader understand now?' Tools 'Write', 'Speak'. Primary 'Compare versions'. Small note 'One useful change is enough.' Do not draw a fence or a suggested revision scene. Do not fill in the revised sentence, add irrelevant adjectives, invent new events, award points or display an automatic quality rating. Preserve mature editorial comparison layout and restrained echidna identity."
+  }
+]

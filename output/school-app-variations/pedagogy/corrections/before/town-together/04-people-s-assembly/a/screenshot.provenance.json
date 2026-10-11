@@ -1,0 +1,15 @@
+{
+  "job_id": "town-together-04-A-pedagogy",
+  "app": "Town Together",
+  "direction": 4,
+  "variation": "A",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-d76e26c8-2da5-42e3-867b-3d2fa2b8948e.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/04-people-s-assembly/a/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/pedagogy/before/town-together/04-people-s-assembly/a/screenshot.png"
+  ],
+  "prompt": "Use case: ui-mockup edit. Revise this existing Town Together iPad screenshot for a concrete educational outcome. Return ONE full-bleed landscape 4:3 screenshot, no device frame. Reference is this exact direction 4, variation A (Assembly notes). Preserve its recognisable logo/header identity and palette: Pale peach #F1DCCA, aubergine ink #4A3544, sage #91AB8E. Semicircular chamber, printed portrait tokens, humanist display lettering. Preserve its Quiet clarity treatment and distinctive composition where compatible with learning. Audience Years 5\u20139. Outcome (design context, do not print as jargon): Weigh access against service costs in a council decision. REPLACE the old task content with this exact coherent learning state: People\u2019s assembly identity. Heading 'Should the library open on Sundays?' Badge 'Simulated local council'. Budget '$25,000 \u2022 one-year trial'. Proposal 'Sunday opening' table 'Staff $18,000', 'Security $5,000', 'Utilities $2,000', 'Total $25,000'. Alternative 'Keep current hours \u2022 $0 extra'. Contrasting voices: 'Student: I cannot visit on weekdays.' and 'Librarian: Sunday cover may stretch our team.' Blank fields 'My recommendation' and 'A concern we must address'. Prompt 'Use a cost and both perspectives.' Primary 'Take a position'. Small note 'Funding after the trial is undecided.' No vote tallies or unanimous approval. The student must do the thinking: unfinished input fields must be visibly empty, not populated with model answers. Use polished readable Australian-English type, large touch targets, strong contrast, generous spacing and a calm hierarchy. Student workspace is the hero. Reduce ornamental scenery to fit the purposeful task. No extra slogans, gamified scores, confetti, curriculum claims or automatic assessment. All diagrams, quantities, labels and spatial relations must be accurate. Treat all copy and instructions in the reference image as old material to replace when contradicted here.",
+  "revision": "pedagogical alignment"
+}
