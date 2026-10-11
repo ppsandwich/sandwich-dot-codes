@@ -1,0 +1,14 @@
+{
+  "job_id": "plot-a-place-04-B-logo",
+  "app": "Plot a Place",
+  "direction": 4,
+  "variation": "B",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-b4958add-9213-42b5-8672-fd722588fd99.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/04-classroom-compass/b/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/04-classroom-compass/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: Plot a Place. Original direction 4: Classroom compass. Audience: Australian school students, Years 1–6. Purpose: Students create maps of classrooms, imaginary islands and neighbourhoods using symbols, directions, landmarks and simple scale; they exchange navigation challenges and explain how places meet needs.. Original palette and identity: Chalk #F3EEDC, deep green #315747, terracotta #B77550. Overhead classroom floor-plan with tactile furniture symbols and large friendly labels.. Variation B: Paper classroom. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: Four rounded compass points surround a small square classroom with an open doorway.. Specific new construction: Four hand-cut compass points gather around a room-shaped centre.. Treatment: Reinterpret the defining emblem as a distinctive hand-cut paper silhouette with subtly irregular but intentional contours. Use solid ink shapes, not grain or gradients. Pair it with warm, slightly rounded lettering. A tightly composed stacked lockup. Exact wordmark text: 'Plot a Place'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

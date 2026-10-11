@@ -1,0 +1,14 @@
+{
+  "job_id": "number-kitchen-02-A-logo",
+  "app": "Number Kitchen",
+  "direction": 2,
+  "variation": "A",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-bccd66eb-43d1-49fb-80a7-77e95b1151be.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/02-recipe-notebook/a/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/02-recipe-notebook/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: Number Kitchen. Original direction 2: Recipe notebook. Audience: Australian school students, Years 1–4. Purpose: A virtual kitchen for quantities, fractions, measurement and money, with teacher-selected concepts and difficulty and optional physical measuring, sorting and sharing.. Original palette and identity: Paper #F2E5CC, deep blue #315170, lemon #DDBE56. Illustrated recipe notebook spread with handwritten quantity annotations and friendly serif titles.. Variation A: Recipe columns. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: An open recipe book with two measuring-spoon page marks and one clear fraction slash.. Specific new construction: Two minimal spoon-page forms and a small fraction slash inside an open book.. Treatment: Refine the defining emblem into clean geometric construction with generous negative space, fewer parts and precise even edges. Pair it with a compact humanist sans wordmark. A single restrained accent; no gradients or texture. Exact wordmark text: 'Number Kitchen'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

@@ -1,0 +1,23 @@
+{
+  "browser": "T3 Code collaborative browser",
+  "checks": {
+    "all_192_gallery_images_loaded": true,
+    "72_cards_24_directions": true,
+    "app_filter_shows_six_pairs": true,
+    "logo_view_mode": true,
+    "shortlist_and_csv_export": true,
+    "csv_has_CRLF_rows": true,
+    "full_size_viewer_and_next": true,
+    "no_horizontal_overflow_at_widths": [
+      390,
+      1024,
+      1440
+    ]
+  },
+  "visual_review": {
+    "new_logos": 72,
+    "new_screenshots": 72,
+    "circuit_corrections": "Closed switch and consistent current arrows in Think in Parts 4A\u20134C.",
+    "map_corrections": "Removed conflicting route markers in Instruction Impossible 3A and 3C."
+  }
+}

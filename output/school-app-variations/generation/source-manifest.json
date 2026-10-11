@@ -1,0 +1,338 @@
+[
+  {
+    "app": "Classroom Words",
+    "direction": 3,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/classroom-words/03-sound-station/screenshot.png",
+    "sha256": "bf59e7398e8a8eea604e41206c65bff75d6f223e85c660d4fa7c79e7897b76bf"
+  },
+  {
+    "app": "Classroom Words",
+    "direction": 3,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/classroom-words/03-sound-station/logo.png",
+    "sha256": "f45cc25df70968258f504e03e2c50932f65695618e30e8e4d7c9e20720e4f2bd"
+  },
+  {
+    "app": "Classroom Words",
+    "direction": 5,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/classroom-words/05-sound-circles/screenshot.png",
+    "sha256": "4bfb9a76f46c197f93b5b9708ba373d3910c8c776ae65b9edddb19d5448f696e"
+  },
+  {
+    "app": "Classroom Words",
+    "direction": 5,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/classroom-words/05-sound-circles/logo.png",
+    "sha256": "961b0f3c4dc4d1a5c3a685aeff201c7092fd538f01ab803c72678501e216cbbd"
+  },
+  {
+    "app": "Think in Parts",
+    "direction": 4,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/think-in-parts/04-voice-and-ink/screenshot.png",
+    "sha256": "b7e68d1ab8663bae89153f4551e499ac3637789ce3e39258de6f0fb239af75b0"
+  },
+  {
+    "app": "Think in Parts",
+    "direction": 4,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/think-in-parts/04-voice-and-ink/logo.png",
+    "sha256": "39eb1943637ae577a2c93ef3fe9867058427f9ee8bafea59ae57ff5aa0f6bf1d"
+  },
+  {
+    "app": "Think in Parts",
+    "direction": 1,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/think-in-parts/01-paper-mechanism/screenshot.png",
+    "sha256": "b46cce148f6b3afcc41ee14f4a3ca7fb74167ecd0feab7612f86721cb7129131"
+  },
+  {
+    "app": "Think in Parts",
+    "direction": 1,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/think-in-parts/01-paper-mechanism/logo.png",
+    "sha256": "876bd9163808d7290c3e2abec52c31a544441b941e40a8425a584a1a70d6c560"
+  },
+  {
+    "app": "Town Together",
+    "direction": 1,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/town-together/01-council-table/screenshot.png",
+    "sha256": "bdd8a7834769b9dda32e4a97d3e0f3098a8137fe89097f5cdfeb52f8459a0de1"
+  },
+  {
+    "app": "Town Together",
+    "direction": 1,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/town-together/01-council-table/logo.png",
+    "sha256": "dabac79856b2650e46113d216e4eaeaaaf6e777647b6a7fff6a62b74915cff74"
+  },
+  {
+    "app": "Town Together",
+    "direction": 4,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/town-together/04-people-s-assembly/screenshot.png",
+    "sha256": "515eb1882a2a1d4309e592fa742b50d924460344f7fab52916bbbb724063192e"
+  },
+  {
+    "app": "Town Together",
+    "direction": 4,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/town-together/04-people-s-assembly/logo.png",
+    "sha256": "729cce5bc8cbcb46e795131ed865278fedc67291d3f5eb7dfdd54ad601ec2152"
+  },
+  {
+    "app": "Wild Notebook",
+    "direction": 1,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/wild-notebook/01-field-journal/screenshot.png",
+    "sha256": "b87e9394b6b95bca6f5da63dcc1e18104842e5cda7e50b8c8424dd399c57026c"
+  },
+  {
+    "app": "Wild Notebook",
+    "direction": 1,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/wild-notebook/01-field-journal/logo.png",
+    "sha256": "79cde966db7595cdef07f0dfe592bab4459dec5e24befd2a85a44a561cd6a8a9"
+  },
+  {
+    "app": "Wild Notebook",
+    "direction": 4,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/wild-notebook/04-habitat-layers/screenshot.png",
+    "sha256": "cdb8566e376da6ebf3ee6264d7d05bd92414cb8018ab1d1b32a3cb89e7cdb38f"
+  },
+  {
+    "app": "Wild Notebook",
+    "direction": 4,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/wild-notebook/04-habitat-layers/logo.png",
+    "sha256": "4e41f5f711a472d8a25302d989bbc42e12bb33cf244997b1d1047e991ba0ba94"
+  },
+  {
+    "app": "TinkerTest",
+    "direction": 5,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/tinkertest/05-evidence-engine/screenshot.png",
+    "sha256": "f98d778fd1ba224cfbe2ffc11871c49aafb5e9c5e8a4293f73a0d02d985bf2c9"
+  },
+  {
+    "app": "TinkerTest",
+    "direction": 5,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/tinkertest/05-evidence-engine/logo.png",
+    "sha256": "11c6582814f97ba0a5ee9112740e009dcf745c5f6ff9fc87ed9e4e770747d351"
+  },
+  {
+    "app": "TinkerTest",
+    "direction": 1,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/tinkertest/01-workshop-lab/screenshot.png",
+    "sha256": "94140cb1e6f9f4dc99e5105861346f7800544f19a298162a0eeb8e932a3adadf"
+  },
+  {
+    "app": "TinkerTest",
+    "direction": 1,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/tinkertest/01-workshop-lab/logo.png",
+    "sha256": "8942902511b03e95eee5df90ada3148cb1c374430c90c0ebda9422456506e98a"
+  },
+  {
+    "app": "Number Kitchen",
+    "direction": 2,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/number-kitchen/02-recipe-notebook/screenshot.png",
+    "sha256": "7d75d80528c4374ec2516e867006be3f24f1476a18c4e56ee163ea7a9c68603a"
+  },
+  {
+    "app": "Number Kitchen",
+    "direction": 2,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/number-kitchen/02-recipe-notebook/logo.png",
+    "sha256": "6339ade8358a6196c9e483aa7dd1fe80df4b5fdada903a2422cdc5752388c5f3"
+  },
+  {
+    "app": "Number Kitchen",
+    "direction": 4,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/number-kitchen/04-measure-lab/screenshot.png",
+    "sha256": "3013d320f17d0d443fc502e93a88c89b5929be539c9e8aa6ea07432d817c8fc8"
+  },
+  {
+    "app": "Number Kitchen",
+    "direction": 4,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/number-kitchen/04-measure-lab/logo.png",
+    "sha256": "2cd1208cb8108efe7e60b0044bc429c8c609ed08de6f40195b68d0727d3b273d"
+  },
+  {
+    "app": "StoryChirps",
+    "direction": 4,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/storychirps/04-little-story-stage/screenshot.png",
+    "sha256": "9db39c4a74f344bd20c09e1f81d90495367b34a45a53c1a859a1f611403844f8"
+  },
+  {
+    "app": "StoryChirps",
+    "direction": 4,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/storychirps/04-little-story-stage/logo.png",
+    "sha256": "c32f7ff5726992a0e8f89fe84a203faa98fc99153982a1cccaf2c3ba858e313b"
+  },
+  {
+    "app": "StoryChirps",
+    "direction": 2,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/storychirps/02-story-nest/screenshot.png",
+    "sha256": "6bddac18106a8deea6b06c1ef26624c7f3dee2e6bd8c79f9a7020f9d91e06227"
+  },
+  {
+    "app": "StoryChirps",
+    "direction": 2,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/storychirps/02-story-nest/logo.png",
+    "sha256": "0aa4f281890c989638656062462d681bf868b2dc86e11eac7ff258bcbfe7ee41"
+  },
+  {
+    "app": "Plot a Place",
+    "direction": 4,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/plot-a-place/04-classroom-compass/screenshot.png",
+    "sha256": "4389dfa510992897c7b4a8c78b972c7abdf6ad83044aa94aa69b7c5fa0d034a0"
+  },
+  {
+    "app": "Plot a Place",
+    "direction": 4,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/plot-a-place/04-classroom-compass/logo.png",
+    "sha256": "db528c834a1824965e3ca30553158ea83793f09e5dc4e0f5bacb1cedfccd6bd5"
+  },
+  {
+    "app": "Plot a Place",
+    "direction": 2,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/plot-a-place/02-little-town-planner/screenshot.png",
+    "sha256": "3308dd57d30d016e5dfd47bf9246f9779a2023e3acfe5bc4123eb66b13fcda43"
+  },
+  {
+    "app": "Plot a Place",
+    "direction": 2,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/plot-a-place/02-little-town-planner/logo.png",
+    "sha256": "aabec818467c8ebfef03573e7e05fcdca569878713a956f08282802a18286445"
+  },
+  {
+    "app": "Clue Canopy",
+    "direction": 2,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/clue-canopy/02-evidence-board/screenshot.png",
+    "sha256": "1818c22e38d6e15a6facb3e3f1bd7916ffcb99106795220fdb96b1d2d1d2d644"
+  },
+  {
+    "app": "Clue Canopy",
+    "direction": 2,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/clue-canopy/02-evidence-board/logo.png",
+    "sha256": "c30e1097e6b09760cd370bae3b3b4dc9a95b9056919f52d757a35d62cfd01a45"
+  },
+  {
+    "app": "Clue Canopy",
+    "direction": 4,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/clue-canopy/04-margin-detective/screenshot.png",
+    "sha256": "1be70fd9c6546630c961afbf87c3f3c7c8f58b17eed2f3fb66c22c9723e53127"
+  },
+  {
+    "app": "Clue Canopy",
+    "direction": 4,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/clue-canopy/04-margin-detective/logo.png",
+    "sha256": "ada876be966730863739de5d69b3fa3b6b514843f0ab9693189b1b8cacbdd268"
+  },
+  {
+    "app": "SwitchSide Stories",
+    "direction": 2,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/switchside-stories/02-story-seesaw/screenshot.png",
+    "sha256": "e6d4ecfc4a1ce10913facf8e9c7f07e58804551cbd66489a2c542e4604cf2d6e"
+  },
+  {
+    "app": "SwitchSide Stories",
+    "direction": 2,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/switchside-stories/02-story-seesaw/logo.png",
+    "sha256": "77229ad521cfc10c155f965ef0446be3e24a42caa5d9926590f4cb8974443b3f"
+  },
+  {
+    "app": "SwitchSide Stories",
+    "direction": 1,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/switchside-stories/01-two-windows/screenshot.png",
+    "sha256": "79683a1052cef85a6da04b1de65c97486230bd061e319fef15122dd9f4b9f896"
+  },
+  {
+    "app": "SwitchSide Stories",
+    "direction": 1,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/switchside-stories/01-two-windows/logo.png",
+    "sha256": "e429c58ec3f3fa0546567beaa0af74942bd4c2673d212ad5779719f081966fca"
+  },
+  {
+    "app": "Instruction Impossible",
+    "direction": 3,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/instruction-impossible/03-paper-pilot/screenshot.png",
+    "sha256": "40750621fc5876ffb75a6820a8d18fe4783c38122c847be28eefd223a891c64e"
+  },
+  {
+    "app": "Instruction Impossible",
+    "direction": 3,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/instruction-impossible/03-paper-pilot/logo.png",
+    "sha256": "e7de3303b1141450ec02eb1a403368e50eaf3b35a02938ced1f89d305f782daa"
+  },
+  {
+    "app": "Instruction Impossible",
+    "direction": 5,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/instruction-impossible/05-direction-workshop/screenshot.png",
+    "sha256": "0b4d7d622cf72191ef8fae997e592599a0d5a1163ab3241cd516d8ac5342d5bc"
+  },
+  {
+    "app": "Instruction Impossible",
+    "direction": 5,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/instruction-impossible/05-direction-workshop/logo.png",
+    "sha256": "c036f97359a4ccfbc8e72734a8a9173d451fa45d8c2062b4224ed460dd98111c"
+  },
+  {
+    "app": "Edit Echidna",
+    "direction": 1,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/edit-echidna/01-small-steps-studio/screenshot.png",
+    "sha256": "d55d5e76e6ff67ec23bcbaa8b086e466b97de80bdad9549940395e0b8110e345"
+  },
+  {
+    "app": "Edit Echidna",
+    "direction": 1,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/edit-echidna/01-small-steps-studio/logo.png",
+    "sha256": "4e0fc7990b220033c020474846f5ff460402066e5646ee31221286ec01c92e67"
+  },
+  {
+    "app": "Edit Echidna",
+    "direction": 3,
+    "kind": "screenshot",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/edit-echidna/03-before-and-better/screenshot.png",
+    "sha256": "4d23559cf98f099de895558893486f9f20a08a626c10aa0120788d6caa0ee369"
+  },
+  {
+    "app": "Edit Echidna",
+    "direction": 3,
+    "kind": "logo",
+    "source": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-concepts/edit-echidna/03-before-and-better/logo.png",
+    "sha256": "a11cbf727d5d95e8a167c4fc72bde1452fc0a9b8ad235b4b198171db9487d2e4"
+  }
+]

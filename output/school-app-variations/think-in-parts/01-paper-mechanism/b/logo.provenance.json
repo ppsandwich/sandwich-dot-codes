@@ -1,0 +1,14 @@
+{
+  "job_id": "think-in-parts-01-B-logo",
+  "app": "Think in Parts",
+  "direction": 1,
+  "variation": "B",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-dbfb6301-7a7b-4b51-90e7-e7662d636c0f.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/01-paper-mechanism/b/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/think-in-parts/01-paper-mechanism/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: Think in Parts. Original direction 1: Paper mechanism. Audience: Australian school students, Years 5–9. Purpose: A multimodal explanation studio where students draw, animate, record voice and build interactive diagrams; teachers set structured challenges and assess reasoning.. Original palette and identity: Warm paper #F3EBDD, charcoal #263C3B, burnt orange #BB6239. Folded-paper diagrams, editorial serif headings with clean humanist controls.. Variation B: Folded explanation. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: Three folded geometric pieces assemble into a speech bubble, with one orange piece slightly separated.. Specific new construction: Three folded-paper pieces with intentional irregular angles and one separated orange corner.. Treatment: Reinterpret the defining emblem as a distinctive hand-cut paper silhouette with subtly irregular but intentional contours. Use solid ink shapes, not grain or gradients. Pair it with warm, slightly rounded lettering. A tightly composed stacked lockup. Exact wordmark text: 'Think in Parts'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

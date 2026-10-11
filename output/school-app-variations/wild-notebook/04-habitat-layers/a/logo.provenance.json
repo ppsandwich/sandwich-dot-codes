@@ -1,0 +1,14 @@
+{
+  "job_id": "wild-notebook-04-A-logo",
+  "app": "Wild Notebook",
+  "direction": 4,
+  "variation": "A",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-500b56b4-7df7-4ed3-be0f-bdee4f2debf2.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/04-habitat-layers/a/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/wild-notebook/04-habitat-layers/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: Wild Notebook. Original direction 4: Habitat layers. Audience: Australian school students, Years 5–9. Purpose: School-ground biodiversity, weather, water and habitat missions combining outdoor observation, data comparison and classroom discussion.. Original palette and identity: Sand #EEDFC5, moss #45613C, terracotta #BA6548. Layered paper-cut soil cross-section, organic panels and warm compact sans.. Variation A: Habitat comparison. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: Three stacked organic strata form an open book, with a small sprout emerging from the top layer.. Specific new construction: Three precise ground strata form a book with one small sprout.. Treatment: Refine the defining emblem into clean geometric construction with generous negative space, fewer parts and precise even edges. Pair it with a compact humanist sans wordmark. A single restrained accent; no gradients or texture. Exact wordmark text: 'Wild Notebook'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

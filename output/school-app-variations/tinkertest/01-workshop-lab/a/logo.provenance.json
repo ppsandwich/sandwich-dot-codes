@@ -1,0 +1,14 @@
+{
+  "job_id": "tinkertest-01-A-logo",
+  "app": "TinkerTest",
+  "direction": 1,
+  "variation": "A",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-e3d89aeb-c8cb-429c-ad35-cc0655e2e7ad.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/01-workshop-lab/a/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/tinkertest/01-workshop-lab/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: TinkerTest. Original direction 1: Workshop lab. Audience: Australian school students, Years 5–9. Purpose: A virtual investigation lab for choosing variables, predicting, running experiments and interpreting results when physical experiments are impractical.. Original palette and identity: Warm grey #ECE9DE, petrol #22505A, orange #C8753D. Matte instrument bench, substantial controls, clean scientific typography.. Variation A: Controlled bench. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: A laboratory flask contains one adjustable slider track with an orange variable dot.. Specific new construction: A clean flask outline containing one slider track and one variable dot.. Treatment: Refine the defining emblem into clean geometric construction with generous negative space, fewer parts and precise even edges. Pair it with a compact humanist sans wordmark. A single restrained accent; no gradients or texture. Exact wordmark text: 'TinkerTest'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

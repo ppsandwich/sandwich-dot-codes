@@ -1,0 +1,14 @@
+{
+  "job_id": "instruction-impossible-05-A-logo",
+  "app": "Instruction Impossible",
+  "direction": 5,
+  "variation": "A",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-d77860f3-f9dd-4639-9825-2f481a78c724.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/05-direction-workshop/a/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/05-direction-workshop/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: Instruction Impossible. Original direction 5: Direction workshop. Audience: Australian school students, Years 2–6. Purpose: Students write directions for a literal character; missing steps and ambiguity have visible consequences, leading to revision and peer challenges.. Original palette and identity: Paper #EEE7D5, cobalt #3F5D86, marigold #D3AE48. Graphic obstacle workshop with grid floor and large printed step numerals.. Variation A: Step editor. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: Three offset numbered-step shapes form a clear turning arrow, with a small gap before the final step.. Specific new construction: Three clean step shapes join into one turning arrow with an intentional gap.. Treatment: Refine the defining emblem into clean geometric construction with generous negative space, fewer parts and precise even edges. Pair it with a compact humanist sans wordmark. A single restrained accent; no gradients or texture. Exact wordmark text: 'Instruction Impossible'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

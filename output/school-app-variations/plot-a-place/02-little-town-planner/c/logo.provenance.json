@@ -1,0 +1,14 @@
+{
+  "job_id": "plot-a-place-02-C-logo",
+  "app": "Plot a Place",
+  "direction": 2,
+  "variation": "C",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-de330fd6-2004-4b2c-b68e-71450da73020.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/02-little-town-planner/c/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/plot-a-place/02-little-town-planner/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: Plot a Place. Original direction 2: Little town planner. Audience: Australian school students, Years 1–6. Purpose: Students create maps of classrooms, imaginary islands and neighbourhoods using symbols, directions, landmarks and simple scale; they exchange navigation challenges and explain how places meet needs.. Original palette and identity: Pale mint #DFE9D9, brick #B75A3D, ink #354B51. Friendly flat town planning board and chunky accessible type.. Variation C: Build a neighbourhood. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: Three simple building blocks nest within a map-pin silhouette.. Specific new construction: Three interlocking roof forms produce a location-pin silhouette in two colours.. Treatment: Rebuild the defining emblem into a bold compact symbol using clever interlocking forms or negative space. Strong recognisable silhouette with two or three flat colours. Use a distinctive bold wordmark. No enclosing generic app-icon square. Exact wordmark text: 'Plot a Place'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

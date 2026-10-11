@@ -1,0 +1,14 @@
+{
+  "job_id": "number-kitchen-02-C-logo",
+  "app": "Number Kitchen",
+  "direction": 2,
+  "variation": "C",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-3a5bd20f-5108-4d7a-a3b9-2b935d4d68a6.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/02-recipe-notebook/c/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/number-kitchen/02-recipe-notebook/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: Number Kitchen. Original direction 2: Recipe notebook. Audience: Australian school students, Years 1–4. Purpose: A virtual kitchen for quantities, fractions, measurement and money, with teacher-selected concepts and difficulty and optional physical measuring, sorting and sharing.. Original palette and identity: Paper #F2E5CC, deep blue #315170, lemon #DDBE56. Illustrated recipe notebook spread with handwritten quantity annotations and friendly serif titles.. Variation C: Double the batch. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: An open recipe book with two measuring-spoon page marks and one clear fraction slash.. Specific new construction: Bold folded-book geometry with two spoon cutouts and a clear fraction slash.. Treatment: Rebuild the defining emblem into a bold compact symbol using clever interlocking forms or negative space. Strong recognisable silhouette with two or three flat colours. Use a distinctive bold wordmark. No enclosing generic app-icon square. Exact wordmark text: 'Number Kitchen'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

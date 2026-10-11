@@ -1,0 +1,15 @@
+{
+  "job_id": "instruction-impossible-03-A-screenshot-map-fix",
+  "app": "Instruction Impossible",
+  "direction": 3,
+  "variation": "A",
+  "type": "screenshot",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-617c5c67-13e8-4835-b465-0d19ce5a050e.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/a/screenshot.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/a/screenshot.png"
+  ],
+  "prompt": "Edit this exact screenshot minimally. In the right-hand map panel ONLY remove all numbered circular map markers (1, 2, 3, 4, 4) and remove all route arrows north of/above the bridge. Fill those removed elements with the same natural path or ground. Keep the lower approach path and the red left-turn arrow leading into the flowerbed, showing the character turned left BEFORE crossing the bridge. All UI outside the map, all text, logo, buttons, character, bridge and visual style unchanged. 4:3 landscape.",
+  "edit_target_snapshot": "generation/revisions/instruction-03-a-before.png"
+}

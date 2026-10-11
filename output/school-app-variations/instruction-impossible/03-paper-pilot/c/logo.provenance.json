@@ -1,0 +1,14 @@
+{
+  "job_id": "instruction-impossible-03-C-logo",
+  "app": "Instruction Impossible",
+  "direction": 3,
+  "variation": "C",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-c14d72a7-bbec-4358-885f-570bb2012dec.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/c/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/instruction-impossible/03-paper-pilot/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: Instruction Impossible. Original direction 3: Paper pilot. Audience: Australian school students, Years 2–6. Purpose: Students write directions for a literal character; missing steps and ambiguity have visible consequences, leading to revision and peer challenges.. Original palette and identity: Sky #DDE9ED, olive #5A653E, terracotta #BB7353. Folded-paper world, numbered flight-path cards and editorial serif headers.. Variation C: Paper route. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: A folded paper plane becomes a directional arrow wrapped around a small exclamation-shaped crease.. Specific new construction: A bold folded arrow with an exclamation-shaped negative-space crease.. Treatment: Rebuild the defining emblem into a bold compact symbol using clever interlocking forms or negative space. Strong recognisable silhouette with two or three flat colours. Use a distinctive bold wordmark. No enclosing generic app-icon square. Exact wordmark text: 'Instruction Impossible'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

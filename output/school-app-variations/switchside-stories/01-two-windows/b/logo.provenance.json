@@ -1,0 +1,14 @@
+{
+  "job_id": "switchside-stories-01-B-logo",
+  "app": "SwitchSide Stories",
+  "direction": 1,
+  "variation": "B",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-91b27393-5067-4e00-80e8-cd41e8c6d213.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/switchside-stories/01-two-windows/b/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/switchside-stories/01-two-windows/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: SwitchSide Stories. Original direction 1: Two windows. Audience: Australian school students, Foundation–Year 4. Purpose: Teacher-guided illustrated social scenarios where children explore different perspectives, try responses and discuss consequences, allowing several reasonable answers.. Original palette and identity: Pale peach #F4DFD1, green #355D4B, gold #CFAC56. Two equal story windows with expressive picture-book figures and calm round type.. Variation B: Paper perspectives. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: Two overlapping open windows form opposing speech bubbles with equal visual weight.. Specific new construction: Two gently irregular open paper frames overlap as equal conversation shapes.. Treatment: Reinterpret the defining emblem as a distinctive hand-cut paper silhouette with subtly irregular but intentional contours. Use solid ink shapes, not grain or gradients. Pair it with warm, slightly rounded lettering. A tightly composed stacked lockup. Exact wordmark text: 'SwitchSide Stories'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

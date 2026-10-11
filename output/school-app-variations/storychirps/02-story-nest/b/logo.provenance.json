@@ -1,0 +1,14 @@
+{
+  "job_id": "storychirps-02-B-logo",
+  "app": "StoryChirps",
+  "direction": 2,
+  "variation": "B",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-502aee5f-f724-4ab8-96a8-05b4ca9597fa.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/02-story-nest/b/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/storychirps/02-story-nest/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: StoryChirps. Original direction 2: Story nest. Audience: Australian school students, Foundation–Year 3. Purpose: Children arrange picture sequences, record retellings and listen back to improve clarity, with teacher prompts and a private classroom collection; the same pictures can support different stories.. Original palette and identity: Pale sage #E0E8D0, dark green #3E573E, ochre #CCAA51. Soft illustrated nest metaphor, linen story stage and warm serif headings.. Variation B: Collected stories. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: Two open speech bubbles nest together around a tiny bird-shaped centre.. Specific new construction: Two hand-cut speech shapes cradle a compact bird silhouette.. Treatment: Reinterpret the defining emblem as a distinctive hand-cut paper silhouette with subtly irregular but intentional contours. Use solid ink shapes, not grain or gradients. Pair it with warm, slightly rounded lettering. A tightly composed stacked lockup. Exact wordmark text: 'StoryChirps'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

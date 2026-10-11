@@ -1,0 +1,14 @@
+{
+  "job_id": "town-together-04-A-logo",
+  "app": "Town Together",
+  "direction": 4,
+  "variation": "A",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-d5d32204-cbb4-48cc-9caf-c19fff4b737d.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/04-people-s-assembly/a/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/town-together/04-people-s-assembly/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: Town Together. Original direction 4: People’s assembly. Audience: Australian school students, Years 5–9. Purpose: A simulated council or parliament where students investigate an issue, compare competing proposals, manage a budget and justify a decision.. Original palette and identity: Pale peach #F1DCCA, aubergine ink #4A3544, sage #91AB8E. Semicircular chamber, printed portrait tokens, humanist display lettering.. Variation A: Assembly notes. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: Five distinct rounded marks make an open semicircle around a central speech bubble.. Specific new construction: Five simple rounded marks arranged in a measured semicircle around a speech dot.. Treatment: Refine the defining emblem into clean geometric construction with generous negative space, fewer parts and precise even edges. Pair it with a compact humanist sans wordmark. A single restrained accent; no gradients or texture. Exact wordmark text: 'Town Together'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}

@@ -1,0 +1,14 @@
+{
+  "job_id": "edit-echidna-03-B-logo",
+  "app": "Edit Echidna",
+  "direction": 3,
+  "variation": "B",
+  "type": "logo",
+  "generator": "built-in image_gen",
+  "source": "/home/dylan/.codex/generated_images/01a12842-2ca1-72b1-9af8-46162ef30e26/exec-685df15a-b9d6-4d90-8c64-a27e983f69fa.png",
+  "output": "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/03-before-and-better/b/logo.png",
+  "references": [
+    "/home/dylan/Documents/GitHub/sandwich-dot-codes/output/school-app-variations/edit-echidna/03-before-and-better/original/logo.png"
+  ],
+  "prompt": "Use case: logo-brand. Create ONE new variation of the supplied logo reference, not a collage. App: Edit Echidna. Original direction 3: Before and better. Audience: Australian school students, Years 2–6. Purpose: Teachers assign one revision goal; students improve their own writing, compare versions and explain their changes through focused challenges.. Original palette and identity: Cream #F0E4CE, ink #3D4D65, coral #C87964. Editorial split-page comparison with bold typographic change markers.. Variation B: Paper revisions. Reference role: original logo, preserve its central concept and recognisable family resemblance while making a visibly distinct candidate. Original emblem: Two overlapping page shapes form an echidna back, with one small orange revision stroke.. Specific new construction: Two irregular paper pages form an echidna back with one revision stroke.. Treatment: Reinterpret the defining emblem as a distinctive hand-cut paper silhouette with subtly irregular but intentional contours. Use solid ink shapes, not grain or gradients. Pair it with warm, slightly rounded lettering. A tightly composed stacked lockup. Exact wordmark text: 'Edit Echidna'. Keep the same spelling and original palette. Compose one emblem plus one wordmark together, centred with generous margins on a square canvas. Transparent background with real alpha; no white or coloured background. Flat, professional, memorable and readable at small sizes; no mockup, no presentation board, no lettering other than the app name, no variant labels, no tagline, no shadows, no gradients. Do not simply copy the original unchanged."
+}
