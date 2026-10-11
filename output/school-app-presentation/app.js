@@ -37,7 +37,6 @@ $('#previous').onclick = () => go(current - 1);
 $('#next').onclick = () => go(current + 1);
 $('#open-index').onclick = e => openDialog('#index-dialog', e.currentTarget);
 $('#open-research').onclick = e => openResearch(e.currentTarget);
-$('#open-notes').onclick = e => openResearch(e.currentTarget);
 document.querySelectorAll('dialog').forEach(dialog => {
   dialog.querySelector('[data-close]').onclick = () => dialog.close();
   dialog.addEventListener('close', () => {

@@ -1,230 +1,136 @@
 {
-  "theme": "Dark monochrome with sans serif typography and logo-only visual app headings",
+  "theme": "Dark sans serif presentation with original colour logos on neutral light panels.",
   "desktop": {
     "viewport": "1440 × 900",
-    "slides": [
-      {
-        "height": 900,
-        "id": "classroom-words",
-        "logoHeight": 219.99996948242188,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "Classroom Words"
-      },
-      {
-        "height": 900,
-        "id": "think-in-parts",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "Think in Parts"
-      },
-      {
-        "height": 900,
-        "id": "town-together",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "Town Together"
-      },
-      {
-        "height": 900,
-        "id": "wild-notebook",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "Wild Notebook"
-      },
-      {
-        "height": 900,
-        "id": "tinkertest",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "TinkerTest"
-      },
-      {
-        "height": 900,
-        "id": "number-kitchen",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "Number Kitchen"
-      },
-      {
-        "height": 900,
-        "id": "storychirps",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "StoryChirps"
-      },
-      {
-        "height": 900,
-        "id": "plot-a-place",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "Plot a Place"
-      },
-      {
-        "height": 900,
-        "id": "clue-canopy",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "Clue Canopy"
-      },
-      {
-        "height": 900,
-        "id": "switchside-stories",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "SwitchSide Stories"
-      },
-      {
-        "height": 900,
-        "id": "instruction-impossible",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "Instruction Impossible"
-      },
-      {
-        "height": 900,
-        "id": "edit-echidna",
-        "logoHeight": 220,
-        "logoWidth": 240,
-        "overflow": false,
-        "accessibleName": "Edit Echidna"
-      }
-    ]
-  },
-  "tablet": {
-    "viewport": "1024 × 768",
+    "allToolsInFooter": true,
+    "focusRestored": true,
+    "index": true,
+    "research": true,
     "slides": [
       {
         "app": "classroom-words",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "think-in-parts",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "town-together",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "wild-notebook",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "tinkertest",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "number-kitchen",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "storychirps",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "plot-a-place",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "clue-canopy",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "switchside-stories",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "instruction-impossible",
+        "height": 900,
         "overflow": false
       },
       {
         "app": "edit-echidna",
+        "height": 900,
         "overflow": false
       }
     ]
   },
   "mobile": {
     "viewport": "390 × 844",
+    "description": "23px",
+    "footerWidth": 375,
+    "metadata": "18px",
     "slides": [
       {
         "app": "classroom-words",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "think-in-parts",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "town-together",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "wild-notebook",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "tinkertest",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "number-kitchen",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "storychirps",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "plot-a-place",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "clue-canopy",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "switchside-stories",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "instruction-impossible",
-        "logoWidth": 240,
         "overflow": false
       },
       {
         "app": "edit-echidna",
-        "logoWidth": 240,
         "overflow": false
       }
     ]
   },
-  "checks": [
-    "All 12 desktop slides fit within 900px height.",
-    "No horizontal overflow at desktop, tablet or mobile widths.",
-    "All 12 monochrome logos visually reviewed in the app index.",
-    "Logos are 240px wide on slides; duplicate names are screen-reader-only.",
-    "Navigation, research logo, screenshot enlargement and modal focus restoration checked.",
-    "Original screenshots and logo files match retained source assets."
-  ]
+  "checks": {
+    "topBarRemoved": true,
+    "slideTaglinesRemoved": true,
+    "logoFilter": "none",
+    "desktopDescriptionPx": 28.8,
+    "desktopYearSubjectPx": 20,
+    "originalAssetsValidated": true
+  }
 }
