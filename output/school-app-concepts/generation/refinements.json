@@ -1,0 +1,28 @@
+[
+  {
+    "asset": "wild-notebook/01-field-journal/screenshot.png",
+    "generator": "Built-in image_gen edit",
+    "reason": "Remove an unintended extra word from the comparison button.",
+    "prompt": "Edit this app screenshot with one precise text correction only. The bottom-right button currently says 'Compare with our class control.' Change its label to exactly 'Compare with our class'. Keep the bar-chart icon, button shape, position, typeface, colour and scale unchanged. Preserve every other pixel as closely as possible: illustration, all other text, layout, palette, controls, notebook and dimensions. Do not add anything."
+  },
+  {
+    "folder": "town-together/03-town-blueprint",
+    "prompt": "Correct the arithmetic and simulation label in this app screenshot. Selected proposal is Raised crossing A$18,000 and total budget A$30,000, so change the orange Remaining value from A$6,000 to exactly A$12,000. Change the text 'Total budget' to 'Simulated budget'. Set the orange budget progress bar to 60 percent full. Keep the unselected New footpath A$24,000 and all other text, illustrations, layout, colours, logo and controls unchanged. Precise local corrections only."
+  },
+  {
+    "folder": "think-in-parts/05-exhibit-studio",
+    "prompt": "Make precise scientific unit corrections in this app screenshot. Forces must use kilonewtons rather than tonnes. Change 'Load (tonnes)' to 'Load (kN)'. Change the label above the truck from 'Load 60 t' to 'Load 60 kN'. Change the bottom support labels from 'Support A 30 t' and 'Support B 30 t' to 'Support A 30 kN' and 'Support B 30 kN'. Keep all numbers, arrows, the centred truck, bridge, every other text, logo, colours and the whole layout unchanged. Only change these four unit labels."
+  },
+  {
+    "asset": "tinkertest/05-evidence-engine/screenshot.png",
+    "generator": "Built-in image_gen edit",
+    "reason": "Replace an inconsistent pendulum graph with a correct results table and clarify the definition of period.",
+    "prompt": "Correct only the results panel and two period definitions in this TinkerTest screenshot. The existing graph has wrong values. Replace the plot inside the right-hand results card with a beautifully aligned two-column DATA TABLE headed 'Length (m)' and 'Period (s)', exactly five rows: '0.25' and '1.00'; '0.50' and '1.42'; '1.00' and '2.01'; '1.50' and '2.46'; '2.00' and '2.84'. Keep card title 'Period versus pendulum length' and simulation label. Use generous row spacing, thin warm-grey rules, orange accent on the 0.50 / 1.42 row. No graph, no axes. Below the table add small caption 'One period is a complete back-and-forth swing.' In the central numeric result card change 'Period (one swing)' to 'Period (one full cycle)' and keep 1.42 s. In the left explanatory paragraph use 'Investigate how the length of a pendulum affects the time for one complete back-and-forth swing.' Keep all other text, layout, illustration, palette, logo, controls and values unchanged, especially length slider 0.50 m and bob mass 100 g. This is a precise scientific content correction."
+  },
+  {
+    "asset": "plot-a-place/05-route-swap/screenshot.png",
+    "generator": "Built-in image_gen edit",
+    "reason": "Make the written route accurately describe the bridge crossing and northward turn.",
+    "prompt": "Make ONE precise instruction correction in the right panel of this Plot a Place app screenshot. Replace step 3 text 'Cross north to the library.' with exactly 'Cross the bridge, then go north to the library.' Wrap it onto two or three short lines within its existing row if needed, keeping all text legible. This correctly describes the map's eastward bridge crossing followed by the northward path. Keep every other part of the image unchanged: map, directions 1 and 2, labels, icons, logo, controls, palette, layout and dimensions. Do not add or remove anything else."
+  }
+]
