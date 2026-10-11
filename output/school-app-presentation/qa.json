@@ -132,5 +132,152 @@
     "desktopDescriptionPx": 28.8,
     "desktopYearSubjectPx": 20,
     "originalAssetsValidated": true
+  },
+  "reasonSection": {
+    "date": "2026-10-12",
+    "desktop": [
+      {
+        "app": "classroom-words",
+        "height": 900,
+        "overflow": false,
+        "reason": ""
+      },
+      {
+        "app": "think-in-parts",
+        "height": 900,
+        "overflow": false,
+        "reason": "I find Explain Everything too expensive. I want to offer teachers and schools a more affordable way to create and assess explanations."
+      },
+      {
+        "app": "town-together",
+        "height": 900,
+        "overflow": false,
+        "reason": "I think civics is underserved by learning apps. There’s room for a substantial library of scenarios, issues and decisions that students can keep coming back to."
+      },
+      {
+        "app": "wild-notebook",
+        "height": 900,
+        "overflow": false,
+        "reason": "I feel we’re losing the field-notebook habit. I want to bring it into the digital age, getting students outside to observe, record and explore science in real places."
+      },
+      {
+        "app": "tinkertest",
+        "height": 900,
+        "overflow": false,
+        "reason": "Physical experiments aren’t always practical or possible. I want to make them accessible through clear visual simulations, giving schools more ways to run meaningful science lessons."
+      },
+      {
+        "app": "number-kitchen",
+        "height": 900,
+        "overflow": false,
+        "reason": ""
+      },
+      {
+        "app": "storychirps",
+        "height": 900,
+        "overflow": false,
+        "reason": "Children often have more to say than they can write. I want to give them space to practise storytelling and hear their own progress."
+      },
+      {
+        "app": "plot-a-place",
+        "height": 900,
+        "overflow": false,
+        "reason": "I want children to understand maps by making places and testing directions with someone else."
+      },
+      {
+        "app": "clue-canopy",
+        "height": 900,
+        "overflow": false,
+        "reason": "A correct answer doesn’t always reveal understanding. I want students to show which clues shaped their thinking."
+      },
+      {
+        "app": "switchside-stories",
+        "height": 900,
+        "overflow": false,
+        "reason": "Everyday disagreements offer useful learning opportunities. I want children to explore different perspectives without being pushed towards one supposedly correct response."
+      },
+      {
+        "app": "instruction-impossible",
+        "height": 900,
+        "overflow": false,
+        "reason": ""
+      },
+      {
+        "app": "edit-echidna",
+        "height": 900,
+        "overflow": false,
+        "reason": ""
+      }
+    ],
+    "mobile": [
+      {
+        "app": "classroom-words",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "think-in-parts",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "town-together",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "wild-notebook",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "tinkertest",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "number-kitchen",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "storychirps",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "plot-a-place",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "clue-canopy",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "switchside-stories",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "instruction-impossible",
+        "overflow": false,
+        "reasonStacksBelow": true
+      },
+      {
+        "app": "edit-echidna",
+        "overflow": false,
+        "reasonStacksBelow": true
+      }
+    ],
+    "approvedReasonCount": 8,
+    "blankReasonCount": 4,
+    "approvedProposalsAdded": [
+      "storychirps",
+      "plot-a-place",
+      "clue-canopy",
+      "switchside-stories"
+    ]
   }
 }
