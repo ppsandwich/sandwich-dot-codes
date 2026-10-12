@@ -1,0 +1,19 @@
+Amazon AU used-condition listing prices — batch 3 — 12 October 2026
+
+2,000 additional distinct product listings, continuing the first two CSVs. No duplicate product ASINs within this batch or across the three CSVs. Together they contain 4,000 distinct products.
+
+1829 listings show both comparison prices. 126 have no used/comparison price displayed; 62 have no new price displayed. Blank cells mean not displayed, not zero. The schema matches both earlier CSVs.
+
+Prices are AUD, copied from search listing cards. used_price_shown_aud is the first secondary-offer price, normally under “More Buying Choices” or “No featured offers available”. Amazon labels these “used & new offers”; this is the requested listing-page price, not an independently verified lowest used-only offer. Original labels are included.
+
+new_price_aud is the main current product price shown on the listing card. RRP, typical prices, crossed-out prices, unit prices, coupon discounts and instalment amounts are excluded. Main listing prices have not each been independently verified against offer conditions. Shipping is not included in either numeric price.
+
+Collection resumes with the 27 previously captured products beyond batch 2's cutoff, retaining their original timestamps, then continues overlapping minimum-price searches at $11.00, $11.81 and $11.94, preserving the Used filter and Price: Low to high sort.
+
+A large cluster of books shares an $11.94 offer price. Continuing the broad search past its 306-result limit would omit much of that price group. To collect more of this group, the search was narrowed to Books with minimum and maximum prices both $11.94. Pages 1–75 returned 16 listings each; page 76 returned no products despite the pagination displaying further pages. Collection then continued at the same exact price in Arts & Photography, the first named book subcategory in Amazon's category menu, through page 33. Duplicates against all previously collected ASINs were removed, retaining first observations, and collection stopped at 2,000 additional products. 1568 of this batch's displayed secondary prices are $11.94. This batch is consequently dominated by books.
+
+“2001–4000” denotes positions in our continued collection, not independently verified exact positions in Amazon's unrestricted search. Category filtering introduces a selection bias within the large same-price group. Uncollected items may share that price or appear earlier under other filters. Price filtering, product variations, changing inventory and Amazon ranking can also alter inclusion and ordering. Displayed secondary-offer prices can fall outside the search's price limits; these are copied as displayed, not replaced with the filter amount.
+
+Listings without visible prices are retained. Each row includes a product link, source search URL and UTC observation timestamp. The visible delivery region was Melbourne 3059. Prices and delivery charges can change.
+
+source-listings-2001-4000.json contains the extracted evidence for pages used, including overlaps and entries beyond the cutoff. The first two batches are unchanged. To resume this collection exactly, consume unused entries from the final Arts & Photography pages before continuing that category's exact-$11.94 search. No purchases were made.
