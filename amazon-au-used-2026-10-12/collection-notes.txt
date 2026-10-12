@@ -1,0 +1,14 @@
+Amazon AU used-condition listing prices — 12 October 2026
+
+1,000 distinct product listings; 927 have both comparison prices displayed.
+49 listings have no used/comparison price shown; 61 have no new price shown. Empty cells mean not displayed, never zero.
+
+Prices are AUD, as shown on the search listing cards. The used_price_shown_aud column copies the first price in the secondary offer section, normally labelled “More Buying Choices” or “No featured offers available”. Amazon labels these offers “used & new”, so this is the requested listing-page comparison price, not an independently verified used-only offer. The original label is included in each row.
+
+new_price_aud is the main current product price shown on the listing card, not its RRP, typical price, crossed-out price, unit price, coupon price or instalment amount. These main listing prices have not each been independently verified against product offer conditions.
+
+The supplied search was sorted Price: Low to high and filtered to Used. Amazon exposed only 306 results across seven pages; page 8 returned no products. Collection therefore continued with overlapping minimum-price searches at $4.90, $6.24 and $7.31, preserving the Used filter and low-to-high sort. Duplicate ASINs were removed, retaining the first observation. The CSV contains the first 1,000 distinct products encountered in that sequence. This is a continuation of the low-price search, not a verified exact first 1,000 positions of Amazon's unrestricted search: filtering, variations, changing inventory and Amazon ranking may affect inclusion and order. The first 306 rows come directly from the supplied unrestricted-price search.
+
+No category or personal-preference exclusions were applied. Listings without visible prices remain in the file so that missing data does not silently alter the sample. Product links, source search URLs and per-page UTC timestamps are included. The visible delivery region was Melbourne 3059. Shipping is not included in the numeric prices. Offers and delivery charges may change.
+
+source-listings.json contains the extracted listing-card evidence for all pages examined, including entries beyond the 1,000-row cutoff. No purchases were made.
