@@ -1,0 +1,27 @@
+Amazon AU used-condition listings — batch 4, excluding books — 12 October 2026
+
+2,000 additional products, with no duplicate ASINs within this CSV or against the earlier three CSVs. The collection now totals 6,000 distinct products. Earlier CSVs are unchanged and still contain books.
+
+1103 rows show both comparison prices; 814 have no used/comparison price displayed and 317 have no new price displayed. Blank cells mean not shown, never zero.
+
+Book filtering findings
+Tested on Amazon AU: k=* -books, negative book-format keywords, n:-4851626051, n:!4851626051, and a pipe-separated union of non-book categories. None reliably excluded books: the category-negation forms resolved to Books, the union was dropped, and keyword exclusions still returned books while suppressing unrelated products. Amazon Resale also includes books. Evidence is saved in book-filter-tests.json.
+
+The practical approach used here is to search non-book departments separately using i=<department>, retaining rh=p_n_condition-type:10284286051 and s=price-asc-rank, then reject book listings from their format text, ISBN-like identifiers and manual review. Departments alone still include miscategorised or cross-listed books. Search links for examples:
+https://www.amazon.com.au/s?k=*&i=electronics&rh=p_n_condition-type%3A10284286051&s=price-asc-rank
+https://www.amazon.com.au/s?k=*&i=kitchen&rh=p_n_condition-type%3A10284286051&s=price-asc-rank
+https://www.amazon.com.au/s?k=*&i=computers&rh=p_n_condition-type%3A10284286051&s=price-asc-rank
+
+Scope and selection
+The unfinished book-only crawl was superseded by this non-book batch following the user's direction. Searches restarted at page 1 in non-book departments so that cheaper non-book products missed by the original broad search could be found. Previous 4,000 ASINs were excluded. Departments examined: amazon-devices, automotive, baby, beauty, popular, fashion, computers, electronics, garden, hpc, home, home-improvement, industrial, kitchen, fashion-luggage, movies-tv, mi, grocery, pets, sporting, office-products, toys, videogames.
+
+Pages were read in rounds across departments, up to page 11 where available. The first 2,000 eligible new products in that collection sequence were retained, then sorted by displayed secondary-offer price, with missing prices last. This is a sample across non-book departments, not verified exact global Amazon positions 4,001–6,000 or a guarantee of the globally cheapest remaining products. The filename numbers denote cumulative collection size. Source URLs and UTC timestamps preserve provenance.
+
+1785 distinct additional book or spoken-word/score candidates were excluded. Physical books, ebooks, identifiable audiobooks, bound sheet music and printed scores were excluded. Blank stationery notebooks, planners, calendars, music recordings, films and games remain eligible. 116 additional listings displaying prices for multiple media formats were excluded to avoid comparing different formats. Automated format/identifier checks were supplemented with review of remaining book-related titles; category metadata is imperfect, so this is not an Amazon-provided book-free filter.
+
+Pricing
+Prices are AUD, excluding delivery. used_price_shown_aud copies the first secondary-offer price, normally labelled “More Buying Choices” or “No featured offers available”. Amazon commonly labels these “used & new offers”; this is the requested price shown on the listing, not an independently verified used-only offer. Original labels are included, including any labels that say new offers only despite the Used search filter.
+
+new_price_aud is the main current product price displayed on the listing. RRP, typical prices, crossed-out prices, unit prices, coupons and instalment amounts are excluded. Individual offer conditions have not been independently verified. Brand and product headings were combined where Amazon renders them separately. Where Amazon omits the product name or prices, no missing details were invented.
+
+The visible delivery region was Melbourne 3059. Offers and delivery charges may change. The source JSON retains all examined listing cards, book-exclusion decisions, title-enrichment evidence and the final collection cutoff so work can resume. No purchases were made.
