@@ -1,0 +1,17 @@
+Amazon AU used-condition listing prices — batch 2 — 12 October 2026
+
+1,000 additional distinct product listings, continuing amazon-au-used-1000.csv. No duplicate product ASINs within this batch or across the two CSVs. Both files together contain 2,000 distinct products.
+
+905 listings show both comparison prices. 66 have no used/comparison price displayed; 59 have no new price displayed. Blank cells mean not displayed, not zero. The schema matches the first CSV.
+
+Prices are AUD, copied from search listing cards. used_price_shown_aud is the first secondary-offer price, normally under “More Buying Choices” or “No featured offers available”. Amazon labels these “used & new offers”; this is the requested listing-page price, not an independently verified lowest used-only offer. Original labels are included.
+
+new_price_aud is the main current product price shown on the listing card. RRP, typical prices, crossed-out prices, unit prices, coupon discounts and instalment amounts are excluded. Main listing prices have not each been independently verified against offer conditions. Shipping is not included in either price.
+
+Collection resumes with 53 previously captured listings beyond the first CSV's cutoff, retaining their original observation timestamps, then continues pages 5–7 of the $7.31 minimum-price search. Further overlapping minimum-price searches at $8.38, $9.33 and $10.19 continue beyond Amazon's 306-result/seven-page limit. The Used filter and Price: Low to high sort remain applied. ASIN duplicates are removed in collection order and the first 1,000 additional products are retained.
+
+“1001–2000” refers to positions in this continued collection, not independently verified exact positions in Amazon's unrestricted search. Price filtering, product variations, inventory and ranking can alter inclusion and ordering. No category or preference exclusions are applied. Listings without visible prices are retained.
+
+Each row includes a product link, source search URL and UTC observation timestamp. The browser's displayed delivery region was Melbourne 3059. Prices and delivery charges can change.
+
+source-listings-1001-2000.json contains listing evidence for the pages used, including overlapping products and entries beyond this batch's cutoff, so collection can continue. The first batch files are unchanged. No purchases were made.
