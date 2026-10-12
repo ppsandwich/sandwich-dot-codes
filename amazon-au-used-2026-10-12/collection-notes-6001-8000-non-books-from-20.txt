@@ -1,0 +1,22 @@
+Amazon AU used-condition listings — batch 5, non-books from A$20 — 12 October 2026
+
+2,000 additional distinct products. No duplicate ASINs within this batch or against the previous four CSVs, which remain unchanged. The collection totals 8,000 distinct products.
+
+Every exported row has a displayed secondary used/comparison price of at least A$20. Prices in this CSV range from A$20.00 to A$142.41, sorted low to high. 1898 rows show both comparison prices; 102 have no new price displayed. Blank new-price cells mean not shown, never zero. Used/comparison price cells are all populated.
+
+Method
+Searched non-book departments separately with the Used filter, Price: Low to high sort and low-price=20. Departments: amazon-devices, automotive, baby, beauty, popular, fashion, computers, electronics, garden, hpc, home, home-improvement, industrial, kitchen, fashion-luggage, movies-tv, mi, grocery, pets, sporting, office-products, toys, videogames. Pages were read in rounds, through page 17 where pagination allowed. The actual displayed secondary price was then checked independently: missing prices, labels without “used”, and prices below A$20 were rejected even when Amazon returned them under the filter. ASINs in the earlier 6,000 products were excluded. Of 2030 eligible additional products found, the 2,000 lowest displayed secondary prices were selected and sorted ascending.
+
+The result is a sample across department searches, not a verified exact global Amazon ranking or a guarantee of the 2,000 cheapest remaining products. The filename numbers denote cumulative collection size. Amazon's category and price filters can return unexpected products and prices.
+
+Books
+Excluded physical books, ebooks, identifiable audiobooks, bound sheet music, printed scores and equipment manuals using listing formats, ISBN-like identifiers and review of remaining book-related titles. Blank exercise books, notebooks, planners, calendars, book storage and device accessories remain eligible. Music recordings, films and games were not excluded as categories. Listings with multiple priced media formats were rejected to avoid comparing different variants. Evidence and manual book exclusions are saved in the source JSON.
+
+Price meanings
+used_price_shown_aud copies the first secondary-offer price displayed on the listing card, usually under “More Buying Choices” or “No featured offers available”. Its label must mention used offers, but Amazon commonly combines “used & new offers”; this is the requested listing-page comparison price, not an independently verified used-only offer. The original label is included for every row.
+
+new_price_aud is the main current product price displayed on that listing. RRP, typical prices, crossed-out prices, unit prices, coupons and instalment amounts are excluded. Individual offer conditions have not been independently verified. Brand and product headings are combined where rendered separately.
+
+All prices are AUD and exclude shipping. Source search URLs, product URLs and observation timestamps in UTC are included. The visible delivery region was Melbourne 3059. Offers and delivery charges may change. No purchases were made.
+
+source-listings-6001-8000-non-books-from-20.json contains every extracted page used, the filtering rules, rejected-observation counts and selected ASINs. Unselected candidates and complete page evidence are retained for continuation.
