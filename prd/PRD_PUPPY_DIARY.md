@@ -1,16 +1,17 @@
-# Puppy diary: product requirements document
+# Wag Journal: product requirements document
 
 Status: revised following product discovery; confirmed decisions and remaining implementation questions  
 Date: 19 October 2026
 
 ## 1. Purpose
 
-Help puppy owners build a practical daily rhythm by making activities quick to record, patterns easy to see and schedules easy to adjust.
+Wag Journal helps puppy owners build a practical daily rhythm by making activities quick to record, patterns easy to see and schedules easy to adjust.
 
 The core loop is: start with a suitable schedule, record what actually happens, review patterns, then adjust the schedule. Success means an owner can explain what is working for their puppy and make a useful change without maintaining a complicated diary.
 
 ## 2. Confirmed requirements
 
+- Use **Wag Journal** as the app name across the web app, native mobile apps and user-facing materials.
 - Launch a React web app with a very simple kiosk interface and responsive phone access. React Native mobile apps follow after the web experience is validated.
 - Host the web app and API on Vercel, targeting the Hobby plan and no more than 12 API route entrypoints or deployed functions.
 - Design for owners and caregivers who may not be technically confident.
