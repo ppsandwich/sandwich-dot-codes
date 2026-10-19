@@ -114,6 +114,55 @@ Sleep is included at launch and must not be inferred from crate occupancy. Settl
 - Provide account recovery, invitation acceptance, kiosk pairing and export flows that need no technical setup by the caregiver.
 - Validate first-use logging, backdating, mute/unmute, correcting an estimate and sharing a PDF with participants who describe themselves as not technically confident.
 
+## 6a. Look, feel and interaction design
+
+### Design direction
+
+Wag Journal should feel like a thoughtfully illustrated everyday notebook: warm, calm and slightly whimsical, with extremely clear controls for tired puppy owners and occasional caregivers. Use the sun-bleached utility direction: warm paper, eucalyptus accents, readable ink-coloured text and generous spacing. Familiar actions and predictable placement take priority over decoration.
+
+### Research references
+
+Reviewed on 19 October 2026 using the products' official descriptions and published screenshots. These are reference observations, not hands-on usability findings or proof that the current shipped apps look identical to their marketing images. The design decisions below are specific to Wag Journal.
+
+- **Pup to Date:** its published screen shows a chronological log, a time-aligned multi-day view and activity shortcuts with elapsed times. Borrow the ability to answer “when was the last time?” without opening a report. Wag Journal adds persistent text labels to activity icons and keeps comparisons outside the kiosk's main logging area. [Product and features](https://puptodate.com/), [reference screenshot](https://puptodate.com/images/screenshot-events2.png).
+- **DogLog:** its official site emphasises shared care, reminders and recognising trends. The published profile screen uses a puppy photo and playful pet motifs. Borrow the personal warmth and shared-care emphasis, with decoration limited to small accents so it does not compete with the logging controls. [Product and features](https://www.doglogapp.com/), [reference screenshot](https://res.cloudinary.com/dyrrwpemp/image/upload/f_auto/DogLog/features-screenshot.png).
+- **DogNote:** its published activity feed pairs event names with timestamps and caregiver attribution, with labelled navigation; the product also supports filtering and export. Borrow readable diary rows and clear attribution. Wag Journal's routine logging should remain directly accessible, with optional detail revealed after saving. [Product and features](https://dognote.app/), [reference screenshot](https://dognote.app/hero-image.png).
+
+Use these patterns as references; create original illustrations, components and branding. Competitor features do not expand the agreed launch scope.
+
+### Visual language
+
+- **Palette:** use warm paper `#F7F3EA` for the page, near-white `#FFFDF8` for raised surfaces, charcoal `#26332D` for primary text and deep eucalyptus `#355C49` for primary actions. Pale sage `#E5EDE4`, soft peach `#F4DFD2` and butter yellow `#F4E7B8` provide restrained accents with dark text. Use dark rust `#9A382D` for errors and storm blue `#285F83` for focus indicators. These are starting tokens; validate every actual text, control and state pairing before release.
+- **Typography:** use a softly expressive serif such as Fraunces for the wordmark and short page headings, with Atkinson Hyperlegible for controls, body copy and data. Keep body text at least 16 CSS px at default web sizing and primary kiosk labels around 20–24 px. Use tabular numerals for times, clear units and native text scaling on mobile. Decorative type never appears in activity labels or timestamps.
+- **Shape and spacing:** use softly rounded controls, quiet borders and matte surfaces. Start with an 8 px spacing rhythm, 16–24 px panel padding and 12–20 px corner radii. Keep interactive controls aligned in a stable grid. Organic curves belong in small illustrations or section accents; content remains neatly aligned.
+- **Whimsy:** one small, original line-drawn puppy can appear in onboarding and empty states, with a subtle wag-shaped flourish near the wordmark. Keep charts and active logging areas visually quiet. Illustrations are decorative, never required to understand a state. Avoid repeating paw-print backgrounds, novelty control shapes, confetti, streak rewards and persistent animation.
+- **Icons:** use a consistent rounded line style paired with visible labels. Distinguish Outside, Potty, Meal, Play, Training, Crate and Sleep with recognisable symbols. Keep activity identity consistent across actions, diary and charts; colour is a secondary cue, never the only distinction.
+
+### Screen structure and navigation
+
+- **Today:** the default personal view shows the puppy's name, current sessions, the next planned activity and quick logging. Place the seven activity actions in a stable order, each with a clear label and last-recorded time where relevant. Charts and setup prompts must not push everyday actions out of reach.
+- **Tablet kiosk:** use a compact identity/status header, a large logging area and a recent-history area beside it in landscape or below it in portrait. All seven actions should fit without scrolling at default text size on the agreed target tablet. Allow vertical scrolling at enlarged text sizes rather than shrinking controls. Keep current sessions and their explicit end actions visible. Retain the limited-history and PIN restrictions in section 6.
+- **Phone:** use a two-column logging layout with comfortable thumb reach and no horizontal carousel of hidden activities. Use four labelled navigation destinations: Today, Diary, Routine and Patterns. Provide a separate labelled Settings entry. Preserve these names and hierarchy in the later React Native apps while respecting native back navigation and safe areas.
+- **Diary:** show a readable chronological list grouped by day, with activity, occurrence time, duration/status and caregiver or device attribution. Expose date and activity filters and a visible edit action. The recent kiosk view is a limited version of this list.
+- **Routine:** show a simple agenda with time, activity and estimated duration. Provide explicit Edit and Move actions; dragging may be an enhancement but cannot be required. Show proposed schedule changes as a clear before/after comparison with the supporting observations.
+- **Patterns:** start with a plain-language finding, its date range and observation count, then the supporting chart and a route back to the entries. Offer day comparison and a readable data alternative. Use solid marks for actual records and outlined marks for plans, with labels; explicitly label estimated durations. Do not present missing logs as zero activity or accidents as a failing score.
+
+### Logging and feedback
+
+- Maintain the one-tap common event and two-tap potty limits in section 5. Show optional notes and outcomes after saving. A tap must have an obvious effect without a celebratory interstitial or mandatory confirmation dialog.
+- For duration activities, show the current mode and preset beside the action, such as “Play · estimated 15 min”. Provide a separate labelled control to change the duration or switch to a running timer. Remember defaults per activity; do not hide mode changes behind long presses. A running session uses an explicit action such as “End play”; an estimate remains labelled until confirmed.
+- Keep an inline confirmation and Undo visible after logging without moving the other activity buttons. Announce save results to assistive technology without stealing focus. Pending, saved and failed states use text plus an icon; a successful local save must not imply the account has received the entry.
+- Keep personal reminder status prominent in authenticated views: “Reminders on” or “Muted until 7 am”, with a direct mute/unmute action. On a shared kiosk, identify the affected caregiver before changing personal notification preferences; never imply a global household mute.
+- Use plain Australian English and sentence-case labels. Examples: “Wee recorded · Undo”, “Saved on this device. Waiting for internet”, and “Nothing logged yet. Start with what your puppy is doing now.” Keep humour out of errors, accidents and missed care prompts.
+- Use brief pressed-state feedback and transitions around 120–180 ms, without delaying logging. Respect reduced-motion settings and avoid sound by default.
+
+### Accessibility and design validation
+
+- Provide at least 48 × 48 CSS px touch targets on the web, with larger primary kiosk actions of at least 72 px height and sufficient separation. Use comparable logical dimensions on native apps. Preserve visible keyboard focus, meaningful screen-reader labels, logical focus order and accessible modal dismissal.
+- Meet the existing WCAG 2.2 AA target: validate text contrast, control boundaries, non-colour state cues, 200% text resizing and narrow-screen reflow. Keep labels visible when text grows. Do not place texture behind text or chart marks.
+- Define default, pressed, focused, disabled, loading, empty, offline, saved and error states for the key flows before implementation. Errors must explain recovery while preserving entered details.
+- Prototype Today/kiosk, potty logging, duration adjustment, Diary correction, Routine editing and Patterns before building the full UI. Test with nontechnical caregivers on tablet and phone, including one-handed use and larger text. Keep the five-second logging target in section 12; also check that participants can identify the last meal, distinguish an estimate from a confirmed session, and find mute/unmute without coaching.
+
 ## 7. Suggested and editable schedules
 
 ### Inputs
@@ -259,6 +308,7 @@ Do not rely on a browser staying open or a long-running function timer. Native l
 20. At web launch, tablet and phone browsers access the same authorised household data and preserve estimates, offline entries and reminder preferences. At the later mobile release, verify the same behaviour across React Native and web clients using the shared API.
 21. Usability testing includes nontechnical caregivers completing setup, logging, correction, muting and PDF sharing without developer assistance.
 22. At web launch, test browser reminders with the web app closed on supported platforms under documented permission, installation and connectivity conditions. Test backgrounded native apps at the later mobile release. The delivery design does not depend on Hobby cron for timely reminders.
+23. The interface follows section 6a across logging, diary, routine and patterns. Validate labelled controls, stable action placement, touch targets, contrast, text resizing, keyboard/screen-reader use and reduced motion. Decorative elements must not add steps or obscure activity, saving or reminder states.
 
 ## 12. Product validation
 
