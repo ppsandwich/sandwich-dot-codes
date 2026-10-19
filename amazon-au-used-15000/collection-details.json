@@ -1,0 +1,106 @@
+{
+  "target_items": 15000,
+  "actual_items": 13001,
+  "shortfall": 1999,
+  "google_sheet_url": "https://docs.google.com/spreadsheets/d/1H81HM3kj28smAOcU0wE-x7gHRs5fxYUE4AWNDTMc5Tc/edit",
+  "spreadsheet_id": "1H81HM3kj28smAOcU0wE-x7gHRs5fxYUE4AWNDTMc5Tc",
+  "items_sheet_id": 86074677,
+  "notes": [
+    [
+      "Amazon AU used-item collection",
+      "Details"
+    ],
+    [
+      "Status",
+      "13,001 qualifying items collected; target of 15,000 not reached (1,999 short)."
+    ],
+    [
+      "Scope",
+      "Amazon AU used-condition searches; books, comics, manuals and identifiable audiobooks excluded. Blank notebooks, calendars, planners, films, music and games retained."
+    ],
+    [
+      "Price minimum",
+      "None. Prices below A$20 are included."
+    ],
+    [
+      "Used price shown",
+      "First comparison price displayed on the search listing. Amazon often labels this 'used & new offers'; this is not a verified used-only seller offer."
+    ],
+    [
+      "New price",
+      "Main current product price displayed on the same search listing. Crossed-out RRP, unit prices, coupons, delivery and conditional discounts are excluded."
+    ],
+    [
+      "Ratio",
+      "New price / used price - 1. For example, 0.50 means the new price is 50% higher than the displayed comparison price. This is not the usual percentage discount from new."
+    ],
+    [
+      "Category",
+      "Amazon search department of the retained observation. Items can appear in multiple departments; this is not a verified product-level taxonomy."
+    ],
+    [
+      "Selection",
+      "Unique ASINs with both numeric prices > 0. Latest qualifying observation retained, sorted by used price ascending. Not a claim to be Amazon's globally cheapest 15,000 items."
+    ],
+    [
+      "Dates",
+      "Source observations collected 12–13 October 2026; row timestamps are UTC. Prices and availability can change."
+    ],
+    [
+      "Search coverage",
+      "4,671 source page observations, including previous batches, department pagination, price-filtered continuation and targeted keyword checks. Pagination limits and missing prices reduced the usable set."
+    ],
+    [
+      "Repository backup",
+      "amazon-au-used-15000/amazon-au-used-complete.csv; source JSON files and consolidate.py saved alongside it."
+    ],
+    [
+      "Verification",
+      "Live checks below"
+    ],
+    [
+      "Items with numeric used price",
+      "=COUNT('Used items'!B2:B13002)"
+    ],
+    [
+      "Items with numeric new price",
+      "=COUNT('Used items'!C2:C13002)"
+    ],
+    [
+      "Unique ASINs",
+      "=COUNTUNIQUE('Used items'!G2:G13002)"
+    ],
+    [
+      "Missing price cells",
+      "=COUNTBLANK('Used items'!B2:C13002)"
+    ],
+    [
+      "Items below A$20",
+      "=COUNTIF('Used items'!B2:B13002,\"<20\")"
+    ],
+    [
+      "Out-of-order price pairs",
+      "=SUMPRODUCT(N('Used items'!B3:B13002<'Used items'!B2:B13001))"
+    ],
+    [
+      "Ratio errors",
+      "=SUMPRODUCT(N(ISERROR('Used items'!E2:E13002)))"
+    ],
+    [
+      "Target shortfall",
+      "=15000-COUNT('Used items'!B2:B13002)"
+    ]
+  ],
+  "validation": {
+    "numeric_used_prices": 13001,
+    "numeric_new_prices": 13001,
+    "unique_asins": 13001,
+    "missing_price_cells": 0,
+    "below_20": 4189,
+    "unsorted_pairs": 0,
+    "ratio_errors": 0,
+    "formulas_verified": 13001
+  },
+  "visual_check": "Google browser sign-in required; native Sheets API readback verified values, formulas, formats, dimensions and filter configuration.",
+  "collection_complete_to_target": false
+}
